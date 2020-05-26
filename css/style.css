@@ -1,0 +1,47 @@
+@import "https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&display=swap";
+@import "bootstrap.min.css";
+header {
+  position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4F4F4F;
+  letter-spacing: 0.2px;
+  margin: 32px 20px;
+  padding: 0;
+  display: inline-block;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon {
+  color: #574A97;
+}
+
+.rent-now-btn {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #776FC3;
+  color: #FFFFFF;
+  border-radius: 15px;
+  border-color: #776FC3;
+  letter-spacing: 0.3px;
+  text-align: center;
+  padding: 12px 18px;
+}
+.rent-now-btn:hover {
+  background-color: #847ccb;
+  border-color: #847ccb;
+}
+
+/*# sourceMappingURL=style.css.map */
