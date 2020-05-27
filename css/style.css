@@ -1,7 +1,13 @@
-@import "https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&display=swap";
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import "https://fonts.googleapis.com/css2?family=Muli:wght@300;400;600;700&display=swap";
+@import "bootstrap-datepicker.min.css";
 @import "bootstrap.min.css";
 header {
   position: relative;
+}
+
+.bg-light {
+  background-color: #FFFFFF !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -25,7 +31,7 @@ header {
   color: #574A97;
 }
 
-.rent-now-btn {
+.rent-now-btn, .rent-btn {
   font-family: "Muli", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -39,9 +45,268 @@ header {
   text-align: center;
   padding: 12px 18px;
 }
-.rent-now-btn:hover {
-  background-color: #847ccb;
-  border-color: #847ccb;
+.rent-now-btn:hover, .rent-btn:hover {
+  background-color: #776FC3;
+  border-color: #776FC3;
+}
+
+.hero-section {
+  background-color: #F1F5F8;
+  background-image: url("../images/picture_bg.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 163px 0px 187px;
+}
+@media screen and (max-width: 576px) {
+  .hero-section {
+    background-color: #F8FAFB;
+    background-image: url("../images/picture_bg_mobile.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 67px 0px 71px;
+  }
+}
+
+.main-title {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  color: #373F41;
+  line-height: 56px;
+  letter-spacing: 0.2px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 576px) {
+  .main-title {
+    font-size: 40px;
+    margin-bottom: 34px;
+    text-align: left;
+  }
+}
+
+.hero-text {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #737B7D;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 576px) {
+  .hero-text {
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.rent-btn {
+  font-size: 20px;
+  line-height: 25px;
+  background-color: #284458;
+  border-color: #284458;
+  border-radius: 0px;
+  padding: 20px 48px;
+}
+.rent-btn:hover {
+  background-color: #284458;
+  border-color: #284458;
+}
+
+.features-section {
+  background-color: rgba(15, 89, 141, 0.04);
+  padding: 71px 0px 70px;
+}
+@media screen and (max-width: 768px) {
+  .features-section {
+    padding: 78px 0px 20px;
+  }
+}
+
+.features-text {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #284458;
+  padding-top: 15px;
+}
+.features-text span {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #284458;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .features-text {
+    margin-bottom: 75px;
+  }
+}
+
+.calendar-section {
+  padding: 129px 0px;
+}
+@media screen and (max-width: 576px) {
+  .calendar-section {
+    padding: 72px 0px 69px;
+  }
+}
+
+.calendar-title {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 43px;
+  letter-spacing: 0.2px;
+  color: #373F41;
+  padding-bottom: 34px;
+}
+@media screen and (max-width: 576px) {
+  .calendar-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.calendar-text {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #737B7D;
+  padding-bottom: 47px;
+}
+
+.datepicker table tr td.today, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today:hover {
+  background-color: #284458;
+  color: #F2F2F2;
+  background-image: none;
+}
+.datepicker table tr td.today:hover, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today.disabled:hover:hover, .datepicker table tr td.today:hover:hover {
+  background-color: #284458;
+  color: #F2F2F2;
+  background-image: none;
+}
+
+.datepicker td, .datepicker th {
+  padding: 10px;
+}
+
+.datepicker .datepicker-switch {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #284458;
+  background-color: #F5F9FC;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  #datetimepicker1 {
+    margin-top: 40px;
+  }
+}
+
+.day {
+  color: #284458;
+  opacity: 0.6;
+}
+
+.testimonials-section {
+  background-color: #F8FAFB;
+  padding: 71px 0px 137px;
+}
+
+.card {
+  border: 1px solid #D0D9DD;
+  border-radius: 0;
+}
+
+.review-title {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+.review-text {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.circle-img {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  font-size: 32px;
+  border-width: 2px;
+  background: rgba(40, 68, 88, 0.08);
+  border-image: initial;
+  border-radius: 50%;
+  position: relative;
+}
+
+.person-img {
+  position: absolute;
+  left: 25px;
+  top: 22px;
+}
+
+.star-rating {
+  letter-spacing: 5px;
+}
+
+.star-icon {
+  color: #C4C4C4;
+  width: 13px;
+  height: 13px;
+}
+
+.date-text {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 0.2px;
+  color: #284458;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -73px;
+  text-align: left;
+  float: left;
+  right: inherit;
+  left: 0 !important;
+  margin-left: 0;
+}
+.carousel-indicators li {
+  background-color: #C4C4C4;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
