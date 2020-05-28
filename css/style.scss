@@ -1,9 +1,10 @@
 @import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
-@import "https://fonts.googleapis.com/css2?family=Muli:wght@300;400;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Muli:wght@300;400;600;700&display=swap";
 @import "bootstrap-datepicker.min.css";
 @import "bootstrap.min.css";
 
 $font-family-primary: 'Muli', sans-serif;
+$font-family-secondary: 'Lato', sans-serif;
 
 @mixin max-screen($number) {
   @media screen and (max-width: $number) {
@@ -226,7 +227,7 @@ header {
   @extend .rent-btn;
   position: absolute;
   top: -117px;
-  @include max-screen(576px) {
+  @include max-screen(992px) {
     position: absolute;
     top: 0;
   }
@@ -319,9 +320,114 @@ header {
 }
 
 .card-hidden {
-  @include max-screen(576px) {
+  @include max-screen(992px) {
     display: none;
   }
 }
+
+footer {
+  background-color: #EEF4F7;
+  padding: 64px 0px 52px;
+}
+
+.logo-title {
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #284458;
+}
+
+.home-title {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #284458;
+}
+
+footer ul{
+  list-style-type: none;
+  padding: 0;
+  li > a {
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #284458;
+    &:hover {
+      color: #284458;
+      text-decoration: none;
+    }
+  }
+}
+
+.address-text {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  color: #284458;
+  margin-top: 21px;
+}
+
+.copyright-margin {
+  margin-top: 57px;
+}
+
+.copyright-text {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #BEC8D0;
+}
+
+.social-img {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  color: #EEF4F7;
+  background-color: rgba(40, 68, 88, 0.7);
+  line-height: 28px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.facebook-icon {
+  @extend .social-img;
+  &:hover {
+    color: #EEF4F7;
+    background-color: #3b5997;
+  }
+}
+
+.twitter-icon {
+  @extend .social-img;
+  &:hover {
+    color: #EEF4F7;
+    background-color: #3ec2f3;
+  }
+}
+
+.pinterest-icon {
+  @extend .social-img;
+  &:hover {
+    color: #EEF4F7;
+    background-color: #e94438;
+  }
+}
+
 
 

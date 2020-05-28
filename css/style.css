@@ -1,5 +1,5 @@
 @import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
-@import "https://fonts.googleapis.com/css2?family=Muli:wght@300;400;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Muli:wght@300;400;600;700&display=swap";
 @import "bootstrap-datepicker.min.css";
 @import "bootstrap.min.css";
 header {
@@ -232,7 +232,7 @@ header {
   position: absolute;
   top: -117px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .check-btn {
     position: absolute;
     top: 0;
@@ -325,10 +325,105 @@ header {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .card-hidden {
     display: none;
   }
+}
+
+footer {
+  background-color: #EEF4F7;
+  padding: 64px 0px 52px;
+}
+
+.logo-title {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #284458;
+}
+
+.home-title {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #284458;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul li > a {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #284458;
+}
+footer ul li > a:hover {
+  color: #284458;
+  text-decoration: none;
+}
+
+.address-text {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  color: #284458;
+  margin-top: 21px;
+}
+
+.copyright-margin {
+  margin-top: 57px;
+}
+
+.copyright-text {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #BEC8D0;
+}
+
+.social-img, .pinterest-icon, .twitter-icon, .facebook-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  color: #EEF4F7;
+  background-color: rgba(40, 68, 88, 0.7);
+  line-height: 28px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.facebook-icon:hover {
+  color: #EEF4F7;
+  background-color: #3b5997;
+}
+
+.twitter-icon:hover {
+  color: #EEF4F7;
+  background-color: #3ec2f3;
+}
+
+.pinterest-icon:hover {
+  color: #EEF4F7;
+  background-color: #e94438;
 }
 
 /*# sourceMappingURL=style.css.map */
