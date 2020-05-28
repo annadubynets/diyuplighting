@@ -49,7 +49,7 @@
                         <h1 class="main-title">Light up your event!</h1>
                         <p class="hero-text">Rent lights perfect for that special event and save hundreds of dollars by setting up your own up lighting.</p>
                 </div>
-                <div class="col-lg-8 offset-lg-0 col-9 offset-3">
+                <div class="col-lg-8 offset-lg-0 text-lg-left col-12 text-center">
                     <a class="btn btn-primary rent-btn" href="#" role="button">Rent Now</a>
                 </div>
             </div>
@@ -78,15 +78,17 @@
     <section class="calendar-section">
         <div class="container">
             <div class="row d-flex justify-content-lg-start justify-content-center">
-                <div class="col-lg-6 order-1">
+                <div class="col-lg-6 order-1 text-lg-left col-12 text-center">
                     <h2 class="calendar-title">Make your reservation</h2>
                     <p class="calendar-text">The first step is to check availability. Availability is limited, so we recommend reserving your uplighting as early as possible.</p>
                 </div>
-                <div class="col-lg-6 offset-lg-0 order-3 col-11 offset-1">
-                    <a class="btn btn-primary rent-btn" href="#" role="button">Check Availability</a>
-                </div>
-                <div class="col-lg-5 offset-lg-1 order-2 col-12 offset-1">
+
+                <div class="col-lg-5 offset-lg-1 order-2 text-lg-left col-11 text-center">
                     <div id="datetimepicker1"></div>
+                </div>
+
+                <div class="col-lg-6 offset-lg-0 order-3 text-lg-left col-11 offset-1">
+                    <a class="btn btn-primary check-btn" href="#" role="button">Check Availability</a>
                 </div>
             </div>
         </div>
@@ -99,37 +101,73 @@
                     <h2 class="calendar-title">What our customers say</h2>
                 </div>
             </div>
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <div class="circle-img">
-                                                    <img src="images/person_icon.svg" class="person-img">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <h5 class="review-title">Great company with quality product</h5>
-                                                <div class="star-rating">
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                </div>
-                                                <span>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <div class="circle-img">
+                                                            <img src="images/person_icon.svg" class="person-img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-9">
+                                                        <h5 class="review-title">Great company with quality product</h5>
+                                                        <div class="star-rating">
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                        </div>
+                                                        <span>
                                                 </span>
-                                                <p class="review-text">We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again</p>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-lg-6">
-                                                        <p class="date-text">11/23/2020</p>
+                                                        <p class="review-text">We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again</p>
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-lg-6">
+                                                                <p class="date-text">11/23/2020</p>
+                                                            </div>
+                                                            <div class="col-lg-6 text-right">
+                                                                <p class="date-text">Javier Rivero</p>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-lg-6 text-right">
-                                                        <p class="date-text">Javier Rivero</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 card-hidden">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <div class="circle-img">
+                                                            <img src="images/person_icon.svg" class="person-img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-9">
+                                                        <h5 class="review-title">Great company with quality product</h5>
+                                                        <div class="star-rating">
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                        </div>
+                                                        <p class="review-text">We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again</p>
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-lg-6">
+                                                                <p class="date-text">11/23/2020</p>
+                                                            </div>
+                                                            <div class="col-lg-6 text-right">
+                                                                <p class="date-text">Javier Rivero</p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -137,70 +175,70 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <div class="circle-img">
-                                                    <img src="images/person_icon.svg" class="person-img">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <h5 class="review-title">Great company with quality product</h5>
-                                                <div class="star-rating">
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                </div>
-                                                <p class="review-text">We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again</p>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-lg-6">
-                                                        <p class="date-text">11/23/2020</p>
-                                                    </div>
-                                                    <div class="col-lg-6 text-right">
-                                                        <p class="date-text">Javier Rivero</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <div class="circle-img">
-                                                    <img src="images/person_icon.svg" class="person-img">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <h5 class="review-title">Great company with quality product</h5>
-                                                <div class="star-rating">
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                </div>
-                                                <span>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <div class="circle-img">
+                                                            <img src="images/person_icon.svg" class="person-img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-9">
+                                                        <h5 class="review-title">Great company with quality product</h5>
+                                                        <div class="star-rating">
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                        </div>
+                                                        <span>
                                                 </span>
-                                                <p class="review-text">We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again</p>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-lg-6">
-                                                        <p class="date-text">11/23/2020</p>
+                                                        <p class="review-text">We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again</p>
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-lg-6">
+                                                                <p class="date-text">11/23/2020</p>
+                                                            </div>
+                                                            <div class="col-lg-6 text-right">
+                                                                <p class="date-text">Javier Rivero</p>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-lg-6 text-right">
-                                                        <p class="date-text">Javier Rivero</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 card-hidden">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <div class="circle-img">
+                                                            <img src="images/person_icon.svg" class="person-img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-9">
+                                                        <h5 class="review-title">Great company with quality product</h5>
+                                                        <div class="star-rating">
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                        </div>
+                                                        <p class="review-text">We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again</p>
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-lg-6">
+                                                                <p class="date-text">11/23/2020</p>
+                                                            </div>
+                                                            <div class="col-lg-6 text-right">
+                                                                <p class="date-text">Javier Rivero</p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -208,102 +246,70 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <div class="circle-img">
-                                                    <img src="images/person_icon.svg" class="person-img">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <h5 class="review-title">Great company with quality product</h5>
-                                                <div class="star-rating">
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                </div>
-                                                <p class="review-text">We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again</p>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-lg-6">
-                                                        <p class="date-text">11/23/2020</p>
-                                                    </div>
-                                                    <div class="col-lg-6 text-right">
-                                                        <p class="date-text">Javier Rivero</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <div class="circle-img">
-                                                    <img src="images/person_icon.svg" class="person-img">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <h5 class="review-title">Great company with quality product</h5>
-                                                <div class="star-rating">
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                </div>
-                                                <span>
-                                                </span>
-                                                <p class="review-text">We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again</p>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-lg-6">
-                                                        <p class="date-text">11/23/2020</p>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <div class="circle-img">
+                                                            <img src="images/person_icon.svg" class="person-img">
+                                                        </div>
                                                     </div>
-                                                    <div class="col-lg-6 text-right">
-                                                        <p class="date-text">Javier Rivero</p>
+                                                    <div class="col-lg-9">
+                                                        <h5 class="review-title">Great company with quality product</h5>
+                                                        <div class="star-rating">
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                        </div>
+                                                        <span>
+                                                </span>
+                                                        <p class="review-text">We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again</p>
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-lg-6">
+                                                                <p class="date-text">11/23/2020</p>
+                                                            </div>
+                                                            <div class="col-lg-6 text-right">
+                                                                <p class="date-text">Javier Rivero</p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <div class="circle-img">
-                                                    <img src="images/person_icon.svg" class="person-img">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <h5 class="review-title">Great company with quality product</h5>
-                                                <div class="star-rating">
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                    <i class="fas fa-star star-icon"></i>
-                                                </div>
-                                                <p class="review-text">We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again</p>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-lg-6">
-                                                        <p class="date-text">11/23/2020</p>
+                                    <div class="col-lg-6 card-hidden">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <div class="circle-img">
+                                                            <img src="images/person_icon.svg" class="person-img">
+                                                        </div>
                                                     </div>
-                                                    <div class="col-lg-6 text-right">
-                                                        <p class="date-text">Javier Rivero</p>
+                                                    <div class="col-lg-9">
+                                                        <h5 class="review-title">Great company with quality product</h5>
+                                                        <div class="star-rating">
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                            <i class="fas fa-star star-icon"></i>
+                                                        </div>
+                                                        <p class="review-text">We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again</p>
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-lg-6">
+                                                                <p class="date-text">11/23/2020</p>
+                                                            </div>
+                                                            <div class="col-lg-6 text-right">
+                                                                <p class="date-text">Javier Rivero</p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -312,13 +318,13 @@
                                 </div>
                             </div>
                         </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
                     </div>
                 </div>
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
             </div>
         </div>
     </section>

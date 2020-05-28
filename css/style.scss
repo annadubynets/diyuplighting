@@ -123,7 +123,7 @@ header {
 .features-section {
   background-color: rgba(15, 89, 141, 0.04);
   padding: 71px 0px 70px;
-  @include max-screen(768px) {
+  @include max-screen(992px) {
     padding: 78px 0px 20px;
   }
 }
@@ -145,7 +145,7 @@ header {
     color: #284458;
     display: block;
   }
-  @include max-screen(768px) {
+  @include max-screen(992px) {
     margin-bottom: 75px;
   }
 }
@@ -153,7 +153,7 @@ header {
 .calendar-section {
   padding: 129px 0px;
   @include max-screen(576px) {
-    padding: 72px 0px 69px;
+    padding: 72px 0px 100px;
   }
 }
 
@@ -169,7 +169,6 @@ header {
   @include max-screen(576px) {
     font-size: 24px;
     line-height: 30px;
-    text-align: center;
   }
 }
 
@@ -183,7 +182,6 @@ header {
   padding-bottom: 47px;
   @include max-screen(576px) {
     padding-bottom: 0px;
-    text-align: center;
   }
 }
 
@@ -222,6 +220,16 @@ header {
 .day {
   color: #284458;
   opacity: 0.6;
+}
+
+.check-btn {
+  @extend .rent-btn;
+  position: absolute;
+  top: -117px;
+  @include max-screen(576px) {
+    position: absolute;
+    top: 0;
+  }
 }
 
 .testimonials-section {
@@ -307,6 +315,12 @@ header {
     height: 10px;
     border-radius: 50%;
     margin-right: 10px;
+  }
+}
+
+.card-hidden {
+  @include max-screen(576px) {
+    display: none;
   }
 }
 

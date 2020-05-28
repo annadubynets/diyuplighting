@@ -31,7 +31,7 @@ header {
   color: #574A97;
 }
 
-.rent-now-btn, .rent-btn {
+.rent-now-btn, .rent-btn, .check-btn {
   font-family: "Muli", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -45,7 +45,7 @@ header {
   text-align: center;
   padding: 12px 18px;
 }
-.rent-now-btn:hover, .rent-btn:hover {
+.rent-now-btn:hover, .rent-btn:hover, .check-btn:hover {
   background-color: #776FC3;
   border-color: #776FC3;
 }
@@ -103,7 +103,7 @@ header {
   }
 }
 
-.rent-btn {
+.rent-btn, .check-btn {
   font-size: 20px;
   line-height: 25px;
   background-color: #284458;
@@ -111,7 +111,7 @@ header {
   border-radius: 0px;
   padding: 20px 48px;
 }
-.rent-btn:hover {
+.rent-btn:hover, .check-btn:hover {
   background-color: #284458;
   border-color: #284458;
 }
@@ -120,7 +120,7 @@ header {
   background-color: rgba(15, 89, 141, 0.04);
   padding: 71px 0px 70px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .features-section {
     padding: 78px 0px 20px;
   }
@@ -144,7 +144,7 @@ header {
   color: #284458;
   display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .features-text {
     margin-bottom: 75px;
   }
@@ -155,7 +155,7 @@ header {
 }
 @media screen and (max-width: 576px) {
   .calendar-section {
-    padding: 72px 0px 69px;
+    padding: 72px 0px 100px;
   }
 }
 
@@ -173,7 +173,6 @@ header {
   .calendar-title {
     font-size: 24px;
     line-height: 30px;
-    text-align: center;
   }
 }
 
@@ -189,7 +188,6 @@ header {
 @media screen and (max-width: 576px) {
   .calendar-text {
     padding-bottom: 0px;
-    text-align: center;
   }
 }
 
@@ -228,6 +226,17 @@ header {
 .day {
   color: #284458;
   opacity: 0.6;
+}
+
+.check-btn {
+  position: absolute;
+  top: -117px;
+}
+@media screen and (max-width: 576px) {
+  .check-btn {
+    position: absolute;
+    top: 0;
+  }
 }
 
 .testimonials-section {
@@ -314,6 +323,12 @@ header {
   height: 10px;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .card-hidden {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
