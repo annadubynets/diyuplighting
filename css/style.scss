@@ -169,6 +169,7 @@ header {
   @include max-screen(576px) {
     font-size: 24px;
     line-height: 30px;
+    text-align: center;
   }
 }
 
@@ -180,6 +181,10 @@ header {
   line-height: 32px;
   color: #737B7D;
   padding-bottom: 47px;
+  @include max-screen(576px) {
+    padding-bottom: 0px;
+    text-align: center;
+  }
 }
 
 .datepicker table tr td.today, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today:hover {
@@ -210,7 +215,7 @@ header {
 
 #datetimepicker1 {
   @include max-screen(576px) {
-    margin-top: 40px;
+    margin: 30px 0px;
   }
 }
 

@@ -173,6 +173,7 @@ header {
   .calendar-title {
     font-size: 24px;
     line-height: 30px;
+    text-align: center;
   }
 }
 
@@ -184,6 +185,12 @@ header {
   line-height: 32px;
   color: #737B7D;
   padding-bottom: 47px;
+}
+@media screen and (max-width: 576px) {
+  .calendar-text {
+    padding-bottom: 0px;
+    text-align: center;
+  }
 }
 
 .datepicker table tr td.today, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today:hover {
@@ -214,7 +221,7 @@ header {
 
 @media screen and (max-width: 576px) {
   #datetimepicker1 {
-    margin-top: 40px;
+    margin: 30px 0px;
   }
 }
 
