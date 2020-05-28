@@ -206,6 +206,16 @@ header {
   padding: 10px;
 }
 
+.table-condensed {
+  width: 100%;
+  height: 100%;
+}
+
+.datepicker-inline {
+  width: 100%;
+  height: 100%;
+}
+
 .datepicker .datepicker-switch {
   font-family: "Muli", sans-serif;
   font-style: normal;
@@ -217,7 +227,7 @@ header {
   border-radius: 15px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   #datetimepicker1 {
     margin: 30px 0px;
   }
@@ -228,14 +238,10 @@ header {
   opacity: 0.6;
 }
 
-.check-btn {
-  position: absolute;
-  top: -117px;
-}
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .check-btn {
     position: absolute;
-    top: 0;
+    top: -117px;
   }
 }
 
