@@ -39,7 +39,7 @@ header {
   line-height: 18px;
   background-color: #776FC3;
   color: #FFFFFF;
-  border-radius: 15px;
+  border-radius: 25px;
   border-color: #776FC3;
   letter-spacing: 0.3px;
   text-align: center;
@@ -51,15 +51,13 @@ header {
 }
 
 .hero-section {
-  background-color: #F1F5F8;
   background-image: url("../images/picture_bg.svg");
   background-position: right;
   background-repeat: no-repeat;
-  padding: 163px 0px 187px;
+  padding: 110px 0px 187px;
 }
 @media screen and (max-width: 576px) {
   .hero-section {
-    background-color: #F8FAFB;
     background-image: url("../images/picture_bg_mobile.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -70,18 +68,18 @@ header {
 .main-title {
   font-family: "Muli", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 70px;
-  color: #373F41;
-  line-height: 56px;
-  letter-spacing: 0.2px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 50px;
+  color: #574A97;
+  line-height: 70px;
+  margin-bottom: 27px;
 }
 @media screen and (max-width: 576px) {
   .main-title {
-    font-size: 40px;
-    margin-bottom: 34px;
+    font-size: 34px;
+    line-height: 70px;
+    letter-spacing: 0.2px;
+    margin-bottom: 23px;
     text-align: left;
   }
 }
@@ -91,8 +89,8 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  color: #737B7D;
-  line-height: 50px;
+  line-height: 48px;
+  color: #8F8D9A;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 576px) {
@@ -106,19 +104,18 @@ header {
 .rent-btn, .check-btn {
   font-size: 20px;
   line-height: 25px;
-  background-color: #284458;
-  border-color: #284458;
-  border-radius: 0px;
+  background-color: #776FC3;
+  border-color: #776FC3;
   padding: 20px 48px;
+  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
 }
 .rent-btn:hover, .check-btn:hover {
-  background-color: #284458;
-  border-color: #284458;
+  background-color: #776FC3;
+  border-color: #776FC3;
 }
 
 .features-section {
-  background-color: rgba(15, 89, 141, 0.04);
-  padding: 71px 0px 70px;
+  padding: 71px 0px 106px;
 }
 @media screen and (max-width: 992px) {
   .features-section {
@@ -129,19 +126,18 @@ header {
 .features-text {
   font-family: "Muli", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  color: #284458;
-  padding-top: 15px;
+  color: #4F4F4F;
 }
 .features-text span {
   font-family: "Muli", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 32px;
-  color: #284458;
+  color: #8F8D9A;
   display: block;
 }
 @media screen and (max-width: 992px) {
@@ -150,8 +146,17 @@ header {
   }
 }
 
+.led-uplight-bg {
+  background-image: url("../images/led_uplight_bg.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 .calendar-section {
-  padding: 129px 0px;
+  background-image: url("../images/reservation_bg.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 85px 0px;
 }
 @media screen and (max-width: 576px) {
   .calendar-section {
@@ -166,8 +171,8 @@ header {
   font-size: 34px;
   line-height: 43px;
   letter-spacing: 0.2px;
-  color: #373F41;
-  padding-bottom: 34px;
+  color: #574A97;
+  padding-bottom: 24px;
 }
 @media screen and (max-width: 576px) {
   .calendar-title {
@@ -182,8 +187,8 @@ header {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
-  color: #737B7D;
-  padding-bottom: 47px;
+  color: #8F8D9A;
+  padding-bottom: 50px;
 }
 @media screen and (max-width: 576px) {
   .calendar-text {
@@ -192,14 +197,21 @@ header {
 }
 
 .datepicker table tr td.today, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today:hover {
-  background-color: #284458;
+  background-color: #776FC3;
+  border-radius: 50px;
+  color: #F2F2F2;
+  background-image: none;
+  opacity: 1;
+}
+.datepicker table tr td.today:hover, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today.disabled:hover:hover, .datepicker table tr td.today:hover:hover {
+  background-color: #776FC3;
   color: #F2F2F2;
   background-image: none;
 }
-.datepicker table tr td.today:hover, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today.disabled:hover:hover, .datepicker table tr td.today:hover:hover {
-  background-color: #284458;
-  color: #F2F2F2;
-  background-image: none;
+
+.datepicker table tr td.new, .datepicker table tr td.old {
+  color: #8F8D9A;
+  opacity: 0.2;
 }
 
 .datepicker td, .datepicker th {
@@ -223,7 +235,7 @@ header {
   font-size: 16px;
   line-height: 20px;
   color: #284458;
-  background-color: #F5F9FC;
+  background-color: #E5F7FF;
   border-radius: 15px;
 }
 
@@ -234,8 +246,12 @@ header {
 }
 
 .day {
-  color: #284458;
+  color: #8F8D9A;
   opacity: 0.6;
+}
+
+.dow {
+  color: #574A97;
 }
 
 @media screen and (min-width: 992px) {
