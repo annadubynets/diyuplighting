@@ -119,7 +119,7 @@ header {
 }
 @media screen and (max-width: 992px) {
   .features-section {
-    padding: 78px 0px 20px;
+    padding: 111px 0px 69px;
   }
 }
 
@@ -152,15 +152,23 @@ header {
   background-position: top;
 }
 
+@media screen and (max-width: 992px) {
+  .led-uplight-margin {
+    margin-bottom: 91px;
+  }
+}
+
 .calendar-section {
   background-image: url("../images/reservation_bg.svg");
   background-repeat: no-repeat;
   background-position: left;
   padding: 85px 0px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1200px) {
   .calendar-section {
-    padding: 72px 0px 100px;
+    background-image: none;
+    background-color: #E5F7FF;
+    padding: 61px 0px 71px;
   }
 }
 

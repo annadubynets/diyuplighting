@@ -127,7 +127,7 @@ header {
 .features-section {
   padding: 71px 0px 106px;
   @include max-screen(992px) {
-    padding: 78px 0px 20px;
+    padding: 111px 0px 69px;
   }
 }
 
@@ -158,13 +158,21 @@ header {
   background-position: top;
 }
 
+.led-uplight-margin {
+  @include max-screen(992px) {
+    margin-bottom: 91px;
+  }
+}
+
 .calendar-section {
   background-image: url("../images/reservation_bg.svg");
   background-repeat: no-repeat;
   background-position: left;
   padding: 85px 0px;
-  @include max-screen(576px) {
-    padding: 72px 0px 100px;
+  @include max-screen(1200px) {
+    background-image: none;
+    background-color: #E5F7FF;
+    padding: 61px 0px 71px;
   }
 }
 
