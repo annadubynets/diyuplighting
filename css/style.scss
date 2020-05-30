@@ -362,9 +362,16 @@ header {
   }
 }
 
+.awards-section {
+  background-image: url("../images/awards_picture.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 97px 0px 84px;
+}
+
 footer {
   background-color: #EEF4F7;
-  padding: 64px 0px 52px;
+  padding: 54px 0px 52px;
 }
 
 .footer-title-big {
@@ -382,9 +389,11 @@ footer {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 18px;
   letter-spacing: 0.2px;
-  color: #284458;
+  color: #574A97;
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 
 footer ul{
@@ -397,9 +406,9 @@ footer ul{
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
-    color: #284458;
+    color: #8F8D9A;
     &:hover {
-      color: #284458;
+      color: #8F8D9A;
       text-decoration: none;
     }
   }
@@ -413,11 +422,9 @@ footer ul{
   line-height: 25px;
   letter-spacing: 0.2px;
   color: #284458;
-  margin-top: 21px;
-}
-
-.copyright-margin {
-  margin-top: 57px;
+  @include max-screen(992px) {
+    display: none;
+  }
 }
 
 .copyright-text {
@@ -427,15 +434,29 @@ footer ul{
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
-  color: #BEC8D0;
+  color: #8F8D9A;
+}
+
+.copyright-margin {
+  margin-top: 50px;
+  @include max-screen(992px) {
+    margin-top: 30px;
+  }
+}
+
+.social-margin {
+  margin-top: 50px;
+  @include max-screen(992px) {
+    margin-top: 17px;
+  }
 }
 
 .social-img {
   display: inline-block;
   width: 28px;
   height: 28px;
-  color: #EEF4F7;
-  background-color: rgba(40, 68, 88, 0.7);
+  color: #FBFAFD;
+  background-color: #776FC3;
   line-height: 28px;
   font-size: 15px;
   text-align: center;
@@ -444,27 +465,25 @@ footer ul{
 
 .facebook-icon {
   @extend .social-img;
-  &:hover {
-    color: #EEF4F7;
-    background-color: #3b5997;
-  }
 }
 
 .twitter-icon {
   @extend .social-img;
-  &:hover {
-    color: #EEF4F7;
-    background-color: #3ec2f3;
-  }
 }
 
 .pinterest-icon {
   @extend .social-img;
-  &:hover {
-    color: #EEF4F7;
-    background-color: #e94438;
-  }
 }
 
+.footer-city-text {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  color: #BDBDBD;
+  margin-top: 59px;
+}
 
 
