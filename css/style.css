@@ -1,5 +1,5 @@
 @import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
-@import "https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Muli:wght@300;400;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@700&family=Muli:wght@300;400;600;700&display=swap";
 @import "bootstrap-datepicker.min.css";
 @import "bootstrap.min.css";
 header {
@@ -322,7 +322,7 @@ header {
   letter-spacing: 5px;
 }
 
-.star-icon {
+.star-icon, .awards-star-icon {
   color: #C4C4C4;
   width: 13px;
   height: 13px;
@@ -362,10 +362,60 @@ header {
 }
 
 .awards-section {
-  background-image: url("../images/awards_picture.svg");
+  background-image: url("../images/awards_picture.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 97px 0px 84px;
+}
+
+.awards-card {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 25px #574A97;
+  border-radius: 30px;
+  border: none;
+}
+@media screen and (max-width: 1200px) {
+  .awards-card {
+    margin-bottom: 26px;
+  }
+}
+
+.awards-card-title {
+  font-family: "Arvo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 35px;
+  color: #776FC3;
+}
+.awards-card-title span {
+  font-family: "Arvo", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 35px;
+  color: #574A97;
+}
+.awards-card-title:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #E0E0E0;
+}
+
+.awards-card-text {
+  font-family: "Muli", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 13px;
+  color: #4F4F4F;
+  margin-top: 2px;
+}
+
+.awards-star-icon {
+  color: #F2C94C;
 }
 
 footer {
@@ -477,6 +527,12 @@ footer ul li > a:hover {
   letter-spacing: 0.2px;
   color: #BDBDBD;
   margin-top: 59px;
+}
+@media screen and (max-width: 992px) {
+  .footer-city-text {
+    text-align: center;
+    margin-top: 44px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

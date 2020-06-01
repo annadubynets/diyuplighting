@@ -1,5 +1,5 @@
 @import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
-@import "https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Muli:wght@300;400;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@700&family=Muli:wght@300;400;600;700&display=swap";
 @import "bootstrap-datepicker.min.css";
 @import "bootstrap.min.css";
 
@@ -363,10 +363,59 @@ header {
 }
 
 .awards-section {
-  background-image: url("../images/awards_picture.svg");
+  background-image: url("../images/awards_picture.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 97px 0px 84px;
+}
+
+.awards-card {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 25px #574A97;
+  border-radius: 30px;
+  border: none;
+  @include max-screen(1200px) {
+    margin-bottom: 26px;
+  }
+}
+
+.awards-card-title {
+  font-family: 'Arvo', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 35px;
+  color: #776FC3;
+  span {
+    font-family: 'Arvo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 35px;
+    color: #574A97;
+  }
+  &:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #E0E0E0;
+  }
+}
+
+.awards-card-text {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 13px;
+  color: #4F4F4F;
+  margin-top: 2px;
+}
+
+.awards-star-icon {
+  @extend .star-icon;
+  color: #F2C94C;
 }
 
 footer {
@@ -484,6 +533,10 @@ footer ul{
   letter-spacing: 0.2px;
   color: #BDBDBD;
   margin-top: 59px;
+  @include max-screen(992px) {
+    text-align: center;
+    margin-top: 44px;
+  }
 }
 
 
