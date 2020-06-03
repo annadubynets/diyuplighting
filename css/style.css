@@ -57,7 +57,7 @@ header {
   background-repeat: no-repeat;
   padding: 110px 0px 187px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .hero-section {
     background-image: url("../images/picture_bg_mobile.svg");
     background-repeat: no-repeat;
@@ -70,12 +70,12 @@ header {
   font-family: "Muli", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 70px;
   color: #574A97;
-  line-height: 70px;
-  margin-bottom: 27px;
+  line-height: 56px;
+  margin-bottom: 49px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .main-title {
     font-size: 34px;
     line-height: 70px;
@@ -90,11 +90,11 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 48px;
+  line-height: 38px;
   color: #8F8D9A;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .hero-text {
     margin-bottom: 28px;
     font-size: 16px;
@@ -142,8 +142,16 @@ header {
   display: block;
 }
 @media screen and (max-width: 992px) {
+  .features-text span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 992px) {
   .features-text {
     margin-bottom: 75px;
+    font-size: 20px;
+    line-height: 36px;
   }
 }
 
@@ -151,11 +159,12 @@ header {
   background-image: url("../images/led_uplight_bg.svg");
   background-repeat: no-repeat;
   background-position: top;
+  top: 40px;
 }
 
 @media screen and (max-width: 992px) {
   .led-uplight-margin {
-    margin-bottom: 91px;
+    margin-bottom: 140px;
   }
 }
 
@@ -199,7 +208,7 @@ header {
   color: #8F8D9A;
   padding-bottom: 36px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .calendar-text {
     padding-bottom: 0px;
   }

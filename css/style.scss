@@ -70,7 +70,7 @@ header {
   background-position: right;
   background-repeat: no-repeat;
   padding: 110px 0px 187px;
-  @include max-screen(576px) {
+  @include max-screen(992px) {
     background-image: url("../images/picture_bg_mobile.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -82,11 +82,11 @@ header {
   font-family: $font-family-primary;
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 70px;
   color: #574A97;
-  line-height: 70px;
-  margin-bottom: 27px;
-  @include max-screen(576px) {
+  line-height: 56px;
+  margin-bottom: 49px;
+  @include max-screen(992px) {
     font-size: 34px;
     line-height: 70px;
     letter-spacing: 0.2px;
@@ -100,10 +100,10 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 48px;
+  line-height: 38px;
   color: #8F8D9A;
-  margin-bottom: 40px;
-  @include max-screen(576px) {
+  margin-bottom: 35px;
+  @include max-screen(992px) {
     margin-bottom: 28px;
     font-size: 16px;
     line-height: 24px;
@@ -146,9 +146,15 @@ header {
     line-height: 32px;
     color: #8F8D9A;
     display: block;
+    @include max-screen(992px) {
+      font-size: 14px;
+      line-height: 21px;
+    }
   }
   @include max-screen(992px) {
     margin-bottom: 75px;
+    font-size: 20px;
+    line-height: 36px;
   }
 }
 
@@ -156,11 +162,12 @@ header {
   background-image: url("../images/led_uplight_bg.svg");
   background-repeat: no-repeat;
   background-position: top;
+  top: 40px;
 }
 
 .led-uplight-margin {
   @include max-screen(992px) {
-    margin-bottom: 91px;
+    margin-bottom: 140px;
   }
 }
 
@@ -199,7 +206,7 @@ header {
   line-height: 32px;
   color: #8F8D9A;
   padding-bottom: 36px;
-  @include max-screen(576px) {
+  @include max-screen(992px) {
     padding-bottom: 0px;
   }
 }
