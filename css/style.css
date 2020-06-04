@@ -137,83 +137,6 @@ header {
   color: #574A97;
 }
 
-.hero-section {
-  background-image: url("../images/home/picture_bg.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  padding: 110px 0px 187px;
-}
-@media screen and (max-width: 992px) {
-  .hero-section {
-    background-image: url("../images/home/picture_bg_mobile.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    padding: 67px 0px 71px;
-  }
-}
-
-.hero-title {
-  font-family: "Arvo", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 70px;
-  color: #574A97;
-  line-height: 56px;
-  margin-bottom: 49px;
-}
-@media screen and (max-width: 992px) {
-  .hero-title {
-    font-size: 34px;
-    line-height: 70px;
-    letter-spacing: 0.2px;
-    margin-bottom: 23px;
-    text-align: left;
-  }
-}
-
-.rent-btn, .see-full-faq-btn, .extras-rent-btn, .check-btn {
-  font-size: 20px;
-  line-height: 25px;
-  padding: 20px 48px;
-  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
-}
-
-.features-section {
-  padding: 71px 0px 106px;
-}
-@media screen and (max-width: 992px) {
-  .features-section {
-    padding: 111px 0px 69px;
-  }
-}
-
-.led-uplight-bg {
-  background-image: url("../images/home/led_uplight_bg.svg");
-  background-repeat: no-repeat;
-  background-position: top;
-  top: 40px;
-}
-
-@media screen and (max-width: 992px) {
-  .led-uplight-margin {
-    margin-bottom: 140px;
-  }
-}
-
-.calendar-section {
-  background-image: url("../images/home/reservation_bg.png");
-  background-repeat: no-repeat;
-  background-position: left;
-  padding: 85px 0px 103px;
-}
-@media screen and (max-width: 1200px) {
-  .calendar-section {
-    background-image: none;
-    background-color: #E5F7FF;
-    padding: 61px 0px 71px;
-  }
-}
-
 .datepicker table tr td.today, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today:hover {
   background-color: #776FC3;
   border-radius: 50px;
@@ -313,15 +236,146 @@ header {
   color: rgba(87, 74, 151, 0.43);
 }
 
+.card {
+  background-color: #FCFAFD;
+  border: none;
+}
+
+.card-body {
+  position: relative;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -73px;
+  text-align: left;
+  float: left;
+  right: inherit;
+  left: 0 !important;
+  margin-left: 0;
+}
+.carousel-indicators li {
+  background-color: #C4C4C4;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.accordion > .card:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgba(143, 141, 154, 0.46);
+  margin-bottom: 10px;
+}
+
+.card-header {
+  background-color: #FCFAFD;
+  border: none;
+  padding: 0.75rem 0.15rem;
+}
+
+.card .card-header .btn-link:after {
+  content: url(../images/home/arrow_up.svg);
+  float: right;
+}
+
+.card .card-header .btn-link.collapsed:after {
+  content: url(../images/home/arrow_down.svg);
+}
+
+.btn-link {
+  display: block;
+  text-align: left;
+}
+
+.btn-link.focus, .btn-link:focus {
+  text-decoration: none;
+}
+
+.hero-section {
+  background-image: url("../images/home/picture_bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 110px 0px 187px;
+}
+@media screen and (max-width: 992px) {
+  .hero-section {
+    background-image: url("../images/home/picture_bg_mobile.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 67px 0px 71px;
+  }
+}
+
+.hero-title {
+  font-family: "Arvo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  color: #574A97;
+  line-height: 56px;
+  margin-bottom: 49px;
+}
+@media screen and (max-width: 992px) {
+  .hero-title {
+    font-size: 34px;
+    line-height: 70px;
+    letter-spacing: 0.2px;
+    margin-bottom: 23px;
+    text-align: left;
+  }
+}
+
+.rent-btn, .see-full-faq-btn, .extras-rent-btn, .check-btn {
+  font-size: 20px;
+  line-height: 25px;
+  padding: 20px 48px;
+  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
+}
+
+.features-section {
+  padding: 71px 0px 106px;
+}
+@media screen and (max-width: 992px) {
+  .features-section {
+    padding: 111px 0px 69px;
+  }
+}
+
+.led-uplight-bg {
+  background-image: url("../images/home/led_uplight_bg.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  top: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .led-uplight-margin {
+    margin-bottom: 140px;
+  }
+}
+
+.calendar-section {
+  background-image: url("../images/home/reservation_bg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 85px 0px 103px;
+}
+@media screen and (max-width: 1200px) {
+  .calendar-section {
+    background-image: none;
+    background-color: #E5F7FF;
+    padding: 61px 0px 71px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .check-btn {
     position: absolute;
     top: -45px;
   }
-}
-
-.card-body {
-  position: relative;
 }
 
 .extras-section {
@@ -460,11 +514,6 @@ header {
   padding: 115px 0px 136px;
 }
 
-.card {
-  background-color: #FCFAFD;
-  border: none;
-}
-
 .testimonials-card {
   background-color: #FFFFFF;
   border-radius: 30px;
@@ -568,23 +617,6 @@ header {
   color: #284458;
 }
 
-.carousel-indicators {
-  position: absolute;
-  bottom: -73px;
-  text-align: left;
-  float: left;
-  right: inherit;
-  left: 0 !important;
-  margin-left: 0;
-}
-.carousel-indicators li {
-  background-color: #C4C4C4;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
 @media screen and (max-width: 992px) {
   .card-hidden {
     display: none;
@@ -601,39 +633,6 @@ header {
   }
 }
 
-.question-card {
-  border: none;
-  padding: 0px;
-  background-color: #FCFAFD;
-}
-
-.card-header {
-  background-color: #FCFAFD;
-  border: none;
-}
-
-.card .card-header .btn-link:after {
-  content: url(../images/home/arrow_up.svg);
-  float: right;
-}
-
-.card .card-header .btn-link.collapsed:after {
-  content: url(../images/home/arrow_down.svg);
-}
-
-.btn-link {
-  display: block;
-  text-align: left;
-}
-
-.btn-link.focus, .btn-link:focus {
-  text-decoration: none;
-}
-
-.accordion-answer {
-  margin-left: 30px;
-}
-
 .question-title {
   font-family: "Muli", sans-serif;
   font-style: normal;
@@ -648,13 +647,6 @@ header {
   color: #574A97;
 }
 
-.card-border:before {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: rgba(143, 141, 154, 0.46);
-}
-
 .question-text {
   font-family: "Muli", sans-serif;
   font-style: normal;
@@ -664,7 +656,7 @@ header {
   letter-spacing: 0.2px;
   color: #8F8D9A;
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .accordion-margin {

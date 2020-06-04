@@ -22,6 +22,8 @@ $black-dark-color: #284458;
   }
 }
 
+// standart elements
+
 h1 {
   font-family: $font-family-secondary;
   font-style: normal;
@@ -95,6 +97,8 @@ h2{
   }
 }
 
+//bootstrap
+
 .btn-primary {
   font-family: $font-family-primary;
   font-style: normal;
@@ -144,75 +148,6 @@ header {
 
 .navbar-light .navbar-toggler-icon {
   color: $dark-purple-color;
-}
-
-.hero-section {
-  background-image: url("../images/home/picture_bg.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  padding: 110px 0px 187px;
-  @include max-screen(992px) {
-    background-image: url("../images/home/picture_bg_mobile.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    padding: 67px 0px 71px;
-  }
-}
-
-.hero-title {
-  font-family: $font-family-secondary;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 70px;
-  color: $dark-purple-color;
-  line-height: 56px;
-  margin-bottom: 49px;
-  @include max-screen(992px) {
-    font-size: 34px;
-    line-height: 70px;
-    letter-spacing: 0.2px;
-    margin-bottom: 23px;
-    text-align: left;
-  }
-}
-
-.rent-btn {
-  font-size: 20px;
-  line-height: 25px;
-  padding: 20px 48px;
-  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
-}
-
-.features-section {
-  padding: 71px 0px 106px;
-  @include max-screen(992px) {
-    padding: 111px 0px 69px;
-  }
-}
-
-.led-uplight-bg {
-  background-image: url("../images/home/led_uplight_bg.svg");
-  background-repeat: no-repeat;
-  background-position: top;
-  top: 40px;
-}
-
-.led-uplight-margin {
-  @include max-screen(992px) {
-    margin-bottom: 140px;
-  }
-}
-
-.calendar-section {
-  background-image: url("../images/home/reservation_bg.png");
-  background-repeat: no-repeat;
-  background-position: left;
-  padding: 85px 0px 103px;
-  @include max-screen(1200px) {
-    background-image: none;
-    background-color: $light-blue-color;
-    padding: 61px 0px 71px;
-  }
 }
 
 .datepicker table tr td.today, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today:hover {
@@ -312,16 +247,143 @@ header {
   color: rgba(87, 74, 151, 0.43);
 }
 
+.card {
+  background-color: #FCFAFD;
+  border: none;
+}
+
+.card-body {
+  position: relative;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -73px;
+  text-align: left;
+  float: left;
+  right: inherit;
+  left: 0!important;
+  margin-left: 0;
+  li {
+    background-color: #C4C4C4;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+
+.accordion>.card {
+  &:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: rgba(143, 141, 154, 0.46);
+    margin-bottom: 10px;
+  }
+}
+
+.card-header {
+  background-color: #FCFAFD;
+  border: none;
+  padding: 0.75rem 0.15rem;
+}
+
+.card .card-header .btn-link:after {
+  content: url(../images/home/arrow_up.svg);
+  float: right;
+}
+
+.card .card-header .btn-link.collapsed:after {
+  content: url(../images/home/arrow_down.svg);
+}
+
+.btn-link {
+  display: block;
+  text-align: left;
+}
+
+.btn-link.focus, .btn-link:focus {
+  text-decoration: none;
+}
+
+//custom
+
+.hero-section {
+  background-image: url("../images/home/picture_bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 110px 0px 187px;
+  @include max-screen(992px) {
+    background-image: url("../images/home/picture_bg_mobile.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 67px 0px 71px;
+  }
+}
+
+.hero-title {
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  color: $dark-purple-color;
+  line-height: 56px;
+  margin-bottom: 49px;
+  @include max-screen(992px) {
+    font-size: 34px;
+    line-height: 70px;
+    letter-spacing: 0.2px;
+    margin-bottom: 23px;
+    text-align: left;
+  }
+}
+
+.rent-btn {
+  font-size: 20px;
+  line-height: 25px;
+  padding: 20px 48px;
+  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
+}
+
+.features-section {
+  padding: 71px 0px 106px;
+  @include max-screen(992px) {
+    padding: 111px 0px 69px;
+  }
+}
+
+.led-uplight-bg {
+  background-image: url("../images/home/led_uplight_bg.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  top: 40px;
+}
+
+.led-uplight-margin {
+  @include max-screen(992px) {
+    margin-bottom: 140px;
+  }
+}
+
+.calendar-section {
+  background-image: url("../images/home/reservation_bg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 85px 0px 103px;
+  @include max-screen(1200px) {
+    background-image: none;
+    background-color: $light-blue-color;
+    padding: 61px 0px 71px;
+  }
+}
+
 .check-btn {
   @extend .rent-btn;
   @include min-width(992px) {
     position: absolute;
     top: -45px;
   }
-}
-
-.card-body {
-  position: relative;
 }
 
 .extras-section {
@@ -447,11 +509,6 @@ header {
   padding: 115px 0px 136px;
 }
 
-.card {
-  background-color: #FCFAFD;
-  border: none;
-}
-
 .testimonials-card {
   background-color: #FFFFFF;
   border-radius: 30px;
@@ -555,23 +612,6 @@ header {
   color: $black-dark-color;
 }
 
-.carousel-indicators {
-  position: absolute;
-  bottom: -73px;
-  text-align: left;
-  float: left;
-  right: inherit;
-  left: 0!important;
-  margin-left: 0;
-  li {
-    background-color: #C4C4C4;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-}
-
 .card-hidden {
   @include max-screen(992px) {
     display: none;
@@ -584,39 +624,6 @@ header {
   @include max-screen(992px) {
     padding: 90px 00px 125px;
   }
-}
-
-.question-card {
-  border: none;
-  padding: 0px;
-  background-color: #FCFAFD;
-}
-
-.card-header {
-  background-color: #FCFAFD;
-  border: none;
-}
-
-.card .card-header .btn-link:after {
-  content: url(../images/home/arrow_up.svg);
-  float: right;
-}
-
-.card .card-header .btn-link.collapsed:after {
-  content: url(../images/home/arrow_down.svg);
-}
-
-.btn-link {
-  display: block;
-  text-align: left;
-}
-
-.btn-link.focus, .btn-link:focus {
-  text-decoration: none;
-}
-
-.accordion-answer {
-  margin-left: 30px;
 }
 
 .question-title {
@@ -633,15 +640,6 @@ header {
   }
 }
 
-.card-border {
-  &:before {
-    content: "";
-    display: block;
-    height: 1px;
-    background-color: rgba(143, 141, 154, 0.46);
-  }
-}
-
 .question-text {
   font-family: $font-family-primary;
   font-style: normal;
@@ -651,7 +649,7 @@ header {
   letter-spacing: 0.2px;
   color: $gray-color;
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .accordion-margin {
@@ -814,5 +812,3 @@ footer ul{
     margin-top: 44px;
   }
 }
-
-
