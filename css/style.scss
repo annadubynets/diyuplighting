@@ -1,10 +1,15 @@
-@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
-@import "https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@700&family=Muli:wght@300;400;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Muli:wght@400;600;700&display=swap";
 @import "bootstrap-datepicker.min.css";
 @import "bootstrap.min.css";
 
 $font-family-primary: 'Muli', sans-serif;
-$font-family-secondary: 'Lato', sans-serif;
+$font-family-secondary: 'Arvo', sans-serif;
+$light-purple-color: #776FC3;
+$dark-purple-color: #574A97;
+$light-blue-color: #E5F7FF;
+$gray-color: #8F8D9A;
+$black-color: #4F4F4F;
+$black-dark-color: #284458;
 
 @mixin max-screen($number) {
   @media screen and (max-width: $number) {
@@ -17,12 +22,107 @@ $font-family-secondary: 'Lato', sans-serif;
   }
 }
 
+h1 {
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 42px;
+  color: $dark-purple-color;
+  margin-bottom: 24px;
+  @include max-screen(992px) {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 18px;
+  }
+}
+
+h2{
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: $black-color;
+  margin-bottom: 14px;
+  @include max-screen(992px) {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+
+.big-paragraph {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: $gray-color;
+  margin-bottom: 35px;
+  @include max-screen(992px) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 28px;
+  }
+}
+
+.default-paragraph {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $gray-color;
+  padding-bottom: 36px;
+  @include max-screen(992px) {
+    padding-bottom: 0px;
+  }
+}
+
+.small-paragraph {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $gray-color;
+  display: block;
+  margin-bottom: 37px;
+  @include max-screen(992px) {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 92px;
+  }
+}
+
+.btn-primary {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $light-purple-color;
+  color: #FFFFFF;
+  border-radius: 25px;
+  border-color: $light-purple-color;
+  letter-spacing: 0.3px;
+  text-align: center;
+  padding: 12px 18px;
+  &:hover {
+    background-color: $light-purple-color;
+    border-color: $light-purple-color;
+  }
+}
+
 header {
   position: relative;
 }
 
 .bg-light {
   background-color: #FFFFFF!important;
+  @include max-screen(576px) {
+    box-shadow: 0px 1px 3px rgba(40, 68, 88, 0.22);
+  }
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -31,7 +131,7 @@ header {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  color: #4F4F4F;
+  color: $black-color;
   letter-spacing: 0.2px;
   margin: 32px 20px;
   padding: 0;
@@ -43,47 +143,28 @@ header {
 }
 
 .navbar-light .navbar-toggler-icon {
-  color: #574A97;
-}
-
-.rent-now-btn {
-  font-family: $font-family-primary;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  background-color: #776FC3;
-  color: #FFFFFF;
-  border-radius: 25px;
-  border-color: #776FC3;
-  letter-spacing: 0.3px;
-  text-align: center;
-  padding: 12px 18px;
-  &:hover {
-    background-color: #776FC3;
-    border-color: #776FC3;
-  }
+  color: $dark-purple-color;
 }
 
 .hero-section {
-  background-image: url("../images/picture_bg.svg");
+  background-image: url("../images/home/picture_bg.png");
   background-position: right;
   background-repeat: no-repeat;
   padding: 110px 0px 187px;
   @include max-screen(992px) {
-    background-image: url("../images/picture_bg_mobile.svg");
+    background-image: url("../images/home/picture_bg_mobile.png");
     background-repeat: no-repeat;
     background-position: right;
     padding: 67px 0px 71px;
   }
 }
 
-.main-title {
-  font-family: $font-family-primary;
+.hero-title {
+  font-family: $font-family-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 70px;
-  color: #574A97;
+  color: $dark-purple-color;
   line-height: 56px;
   margin-bottom: 49px;
   @include max-screen(992px) {
@@ -95,33 +176,11 @@ header {
   }
 }
 
-.hero-text {
-  font-family: $font-family-primary;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 38px;
-  color: #8F8D9A;
-  margin-bottom: 35px;
-  @include max-screen(992px) {
-    margin-bottom: 28px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
 .rent-btn {
-  @extend .rent-now-btn;
   font-size: 20px;
   line-height: 25px;
-  background-color: #776FC3;
-  border-color: #776FC3;
   padding: 20px 48px;
   box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
-  &:hover {
-    background-color: #776FC3;
-    border-color: #776FC3;
-  }
 }
 
 .features-section {
@@ -131,35 +190,8 @@ header {
   }
 }
 
-.features-text {
-  font-family: $font-family-primary;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  color: #4F4F4F;
-  span {
-    font-family: $font-family-primary;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    color: #8F8D9A;
-    display: block;
-    @include max-screen(992px) {
-      font-size: 14px;
-      line-height: 21px;
-    }
-  }
-  @include max-screen(992px) {
-    margin-bottom: 75px;
-    font-size: 20px;
-    line-height: 36px;
-  }
-}
-
 .led-uplight-bg {
-  background-image: url("../images/led_uplight_bg.svg");
+  background-image: url("../images/home/led_uplight_bg.svg");
   background-repeat: no-repeat;
   background-position: top;
   top: 40px;
@@ -172,60 +204,32 @@ header {
 }
 
 .calendar-section {
-  background-image: url("../images/reservation_bg.svg");
+  background-image: url("../images/home/reservation_bg.png");
   background-repeat: no-repeat;
   background-position: left;
   padding: 85px 0px 103px;
   @include max-screen(1200px) {
     background-image: none;
-    background-color: #E5F7FF;
+    background-color: $light-blue-color;
     padding: 61px 0px 71px;
   }
 }
 
-.calendar-title {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 42px;
-  color: #574A97;
-  margin-bottom: 24px;
-  @include max-screen(992px) {
-    font-size: 22px;
-    line-height: 27px;
-    margin-bottom: 18px;
-  }
-}
-
-.calendar-text {
-  font-family: $font-family-primary;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  color: #8F8D9A;
-  padding-bottom: 36px;
-  @include max-screen(992px) {
-    padding-bottom: 0px;
-  }
-}
-
 .datepicker table tr td.today, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today:hover {
-  background-color: #776FC3;
+  background-color: $light-purple-color;
   border-radius: 50px;
   color: #F2F2F2;
   background-image: none;
   opacity: 1;
   &:hover {
-    background-color: #776FC3;
+    background-color: $light-purple-color;
     color: #F2F2F2;
     background-image: none;
   }
 }
 
 .datepicker table tr td.new, .datepicker table tr td.old {
-  color: #8F8D9A;
+  color: $gray-color;
   opacity: 0.2;
 }
 
@@ -250,12 +254,12 @@ header {
   font-size: 16px;
   line-height: 20px;
   color: #6CB3D2;
-  background-color: #E5F7FF;
+  background-color: $light-blue-color;
   border-radius: 15px;
 }
 
 .carousel-indicators .active {
-  background-color: #776FC3;
+  background-color: $light-purple-color;
 }
 
 #datetimepicker1 {
@@ -265,12 +269,12 @@ header {
 }
 
 .day {
-  color: #8F8D9A;
+  color: $gray-color;
   opacity: 0.6;
 }
 
 .dow {
-  color: #574A97;
+  color: $dark-purple-color;
 }
 
 .btn-secondary {
@@ -321,7 +325,7 @@ header {
 }
 
 .extras-section {
-  background-image: url("../images/extras_bg.png");
+  background-image: url("../images/home/extras_bg.png");
   background-repeat: no-repeat;
   padding: 23px 0px 106px;
   @include max-screen(992px) {
@@ -340,21 +344,7 @@ header {
   }
 }
 
-.extras-title-primary {
-  @extend .calendar-title;
-  @include max-screen(992px) {
-    text-align: center;
-    margin-bottom: 59px;
-  }
-}
-
 .extras-title {
-  font-family: 'Arvo', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  color: #4F4F4F;
   @include max-screen(992px) {
     text-align: left;
     margin-bottom: 9px;
@@ -367,7 +357,7 @@ header {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #574A97;
+  color: $dark-purple-color;
   margin-bottom: 14px;
   @include max-screen(992px) {
     text-align: left;
@@ -381,7 +371,7 @@ header {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #8F8D9A;
+  color: $gray-color;
   margin-bottom: 26px;
   @include max-screen(992px) {
     display: none;
@@ -389,14 +379,14 @@ header {
 }
 
 .pinspot-img {
-  background-image: url("../images/blue_shading_bg.svg");
+  background-image: url("../images/home/blue_shading_bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   border-radius: 30px;
   margin-bottom: 25px;
   @include max-screen(992px) {
-    background-image: url("../images/blue_shading_bg_mobile.svg");
+    background-image: url("../images/home/blue_shading_bg_mobile.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -406,11 +396,11 @@ header {
 }
 
 .pngwing-img {
-  background-image: url("../images/blue_shading_bg_2.svg");
+  background-image: url("../images/home/blue_shading_bg_2.svg");
   background-size: contain;
   background-repeat: no-repeat;
   @include max-screen(992px) {
-    background-image: url("../images/blue_shading_bg_mobile.svg");
+    background-image: url("../images/home/blue_shading_bg_mobile.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -419,14 +409,14 @@ header {
 }
 
 .preview-img {
-  background-image: url("../images/blue_shading_bg_3.svg");
+  background-image: url("../images/home/blue_shading_bg_3.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   border-radius: 30px;
   margin-bottom: 6px;
   @include max-screen(992px) {
-    background-image: url("../images/blue_shading_bg_mobile.svg");
+    background-image: url("../images/home/blue_shading_bg_mobile.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -436,7 +426,7 @@ header {
 }
 
 .extras-rent-btn {
-  @extend .rent-now-btn;
+  @extend .rent-btn;
   border-radius: 20px;
   padding: 15px 40px;
   font-size: 16px;
@@ -469,16 +459,6 @@ header {
   margin-bottom: 55px;
 }
 
-.review-title {
-  font-family: $font-family-secondary;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  color: #4F4F4F;
-  margin-bottom: 14px;
-}
-
 .review-text {
   font-family: $font-family-primary;
   font-style: normal;
@@ -496,7 +476,7 @@ header {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
-  color: #574A97;
+  color: $dark-purple-color;
   margin-top: 55px;
   span {
     display: block;
@@ -512,7 +492,7 @@ header {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
-  color: #574A97;
+  color: $dark-purple-color;
   margin-top: 34px;
   span {
     display: block;
@@ -527,7 +507,7 @@ header {
 }
 
 .review-photo-bg {
-  background-image: url("../images/review_photo_bg.svg");
+  background-image: url("../images/home/review_photo_bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -537,7 +517,7 @@ header {
 }
 
 .review-photo-two-bg {
-  background-image: url("../images/review_photo_two_bg.svg");
+  background-image: url("../images/home/review_photo_two_bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -550,8 +530,8 @@ header {
   width: 87px;
   height: 87px;
   display: inline-block;
-  border: 7px solid #574A97;
-  box-shadow: 0px 4px 20px #776FC3;
+  border: 7px solid $dark-purple-color;
+  box-shadow: 0px 4px 20px $light-purple-color;
   border-radius: 30px;
 }
 
@@ -565,12 +545,6 @@ header {
   letter-spacing: 5px;
 }
 
-.star-icon {
-  color: #776FC3;
-  width: 13px;
-  height: 13px;
-}
-
 .date-text {
   font-family: $font-family-primary;
   font-style: normal;
@@ -578,7 +552,7 @@ header {
   font-size: 10px;
   line-height: 13px;
   letter-spacing: 0.2px;
-  color: #284458;
+  color: $black-dark-color;
 }
 
 .carousel-indicators {
@@ -624,14 +598,12 @@ header {
 }
 
 .card .card-header .btn-link:after {
-  content: "\f107";
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
+  content: url(../images/home/arrow_up.svg);
   float: right;
 }
 
 .card .card-header .btn-link.collapsed:after {
-  content: "\f106";
+  content: url(../images/home/arrow_down.svg);
 }
 
 .btn-link {
@@ -654,10 +626,10 @@ header {
   font-size: 18px;
   line-height: 23px;
   letter-spacing: 0.2px;
-  color: #574A97;
+  color: $dark-purple-color;
   &:hover {
     text-decoration: none;
-    color: #574A97;
+    color: $dark-purple-color;
   }
 }
 
@@ -677,7 +649,7 @@ header {
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.2px;
-  color: #8F8D9A;
+  color: $gray-color;
   margin-top: 20px;
   margin-left: 30px;
 }
@@ -688,15 +660,15 @@ header {
 
 .see-full-faq-btn {
   @extend .rent-btn;
-  color: #574A97;
+  color: $dark-purple-color;
   background-color: #FFFFFF;
-  border: 2px solid #574A97;
+  border: 2px solid $dark-purple-color;
   border-radius: 25px;
   box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
 }
 
 .awards-section {
-  background-image: url("../images/awards_picture.png");
+  background-image: url("../images/home/awards_picture.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -705,7 +677,7 @@ header {
 
 .awards-card {
   background: #FFFFFF;
-  box-shadow: 0px 4px 25px #574A97;
+  box-shadow: 0px 4px 25px $dark-purple-color;
   border-radius: 30px;
   border: none;
   @include max-screen(1200px) {
@@ -719,14 +691,14 @@ header {
   font-weight: 400;
   font-size: 23px;
   line-height: 35px;
-  color: #776FC3;
+  color: $light-purple-color;
   span {
     font-family: 'Arvo', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
     line-height: 35px;
-    color: #574A97;
+    color: $dark-purple-color;
   }
   &:after {
     content: "";
@@ -742,13 +714,8 @@ header {
   font-weight: 700;
   font-size: 9px;
   line-height: 13px;
-  color: #4F4F4F;
+  color: $black-color;
   margin-top: 2px;
-}
-
-.awards-star-icon {
-  @extend .star-icon;
-  color: #F2C94C;
 }
 
 footer {
@@ -763,7 +730,7 @@ footer {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0.2px;
-  color: #284458;
+  color: $black-dark-color;
 }
 
 .footer-title-small {
@@ -773,7 +740,7 @@ footer {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.2px;
-  color: #574A97;
+  color: $dark-purple-color;
   margin-top: 23px;
   margin-bottom: 23px;
 }
@@ -788,9 +755,9 @@ footer ul{
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
-    color: #8F8D9A;
+    color: $gray-color;
     &:hover {
-      color: #8F8D9A;
+      color: $gray-color;
       text-decoration: none;
     }
   }
@@ -803,7 +770,7 @@ footer ul{
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 0.2px;
-  color: #284458;
+  color: $black-dark-color;
   @include max-screen(992px) {
     display: none;
   }
@@ -816,7 +783,7 @@ footer ul{
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
-  color: #8F8D9A;
+  color: $gray-color;
 }
 
 .copyright-margin {
@@ -831,30 +798,6 @@ footer ul{
   @include max-screen(992px) {
     margin-top: 17px;
   }
-}
-
-.social-img {
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  color: #FBFAFD;
-  background-color: #776FC3;
-  line-height: 28px;
-  font-size: 15px;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.facebook-icon {
-  @extend .social-img;
-}
-
-.twitter-icon {
-  @extend .social-img;
-}
-
-.pinterest-icon {
-  @extend .social-img;
 }
 
 .footer-city-text {
