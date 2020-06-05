@@ -853,6 +853,11 @@ footer ul{
 
 .ui-datepicker .ui-datepicker-title {
   margin: 0 9.3em;
+  @include max-screen(992px) {
+    margin: 0 auto;
+    width: 171px;
+    text-align: center;
+  }
 }
 
 

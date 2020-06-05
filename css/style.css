@@ -868,6 +868,13 @@ footer ul li > a:hover {
 .ui-datepicker .ui-datepicker-title {
   margin: 0 9.3em;
 }
+@media screen and (max-width: 992px) {
+  .ui-datepicker .ui-datepicker-title {
+    margin: 0 auto;
+    width: 171px;
+    text-align: center;
+  }
+}
 
 .ui-datepicker th {
   font-family: "Muli", sans-serif;
