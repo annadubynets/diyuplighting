@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Muli:wght@400;600;700&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Muli:wght@400;600;700&display=swap");
 @import "bootstrap-datepicker.min.css";
 @import "bootstrap.min.css";
 h1 {
