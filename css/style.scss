@@ -273,6 +273,14 @@ header {
   }
 }
 
+.carousel-control-next {
+  width: 64px;
+  height: 64px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0px 0px 40px rgba(119, 111, 195, 0.25);
+}
+
 .accordion>.card {
   &:after {
     content: "";
@@ -575,7 +583,7 @@ header {
 
 .review-photo-two-bg {
   background-image: url("../images/home/review_photo_two_bg.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
   border-radius: 25px;
