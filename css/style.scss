@@ -835,34 +835,28 @@ footer ul{
 // JQuery UI
 // ------------------------
 
-.ui-datepicker-title {
+.ui-datepicker .ui-datepicker-title {
   font-family: $font-family-primary;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #6CB3D2;
-  background-color: #E5F7FF;
+  background-color: #E5F7FF!important;
   border-radius: 16px;
-  text-align: center;
   padding: 6px 0px;
-  @include max-screen(992px) {
-    background-color: #FFFFFF;
-  }
-}
+  text-align: center;
+  margin: 0 auto;
+  max-width: 140px !important;
+  @include max-screen(1200px) {
+    background-color: #FFFFFF!important;
 
-.ui-datepicker .ui-datepicker-title {
-  margin: 0 9.3em;
-  @include max-screen(546px) {
-    margin: 0 auto;
-    max-width: 171px !important;
   }
 }
 
 .ui-datepicker-year {
   display: none;
 }
-
 
 .ui-datepicker th {
   font-family: $font-family-primary;
@@ -908,7 +902,7 @@ footer ul{
 }
 
 .ui-datepicker td span, .ui-datepicker td a {
-  padding: 1.2em;
+  padding: 14px;
 }
 
 .ui-widget.ui-widget-content {
@@ -939,7 +933,10 @@ footer ul{
 }
 
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
-  width: 9.8em;
+  width: 80px;
+  @include max-screen(992px) {
+    width: 5em;
+  }
 }
 
 .ui-datepicker .ui-datepicker-prev:hover {
@@ -958,14 +955,13 @@ footer ul{
 }
 
 #datepicker {
-  width: 100%;
   @include max-screen(992px) {
     margin: 69px 0px;
   }
 }
 
 .ui-datepicker table {
-  width: 328px;
+
   margin: 0 auto;
 }
 

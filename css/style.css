@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Muli:wght@400;600;700&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Muli:wght@400;600;700&display=swap");
 @import "//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css";
 @import "bootstrap.min.css";
 h1 {
@@ -847,33 +847,28 @@ footer ul li > a:hover {
   }
 }
 
-.ui-datepicker-title {
+.ui-datepicker .ui-datepicker-title {
   font-family: "Muli", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #6CB3D2;
-  background-color: #E5F7FF;
+  background-color: #E5F7FF !important;
   border-radius: 16px;
-  text-align: center;
   padding: 6px 0px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 140px !important;
 }
-@media screen and (max-width: 992px) {
-  .ui-datepicker-title {
-    background-color: #FFFFFF;
+@media screen and (max-width: 1200px) {
+  .ui-datepicker .ui-datepicker-title {
+    background-color: #FFFFFF !important;
   }
 }
 
-.ui-datepicker .ui-datepicker-title {
-  margin: 0 9.3em;
-}
-@media screen and (max-width: 992px) {
-  .ui-datepicker .ui-datepicker-title {
-    margin: 0 auto;
-    width: 171px;
-    text-align: center;
-  }
+.ui-datepicker-year {
+  display: none;
 }
 
 .ui-datepicker th {
@@ -920,7 +915,7 @@ footer ul li > a:hover {
 }
 
 .ui-datepicker td span, .ui-datepicker td a {
-  padding: 1.2em;
+  padding: 14px;
 }
 
 .ui-widget.ui-widget-content {
@@ -951,7 +946,12 @@ footer ul li > a:hover {
 }
 
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
-  width: 9.8em;
+  width: 80px;
+}
+@media screen and (max-width: 992px) {
+  .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    width: 5em;
+  }
 }
 
 .ui-datepicker .ui-datepicker-prev:hover {
@@ -969,9 +969,6 @@ footer ul li > a:hover {
   top: 57%;
 }
 
-#datepicker {
-  width: 100%;
-}
 @media screen and (max-width: 992px) {
   #datepicker {
     margin: 69px 0px;
@@ -979,7 +976,6 @@ footer ul li > a:hover {
 }
 
 .ui-datepicker table {
-  width: 328px;
   margin: 0 auto;
 }
 
