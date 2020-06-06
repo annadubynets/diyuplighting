@@ -289,6 +289,12 @@ header {
   background-color: #FFFFFF;
   border-radius: 50%;
   box-shadow: 0px 0px 40px rgba(119, 111, 195, 0.25);
+  position: absolute;
+  top: 305px;
+  right: 29px;
+  @include max-screen(1200px) {
+    display: none;
+  }
 }
 
 .accordion>.card {
@@ -525,6 +531,7 @@ header {
 .testimonials-section {
   background-color: #FCFAFD;
   padding: 115px 0px 136px;
+  position: relative;
 }
 
 .testimonials-card {
