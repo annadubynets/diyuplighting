@@ -32,10 +32,14 @@ h1 {
   line-height: 42px;
   color: $dark-purple-color;
   margin-bottom: 24px;
+  text-transform: capitalize;
   @include max-screen(992px) {
     font-size: 22px;
     line-height: 27px;
     margin-bottom: 18px;
+  }
+  span {
+    text-transform: uppercase;
   }
 }
 
@@ -47,6 +51,7 @@ h2{
   line-height: 36px;
   color: $black-color;
   margin-bottom: 14px;
+  text-transform: capitalize;
   @include max-screen(992px) {
     font-size: 20px;
     line-height: 36px;
@@ -112,10 +117,14 @@ h2{
   letter-spacing: 0.3px;
   text-align: center;
   padding: 12px 18px;
-  &:hover {
-    background-color: $light-purple-color;
-    border-color: $light-purple-color;
-  }
+}
+
+.btn:active, .btn:focus, .btn:hover{
+  background-color: #FFFFFF!important;
+  border-color: $dark-purple-color!important;
+  color: $dark-purple-color!important;
+  outline: none!important;
+  box-shadow: none;
 }
 
 header {
@@ -236,7 +245,7 @@ header {
   }
   @include min-width(992px) {
     position: absolute;
-    top: -135px;
+    top: -90px;
   }
 }
 
@@ -263,7 +272,9 @@ header {
 }
 
 .card-body {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .carousel-indicators {
@@ -354,6 +365,7 @@ header {
   color: $dark-purple-color;
   line-height: 56px;
   margin-bottom: 49px;
+  text-transform: capitalize;
   @include max-screen(992px) {
     font-size: 34px;
     line-height: 70px;
@@ -399,14 +411,6 @@ header {
     background-image: none;
     background-color: $light-blue-color;
     padding: 61px 0px 71px;
-  }
-}
-
-.check-btn {
-  @extend .rent-btn;
-  @include min-width(992px) {
-    position: absolute;
-    top: -45px;
   }
 }
 
@@ -458,7 +462,6 @@ header {
   font-size: 14px;
   line-height: 21px;
   color: $gray-color;
-  margin-bottom: 26px;
   @include max-screen(992px) {
     display: none;
   }
@@ -470,7 +473,7 @@ header {
   background-repeat: no-repeat;
   background-position: bottom;
   border-radius: 30px;
-  margin-bottom: 25px;
+  height: 204px;
   @include max-screen(992px) {
     background-image: url("../images/home/blue_shading_bg_mobile.svg");
     background-size: cover;
@@ -485,6 +488,7 @@ header {
   background-image: url("../images/home/blue_shading_bg_2.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  height: 204px;
   @include max-screen(992px) {
     background-image: url("../images/home/blue_shading_bg_mobile.svg");
     background-size: cover;
@@ -501,6 +505,7 @@ header {
   background-position: bottom;
   border-radius: 30px;
   margin-bottom: 6px;
+  height: 204px;
   @include max-screen(992px) {
     background-image: url("../images/home/blue_shading_bg_mobile.svg");
     background-size: cover;
@@ -517,11 +522,26 @@ header {
   padding: 15px 40px;
   font-size: 16px;
   line-height: 20px;
+  position: relative;
+  top: 47px;
+  margin-top: -47px;
+}
+
+.equal, .equal > div[class*='col-'] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex:1 0 auto;
 }
 
 .img-position {
   position: relative;
   top: -50px;
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: scale-down;
 }
 
 .extras-position {

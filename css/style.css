@@ -9,6 +9,7 @@ h1 {
   line-height: 42px;
   color: #574A97;
   margin-bottom: 24px;
+  text-transform: capitalize;
 }
 @media screen and (max-width: 992px) {
   h1 {
@@ -16,6 +17,9 @@ h1 {
     line-height: 27px;
     margin-bottom: 18px;
   }
+}
+h1 span {
+  text-transform: uppercase;
 }
 
 h2 {
@@ -26,6 +30,7 @@ h2 {
   line-height: 36px;
   color: #4F4F4F;
   margin-bottom: 14px;
+  text-transform: capitalize;
 }
 @media screen and (max-width: 992px) {
   h2 {
@@ -98,9 +103,13 @@ h2 {
   text-align: center;
   padding: 12px 18px;
 }
-.btn-primary:hover {
-  background-color: #776FC3;
-  border-color: #776FC3;
+
+.btn:active, .btn:focus, .btn:hover {
+  background-color: #FFFFFF !important;
+  border-color: #574A97 !important;
+  color: #574A97 !important;
+  outline: none !important;
+  box-shadow: none;
 }
 
 header {
@@ -225,7 +234,7 @@ header {
 @media screen and (min-width: 992px) {
   .btn-secondary {
     position: absolute;
-    top: -135px;
+    top: -90px;
   }
 }
 
@@ -252,7 +261,9 @@ header {
 }
 
 .card-body {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .carousel-indicators {
@@ -343,6 +354,7 @@ header {
   color: #574A97;
   line-height: 56px;
   margin-bottom: 49px;
+  text-transform: capitalize;
 }
 @media screen and (max-width: 992px) {
   .hero-title {
@@ -354,7 +366,7 @@ header {
   }
 }
 
-.rent-btn, .see-full-faq-btn, .extras-rent-btn, .check-btn {
+.rent-btn, .see-full-faq-btn, .extras-rent-btn {
   font-size: 20px;
   line-height: 25px;
   padding: 20px 48px;
@@ -394,13 +406,6 @@ header {
     background-image: none;
     background-color: #E5F7FF;
     padding: 61px 0px 71px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .check-btn {
-    position: absolute;
-    top: -45px;
   }
 }
 
@@ -458,7 +463,6 @@ header {
   font-size: 14px;
   line-height: 21px;
   color: #8F8D9A;
-  margin-bottom: 26px;
 }
 @media screen and (max-width: 992px) {
   .extras-text {
@@ -472,7 +476,7 @@ header {
   background-repeat: no-repeat;
   background-position: bottom;
   border-radius: 30px;
-  margin-bottom: 25px;
+  height: 204px;
 }
 @media screen and (max-width: 992px) {
   .pinspot-img {
@@ -489,6 +493,7 @@ header {
   background-image: url("../images/home/blue_shading_bg_2.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  height: 204px;
 }
 @media screen and (max-width: 992px) {
   .pngwing-img {
@@ -507,6 +512,7 @@ header {
   background-position: bottom;
   border-radius: 30px;
   margin-bottom: 6px;
+  height: 204px;
 }
 @media screen and (max-width: 992px) {
   .preview-img {
@@ -524,11 +530,26 @@ header {
   padding: 15px 40px;
   font-size: 16px;
   line-height: 20px;
+  position: relative;
+  top: 47px;
+  margin-top: -47px;
+}
+
+.equal, .equal > div[class*=col-] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 0 auto;
 }
 
 .img-position {
   position: relative;
   top: -50px;
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: scale-down;
 }
 
 .extras-position {
