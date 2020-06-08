@@ -106,10 +106,15 @@ h2 {
   padding: 12px 18px;
 }
 
-.btn:active, .btn:focus, .btn:hover {
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
   background-color: #FFFFFF !important;
   border-color: #574A97 !important;
   color: #574A97 !important;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn:active, .btn:focus {
   outline: none !important;
   box-shadow: none;
 }
@@ -567,7 +572,7 @@ header {
 
 .testimonials-section {
   background-color: #FCFAFD;
-  padding: 115px 0px 136px;
+  padding: 115px 0px 86px;
   position: relative;
 }
 
@@ -1055,6 +1060,8 @@ footer ul li > a:hover {
 
 .owl-dots {
   text-align: left;
+  position: relative;
+  top: -68px;
 }
 
 .owl-dots .owl-dot.active span {
