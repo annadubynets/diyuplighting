@@ -475,7 +475,6 @@ header {
   background-position: bottom;
   border-radius: 30px;
   height: 204px;
-  margin-bottom: 6px;
   @include max-screen(992px) {
     background-image: url("../images/home/blue_shading_bg_mobile.svg");
     background-size: cover;
@@ -569,9 +568,6 @@ header {
   border-radius: 30px;
   border: none;
   padding-bottom: 68px;
-  //display: flex;
-  //flex-flow: row wrap;
-  //justify-content: flex-start;
 }
 
 .review-text {

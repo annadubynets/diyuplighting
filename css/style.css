@@ -478,7 +478,6 @@ header {
   background-position: bottom;
   border-radius: 30px;
   height: 204px;
-  margin-bottom: 6px;
 }
 @media screen and (max-width: 992px) {
   .pinspot-img {
