@@ -1055,6 +1055,8 @@ footer ul li > a:hover {
 
 .owl-dots {
   text-align: left;
+  position: relative;
+  top: -68px;
 }
 
 .owl-dots .owl-dot.active span {
