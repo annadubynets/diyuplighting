@@ -822,9 +822,6 @@ header {
 
 .star-rating {
   letter-spacing: 5px;
-  @include max-screen(576px) {
-    letter-spacing: 0px;
-  }
 }
 
 .date-text {
@@ -867,7 +864,6 @@ header {
   line-height: 28px;
   letter-spacing: 0.2px;
   color: $gray-color;
-  margin-left: 20px;
 }
 
 .accordion-margin {
@@ -915,15 +911,13 @@ header {
     font-size: 15px;
     line-height: 35px;
     color: $dark-purple-color;
+    display: block;
   }
   &:after {
     content: "";
     display: block;
     height: 1px;
     background-color: #E0E0E0;
-  }
-  @include max-screen(576px) {
-    font-size: 18px;
   }
 }
 

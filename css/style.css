@@ -831,11 +831,6 @@ header {
 .star-rating {
   letter-spacing: 5px;
 }
-@media screen and (max-width: 576px) {
-  .star-rating {
-    letter-spacing: 0px;
-  }
-}
 
 .date-text {
   font-family: "Muli", sans-serif;
@@ -879,7 +874,6 @@ header {
   line-height: 28px;
   letter-spacing: 0.2px;
   color: #8F8D9A;
-  margin-left: 20px;
 }
 
 .accordion-margin {
@@ -929,17 +923,13 @@ header {
   font-size: 15px;
   line-height: 35px;
   color: #574A97;
+  display: block;
 }
 .awards-card-title:after {
   content: "";
   display: block;
   height: 1px;
   background-color: #E0E0E0;
-}
-@media screen and (max-width: 576px) {
-  .awards-card-title {
-    font-size: 18px;
-  }
 }
 
 .awards-card-text {
