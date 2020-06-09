@@ -822,6 +822,9 @@ header {
 
 .star-rating {
   letter-spacing: 5px;
+  @include max-screen(576px) {
+    letter-spacing: 0px;
+  }
 }
 
 .date-text {
@@ -918,6 +921,9 @@ header {
     display: block;
     height: 1px;
     background-color: #E0E0E0;
+  }
+  @include max-screen(576px) {
+    font-size: 18px;
   }
 }
 

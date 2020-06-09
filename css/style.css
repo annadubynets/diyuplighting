@@ -831,6 +831,11 @@ header {
 .star-rating {
   letter-spacing: 5px;
 }
+@media screen and (max-width: 576px) {
+  .star-rating {
+    letter-spacing: 0px;
+  }
+}
 
 .date-text {
   font-family: "Muli", sans-serif;
@@ -930,6 +935,11 @@ header {
   display: block;
   height: 1px;
   background-color: #E0E0E0;
+}
+@media screen and (max-width: 576px) {
+  .awards-card-title {
+    font-size: 18px;
+  }
 }
 
 .awards-card-text {
