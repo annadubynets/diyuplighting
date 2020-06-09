@@ -23,12 +23,33 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">PRODUCTS</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PRODUCTS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Uplight</a>
+                                <a class="dropdown-item" href="#">Marquee Letter</a>
+                                <a class="dropdown-item" href="#">Pin Spot</a>
+                                <a class="dropdown-item" href="#">Confetti Blaster</a>
+
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">LEARN</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLearn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                LEARN
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">First link</a>
+                                <a class="dropdown-item" href="#">Second link</a>
+                                <a class="dropdown-item" href="#">Third link</a>
+                                <a class="dropdown-item" href="#">Fourth link</a>
+                                <a class="dropdown-item" href="#">Fifth link</a>
+                                <a class="dropdown-item" href="#">Sixth link</a>
+                            </div>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">CONTACT</a>
                         </li>
@@ -60,26 +81,20 @@
             <div class="row justify-content-around text-center">
                 <div class="col-lg-6 order-lg-0 col-sm-6 order-2">
                     <div class="row align-content-lg-left">
-                        <div class="col-lg-4 order-lg-0 order-3">
-                            <img src="images/home/colors.svg">
-                        </div>
-                        <div class="col-lg-8 order-lg-0 order-3 text-center text-sm-left">
+                        <img src="images/home/colors.svg" class="col-lg-4 offset-lg-0 col-6 offset-3">
+                        <div class="col-lg-8 text-center text-sm-left">
                             <h2>Multi-colors</h2>
                             <p class="small-paragraph">Pick from easy preset colors and display patterns</p>
                         </div>
 
-                        <div class="col-lg-4 order-lg-0 order-2">
-                            <img src="images/home/setup.svg">
-                        </div>
-                        <div class="col-lg-8 order-lg-0 order-2 text-center text-sm-left">
+                        <img src="images/home/setup.svg" class="col-lg-4 offset-lg-0 col-6 offset-3">
+                        <div class="col-lg-8 text-center text-sm-left">
                             <h2>Quick Set-up</h2>
                             <p class="small-paragraph">Safe and easy to use - no experience necessary</p>
                         </div>
 
-                        <div class="col-lg-4 order-lg-0 order-1">
-                            <img src="images/home/shipping.svg">
-                        </div>
-                        <div class="col-lg-8 order-lg-0 order-1 text-center text-sm-left">
+                        <img src="images/home/shipping.svg" class="col-lg-4 offset-lg-0 col-6 offset-3">
+                        <div class="col-lg-8 text-center text-sm-left">
                             <h2>Free Shipping</h2>
                             <p class="small-paragraph">Lights 2 days before your event and ship free both ways</p>
                         </div>
@@ -87,7 +102,7 @@
 
                 </div>
                 <div class="col-lg-6 order-lg-0 col-sm-6 order-1 led-uplight-bg">
-                    <img src="images/home/profile-plus-led-uplight_2.png" class="led-uplight-margin">
+                    <img src="images/home/led-uplight-picture.png" class="led-uplight-margin">
                 </div>
             </div>
         </div>
@@ -108,7 +123,7 @@
                 <div class="col-lg-6 offset-lg-0 text-lg-left col-12 text-center order-4">
 
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle qty-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Qty
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -228,7 +243,7 @@
                     </div>
                     <div class="card-footer">
                         <div class="review-name-position">
-                            <p class="review-name-second">Becca Stevenson <span>11/23/2020</span></p>
+                            <p class="review-name">Becca Stevenson <span>11/23/2020</span></p>
                             <div class="review-photo-two-bg">
                                 <img src="images/home/review_photo_two.svg" class="circle-img">
                             </div>
@@ -272,7 +287,7 @@
                     </div>
                     <div class="card-footer">
                         <div class="review-name-position">
-                            <p class="review-name-second">Becca Stevenson <span>11/23/2020</span></p>
+                            <p class="review-name">Becca Stevenson <span>11/23/2020</span></p>
                             <div class="review-photo-two-bg">
                                 <img src="images/home/review_photo_two.svg" class="circle-img">
                             </div>
@@ -316,7 +331,7 @@
                     </div>
                     <div class="card-footer">
                         <div class="review-name-position">
-                            <p class="review-name-second">Becca Stevenson <span>11/23/2020</span></p>
+                            <p class="review-name">Becca Stevenson <span>11/23/2020</span></p>
                             <div class="review-photo-two-bg">
                                 <img src="images/home/review_photo_two.svg" class="circle-img">
                             </div>
@@ -518,17 +533,20 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 order-lg-0 col-12 order-5">
+                <div class="col-lg-1 order-lg-0 col-12 order-5">
                     <a class="navbar-brand" alt="logo" href="index.html">
                         <img src="images/logo/logo_1.png">
-                        <img src="images/logo/logo_2.png">
                     </a>
                 </div>
-                <div class="col-lg-1 order-lg-0 col-4 order-1">
-                    <p class="footer-title-small">HOME</p>
+
+                <div class="col-lg-3 order-lg-0 col-12 order-5">
+                    <a class="navbar-brand" alt="logo" href="index.html">
+                        <img src="images/logo/logo_2.png" class="footer-logo-pos">
+                    </a>
+                    <p class="address-text">diyuplighting@gmail.com <br> (773) 917-8235</p>
                 </div>
 
-                <div class="col-lg-2 order-lg-0 col-4 order-1">
+                <div class="col-lg-3 order-lg-0 col-sm-5 col-6 order-1">
                     <p class="footer-title-small">PRODUCTS</p>
                     <div class="row">
                         <div class="col-lg-6">
@@ -549,7 +567,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 order-lg-0 col-4 order-1">
+                <div class="col-lg-3 order-lg-0 col-sm-5 col-6 order-1">
                     <p class="footer-title-small">LEARN</p>
                     <div class="row">
                         <div class="col-lg-6">
@@ -580,25 +598,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 order-lg-0 offset-lg-1 col-12 order-2">
-                    <p class="footer-title-small">CONTACT</p>
-                    <p class="address-text">Email: diyuplighting@gmail.com
-                        Phone: (773) 917-8235</p>
+
+                <div class="col-lg-3 offset-lg-5 order-lg-0 col-12 order-3 social-margin">
+                    <a href="#">
+                        <img src="images/footer/facebook.svg" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="images/footer/twitter.svg" class="social-icon">
+                    </a>
+                    <a href="#">
+                        <img src="images/footer/pinterest.svg" class="social-icon">
+                    </a>
                 </div>
-                <div class="col-lg-5 order-lg-0 order-4 copyright-margin">
+
+                <div class="col-lg-3 offset-lg-1 order-lg-0 order-4 copyright-margin">
                     <p class="copyright-text">(C) 2010-2020 19A, Inc.</p>
                 </div>
-                <div class="col-lg-2 order-lg-0 col-12 order-3 social-margin">
-                    <a href="#">
-                        <img src="images/footer/facebook.svg">
-                    </a>
-                    <a href="#">
-                        <img src="images/footer/twitter.svg">
-                    </a>
-                    <a href="#">
-                        <img src="images/footer/pinterest.svg">
-                    </a>
-                </div>
+
                 <div class="col-lg-12 order-lg-0 order-7">
                     <p class="footer-city-text">New York | Los Angeles | Chicago | Houston | Philadelphia | Phoenix | San Antonio | San Diego | Dallas | San Jose | Austin | Indianapolis | Jacksonville | San Francisco | Columbus | Charlotte | Detroit | Memphis | Seattle | Memphis | Denver | Washington DC | Boston | Nashville | Baltimore | Oklahoma City | Louisville | Portland | Las Vegas | Milwaukee | Albuquerque | Tucson | Fresno | Sacramento | El Paso | Long Beach | Kansas City | Virginia Beach | Atlanta | Colorado Springs | Omaha | Raleigh | Miami | Oakland | Minneapolis | Tulsa | Cleveland | Wichita | New Orleans | Tampa | Aurora | St Louis | Pittsburgh | Cincinnati | Newark | Henderson | Fargo | Boise | Birmingham</p>
                 </div>
