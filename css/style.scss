@@ -340,10 +340,6 @@ header {
   }
 }
 
-.ui-datepicker-year {
-  display: none;
-}
-
 .ui-datepicker th {
   font-family: $font-family-primary;
   font-style: normal;
@@ -437,7 +433,7 @@ header {
 
 .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
   position: absolute;
-  top: 57%;
+  top: 44%;
 }
 
 #datepicker {
