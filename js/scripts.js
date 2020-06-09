@@ -2,8 +2,10 @@ $( "#datepicker" ).datepicker({
     showOtherMonths: true,
     selectOtherMonths: true,
     navigationAsDateFormat: true,
-    nextText: 'MM',
-    prevText: 'MM',
+    nextText: 'M >',
+    prevText: '< M',
+    monthNames: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+                 "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
 });
 
 $('.owl-carousel').owlCarousel({
