@@ -1,0 +1,84 @@
+@import "mixins";
+@import "variables";
+
+// ------------------------
+// Standard elements
+// ------------------------
+
+h1 {
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 42px;
+  color: $dark-purple-color;
+  margin-bottom: 24px;
+  text-transform: capitalize;
+  @include max-screen(992px) {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 18px;
+  }
+  span {
+    text-transform: uppercase;
+  }
+}
+  
+h2{
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: $black-color;
+  margin-bottom: 14px;
+  text-transform: capitalize;
+  @include max-screen(992px) {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+
+.big-paragraph {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: $gray-color;
+  margin-bottom: 35px;
+  @include max-screen(992px) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 28px;
+  }
+}
+
+.default-paragraph {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $gray-color;
+  padding-bottom: 36px;
+  @include max-screen(992px) {
+    padding-bottom: 0px;
+  }
+}
+
+.small-paragraph {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $gray-color;
+  display: block;
+  margin-bottom: 37px;
+  @include max-screen(992px) {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 56px;
+  }
+}

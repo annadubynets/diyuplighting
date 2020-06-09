@@ -1,0 +1,425 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0", :name => "viewport"}/
+    %meta{:content => "ie=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title Diy up lighting
+    %link{:href => "css/style.css", :rel => "stylesheet"}/
+  %body
+    %header
+      %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        .container
+          %a.navbar-brand{:alt => "logo", :href => "index.html"}
+            %img{:src => "images/logo/logo_1.png"}/
+            %img{:src => "images/logo/logo_2.png"}/
+          %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+            %img{:src => "images/navbar/menu_icon.svg"}/
+          #navbarSupportedContent.collapse.navbar-collapse
+            %ul.navbar-nav.ml-auto
+              %li.nav-item.dropdown
+                %a#navbarDropdownProducts.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  PRODUCTS
+                .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+                  %a.dropdown-item{:href => "#"} Uplight
+                  %a.dropdown-item{:href => "#"} Marquee Letter
+                  %a.dropdown-item{:href => "#"} Pin Spot
+                  %a.dropdown-item{:href => "#"} Confetti Blaster
+              %li.nav-item.dropdown
+                %a#navbarDropdownLearn.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  LEARN
+                .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+                  %a.dropdown-item{:href => "#"} First link
+                  %a.dropdown-item{:href => "#"} Second link
+                  %a.dropdown-item{:href => "#"} Third link
+                  %a.dropdown-item{:href => "#"} Fourth link
+                  %a.dropdown-item{:href => "#"} Fifth link
+                  %a.dropdown-item{:href => "#"} Sixth link
+              %li.nav-item
+                %a.nav-link{:href => "#"} CONTACT
+            %a.btn.btn-primary{:href => "#", :role => "button"} Rent Now
+    %section.hero-section
+      .container
+        .row
+          .col-lg-12
+            %h1.hero-title Light up your event!
+          .col-lg-5.col-6
+            %p.big-paragraph Transform your event with easy to use uplights. Wow your guests while saving hundreds of dollars with our simple rental process.
+          .col-lg-8.offset-lg-0.text-lg-left.col-12.text-center
+            %a.btn.btn-primary.rent-btn{:href => "#", :role => "button"} Rent Uplights Now
+    %section.features-section
+      .container
+        .row.justify-content-around.text-center
+          .col-lg-6.order-lg-0.col-sm-6.order-2
+            .row.align-content-lg-left
+              %img.col-lg-4.offset-lg-0.col-6.offset-3{:src => "images/home/colors.svg"}/
+              .col-lg-8.text-center.text-sm-left
+                %h2 Multi-colors
+                %p.small-paragraph Pick from easy preset colors and display patterns
+              %img.col-lg-4.offset-lg-0.col-6.offset-3{:src => "images/home/setup.svg"}/
+              .col-lg-8.text-center.text-sm-left
+                %h2 Quick Set-up
+                %p.small-paragraph Safe and easy to use - no experience necessary
+              %img.col-lg-4.offset-lg-0.col-6.offset-3{:src => "images/home/shipping.svg"}/
+              .col-lg-8.text-center.text-sm-left
+                %h2 Free Shipping
+                %p.small-paragraph Lights 2 days before your event and ship free both ways
+          .col-lg-6.order-lg-0.col-sm-6.order-1.led-uplight-bg
+            %img.led-uplight-margin{:src => "images/home/led-uplight-picture.png"}/
+    %section.calendar-section
+      .container
+        .row.d-flex.justify-content-lg-start.justify-content-center
+          .col-lg-6.order-1.text-lg-left.col-12.text-center
+            %h1 Reserve your uplights
+            %p.default-paragraph Select your event date and quantity needed in order to instantly check availability. We have a limited number of lights, so we recommend reserving your uplighting as early as possible.
+          .col-lg-5.offset-lg-1.order-2.text-lg-left.col-12.col-sm-8.col-md-6.d-flex.justify-content-center
+            #datepicker
+          .col-lg-6.offset-lg-0.text-lg-left.col-12.text-center.order-4
+            .dropdown
+              %button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.qty-dropdown{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+                Qty
+              .dropdown-menu{"aria-labelledby" => "dropdownMenuButton"}
+                %a.dropdown-item{:href => "#"} Action
+                %a.dropdown-item{:href => "#"} Another action
+                %a.dropdown-item{:href => "#"} Something else here
+            %a.btn.btn-primary.rent-btn{:href => "#", :role => "button"} Check Availability
+    %section.extras-section
+      .container
+        .row.equal
+          .col-lg-12
+            %h1
+              Add
+              %span more
+              life to your event!
+          .col-lg-4
+            .card.extras-card.text-center.w-100
+              .card-body
+                .pinspot-img
+                  %img.img-position{:src => "images/home/pinspot-removebg-preview.svg"}/
+                %h2.extras-title Pin Spot
+                %p.price-text Rent for $10 each
+                %p.extras-text Battery powered and versatile, this focused beam of light can be used to illuminate centerpieces, floral arrangements, cakes, and more.
+              .card-footer
+                %a.btn.btn-primary.extras-rent-btn{:href => "#", :role => "button"} Rent Now
+          .col-lg-4
+            .card.extras-card.text-center.w-100
+              .card-body
+                .pngwing-img
+                  %img.img-position{:src => "images/home/light_lit_E.png"}/
+                %h2.extras-title Marquee Letters
+                %p.price-text Rent for $49 each
+                %p.extras-text Make a statement with 21" tall vintage inspired marquee letters. Pick from our collection of numbers, letters, and special characters.
+              .card-footer
+                %a.btn.btn-primary.extras-rent-btn{:href => "#", :role => "button"} Rent Now
+          .col-lg-4
+            .card.extras-card.text-center.w-100
+              .card-body
+                .preview-img
+                  %img.img-position{:src => "images/home/removebg-preview.svg"}/
+                %h2.extras-title Confetti Cannon
+                %p.price-text Rent for $129 each
+                %p.extras-text Create an incredibly memorable experience with our safe and simple to operate confetti cannon. Includes confetti for multiple launches!
+              .card-footer
+                %a.btn.btn-primary.extras-rent-btn{:href => "#", :role => "button"} Rent Now
+    %section.testimonials-section
+      .container
+        .row
+          .col-lg-12.text-center
+            %h1 What customers say about us
+        .owl-carousel
+          .item.card
+            .card-body.testimonials-card
+              %h2 Great company with quality product
+              .star-rating
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+              %p.review-text We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again.
+            .card-footer
+              .review-name-position
+                %p.review-name
+                  Yiu Kim
+                  %span 11/23/2020
+                .review-photo-bg
+                  %img.circle-img{:src => "images/home/review_photo_one.svg"}/
+          .item.card
+            .card-body.testimonials-card
+              %h2 Couldn’t have been easier
+              .star-rating
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+              %p.review-text We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again.
+            .card-footer
+              .review-name-position
+                %p.review-name
+                  Becca Stevenson
+                  %span 11/23/2020
+                .review-photo-two-bg
+                  %img.circle-img{:src => "images/home/review_photo_two.svg"}/
+          .item.card
+            .card-body.testimonials-card
+              %h2 Great company with quality product
+              .star-rating
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+              %p.review-text We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again.
+            .card-footer
+              .review-name-position
+                %p.review-name
+                  Yiu Kim
+                  %span 11/23/2020
+                .review-photo-bg
+                  %img.circle-img{:src => "images/home/review_photo_one.svg"}/
+          .item.card
+            .card-body.testimonials-card
+              %h2 Couldn’t have been easier
+              .star-rating
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+              %p.review-text We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again.
+            .card-footer
+              .review-name-position
+                %p.review-name
+                  Becca Stevenson
+                  %span 11/23/2020
+                .review-photo-two-bg
+                  %img.circle-img{:src => "images/home/review_photo_two.svg"}/
+          .item.card
+            .card-body.testimonials-card
+              %h2 Great company with quality product
+              .star-rating
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+              %p.review-text We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again.
+            .card-footer
+              .review-name-position
+                %p.review-name
+                  Yiu Kim
+                  %span 11/23/2020
+                .review-photo-bg
+                  %img.circle-img{:src => "images/home/review_photo_one.svg"}/
+          .item.card
+            .card-body.testimonials-card
+              %h2 Couldn’t have been easier
+              .star-rating
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+                %img{:src => "images/home/star.svg"}/
+              %p.review-text We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again.
+            .card-footer
+              .review-name-position
+                %p.review-name
+                  Becca Stevenson
+                  %span 11/23/2020
+                .review-photo-two-bg
+                  %img.circle-img{:src => "images/home/review_photo_two.svg"}/
+    %section.question-section
+      .container
+        .row
+          .col-lg-12.text-center
+            %h1 Learn More
+          .col-lg-10.offset-lg-1.accordion-margin
+            #accordionAnswersQ1.accordion
+              .card
+                #headingA0.card-header
+                  %a.btn.btn-link.collapsed.question-title{"aria-controls" => "collapseA0", "aria-expanded" => "false", "data-target" => "#collapseA0", "data-toggle" => "collapse", :href => "#"}
+                    Is this really that easy to do?
+                #collapseA0.collapse{"aria-labelledby" => "headingA0", "data-parent" => "#accordionAnswersQ1"}
+                  .card-body
+                    %p.question-text This is true for traditional par cans. We only ship out more modern LED lights. They use very minimal power and do not get hot at all. You can have them on for your entire event!
+              .card
+                #headingA1.card-header
+                  %a.btn.btn-link.collapsed.question-title{"aria-controls" => "collapseA1", "aria-expanded" => "false", "data-target" => "#collapseA1", "data-toggle" => "collapse", :href => "#"}
+                    I've heard that par cans get really hot and can cause fires and/or electrical problems.
+                #collapseA1.collapse{"aria-labelledby" => "headingA1", "data-parent" => "#accordionAnswersQ1"}
+                  .card-body
+                    %p.question-text This is true for traditional par cans. We only ship out more modern LED lights. They use very minimal power and do not get hot at all. You can have them on for your entire event!
+              .card
+                #headingA2.card-header
+                  %a.btn.btn-link.collapsed.question-title{"aria-controls" => "collapseA2", "aria-expanded" => "false", "data-target" => "#collapseA2", "data-toggle" => "collapse", :href => "#"}
+                    Do you rent indoor or outdoor lights?
+                #collapseA2.collapse{"aria-labelledby" => "headingA2", "data-parent" => "#accordionAnswersQ1"}
+                  .card-body
+                    %p.question-text This is true for traditional par cans. We only ship out more modern LED lights. They use very minimal power and do not get hot at all. You can have them on for your entire event!
+              .card
+                #headingA3.card-header
+                  %a.btn.btn-link.collapsed.question-title{"aria-controls" => "collapseA3", "aria-expanded" => "false", "data-target" => "#collapseA3", "data-toggle" => "collapse", :href => "#"}
+                    How many lights should I rent?
+                #collapseA3.collapse{"aria-labelledby" => "headingA3", "data-parent" => "#accordionAnswersQ1"}
+                  .card-body
+                    %p.question-text This is true for traditional par cans. We only ship out more modern LED lights. They use very minimal power and do not get hot at all. You can have them on for your entire event!
+              .card
+                #headingA4.card-header
+                  %a.btn.btn-link.collapsed.question-title{"aria-controls" => "collapseA4", "aria-expanded" => "false", "data-target" => "#collapseA4", "data-toggle" => "collapse", :href => "#"}
+                    What length power cable is provided? Will I need any additional cords?
+                #collapseA4.collapse{"aria-labelledby" => "headingA4", "data-parent" => "#accordionAnswersQ1"}
+                  .card-body
+                    %p.question-text This is true for traditional par cans. We only ship out more modern LED lights. They use very minimal power and do not get hot at all. You can have them on for your entire event!
+          .col-lg-12.text-center
+            %a.btn.btn-primary.see-full-faq-btn{:href => "#", :role => "button"} See the full FAQ
+    %section.awards-section
+      .container
+        .row
+          .col-xl-2.offset-xl-0.col-lg-4.offset-lg-0.col-md-4.offset-md-0.col-sm-6.offset-sm-0.col-8.offset-2
+            .card.awards-card.text-center
+              .card-body
+                .star-rating
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                %p.awards-card-text COUPLES’ CHOICE
+                %p.awards-card-title
+                  AWARDS
+                  %span 2020
+                %img{:src => "images/home/awards_icon.svg"}/
+          .col-xl-2.offset-xl-0.col-lg-4.offset-lg-0.col-md-4.offset-md-0.col-sm-6.offset-sm-0.col-8.offset-2
+            .card.awards-card.text-center
+              .card-body
+                .star-rating
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                %p.awards-card-text COUPLES’ CHOICE
+                %p.awards-card-title
+                  AWARDS
+                  %span 2019
+                %img{:src => "images/home/awards_icon.svg"}/
+          .col-xl-2.offset-xl-0.col-lg-4.offset-lg-0.col-md-4.offset-md-0.col-sm-6.offset-sm-0.col-8.offset-2
+            .card.awards-card.text-center
+              .card-body
+                .star-rating
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                %p.awards-card-text COUPLES’ CHOICE
+                %p.awards-card-title
+                  AWARDS
+                  %span 2018
+                %img{:src => "images/home/awards_icon.svg"}/
+          .col-xl-2.offset-xl-0.col-lg-4.offset-lg-0.col-md-4.offset-md-0.col-sm-6.offset-sm-0.col-8.offset-2
+            .card.awards-card.text-center
+              .card-body
+                .star-rating
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                %p.awards-card-text COUPLES’ CHOICE
+                %p.awards-card-title
+                  AWARDS
+                  %span 2017
+                %img{:src => "images/home/awards_icon.svg"}/
+          .col-xl-2.offset-xl-0.col-lg-4.offset-lg-0.col-md-4.offset-md-0.col-sm-6.offset-sm-0.col-8.offset-2
+            .card.awards-card.text-center
+              .card-body
+                .star-rating
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                %p.awards-card-text COUPLES’ CHOICE
+                %p.awards-card-title
+                  AWARDS
+                  %span 2016
+                %img{:src => "images/home/awards_icon.svg"}/
+          .col-xl-2.offset-xl-0.col-lg-4.offset-lg-0.col-md-4.offset-md-0.col-sm-6.offset-sm-0.col-8.offset-2
+            .card.awards-card.text-center
+              .card-body
+                .star-rating
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                  %img{:src => "images/home/awards_star.svg"}/
+                %p.awards-card-text COUPLES’ CHOICE
+                %p.awards-card-title
+                  AWARDS
+                  %span 2015
+                %img{:src => "images/home/awards_icon.svg"}/
+    %footer
+      .container
+        .row
+          .col-lg-1.order-lg-0.col-12.order-5
+            %a.navbar-brand{:alt => "logo", :href => "index.html"}
+              %img{:src => "images/logo/logo_1.png"}/
+          .col-lg-3.order-lg-0.col-12.order-5
+            %a.navbar-brand{:alt => "logo", :href => "index.html"}
+              %img.footer-logo-pos{:src => "images/logo/logo_2.png"}/
+            %p.address-text
+              diyuplighting@gmail.com
+              %br/
+              (773) 917-8235
+          .col-lg-3.order-lg-0.col-sm-5.col-6.order-1
+            %p.footer-title-small PRODUCTS
+            .row
+              .col-lg-6
+                %ul
+                  %li
+                    %a{:href => "#"} Uplight
+                  %li
+                    %a{:href => "#"} Marquee Letter
+                  %li
+                    %a{:href => "#"} Pin Spot
+                  %li
+                    %a{:href => "#"} Confetti Blaster
+          .col-lg-3.order-lg-0.col-sm-5.col-6.order-1
+            %p.footer-title-small LEARN
+            .row
+              .col-lg-6
+                %ul
+                  %li
+                    %a{:href => "#"} First link
+                  %li
+                    %a{:href => "#"} Second link
+                  %li
+                    %a{:href => "#"} Third link
+                  %li
+                    %a{:href => "#"} Fourth link
+              .col-lg-6
+                %ul
+                  %li
+                    %a{:href => "#"} Fifth link
+                  %li
+                    %a{:href => "#"} Sixth link
+          .col-lg-3.offset-lg-5.order-lg-0.col-12.order-3.social-margin
+            %a{:href => "#"}
+              %img.social-icon{:src => "images/footer/facebook.svg"}/
+            %a{:href => "#"}
+              %img.social-icon{:src => "images/footer/twitter.svg"}/
+            %a{:href => "#"}
+              %img.social-icon{:src => "images/footer/pinterest.svg"}/
+          .col-lg-3.offset-lg-1.order-lg-0.order-4.copyright-margin
+            %p.copyright-text (C) 2010-2020 19A, Inc.
+          .col-lg-12.order-lg-0.order-7
+            %p.footer-city-text New York | Los Angeles | Chicago | Houston | Philadelphia | Phoenix | San Antonio | San Diego | Dallas | San Jose | Austin | Indianapolis | Jacksonville | San Francisco | Columbus | Charlotte | Detroit | Memphis | Seattle | Memphis | Denver | Washington DC | Boston | Nashville | Baltimore | Oklahoma City | Louisville | Portland | Las Vegas | Milwaukee | Albuquerque | Tucson | Fresno | Sacramento | El Paso | Long Beach | Kansas City | Virginia Beach | Atlanta | Colorado Springs | Omaha | Raleigh | Miami | Oakland | Minneapolis | Tulsa | Cleveland | Wichita | New Orleans | Tampa | Aurora | St Louis | Pittsburgh | Cincinnati | Newark | Henderson | Fargo | Boise | Birmingham
+    %script{:src => "//code.jquery.com/jquery-1.12.4.js"}
+    %script{:src => "//code.jquery.com/ui/1.12.1/jquery-ui.js"}
+    %script{:src => "js/owl.carousel.min.js"}
+    %script{:src => "js/popper.min.js"}
+    %script{:src => "js/bootstrap.min.js"}
+    %script{:src => "js/scripts.js"}

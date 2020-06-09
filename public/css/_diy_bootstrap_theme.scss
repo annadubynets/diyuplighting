@@ -1,0 +1,154 @@
+@import "variables";
+@import "mixins";
+
+// ------------------------
+// Bootstrap
+// ------------------------
+
+header {
+  position: relative;
+}
+
+.btn-primary {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $light-purple-color;
+  color: #FFFFFF;
+  border-radius: 25px;
+  border-color: $light-purple-color;
+  letter-spacing: 0.3px;
+  text-align: center;
+  padding: 12px 18px;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover{
+  background-color: #FFFFFF!important;
+  border-color: $dark-purple-color!important;
+  color: $dark-purple-color!important;
+  outline: none!important;
+  box-shadow: none;
+}
+
+.btn:active, .btn:focus{
+  outline: none!important;
+  box-shadow: none;
+}
+
+.bg-light {
+  background-color: #FFFFFF!important;
+  @include max-screen(576px) {
+    box-shadow: 0px 1px 3px rgba(40, 68, 88, 0.22);
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black-color;
+  letter-spacing: 0.2px;
+  margin: 32px 20px;
+  padding: 0;
+  display: inline-block;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon {
+  color: $dark-purple-color;
+}
+
+.carousel-indicators .active {
+  background-color: $light-purple-color;
+}
+
+.day {
+  color: $gray-color;
+  opacity: 0.6;
+}
+
+.dow {
+  color: $dark-purple-color;
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  border-color: transparent!important;
+  color: rgba(87, 74, 151, 0.43);
+  border-radius: 25px;
+  margin-bottom: 27px;
+  padding: 20px 30px;
+  &:hover {
+    background-color: #FFFFFF;
+    border-color: transparent!important;
+    color: rgba(87, 74, 151, 0.43);
+  }
+  @include min-width(992px) {
+    position: absolute;
+    top: -90px;
+  }
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+  background-color: #FFFFFF;
+  border-color: transparent!important;
+  color: rgba(87, 74, 151, 0.43);
+}
+
+.dropdown-item {
+  color: rgba(87, 74, 151, 0.43);
+}
+
+.card {
+  background-color: #FCFAFD;
+  border: none;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: none;
+  padding: 0px;
+}
+
+.accordion>.card {
+  &:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: rgba(143, 141, 154, 0.46);
+    margin-bottom: 10px;
+  }
+}
+
+.card-header {
+  background-color: #FCFAFD;
+  border: none;
+  padding: 0.75rem 0.15rem;
+}
+
+.card .card-header .btn-link:after {
+  content: url(../images/home/arrow_up.svg);
+  float: right;
+}
+
+.card .card-header .btn-link.collapsed:after {
+  content: url(../images/home/arrow_down.svg);
+}
+
+.btn-link {
+  display: block;
+  text-align: left;
+}
+
+.btn-link.focus, .btn-link:focus {
+  text-decoration: none;
+}
