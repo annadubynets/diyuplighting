@@ -152,3 +152,7 @@ header {
 .btn-link.focus, .btn-link:focus {
   text-decoration: none;
 }
+
+.dropdown-menu.show {
+  margin-top: -15px;
+}
