@@ -7,8 +7,8 @@
 @import "variables";
 @import "typography";
 @import "jquery-ui-theme";
-@import "card";
-@import "navbar";
+@import "cards";
+@import "navbars";
 @import "buttons";
 
 // ------------------------
@@ -245,7 +245,7 @@
   flex:1 0 auto;
 }
 
-.img-position {
+.extras-img-position {
   position: relative;
   top: -50px;
   max-width: 100%;
@@ -298,7 +298,7 @@
   }
 }
 
-.review-name-position {
+.testimonials-position {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
