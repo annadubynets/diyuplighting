@@ -141,13 +141,6 @@
   }
 }
 
-.extras-section h2 {
-  @include max-screen(992px) {
-    text-align: left;
-    margin-bottom: 9px;
-  }
-}
-
 .price-text {
   font-family: $font-family-secondary;
   font-style: normal;
@@ -155,10 +148,6 @@
   font-size: 14px;
   line-height: 20px;
   color: $dark-purple-color;
-  @include max-screen(992px) {
-    text-align: left;
-    margin-bottom: 30px;
-  }
 }
 
 .extras-text {
@@ -167,9 +156,6 @@
   font-size: 14px;
   line-height: 21px;
   color: $gray-color;
-  @include max-screen(992px) {
-    text-align: left;
-  }
 }
 
 .pinspot-img {
@@ -280,7 +266,6 @@
   font-size: 14px;
   line-height: 21px;
   color: #9F9CAB;
-  margin-top: 28px;
 }
 
 .review-name {
@@ -291,7 +276,6 @@
   letter-spacing: 0.2px;
   color: $dark-purple-color;
   margin-left: auto;
-  margin-top: 24px;
   span {
     display: block;
     font-weight: 400;
@@ -376,11 +360,7 @@
   box-shadow: 0px 4px 25px $dark-purple-color;
   border-radius: 30px;
   border: none;
-  @include max-screen(1200px) {
-    margin-bottom: 26px;
-  }
 }
-
 
 .awards-card-title {
   font-family: $font-family-secondary;
@@ -412,70 +392,11 @@
   font-size: 9px;
   line-height: 13px;
   color: $black-color;
-  margin-top: 2px;
-}
-
-.footer-title-small {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: 0.2px;
-  color: $dark-purple-color;
-  margin-top: 23px;
-  margin-bottom: 23px;
 }
 
 .footer-logo-pos {
   position: relative;
   top: 5px;
-}
-
-.address-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 25px;
-  letter-spacing: 0.2px;
-  color: $black-dark-color;
-  margin-top: 23px;
-}
-
-.copyright-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.2px;
-  color: $gray-color;
-}
-
-.copyright-margin {
-  margin-top: 50px;
-  @include max-screen(992px) {
-    margin-top: 30px;
-  }
-}
-
-.social-margin {
-  margin-top: 50px;
-  @include max-screen(992px) {
-    margin-top: 17px;
-  }
-}
-
-.footer-city-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 21px;
-  letter-spacing: 0.2px;
-  color: #BDBDBD;
-  margin-top: 59px;
-  @include max-screen(992px) {
-    text-align: center;
-    margin-top: 28px;
-  }
 }
 
 // ------------------------------

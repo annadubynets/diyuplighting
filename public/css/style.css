@@ -53,6 +53,38 @@ h2 {
   }
 }
 
+h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  color: #BDBDBD;
+  margin-top: 59px;
+}
+@media screen and (max-width: 992px) {
+  h6 {
+    text-align: center;
+    margin-top: 28px;
+  }
+}
+
 .display-3 {
   font-family: "Arvo", sans-serif;
   font-style: normal;
@@ -71,6 +103,22 @@ h2 {
     margin-bottom: 23px;
     text-align: left;
   }
+}
+
+.text-primary {
+  color: #574A97 !important;
+}
+
+.text-secondary {
+  color: #8F8D9A !important;
+}
+
+.text-muted {
+  color: #BDBDBD !important;
+}
+
+.text-dark {
+  color: #284458 !important;
 }
 
 footer {
@@ -581,13 +629,6 @@ footer ul li > a:hover {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .extras-section h2 {
-    text-align: left;
-    margin-bottom: 9px;
-  }
-}
-
 .price-text {
   font-family: "Arvo", sans-serif;
   font-style: normal;
@@ -596,12 +637,6 @@ footer ul li > a:hover {
   line-height: 20px;
   color: #574A97;
 }
-@media screen and (max-width: 992px) {
-  .price-text {
-    text-align: left;
-    margin-bottom: 30px;
-  }
-}
 
 .extras-text {
   font-style: normal;
@@ -609,11 +644,6 @@ footer ul li > a:hover {
   font-size: 14px;
   line-height: 21px;
   color: #8F8D9A;
-}
-@media screen and (max-width: 992px) {
-  .extras-text {
-    text-align: left;
-  }
 }
 
 .pinspot-img {
@@ -732,7 +762,6 @@ footer ul li > a:hover {
   font-size: 14px;
   line-height: 21px;
   color: #9F9CAB;
-  margin-top: 28px;
 }
 
 .review-name {
@@ -743,7 +772,6 @@ footer ul li > a:hover {
   letter-spacing: 0.2px;
   color: #574A97;
   margin-left: auto;
-  margin-top: 24px;
 }
 .review-name span {
   display: block;
@@ -831,11 +859,6 @@ footer ul li > a:hover {
   border-radius: 30px;
   border: none;
 }
-@media screen and (max-width: 1200px) {
-  .awards-section .card {
-    margin-bottom: 26px;
-  }
-}
 
 .awards-card-title {
   font-family: "Arvo", sans-serif;
@@ -867,76 +890,11 @@ footer ul li > a:hover {
   font-size: 9px;
   line-height: 13px;
   color: #4F4F4F;
-  margin-top: 2px;
-}
-
-.footer-title-small {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: 0.2px;
-  color: #574A97;
-  margin-top: 23px;
-  margin-bottom: 23px;
 }
 
 .footer-logo-pos {
   position: relative;
   top: 5px;
-}
-
-.address-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 25px;
-  letter-spacing: 0.2px;
-  color: #284458;
-  margin-top: 23px;
-}
-
-.copyright-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.2px;
-  color: #8F8D9A;
-}
-
-.copyright-margin {
-  margin-top: 50px;
-}
-@media screen and (max-width: 992px) {
-  .copyright-margin {
-    margin-top: 30px;
-  }
-}
-
-.social-margin {
-  margin-top: 50px;
-}
-@media screen and (max-width: 992px) {
-  .social-margin {
-    margin-top: 17px;
-  }
-}
-
-.footer-city-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 21px;
-  letter-spacing: 0.2px;
-  color: #BDBDBD;
-  margin-top: 59px;
-}
-@media screen and (max-width: 992px) {
-  .footer-city-text {
-    text-align: center;
-    margin-top: 28px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
