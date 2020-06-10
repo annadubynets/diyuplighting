@@ -5,6 +5,22 @@
 // Standard elements
 // ------------------------
 
+// Global fonts configuration
+
+html {
+  font-family: $font-family-primary !important;
+}
+
+body {
+  font-family: $font-family-primary !important;
+}
+
+//
+
+header {
+  position: relative;
+}
+
 h1 {
   font-family: $font-family-secondary;
   font-style: normal;
@@ -39,46 +55,41 @@ h2{
   }
 }
 
-.big-paragraph {
-  font-family: $font-family-primary;
+.display-3 {
+  font-family: $font-family-secondary;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 38px;
-  color: $gray-color;
-  margin-bottom: 35px;
+  font-size: 70px;
+  color: $dark-purple-color;
+  line-height: 56px;
+  margin-bottom: 49px;
+  text-transform: capitalize;
   @include max-screen(992px) {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 28px;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    margin-bottom: 23px;
+    text-align: left;
   }
 }
 
-.default-paragraph {
-  font-family: $font-family-primary;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: $gray-color;
-  padding-bottom: 36px;
-  @include max-screen(992px) {
-    padding-bottom: 0px;
-  }
+footer {
+  padding: 20px 0px 40px;
 }
 
-.small-paragraph {
-  font-family: $font-family-primary;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  color: $gray-color;
-  display: block;
-  margin-bottom: 37px;
-  @include max-screen(992px) {
+footer ul{
+  list-style-type: none;
+  padding: 0;
+  li > a {
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 21px;
-    margin-bottom: 56px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $gray-color;
+    &:hover {
+      color: $gray-color;
+      text-decoration: none;
+    }
   }
 }

@@ -7,7 +7,9 @@
 @import "variables";
 @import "typography";
 @import "jquery-ui-theme";
-@import "diy_bootstrap_theme";
+@import "card";
+@import "navbar";
+@import "buttons";
 
 // ------------------------
 // Home page
@@ -26,35 +28,39 @@
   }
 }
 
-.hero-title {
-  font-family: $font-family-secondary;
+.hero-section p {
   font-style: normal;
   font-weight: 400;
-  font-size: 70px;
-  color: $dark-purple-color;
-  line-height: 56px;
-  margin-bottom: 49px;
-  text-transform: capitalize;
+  font-size: 24px;
+  line-height: 38px;
+  color: $gray-color;
+  margin-bottom: 35px;
   @include max-screen(992px) {
-    font-size: 40px;
-    line-height: 56px;
-    letter-spacing: 0.2px;
-    margin-bottom: 23px;
-    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 28px;
   }
-}
-
-.rent-btn {
-  font-size: 20px;
-  line-height: 25px;
-  padding: 20px 48px;
-  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
 }
 
 .features-section {
   padding: 70px 0px 106px;
   @include max-screen(992px) {
     padding: 15px 0px 13px;
+  }
+}
+
+.features-section p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $gray-color;
+  display: block;
+  margin-bottom: 37px;
+  @include max-screen(992px) {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 56px;
   }
 }
 
@@ -70,7 +76,7 @@
   }
 }
 
-.led-uplight-margin {
+.led-uplight-img {
   max-height: 310px;
   max-width: 100%;
   object-fit: scale-down;
@@ -88,9 +94,31 @@
   }
 }
 
+.calendar-section p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $gray-color;
+  padding-bottom: 36px;
+  @include max-screen(992px) {
+    padding-bottom: 0px;
+  }
+}
+
+#datepicker {
+  @include max-screen(992px) {
+    margin: 69px 0px;
+  }
+}
+
 .qty-dropdown::after {
   color: rgba(87, 74, 151, 0.46);
   margin-left: 85px;
+}
+
+.calendar-section .dropdown-menu.show {
+  margin-top: 0px;
 }
 
 .extras-section {
@@ -102,7 +130,7 @@
   }
 }
 
-.extras-card {
+.extras-section .card {
   background: #FFFFFF;
   box-shadow: 0px 0px 40px rgba(210, 241, 255, 0.6);
   border-radius: 30px;
@@ -113,7 +141,7 @@
   }
 }
 
-.extras-title {
+.extras-section h2 {
   @include max-screen(992px) {
     text-align: left;
     margin-bottom: 9px;
@@ -121,7 +149,7 @@
 }
 
 .price-text {
-  font-family: 'Arvo', serif;
+  font-family: $font-family-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -134,7 +162,6 @@
 }
 
 .extras-text {
-  font-family: $font-family-primary;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -190,8 +217,7 @@
   }
 }
 
-.extras-rent-btn {
-  @extend .rent-btn;
+.extras-section .btn-primary {
   border-radius: 20px;
   padding: 15px 40px;
   font-size: 16px;
@@ -227,10 +253,6 @@
   object-fit: scale-down;
 }
 
-.extras-position {
-  position: absolute;
-}
-
 .testimonials-section {
   background-color: #FCFAFD;
   padding: 115px 0px 86px;
@@ -241,15 +263,18 @@
   }
 }
 
-.testimonials-card {
+.testimonials-section .card-body {
   background-color: #FFFFFF;
   border-radius: 30px;
   border: none;
   padding-bottom: 68px;
 }
 
+.star-rating {
+  letter-spacing: 5px;
+}
+
 .review-text {
-  font-family: $font-family-primary;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -259,7 +284,6 @@
 }
 
 .review-name {
-  font-family: $font-family-primary;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -309,26 +333,6 @@
   border-radius: 30px;
 }
 
-.person-img {
-  position: absolute;
-  left: 25px;
-  top: 22px;
-}
-
-.star-rating {
-  letter-spacing: 5px;
-}
-
-.date-text {
-  font-family: $font-family-primary;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 10px;
-  line-height: 13px;
-  letter-spacing: 0.2px;
-  color: $black-dark-color;
-}
-
 .question-section {
   background-color: #FCFAFD;
   padding-bottom: 159px;
@@ -338,7 +342,6 @@
 }
 
 .question-title {
-  font-family: $font-family-primary;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -352,7 +355,6 @@
 }
 
 .question-text {
-  font-family: $font-family-primary;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -365,15 +367,6 @@
   margin-bottom: 62px;
 }
 
-.see-full-faq-btn {
-  @extend .rent-btn;
-  color: $dark-purple-color;
-  background-color: #FFFFFF;
-  border: 2px solid $dark-purple-color;
-  border-radius: 25px;
-  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
-}
-
 .awards-section {
   background-image: url("../images/home/awards_picture.png");
   background-repeat: no-repeat;
@@ -382,7 +375,7 @@
   padding: 97px 0px 84px;
 }
 
-.awards-card {
+.awards-section .card {
   background: #FFFFFF;
   box-shadow: 0px 4px 25px $dark-purple-color;
   border-radius: 30px;
@@ -393,14 +386,14 @@
 }
 
 .awards-card-title {
-  font-family: 'Arvo', serif;
+  font-family: $font-family-secondary;
   font-style: normal;
   font-weight: 400;
   font-size: 23px;
   line-height: 35px;
   color: $light-purple-color;
   span {
-    font-family: 'Arvo', serif;
+    font-family: $font-family-secondary;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -417,7 +410,6 @@
 }
 
 .awards-card-text {
-  font-family: $font-family-primary;
   font-style: normal;
   font-weight: 700;
   font-size: 9px;
@@ -426,22 +418,7 @@
   margin-top: 2px;
 }
 
-footer {
-  padding: 20px 0px 40px;
-}
-
-.footer-title-big {
-  font-family: $font-family-secondary;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0.2px;
-  color: $black-dark-color;
-}
-
 .footer-title-small {
-  font-family: $font-family-primary;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -452,31 +429,12 @@ footer {
   margin-bottom: 23px;
 }
 
-footer ul{
-  list-style-type: none;
-  padding: 0;
-  li > a {
-    font-family: $font-family-primary;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    color: $gray-color;
-    &:hover {
-      color: $gray-color;
-      text-decoration: none;
-    }
-  }
-}
-
 .footer-logo-pos {
   position: relative;
   top: 5px;
 }
 
 .address-text {
-  font-family: $font-family-primary;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -487,7 +445,6 @@ footer ul{
 }
 
 .copyright-text {
-  font-family: $font-family-primary;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -516,7 +473,6 @@ footer ul{
 }
 
 .footer-city-text {
-  font-family: $font-family-primary;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -527,12 +483,6 @@ footer ul{
   @include max-screen(992px) {
     text-align: center;
     margin-top: 28px;
-  }
-}
-
-#datepicker {
-  @include max-screen(992px) {
-    margin: 69px 0px;
   }
 }
 

@@ -1,0 +1,95 @@
+.btn-primary {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #776FC3;
+  color: #FFFFFF;
+  border-radius: 25px;
+  border-color: #776FC3;
+  letter-spacing: 0.3px;
+  text-align: center;
+  padding: 12px 18px;
+}
+
+.btn-light {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  padding: 12px 18px;
+  color: #574A97;
+  background-color: #FFFFFF;
+  border: 2px solid #574A97;
+  border-radius: 25px;
+  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
+}
+
+.btn-primary:active, .btn-light:active, .btn-primary:focus, .btn-light:focus, .btn-primary:hover, .btn-light:hover {
+  background-color: #FFFFFF !important;
+  border-color: #574A97 !important;
+  color: #574A97 !important;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn:active, .btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn-lg {
+  font-size: 20px;
+  line-height: 25px;
+  padding: 20px 48px;
+  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  border-color: transparent !important;
+  color: rgba(87, 74, 151, 0.43);
+  border-radius: 25px;
+  margin-bottom: 27px;
+  padding: 20px 30px;
+}
+.btn-secondary:hover {
+  background-color: #FFFFFF;
+  border-color: transparent !important;
+  color: rgba(87, 74, 151, 0.43);
+}
+@media screen and (min-width: 992px) {
+  .btn-secondary {
+    position: absolute;
+    top: -90px;
+  }
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: #FFFFFF;
+  border-color: transparent !important;
+  color: rgba(87, 74, 151, 0.43);
+}
+
+.dropdown-item {
+  color: rgba(87, 74, 151, 0.43);
+}
+
+.btn-link {
+  display: block;
+  text-align: left;
+}
+
+.btn-link.focus, .btn-link:focus {
+  text-decoration: none;
+}
+
+.dropdown-menu.show {
+  margin-top: -15px;
+}
+
+/*# sourceMappingURL=buttons.css.map */
