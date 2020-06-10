@@ -695,7 +695,7 @@ footer ul li > a:hover {
   flex: 1 0 auto;
 }
 
-.img-position {
+.extras-img-position {
   position: relative;
   top: -50px;
   max-width: 100%;
@@ -750,7 +750,7 @@ footer ul li > a:hover {
   font-weight: 400;
 }
 
-.review-name-position {
+.testimonials-position {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
