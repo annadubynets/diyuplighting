@@ -1,0 +1,29 @@
+@import "variables";
+
+.font-secondary {
+  font-family: $font-family-secondary!important;
+}
+
+.text-primary {
+  color: $dark-purple-color!important;
+}
+
+.text-info {
+  color: $light-purple-color!important;
+}
+
+.text-secondary {
+  color: $gray-color!important;
+}
+
+.text-muted {
+  color: $gray-light-color!important;
+}
+
+.text-dark {
+  color: $black-dark-color!important;
+}
+
+.text-light {
+  color: $light-white-color!important;
+}

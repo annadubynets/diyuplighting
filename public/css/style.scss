@@ -10,6 +10,8 @@
 @import "cards";
 @import "navbars";
 @import "buttons";
+@import "backgrounds";
+@import "texts";
 
 // ------------------------
 // Home page
@@ -20,7 +22,7 @@
   background-position: right;
   background-repeat: no-repeat;
   padding: 110px 0px 187px;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     background-image: url("../images/home/picture_bg_mobile.png");
     background-repeat: no-repeat;
     background-position: right;
@@ -29,13 +31,10 @@
 }
 
 .hero-section p {
-  font-style: normal;
-  font-weight: 400;
   font-size: 24px;
   line-height: 38px;
-  color: $gray-color;
   margin-bottom: 35px;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 28px;
@@ -44,20 +43,17 @@
 
 .features-section {
   padding: 70px 0px 106px;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     padding: 15px 0px 13px;
   }
 }
 
 .features-section p {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  color: $gray-color;
   display: block;
   margin-bottom: 37px;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 56px;
@@ -69,7 +65,7 @@
   background-repeat: no-repeat;
   background-position: center;
   top: 40px;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     background-position: top;
     top: 0px;
     margin-bottom: 70px;
@@ -87,7 +83,7 @@
   background-repeat: no-repeat;
   background-position: left;
   padding: 85px 0px 103px;
-  @include max-screen(1200px) {
+  @include max-screen($xl-screen) {
     background-image: none;
     background-color: $light-blue-color;
     padding: 70px 0px 70px;
@@ -95,19 +91,16 @@
 }
 
 .calendar-section p {
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: $gray-color;
   padding-bottom: 36px;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     padding-bottom: 0px;
   }
 }
 
 #datepicker {
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     margin: 69px 0px;
   }
 }
@@ -117,45 +110,28 @@
   margin-left: 85px;
 }
 
-.calendar-section .dropdown-menu.show {
-  margin-top: 0px;
-}
-
 .extras-section {
   background-image: url("../images/home/extras_bg.png");
   background-repeat: no-repeat;
   padding: 70px 0px 106px;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     padding-bottom: 24px;
   }
 }
 
 .extras-section .card {
-  background: #FFFFFF;
   box-shadow: 0px 0px 40px rgba(210, 241, 255, 0.6);
   border-radius: 30px;
   border: none;
   margin-top: 74px;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     margin-bottom: 70px;
   }
 }
 
-.price-text {
-  font-family: $font-family-secondary;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: $dark-purple-color;
-}
-
 .extras-text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: $gray-color;
 }
 
 .pinspot-img {
@@ -164,7 +140,7 @@
   background-repeat: no-repeat;
   border-radius: 30px;
   margin-bottom: 23px;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     background-image: url("../images/home/blue_shading_bg_mobile.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -178,7 +154,7 @@
   background-image: url("../images/home/blue_shading_bg_2.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     background-image: url("../images/home/blue_shading_bg_mobile.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -193,7 +169,7 @@
   background-repeat: no-repeat;
   border-radius: 30px;
   margin-bottom: 6px;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     background-image: url("../images/home/blue_shading_bg_mobile.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -240,17 +216,15 @@
 }
 
 .testimonials-section {
-  background-color: #FCFAFD;
   padding: 115px 0px 86px;
   position: relative;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     padding-top: 70px;
     padding-bottom: 0px;
   }
 }
 
 .testimonials-section .card-body {
-  background-color: #FFFFFF;
   border-radius: 30px;
   border: none;
   padding-bottom: 68px;
@@ -260,21 +234,10 @@
   letter-spacing: 5px;
 }
 
-.review-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #9F9CAB;
-}
-
 .review-name {
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
-  color: $dark-purple-color;
   margin-left: auto;
   span {
     display: block;
@@ -318,20 +281,16 @@
 }
 
 .question-section {
-  background-color: #FCFAFD;
   padding-bottom: 159px;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     padding: 70px 0px;
   }
 }
 
 .question-title {
-  font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   letter-spacing: 0.2px;
-  color: $dark-purple-color;
   &:hover {
     text-decoration: none;
     color: $dark-purple-color;
@@ -339,12 +298,9 @@
 }
 
 .question-text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.2px;
-  color: $gray-color;
 }
 
 .awards-section {
@@ -356,26 +312,17 @@
 }
 
 .awards-section .card {
-  background: #FFFFFF;
   box-shadow: 0px 4px 25px $dark-purple-color;
   border-radius: 30px;
   border: none;
 }
 
 .awards-card-title {
-  font-family: $font-family-secondary;
-  font-style: normal;
-  font-weight: 400;
   font-size: 23px;
   line-height: 35px;
-  color: $light-purple-color;
   span {
-    font-family: $font-family-secondary;
-    font-style: normal;
-    font-weight: 700;
     font-size: 15px;
     line-height: 35px;
-    color: $dark-purple-color;
     display: block;
   }
   &:after {
@@ -387,11 +334,8 @@
 }
 
 .awards-card-text {
-  font-style: normal;
-  font-weight: 700;
   font-size: 9px;
   line-height: 13px;
-  color: $black-color;
 }
 
 .footer-logo-pos {

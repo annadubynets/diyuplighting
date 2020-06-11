@@ -42,7 +42,7 @@ h2 {
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  color: #4F4F4F;
+  color: #284458;
   margin-bottom: 14px;
   text-transform: capitalize;
 }
@@ -103,22 +103,6 @@ h6 {
     margin-bottom: 23px;
     text-align: left;
   }
-}
-
-.text-primary {
-  color: #574A97 !important;
-}
-
-.text-secondary {
-  color: #8F8D9A !important;
-}
-
-.text-muted {
-  color: #BDBDBD !important;
-}
-
-.text-dark {
-  color: #284458 !important;
 }
 
 footer {
@@ -322,7 +306,7 @@ footer ul li > a:hover {
 .owl-carousel .owl-nav button.owl-next span {
   display: none;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   .owl-carousel .owl-nav button.owl-next {
     display: none;
   }
@@ -367,7 +351,6 @@ footer ul li > a:hover {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  color: #4F4F4F;
   letter-spacing: 0.2px;
   margin: 32px 20px;
   padding: 0;
@@ -382,18 +365,13 @@ footer ul li > a:hover {
   color: #574A97;
 }
 
-.bg-light {
-  background-color: #FFFFFF !important;
-}
 @media screen and (max-width: 576px) {
-  .bg-light {
+  .navbar-light {
     box-shadow: 0px 1px 3px rgba(40, 68, 88, 0.22);
   }
 }
 
 .btn-primary {
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   background-color: #776FC3;
@@ -406,8 +384,6 @@ footer ul li > a:hover {
 }
 
 .btn-light {
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.3px;
@@ -472,6 +448,10 @@ footer ul li > a:hover {
   color: rgba(87, 74, 151, 0.43);
 }
 
+.dropdown-menu.show {
+  margin-top: -15px;
+}
+
 .btn-link {
   display: block;
   text-align: left;
@@ -481,8 +461,44 @@ footer ul li > a:hover {
   text-decoration: none;
 }
 
-.dropdown-menu.show {
-  margin-top: -15px;
+a.text-primary:focus, a.text-primary:hover {
+  color: #574A97 !important;
+}
+
+.bg-light {
+  background-color: #FFFFFF !important;
+}
+
+.bg-white {
+  background-color: #FCFAFD !important;
+}
+
+.font-secondary {
+  font-family: "Arvo", sans-serif !important;
+}
+
+.text-primary {
+  color: #574A97 !important;
+}
+
+.text-info {
+  color: #776FC3 !important;
+}
+
+.text-secondary {
+  color: #8F8D9A !important;
+}
+
+.text-muted {
+  color: #BDBDBD !important;
+}
+
+.text-dark {
+  color: #284458 !important;
+}
+
+.text-light {
+  color: #FFFFFF !important;
 }
 
 .hero-section {
@@ -501,11 +517,8 @@ footer ul li > a:hover {
 }
 
 .hero-section p {
-  font-style: normal;
-  font-weight: 400;
   font-size: 24px;
   line-height: 38px;
-  color: #8F8D9A;
   margin-bottom: 35px;
 }
 @media screen and (max-width: 992px) {
@@ -526,11 +539,8 @@ footer ul li > a:hover {
 }
 
 .features-section p {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  color: #8F8D9A;
   display: block;
   margin-bottom: 37px;
 }
@@ -577,11 +587,8 @@ footer ul li > a:hover {
 }
 
 .calendar-section p {
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: #8F8D9A;
   padding-bottom: 36px;
 }
 @media screen and (max-width: 992px) {
@@ -601,10 +608,6 @@ footer ul li > a:hover {
   margin-left: 85px;
 }
 
-.calendar-section .dropdown-menu.show {
-  margin-top: 0px;
-}
-
 .extras-section {
   background-image: url("../images/home/extras_bg.png");
   background-repeat: no-repeat;
@@ -617,7 +620,6 @@ footer ul li > a:hover {
 }
 
 .extras-section .card {
-  background: #FFFFFF;
   box-shadow: 0px 0px 40px rgba(210, 241, 255, 0.6);
   border-radius: 30px;
   border: none;
@@ -629,21 +631,9 @@ footer ul li > a:hover {
   }
 }
 
-.price-text {
-  font-family: "Arvo", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #574A97;
-}
-
 .extras-text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #8F8D9A;
 }
 
 .pinspot-img {
@@ -734,7 +724,6 @@ footer ul li > a:hover {
 }
 
 .testimonials-section {
-  background-color: #FCFAFD;
   padding: 115px 0px 86px;
   position: relative;
 }
@@ -746,7 +735,6 @@ footer ul li > a:hover {
 }
 
 .testimonials-section .card-body {
-  background-color: #FFFFFF;
   border-radius: 30px;
   border: none;
   padding-bottom: 68px;
@@ -756,21 +744,10 @@ footer ul li > a:hover {
   letter-spacing: 5px;
 }
 
-.review-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #9F9CAB;
-}
-
 .review-name {
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
-  color: #574A97;
   margin-left: auto;
 }
 .review-name span {
@@ -814,7 +791,6 @@ footer ul li > a:hover {
 }
 
 .question-section {
-  background-color: #FCFAFD;
   padding-bottom: 159px;
 }
 @media screen and (max-width: 992px) {
@@ -824,12 +800,9 @@ footer ul li > a:hover {
 }
 
 .question-title {
-  font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   letter-spacing: 0.2px;
-  color: #574A97;
 }
 .question-title:hover {
   text-decoration: none;
@@ -837,12 +810,9 @@ footer ul li > a:hover {
 }
 
 .question-text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.2px;
-  color: #8F8D9A;
 }
 
 .awards-section {
@@ -854,27 +824,18 @@ footer ul li > a:hover {
 }
 
 .awards-section .card {
-  background: #FFFFFF;
   box-shadow: 0px 4px 25px #574A97;
   border-radius: 30px;
   border: none;
 }
 
 .awards-card-title {
-  font-family: "Arvo", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 23px;
   line-height: 35px;
-  color: #776FC3;
 }
 .awards-card-title span {
-  font-family: "Arvo", sans-serif;
-  font-style: normal;
-  font-weight: 700;
   font-size: 15px;
   line-height: 35px;
-  color: #574A97;
   display: block;
 }
 .awards-card-title:after {
@@ -885,11 +846,8 @@ footer ul li > a:hover {
 }
 
 .awards-card-text {
-  font-style: normal;
-  font-weight: 700;
   font-size: 9px;
   line-height: 13px;
-  color: #4F4F4F;
 }
 
 .footer-logo-pos {

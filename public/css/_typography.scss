@@ -8,11 +8,11 @@
 // Global fonts configuration
 
 html {
-  font-family: $font-family-primary !important;
+  font-family: $font-family-primary!important;
 }
 
 body {
-  font-family: $font-family-primary !important;
+  font-family: $font-family-primary!important;
 }
 
 //
@@ -30,7 +30,7 @@ h1 {
   color: $dark-purple-color;
   margin-bottom: 24px;
   text-transform: capitalize;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     font-size: 22px;
     line-height: 27px;
     margin-bottom: 18px;
@@ -46,10 +46,10 @@ h2{
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  color: $black-color;
+  color: $black-dark-color;
   margin-bottom: 14px;
   text-transform: capitalize;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     font-size: 20px;
     line-height: 36px;
   }
@@ -79,7 +79,7 @@ h6 {
   letter-spacing: 0.2px;
   color: #BDBDBD;
   margin-top: 59px;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     text-align: center;
     margin-top: 28px;
   }
@@ -94,29 +94,13 @@ h6 {
   line-height: 56px;
   margin-bottom: 49px;
   text-transform: capitalize;
-  @include max-screen(992px) {
+  @include max-screen($lg-screen) {
     font-size: 40px;
     line-height: 56px;
     letter-spacing: 0.2px;
     margin-bottom: 23px;
     text-align: left;
   }
-}
-
-.text-primary {
-  color: $dark-purple-color!important;
-}
-
-.text-secondary {
-  color: $gray-color!important;
-}
-
-.text-muted {
-  color: $gray-light-color!important;
-}
-
-.text-dark {
-  color: $black-dark-color!important;
 }
 
 footer {

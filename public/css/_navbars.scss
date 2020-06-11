@@ -10,7 +10,6 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  color: $black-color;
   letter-spacing: 0.2px;
   margin: 32px 20px;
   padding: 0;
@@ -25,9 +24,8 @@
   color: $dark-purple-color;
 }
 
-.bg-light {
-  background-color: #FFFFFF!important;
-  @include max-screen(576px) {
+.navbar-light {
+  @include max-screen($sm-screen) {
     box-shadow: 0px 1px 3px rgba(40, 68, 88, 0.22);
   }
 }
