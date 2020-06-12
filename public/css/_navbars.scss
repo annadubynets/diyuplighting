@@ -14,6 +14,9 @@
   margin: 32px 20px;
   padding: 0;
   display: inline-block;
+  @include max-screen($lg-screen) {
+    margin: 24px 20px;
+  }
 }
 
 .navbar-light .navbar-toggler {

@@ -85,6 +85,12 @@
   color: rgba(87, 74, 151, 0.43);
 }
 
+.dropdown-menu {
+  @include max-screen($lg-screen){
+    border: none;
+  }
+}
+
 .dropdown-menu.show {
   margin-top: -15px;
 }

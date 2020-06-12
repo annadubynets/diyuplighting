@@ -126,6 +126,13 @@ footer ul li > a:hover {
   text-decoration: none;
 }
 
+@media screen and (max-width: 320px) {
+  .col-xss-12 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
 .ui-datepicker .ui-datepicker-title {
   font-style: normal;
   font-weight: 700;
@@ -356,6 +363,11 @@ footer ul li > a:hover {
   padding: 0;
   display: inline-block;
 }
+@media screen and (max-width: 992px) {
+  .navbar-light .navbar-nav .nav-link {
+    margin: 24px 20px;
+  }
+}
 
 .navbar-light .navbar-toggler {
   border-color: transparent;
@@ -451,6 +463,12 @@ footer ul li > a:hover {
 
 .dropdown-item {
   color: rgba(87, 74, 151, 0.43);
+}
+
+@media screen and (max-width: 992px) {
+  .dropdown-menu {
+    border: none;
+  }
 }
 
 .dropdown-menu.show {

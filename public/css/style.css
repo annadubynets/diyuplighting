@@ -363,6 +363,11 @@ footer ul li > a:hover {
   padding: 0;
   display: inline-block;
 }
+@media screen and (max-width: 992px) {
+  .navbar-light .navbar-nav .nav-link {
+    margin: 24px 20px;
+  }
+}
 
 .navbar-light .navbar-toggler {
   border-color: transparent;
@@ -458,6 +463,12 @@ footer ul li > a:hover {
 
 .dropdown-item {
   color: rgba(87, 74, 151, 0.43);
+}
+
+@media screen and (max-width: 992px) {
+  .dropdown-menu {
+    border: none;
+  }
 }
 
 .dropdown-menu.show {
@@ -562,7 +573,7 @@ a.text-primary:focus, a.text-primary:hover {
 .features-section p {
   font-size: 16px;
   line-height: 32px;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 @media screen and (max-width: 992px) {
   .features-section p {
@@ -667,7 +678,6 @@ a.text-primary:focus, a.text-primary:hover {
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 30px;
-  margin-bottom: 23px;
 }
 @media screen and (max-width: 992px) {
   .pinspot-img {
@@ -700,7 +710,6 @@ a.text-primary:focus, a.text-primary:hover {
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 30px;
-  margin-bottom: 6px;
 }
 @media screen and (max-width: 992px) {
   .preview-img {
@@ -711,6 +720,12 @@ a.text-primary:focus, a.text-primary:hover {
     border-radius: 25px;
     margin-bottom: 0px;
   }
+}
+
+.extras-img-position {
+  top: -50px;
+  max-height: 200px;
+  object-fit: scale-down;
 }
 
 .equal, .equal > div[class*=col-] {
@@ -729,13 +744,6 @@ a.text-primary:focus, a.text-primary:hover {
   display: -webkit-flex;
   display: flex;
   flex: 1 0 auto;
-}
-
-.extras-img-position {
-  position: relative;
-  top: -50px;
-  max-height: 200px;
-  object-fit: scale-down;
 }
 
 .testimonials-section {
@@ -761,18 +769,12 @@ a.text-primary:focus, a.text-primary:hover {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
-  margin-left: auto;
-}
-.review-name span {
-  display: block;
-  font-weight: 400;
 }
 
 .testimonials-position {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: relative;
   top: -68px;
 }
 
@@ -839,18 +841,12 @@ a.text-primary:focus, a.text-primary:hover {
 .awards-card-title span {
   font-size: 15px;
   line-height: 35px;
-  display: block;
 }
 .awards-card-title:after {
   content: "";
   display: block;
   height: 1px;
   background-color: #E0E0E0;
-}
-@media screen and (max-width: 360px) {
-  .awards-card-title {
-    font-size: 18px;
-  }
 }
 
 .awards-card-text {
@@ -859,7 +855,6 @@ a.text-primary:focus, a.text-primary:hover {
 }
 
 .footer-logo-pos {
-  position: relative;
   top: 5px;
 }
 

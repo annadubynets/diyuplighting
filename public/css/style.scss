@@ -45,7 +45,7 @@
   p {
     font-size: 16px;
     line-height: 32px;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
     @include max-screen($lg-screen) {
       font-size: 14px;
       line-height: 21px;
@@ -139,7 +139,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 30px;
-  margin-bottom: 23px;
   @include max-screen($lg-screen) {
     background-image: url("../images/home/blue_shading_bg_mobile.svg");
     background-size: cover;
@@ -168,7 +167,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 30px;
-  margin-bottom: 6px;
   @include max-screen($lg-screen) {
     background-image: url("../images/home/blue_shading_bg_mobile.svg");
     background-size: cover;
@@ -179,19 +177,18 @@
   }
 }
 
+.extras-img-position {
+  top: -50px;
+  max-height: 200px;
+  object-fit: scale-down;
+}
+
 .equal, .equal > div[class*='col-'] {
   @include fit-to-parent();
 }
 
 .owl-stage, .owl-stage > div[class*='item'] {
   @include fit-to-parent();
-}
-
-.extras-img-position {
-  position: relative;
-  top: -50px;
-  max-height: 200px;
-  object-fit: scale-down;
 }
 
 .testimonials-section {
@@ -215,18 +212,12 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
-  margin-left: auto;
-  span {
-    display: block;
-    font-weight: 400;
-  }
 }
 
 .testimonials-position {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: relative;
   top: -68px;
 }
 
@@ -290,16 +281,12 @@
   span {
     font-size: 15px;
     line-height: 35px;
-    display: block;
   }
   &:after {
     content: "";
     display: block;
     height: 1px;
     background-color: #E0E0E0;
-  }
-  @include max-screen(360px) {
-    font-size: 18px;
   }
 }
 
@@ -309,7 +296,6 @@
 }
 
 .footer-logo-pos {
-  position: relative;
   top: 5px;
 }
 
