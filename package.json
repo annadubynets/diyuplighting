@@ -1,0 +1,23 @@
+{
+  "name": "diyuplighting",
+  "version": "1.0.0",
+  "description": "DiyUpLighting",
+  "dependencies": {
+    "icon-font-generator": "^2.1.10",
+    "n": "^6.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "generate-fonts": "icon-font-generator --name diy-icon -p diy-icon --csspath public/css/diy-icons.css  public/images/svg-icons/*.svg -o public/fonts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annadubynets/diyuplighting.git"
+  },
+  "author": "Ivan Dubynets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annadubynets/diyuplighting/issues"
+  },
+  "homepage": "https://github.com/annadubynets/diyuplighting#readme"
+}

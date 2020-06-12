@@ -23,3 +23,15 @@ Steps:
 5. Start scss watcher:
 
         ./startSassWatcher.sh
+
+
+### How to re-generate font icons from svgs ###
+
+1. Install nodejs + npm
+2. install packages
+
+        npm install
+
+3. run the font generation action
+
+        npm run generate-fonts
