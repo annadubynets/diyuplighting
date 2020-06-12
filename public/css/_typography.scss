@@ -123,3 +123,10 @@ footer ul{
     }
   }
 }
+
+.col-xss-12  {
+  @include max-screen($xss-screen) {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}

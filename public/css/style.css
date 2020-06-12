@@ -126,6 +126,13 @@ footer ul li > a:hover {
   text-decoration: none;
 }
 
+@media screen and (max-width: 320px) {
+  .col-xss-12 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
 .ui-datepicker .ui-datepicker-title {
   font-style: normal;
   font-weight: 700;
