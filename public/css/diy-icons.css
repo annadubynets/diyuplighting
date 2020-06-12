@@ -1,10 +1,10 @@
 @font-face {
     font-family: "diy-icon";
-    src: url("../fonts/diy-icon.eot?843a0eff9b69c4fbddce4a9f64fc5f4d?#iefix") format("embedded-opentype"),
-url("../fonts/diy-icon.woff2?843a0eff9b69c4fbddce4a9f64fc5f4d") format("woff2"),
-url("../fonts/diy-icon.woff?843a0eff9b69c4fbddce4a9f64fc5f4d") format("woff"),
-url("../fonts/diy-icon.ttf?843a0eff9b69c4fbddce4a9f64fc5f4d") format("truetype"),
-url("../fonts/diy-icon.svg?843a0eff9b69c4fbddce4a9f64fc5f4d#diy-icon") format("svg");
+    src: url("../fonts/diy-icon.eot?d76be6f4ea33704c42b766c4324b9e5f?#iefix") format("embedded-opentype"),
+url("../fonts/diy-icon.woff2?d76be6f4ea33704c42b766c4324b9e5f") format("woff2"),
+url("../fonts/diy-icon.woff?d76be6f4ea33704c42b766c4324b9e5f") format("woff"),
+url("../fonts/diy-icon.ttf?d76be6f4ea33704c42b766c4324b9e5f") format("truetype"),
+url("../fonts/diy-icon.svg?d76be6f4ea33704c42b766c4324b9e5f#diy-icon") format("svg");
 }
 
 i[class^="diy-icon-"]:before, i[class*=" diy-icon-"]:before {

@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "generate-fonts": "icon-font-generator --name diy-icon -p diy-icon --csspath public/css/diy-icons.css  public/images/svg-icons/*.svg -o public/fonts"
+    "generate-fonts": "icon-font-generator --height=1000 --name diy-icon -p diy-icon --csspath public/css/diy-icons.css  public/images/svg-icons/*.svg -o public/fonts"
   },
   "repository": {
     "type": "git",
