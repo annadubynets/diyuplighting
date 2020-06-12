@@ -1,0 +1,17 @@
+@import "variables";
+@import "mixins";
+
+// ------------------------
+// Bootstrap border
+// ------------------------
+
+.rounded-circle {
+  border-radius: 30px!important;
+  width: 87px;
+  height: 87px;
+}
+
+.border-primary {
+  border: 7px solid $dark-purple-color!important;
+  box-shadow: 0px 4px 20px $light-purple-color;
+}

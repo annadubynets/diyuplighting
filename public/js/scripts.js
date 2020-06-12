@@ -1,4 +1,4 @@
-$( "#datepicker" ).datepicker({
+$( ".date-picker" ).datepicker({
     showOtherMonths: true,
     selectOtherMonths: true,
     navigationAsDateFormat: true,

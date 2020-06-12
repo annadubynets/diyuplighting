@@ -68,6 +68,11 @@
   }
 }
 
+.btn-secondary.focus, .btn-secondary:focus {
+  color: rgba(87, 74, 151, 0.43);
+  background-color: $light-white-color;
+}
+
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show>.btn-secondary.dropdown-toggle {

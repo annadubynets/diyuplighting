@@ -12,10 +12,7 @@
 @import "buttons";
 @import "backgrounds";
 @import "texts";
-
-// ------------------------
-// Home page
-// ------------------------
+@import "borders";
 
 .hero-section {
   background-image: url("../images/home/picture_bg.png");
@@ -28,16 +25,15 @@
     background-position: right;
     padding: 67px 0px 71px;
   }
-}
-
-.hero-section p {
-  font-size: 24px;
-  line-height: 38px;
-  margin-bottom: 35px;
-  @include max-screen($lg-screen) {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 28px;
+  p {
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 35px;
+    @include max-screen($lg-screen) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 28px;
+    }
   }
 }
 
@@ -46,17 +42,15 @@
   @include max-screen($lg-screen) {
     padding: 15px 0px 13px;
   }
-}
-
-.features-section p {
-  font-size: 16px;
-  line-height: 32px;
-  display: block;
-  margin-bottom: 37px;
-  @include max-screen($lg-screen) {
-    font-size: 14px;
-    line-height: 21px;
-    margin-bottom: 56px;
+  p {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 37px;
+    @include max-screen($lg-screen) {
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 56px;
+    }
   }
 }
 
@@ -88,18 +82,17 @@
     background-color: $light-blue-color;
     padding: 70px 0px 70px;
   }
-}
-
-.calendar-section p {
-  font-size: 20px;
-  line-height: 30px;
-  padding-bottom: 36px;
-  @include max-screen($lg-screen) {
-    padding-bottom: 0px;
+  p {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 36px;
+    @include max-screen($lg-screen) {
+      padding-bottom: 0px;
+    }
   }
 }
 
-#datepicker {
+.date-picker {
   @include max-screen($lg-screen) {
     margin: 69px 0px;
   }
@@ -117,21 +110,28 @@
   @include max-screen($lg-screen) {
     padding-bottom: 24px;
   }
-}
-
-.extras-section .card {
-  box-shadow: 0px 0px 40px rgba(210, 241, 255, 0.6);
-  border-radius: 30px;
-  border: none;
-  margin-top: 74px;
-  @include max-screen($lg-screen) {
-    margin-bottom: 70px;
+  .card {
+    box-shadow: 0px 0px 40px rgba(210, 241, 255, 0.6);
+    border-radius: 30px;
+    border: none;
+    margin-top: 74px;
+    @include max-screen($lg-screen) {
+      margin-bottom: 70px;
+    }
   }
-}
-
-.extras-text {
-  font-size: 14px;
-  line-height: 21px;
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .btn-primary {
+    border-radius: 20px;
+    padding: 15px 40px;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    top: 27px;
+    margin-top: -47px;
+  }
 }
 
 .pinspot-img {
@@ -179,16 +179,6 @@
   }
 }
 
-.extras-section .btn-primary {
-  border-radius: 20px;
-  padding: 15px 40px;
-  font-size: 16px;
-  line-height: 20px;
-  position: relative;
-  top: 27px;
-  margin-top: -47px;
-}
-
 .equal, .equal > div[class*='col-'] {
   display: -webkit-box;
   display: -moz-box;
@@ -217,21 +207,19 @@
 
 .testimonials-section {
   padding: 115px 0px 86px;
-  position: relative;
   @include max-screen($lg-screen) {
     padding-top: 70px;
     padding-bottom: 0px;
   }
-}
-
-.testimonials-section .card-body {
-  border-radius: 30px;
-  border: none;
-  padding-bottom: 68px;
+  .card-body {
+    border-radius: 30px;
+    border: none;
+    padding-bottom: 68px;
+  }
 }
 
 .star-rating {
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 .review-name {
@@ -259,7 +247,7 @@
   background-repeat: no-repeat;
   background-position: right;
   border-radius: 25px;
-  padding: 24px;
+  padding: 17px;
 }
 
 .review-photo-two-bg {
@@ -268,16 +256,7 @@
   background-repeat: no-repeat;
   background-position: right;
   border-radius: 25px;
-  padding: 24px;
-}
-
-.circle-img {
-  width: 87px;
-  height: 87px;
-  display: inline-block;
-  border: 7px solid $dark-purple-color;
-  box-shadow: 0px 4px 20px $light-purple-color;
-  border-radius: 30px;
+  padding: 17px;
 }
 
 .question-section {
@@ -309,12 +288,11 @@
   background-position: center;
   background-size: cover;
   padding: 97px 0px 84px;
-}
-
-.awards-section .card {
-  box-shadow: 0px 4px 25px $dark-purple-color;
-  border-radius: 30px;
-  border: none;
+  .card {
+    box-shadow: 0px 4px 25px $dark-purple-color;
+    border-radius: 30px;
+    border: none;
+  }
 }
 
 .awards-card-title {
@@ -330,6 +308,9 @@
     display: block;
     height: 1px;
     background-color: #E0E0E0;
+  }
+  @include max-screen(360px) {
+    font-size: 18px;
   }
 }
 
