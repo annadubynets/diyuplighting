@@ -180,27 +180,16 @@
 }
 
 .equal, .equal > div[class*='col-'] {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex:1 0 auto;
+  @include fit-to-parent();
 }
 
 .owl-stage, .owl-stage > div[class*='item'] {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex:1 0 auto;
+  @include fit-to-parent();
 }
 
 .extras-img-position {
   position: relative;
   top: -50px;
-  max-width: 100%;
   max-height: 200px;
   object-fit: scale-down;
 }
