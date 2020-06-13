@@ -1,10 +1,10 @@
 @font-face {
     font-family: "diy-icon";
-    src: url("../fonts/diy-icon.eot?3c51734962ba577a96aa3f86f68515dc?#iefix") format("embedded-opentype"),
-url("../fonts/diy-icon.woff2?3c51734962ba577a96aa3f86f68515dc") format("woff2"),
-url("../fonts/diy-icon.woff?3c51734962ba577a96aa3f86f68515dc") format("woff"),
-url("../fonts/diy-icon.ttf?3c51734962ba577a96aa3f86f68515dc") format("truetype"),
-url("../fonts/diy-icon.svg?3c51734962ba577a96aa3f86f68515dc#diy-icon") format("svg");
+    src: url("../fonts/diy-icon.eot?43a9b0e0928c8f26e1ddc6950ddaf5dd?#iefix") format("embedded-opentype"),
+url("../fonts/diy-icon.woff2?43a9b0e0928c8f26e1ddc6950ddaf5dd") format("woff2"),
+url("../fonts/diy-icon.woff?43a9b0e0928c8f26e1ddc6950ddaf5dd") format("woff"),
+url("../fonts/diy-icon.ttf?43a9b0e0928c8f26e1ddc6950ddaf5dd") format("truetype"),
+url("../fonts/diy-icon.svg?43a9b0e0928c8f26e1ddc6950ddaf5dd#diy-icon") format("svg");
 }
 
 i[class^="diy-icon-"]:before, i[class*=" diy-icon-"]:before {
@@ -24,7 +24,7 @@ i[class^="diy-icon-"]:before, i[class*=" diy-icon-"]:before {
 .diy-icon-car:before {
     content: "\f102";
 }
-.diy-icon-color_lens:before {
+.diy-icon-color-lens:before {
     content: "\f103";
 }
 .diy-icon-event-available:before {
