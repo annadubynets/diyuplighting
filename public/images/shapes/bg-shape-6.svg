@@ -7,14 +7,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="110"
-   height="110"
-   viewBox="0 0 110 110"
-   fill="none"
-   version="1.1"
-   id="svg31"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
    sodipodi:docname="bg-shape-6.svg"
-   inkscape:version="1.0 (4035a4f, 2020-05-01)">
+   id="svg31"
+   version="1.1"
+   fill="none"
+   viewBox="0 0 110 110"
+   height="110"
+   width="110">
   <metadata
      id="metadata35">
     <rdf:RDF>
@@ -23,87 +23,87 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     inkscape:lockguides="true"
-     inkscape:document-rotation="0"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1440"
-     inkscape:window-height="818"
-     id="namedview33"
-     showgrid="false"
-     inkscape:zoom="5.0967742"
-     inkscape:cx="64.854431"
-     inkscape:cy="56.506329"
-     inkscape:window-x="0"
+     inkscape:current-layer="g12"
+     inkscape:window-maximized="0"
      inkscape:window-y="23"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g12" />
+     inkscape:window-x="0"
+     inkscape:cy="56.506329"
+     inkscape:cx="64.854431"
+     inkscape:zoom="5.0967742"
+     showgrid="false"
+     id="namedview33"
+     inkscape:window-height="818"
+     inkscape:window-width="1251"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0"
+     inkscape:lockguides="true" />
   <g
-     filter="url(#filter0_d)"
+     transform="matrix(0.89261378,0,0,0.89181037,-0.76097109,-0.60728538)"
      id="g12"
-     transform="matrix(0.89261378,0,0,0.89181037,-0.76097109,-0.60728538)">
+     filter="url(#filter0_d)">
     <rect
-       x="53.984596"
-       y="-35.136337"
-       width="70.05574"
-       height="70.05574"
-       rx="18.235708"
-       transform="rotate(45)"
-       fill="#776fc3"
+       style="stroke-width:1.0008"
        id="rect10"
-       style="stroke-width:1.0008" />
+       fill="#776fc3"
+       transform="rotate(45)"
+       rx="18.235708"
+       height="70.05574"
+       width="70.05574"
+       y="-35.497894"
+       x="53.623039" />
   </g>
   <defs
      id="defs29">
     <filter
-       id="filter0_d"
-       x="0.85251999"
-       y="0.68095797"
-       width="123.29"
-       height="123.29"
+       color-interpolation-filters="sRGB"
        filterUnits="userSpaceOnUse"
-       color-interpolation-filters="sRGB">
+       height="123.29"
+       width="123.29"
+       y="0.68095797"
+       x="0.85251999"
+       id="filter0_d">
       <feFlood
-         flood-opacity="0"
+         id="feFlood14"
          result="BackgroundImageFix"
-         id="feFlood14" />
+         flood-opacity="0" />
       <feColorMatrix
-         in="SourceAlpha"
-         type="matrix"
+         id="feColorMatrix16"
          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-         id="feColorMatrix16" />
-      <feOffset
-         dy="12.1475"
-         id="feOffset18" />
-      <feGaussianBlur
-         stdDeviation="6.07374"
-         id="feGaussianBlur20" />
-      <feColorMatrix
          type="matrix"
+         in="SourceAlpha" />
+      <feOffset
+         id="feOffset18"
+         dy="12.1475" />
+      <feGaussianBlur
+         id="feGaussianBlur20"
+         stdDeviation="6.07374" />
+      <feColorMatrix
+         id="feColorMatrix22"
          values="0 0 0 0 0.466667 0 0 0 0 0.435294 0 0 0 0 0.764706 0 0 0 0.22 0"
-         id="feColorMatrix22" />
+         type="matrix" />
       <feBlend
-         mode="normal"
-         in2="BackgroundImageFix"
+         id="feBlend24"
          result="effect1_dropShadow"
-         id="feBlend24" />
+         in2="BackgroundImageFix"
+         mode="normal" />
       <feBlend
-         mode="normal"
-         in="SourceGraphic"
-         in2="effect1_dropShadow"
+         id="feBlend26"
          result="shape"
-         id="feBlend26" />
+         in2="effect1_dropShadow"
+         in="SourceGraphic"
+         mode="normal" />
     </filter>
   </defs>
 </svg>
