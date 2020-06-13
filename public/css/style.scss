@@ -54,6 +54,13 @@
   }
 }
 
+.feature-icon {
+  min-height: 128px;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
 .led-uplight-bg {
   background-image: url("../images/home/led_uplight_bg.svg");
   background-repeat: no-repeat;

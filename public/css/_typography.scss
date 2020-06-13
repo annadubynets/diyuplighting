@@ -131,6 +131,10 @@ footer ul{
 // Font sizes
 // ---------------
 
+.font-size-xxl {
+  font-size: 48px;
+}
+
 .font-size-xl {
   font-size: 28px;
 }
@@ -160,8 +164,8 @@ footer ul{
 // -------------------
 
 $colours:
-	"white" $white-color,
-	"light-white" $light-white-color,
+  "white" $white-color,
+  "light-white" $light-white-color,
   "light-purple" $light-purple-color,
   "dark-purple" $dark-purple-color,
   "light-blue" $light-blue-color,
@@ -178,4 +182,9 @@ $colours:
 	.#{nth($i, 1)}-color {
 		color:nth($i, 2);
 	}
+}
+
+i[class^="diy-icon-"], i[class*=" diy-icon-"] {
+  font-family: diy-icon !important;
+  margin: auto;
 }

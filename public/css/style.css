@@ -130,6 +130,10 @@ footer ul li > a:hover {
   }
 }
 
+.font-size-xxl {
+  font-size: 48px;
+}
+
 .font-size-xl {
   font-size: 28px;
 }
@@ -232,6 +236,11 @@ footer ul li > a:hover {
 
 .yellow-color {
   color: #F2C94C;
+}
+
+i[class^=diy-icon-], i[class*=" diy-icon-"] {
+  font-family: diy-icon !important;
+  margin: auto;
 }
 
 .ui-datepicker .ui-datepicker-title {
@@ -592,6 +601,34 @@ a.text-primary:focus, a.text-primary:hover {
   background-color: #FCFAFD !important;
 }
 
+.bg-shape-3 {
+  background-image: url("../images/shapes/bg-shape-3.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-shape-4 {
+  background-image: url("../images/shapes/bg-shape-4.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-shape-5 {
+  background-image: url("../images/shapes/bg-shape-5.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-shape-6 {
+  background-image: url("../images/shapes/bg-shape-6.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .font-secondary {
   font-family: "Arvo", sans-serif !important;
 }
@@ -680,6 +717,13 @@ a.text-primary:focus, a.text-primary:hover {
     font-size: 14px;
     line-height: 21px;
   }
+}
+
+.feature-icon {
+  min-height: 128px;
+  height: 100%;
+  display: flex;
+  position: relative;
 }
 
 .led-uplight-bg {
