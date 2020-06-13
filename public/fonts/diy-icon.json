@@ -1,6 +1,13 @@
 {
-    "icon-facebook": "\\f101",
-    "icon-pinterest": "\\f102",
-    "icon-star": "\\f103",
-    "icon-twitter": "\\f104"
+    "icon-business-center": "\\f101",
+    "icon-car": "\\f102",
+    "icon-color_lens": "\\f103",
+    "icon-event-available": "\\f104",
+    "icon-facebook": "\\f105",
+    "icon-local-pay": "\\f106",
+    "icon-pinterest": "\\f107",
+    "icon-question-answer": "\\f108",
+    "icon-star": "\\f109",
+    "icon-timer": "\\f10a",
+    "icon-twitter": "\\f10b"
 }
