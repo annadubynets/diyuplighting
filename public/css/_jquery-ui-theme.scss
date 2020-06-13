@@ -8,7 +8,7 @@
 .ui-datepicker .ui-datepicker-title {
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: $font-size-sm;
   line-height: 20px;
   color: #6CB3D2;
   background-color: #E5F7FF!important;
@@ -26,7 +26,7 @@
 .ui-datepicker th {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: $font-size-sm;
   line-height: 20px;
   color: $dark-purple-color;
 }
@@ -79,7 +79,7 @@
 .ui-datepicker-prev > span, .ui-datepicker-next > span {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: $font-size-sm;
   line-height: 20px;
   color: #BEBEBE;
   opacity: 0.4;

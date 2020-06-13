@@ -6,7 +6,7 @@
 // ------------------------
 
 .btn-primary {
-  font-size: 14px;
+  font-size: $font-size-xs;
   line-height: 18px;
   background-color: $light-purple-color;
   color: $light-white-color;
@@ -18,7 +18,7 @@
 }
 
 .btn-light {
-  font-size: 14px;
+  font-size: $font-size-xs;
   line-height: 18px;
   letter-spacing: 0.3px;
   text-align: center;
@@ -44,7 +44,7 @@
 }
 
 .btn-lg {
-  font-size: 20px;
+  font-size: $font-size-md;
   line-height: 25px;
   padding: 20px 48px;
   box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
@@ -93,11 +93,6 @@
 
 .dropdown-menu.show {
   margin-top: -15px;
-}
-
-.btn-link {
-  display: block;
-  text-align: left;
 }
 
 .btn-link.focus, .btn-link:focus {

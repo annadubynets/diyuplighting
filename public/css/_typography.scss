@@ -17,10 +17,6 @@ body {
 
 //
 
-header {
-  position: relative;
-}
-
 h1 {
   font-family: $font-family-secondary;
   font-style: normal;
@@ -124,7 +120,7 @@ footer ul{
   }
 }
 
-.col-xss-12  {
+.col-xss-12 {
   @include max-screen($xss-screen) {
     flex: 0 0 100% !important;
     max-width: 100% !important;
@@ -156,7 +152,7 @@ footer ul{
 }
 
 .font-size-xss {
-  font-size: 14px;
+  font-size: 9px;
 }
 
 // -------------------

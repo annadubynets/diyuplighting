@@ -27,11 +27,11 @@
     padding: 67px 0px 71px;
   }
   p {
-    font-size: 24px;
+    font-size: $font-size-lg;
     line-height: 38px;
     margin-bottom: 35px;
     @include max-screen($lg-screen) {
-      font-size: 16px;
+      font-size: $font-size-sm;
       line-height: 24px;
       margin-bottom: 28px;
     }
@@ -44,13 +44,12 @@
     padding: 15px 0px 13px;
   }
   p {
-    font-size: 16px;
+    font-size: $font-size-sm;
     line-height: 32px;
     margin-bottom: 35px;
     @include max-screen($lg-screen) {
-      font-size: 14px;
+      font-size: $font-size-xs;
       line-height: 21px;
-      margin-bottom: 56px;
     }
   }
 }
@@ -84,7 +83,7 @@
     padding: 70px 0px 70px;
   }
   p {
-    font-size: 20px;
+    font-size: $font-size-md;
     line-height: 30px;
     padding-bottom: 36px;
     @include max-screen($lg-screen) {
@@ -121,15 +120,14 @@
     }
   }
   p {
-    font-size: 14px;
+    font-size: $font-size-xs;
     line-height: 21px;
   }
   .btn-primary {
+    font-size: $font-size-sm;
+    line-height: 20px;
     border-radius: 20px;
     padding: 15px 40px;
-    font-size: 16px;
-    line-height: 20px;
-    position: relative;
     top: 27px;
     margin-top: -47px;
   }
@@ -184,6 +182,14 @@
   object-fit: scale-down;
 }
 
+.star-rating {
+  @include max-screen(360px) {
+    @include min-width($xss-screen) {
+      font-size: 12px;
+    }
+  }
+}
+
 .equal, .equal > div[class*='col-'] {
   @include fit-to-parent();
 }
@@ -205,12 +211,8 @@
   }
 }
 
-.star-rating {
-  letter-spacing: 2px;
-}
-
 .review-name {
-  font-size: 14px;
+  font-size: $font-size-xs;
   line-height: 18px;
   letter-spacing: 0.2px;
 }
@@ -248,7 +250,7 @@
 }
 
 .question-title {
-  font-size: 18px;
+  font-size: $font-size-md;
   line-height: 23px;
   letter-spacing: 0.2px;
   &:hover {
@@ -258,7 +260,7 @@
 }
 
 .question-text {
-  font-size: 16px;
+  font-size: $font-size-sm;
   line-height: 28px;
   letter-spacing: 0.2px;
 }
@@ -277,10 +279,10 @@
 }
 
 .awards-card-title {
-  font-size: 23px;
+  font-size: $font-size-lg;
   line-height: 35px;
   span {
-    font-size: 15px;
+    font-size: $font-size-xs;
     line-height: 35px;
   }
   &:after {
@@ -289,10 +291,15 @@
     height: 1px;
     background-color: #E0E0E0;
   }
+  @include max-screen(360px) {
+    @include min-width($xss-screen) {
+      font-size: $font-size-md;
+    }
+  }
 }
 
 .awards-card-text {
-  font-size: 9px;
+  font-size: $font-size-xss;
   line-height: 13px;
 }
 
