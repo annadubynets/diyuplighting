@@ -46,7 +46,7 @@ h2{
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  color: $black-dark-color;
+  color: $dark-black-color;
   margin-bottom: 14px;
   text-transform: capitalize;
   @include max-screen($lg-screen) {
@@ -159,4 +159,27 @@ footer ul{
   font-size: 14px;
 }
 
+// -------------------
+// Colours 
+// -------------------
 
+$colours:
+	"white" $white-color,
+	"light-white" $light-white-color,
+  "light-purple" $light-purple-color,
+  "dark-purple" $dark-purple-color,
+  "light-blue" $light-blue-color,
+  "light-gray" $light-gray-color,
+  "gray" $gray-color,
+  "dark-black" $dark-black-color,
+  "light-white" $light-white-color,
+  "yellow" $yellow-color;
+  
+@each $i in $colours{
+	.#{nth($i, 1)}-background {
+		background-color: nth($i, 2);
+	}
+	.#{nth($i, 1)}-color {
+		color:nth($i, 2);
+	}
+}
