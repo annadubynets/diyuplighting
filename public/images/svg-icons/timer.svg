@@ -8,39 +8,38 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:version="1.0 (4035a4f, 2020-05-01)"
-   sodipodi:docname="timer.svg"
-   id="svg12"
-   version="1.1"
-   fill="none"
-   viewBox="0 0 52 52"
-   height="52"
-   width="52">
+   sodipodi:docname="timer-2.svg"
+   id="svg14"
+   viewBox="0 0 24 24"
+   height="24"
+   width="24"
+   version="1.1">
   <metadata
-     id="metadata18">
+     id="metadata20">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>timer</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs16" />
+     id="defs18" />
   <sodipodi:namedview
-     inkscape:current-layer="svg12"
+     inkscape:current-layer="svg14"
      inkscape:window-maximized="0"
      inkscape:window-y="23"
      inkscape:window-x="0"
-     inkscape:cy="37.683544"
-     inkscape:cx="22.329114"
-     inkscape:zoom="12.153846"
+     inkscape:cy="12.455696"
+     inkscape:cx="12.379747"
+     inkscape:zoom="26.333333"
      showgrid="false"
-     id="namedview14"
-     inkscape:window-height="802"
-     inkscape:window-width="1350"
+     id="namedview16"
+     inkscape:window-height="809"
+     inkscape:window-width="1259"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      guidetolerance="10"
@@ -49,10 +48,10 @@
      borderopacity="1"
      bordercolor="#666666"
      pagecolor="#ffffff" />
+  <title
+     id="title10">timer</title>
   <path
-     id="path10"
-     fill="#574a97"
-     d="M 18.6667,0.345 H 33.3333 V 5.23389 H 18.6667 Z m 9.7778,31.7778 H 23.5556 V 17.4561 h 4.8889 z m 14.7399,-16.1823 3.4712,-3.4711 c -1.0512,-1.2466 -2.2,-2.41997 -3.4467,-3.44663 L 39.7378,12.4939 C 35.9489,9.46277 31.1822,7.65388 26,7.65388 13.85111,7.65388 4,17.505 4,29.6539 c 0,12.1489 9.82667,22 22,22 12.1733,0 22,-9.8511 22,-22 0,-5.1578 -1.8089,-9.9245 -4.8156,-13.7134 z M 8.88888,29.6784 c 0,9.46 7.65112,17.1111 17.11112,17.1111 9.46,0 17.1111,-7.6511 17.1111,-17.1111 0,-9.46 -7.6511,-17.1112 -17.1111,-17.1112 -9.46,0 -17.11112,7.6512 -17.11112,17.1112 z"
-     clip-rule="evenodd"
-     fill-rule="evenodd" />
+     style="stroke-width:1.13562"
+     id="path12"
+     d="m 12.000615,21.723775 q 3.300123,0 5.61566,-2.342792 2.315537,-2.342792 2.315537,-5.642915 0,-3.300122 -2.315537,-5.6156593 -2.315537,-2.3155371 -5.61566,-2.3155371 -3.300123,0 -5.6156602,2.3155371 -2.3155371,2.3155373 -2.3155371,5.6156593 0,3.300123 2.3155371,5.642915 2.3155372,2.342792 5.6156602,2.342792 z M 19.985186,7.4035588 q 0.905092,1.1708282 1.570568,3.0071322 0.665476,1.836303 0.665476,3.327377 0,4.205216 -2.981013,7.213483 -2.981013,3.008268 -7.239602,3.007132 Q 7.7420253,23.957583 4.7610127,20.951551 1.78,17.945555 1.78,13.738068 q 0,-4.2074857 2.9810127,-7.2134821 2.9810126,-3.0059964 7.2396023,-3.007132 1.4377,0 3.327378,0.6915949 1.889678,0.691595 3.060506,1.5966872 l 1.596687,-1.6500615 q 0.851718,0.691595 1.596687,1.5966872 z M 10.883161,14.910032 V 8.0962894 h 2.236043 V 14.910032 Z M 15.407486,0.11058228 V 2.4 H 8.593743 V 0.11058228 Z" />
 </svg>
