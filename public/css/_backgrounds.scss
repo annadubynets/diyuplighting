@@ -8,6 +8,20 @@
   background-color: $white-color!important;
 }
 
+.bg-shape-1 {
+  background-image: url("../images/shapes/bg-shape-1.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-shape-2 {
+  background-image: url("../images/shapes/bg-shape-2.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .bg-shape-3 {
   background-image: url("../images/shapes/bg-shape-3.svg");
   background-size: contain;
