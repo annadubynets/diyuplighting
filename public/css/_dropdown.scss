@@ -1,0 +1,32 @@
+@import "variables";
+@import "mixins";
+
+// ------------------------
+// Bootstrap dropdown
+// ------------------------
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+  background-color: $light-white-color;
+  border-color: transparent!important;
+  color: rgba(87, 74, 151, 0.43);
+}
+
+.dropdown-item {
+  color: rgba(87, 74, 151, 0.43);
+}
+
+.dropdown-menu {
+  @include max-screen($lg-screen){
+    border: none;
+  }
+}
+
+.dropdown-menu.show {
+  margin-top: -15px;
+}
+
+a.text-primary:focus, a.text-primary:hover {
+  color: $dark-purple-color!important;
+}

@@ -562,34 +562,8 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   background-color: #FFFFFF;
 }
 
-.btn-secondary:not(:disabled):not(.disabled).active,
-.btn-secondary:not(:disabled):not(.disabled):active,
-.show > .btn-secondary.dropdown-toggle {
-  background-color: #FFFFFF;
-  border-color: transparent !important;
-  color: rgba(87, 74, 151, 0.43);
-}
-
-.dropdown-item {
-  color: rgba(87, 74, 151, 0.43);
-}
-
-@media screen and (max-width: 992px) {
-  .dropdown-menu {
-    border: none;
-  }
-}
-
-.dropdown-menu.show {
-  margin-top: -15px;
-}
-
 .btn-link.focus, .btn-link:focus {
   text-decoration: none;
-}
-
-a.text-primary:focus, a.text-primary:hover {
-  color: #574A97 !important;
 }
 
 .bg-light {
