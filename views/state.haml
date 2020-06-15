@@ -4,9 +4,10 @@
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{charset: "UTF-8"}/
     %meta{content: "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0", name: "viewport"}/
-    %meta{content: "ie=edge", "http-equiv" => "X-UA-C\n    ompatible"}/
-    %title Diy up lighting
+    %meta{content: "ie=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title State
     %link{href: "css/style.css", rel: "stylesheet"}/
+    %link{href: "css/state.css", rel: "stylesheet"}/
   %body
     %header
       %nav.navbar.navbar-expand-lg.navbar-light.bg-light
@@ -90,6 +91,159 @@
                 %a.dropdown-item{href: "#"} Another action
                 %a.dropdown-item{href: "#"} Something else here
             %a.btn.btn-primary.font-weight-bold.btn-lg{href: "#", role: "button"} Check Availability
+    %section.venues-section
+      %h2 So Far, DIY Uplighting has provided rental LED lights for the following venues and cities in Colorado:
+      %nav
+        #nav-tab.nav.nav-tabs{role: "tablist"}
+          %a#nav-venues-tab.nav-item.nav-link.active{"aria-controls" => "nav-venues", "aria-selected" => "true", "data-toggle" => "tab", href: "#nav-venues", role: "tab"} Venues
+          %a#nav-cities-tab.nav-item.nav-link.ml-5{"aria-controls" => "nav-cities", "aria-selected" => "false", "data-toggle" => "tab", href: "#nav-cities", role: "tab"} Cities
+      #nav-tabContent.tab-content
+        #nav-venues.tab-pane.fade.show.active{"aria-labelledby" => "nav-venues-tab", role: "tabpanel"}
+          .row
+            .col-lg-4
+              %p.text-secondary.font-weight-normal
+                Clarion Hotel in Colorado Springs, CO
+                Tivoli, In The Turnhalle Opera House (Auraria Campus) in Denver, CO
+                Cielo At Castle Pines in Castle Pines, CO
+                Kirk Hall Douglas County Fairgrounds in Castle Rock, CO
+                Infinite Monkey Theorem Winery in Denver, CO
+                Denver Academy in Denver, CO
+                Roxbourough Room @ Arrowhead Golf Club in Littleton, CO
+                Denver City Park Pavilion in Denver, CO
+                The Curtis Ballroom in Greenwood Village, CO
+                Lakewood Country Club in Lakewood, CO
+                Stonebrook Manor in Thornton, CO
+                Lala's Wine Bar in Denver, CO
+                Ppa Event Center in Denver, CO
+                Infinite Monkey Theorem Winery in Denver, CO
+                Crooked Willow Farms in Larkspur, CO
+                Glenmoor Country Club in Greenwood Village, CO
+                Briarhurst Manor Estate in Manitou Springs, CO
+                Daniels And Fisher Clocktower in Denver, CO
+                Redstone Innq in Redstone, CO
+                Stone Mountain Lodge in Lyons, CO
+                Dunton Hot Springs in Dolores, CO
+                in Centennial, CO
+                Colorado Springs City Auditorium in Colorado Springs, CO
+                Residential Home in Boulder, CO
+                Hyatt Regency in Denver, CO
+            .col-lg-4
+              %p.text-secondary.font-weight-normal
+                Double Tree in Aurora, CO
+                Radiance Church in Commerce City, CO
+                Terrace Gardens in Ken Caryl, CO
+                Embassy Suites Dtc in Centennial, CO
+                The Albany in Pueblo, CO
+                Noahs Event Center in Westminster , CO
+                Aj's At Walkingstick in Pueblo, CO
+                Christ The King Catholic Church Ballard Hall in Denver, CO
+                Hotel Elegante in Colorado Springs, CO
+                Stonebrook in Thornton , CO
+                Blackstone Country Club Wedding in Aurora, CO
+                Blackstone Country Club Wedding in Aurora, CO
+                Hiwan Golf C Lub in Evergreen, CO
+                Doubletree Hotel in Aurora, CO
+                Crowne Plaza Hotel in Denver, CO
+                Kokis Event Center in Commerce City, CO
+                Residence in Lyons, CO
+                in Colorado Springs, CO
+                Crooked Willow Farms in Larkspur, CO
+                Wedgewood At Bouldder Creek in Boulder, CO
+                13661 S. Van Horn in Selma, CO
+                Du in Denver, CO
+                The Pines @ Genesee in Golden , CO
+                Restaurant National in Denver, CO
+                Colorado Convention Center in Denver, CO
+                The Denver Clock Tower in Denver, CO
+                Brookside Garden in Berthoud, CO
+            .col-lg-4
+              %p.text-secondary.font-weight-normal
+                La Foret/ Ingles Hall in Colorado Springs, CO
+                Barn in Fowler, CO
+                Club At Flying Horse in Colorado Springs, CO
+                Tivoli Turnhalle in Denver, CO
+                Timber Ridge in Keystone, CO
+                Crystal Rose in Denver, CO
+                Elk Trace Bed And Breakfast in Pagosa Springs, CO
+                Denver Convention Center in Denver, CO
+                Ritz Carlton Bachelor Gulch in Beaver Creek, CO
+                Space Gallery in Denver, CO
+                Tivoli Turnhalle in Denver, CO
+                Club At Rolling Hills in Golden, CO
+                The Grange in Castle Rock, CO
+        #nav-cities.tab-pane.fade{"aria-labelledby" => "nav-cities-tab", role: "tabpanel"}
+          .row
+            .col-lg-4
+              %p.text-secondary.font-weight-normal
+                Clarion Hotel in Colorado Springs, CO
+                Tivoli, In The Turnhalle Opera House (Auraria Campus) in Denver, CO
+                Cielo At Castle Pines in Castle Pines, CO
+                Kirk Hall Douglas County Fairgrounds in Castle Rock, CO
+                Infinite Monkey Theorem Winery in Denver, CO
+                Denver Academy in Denver, CO
+                Roxbourough Room @ Arrowhead Golf Club in Littleton, CO
+                Denver City Park Pavilion in Denver, CO
+                The Curtis Ballroom in Greenwood Village, CO
+                Lakewood Country Club in Lakewood, CO
+                Stonebrook Manor in Thornton, CO
+                Lala's Wine Bar in Denver, CO
+                Ppa Event Center in Denver, CO
+                Infinite Monkey Theorem Winery in Denver, CO
+                Crooked Willow Farms in Larkspur, CO
+                Glenmoor Country Club in Greenwood Village, CO
+                Briarhurst Manor Estate in Manitou Springs, CO
+                Daniels And Fisher Clocktower in Denver, CO
+                Redstone Innq in Redstone, CO
+                Stone Mountain Lodge in Lyons, CO
+                Dunton Hot Springs in Dolores, CO
+                in Centennial, CO
+                Colorado Springs City Auditorium in Colorado Springs, CO
+                Residential Home in Boulder, CO
+                Hyatt Regency in Denver, CO
+            .col-lg-4
+              %p.text-secondary.font-weight-normal
+                Double Tree in Aurora, CO
+                Radiance Church in Commerce City, CO
+                Terrace Gardens in Ken Caryl, CO
+                Embassy Suites Dtc in Centennial, CO
+                The Albany in Pueblo, CO
+                Noahs Event Center in Westminster , CO
+                Aj's At Walkingstick in Pueblo, CO
+                Christ The King Catholic Church Ballard Hall in Denver, CO
+                Hotel Elegante in Colorado Springs, CO
+                Stonebrook in Thornton , CO
+                Blackstone Country Club Wedding in Aurora, CO
+                Blackstone Country Club Wedding in Aurora, CO
+                Hiwan Golf C Lub in Evergreen, CO
+                Doubletree Hotel in Aurora, CO
+                Crowne Plaza Hotel in Denver, CO
+                Kokis Event Center in Commerce City, CO
+                Residence in Lyons, CO
+                in Colorado Springs, CO
+                Crooked Willow Farms in Larkspur, CO
+                Wedgewood At Bouldder Creek in Boulder, CO
+                13661 S. Van Horn in Selma, CO
+                Du in Denver, CO
+                The Pines @ Genesee in Golden , CO
+                Restaurant National in Denver, CO
+                Colorado Convention Center in Denver, CO
+                The Denver Clock Tower in Denver, CO
+                Brookside Garden in Berthoud, CO
+            .col-lg-4
+              %p.text-secondary.font-weight-normal
+                La Foret/ Ingles Hall in Colorado Springs, CO
+                Barn in Fowler, CO
+                Club At Flying Horse in Colorado Springs, CO
+                Tivoli Turnhalle in Denver, CO
+                Timber Ridge in Keystone, CO
+                Crystal Rose in Denver, CO
+                Elk Trace Bed And Breakfast in Pagosa Springs, CO
+                Denver Convention Center in Denver, CO
+                Ritz Carlton Bachelor Gulch in Beaver Creek, CO
+                Space Gallery in Denver, CO
+                Tivoli Turnhalle in Denver, CO
+                Club At Rolling Hills in Golden, CO
+                The Grange in Castle Rock, CO
     %section.extras-section
       .container
         .row.equal
