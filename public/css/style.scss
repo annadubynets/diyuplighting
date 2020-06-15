@@ -41,7 +41,7 @@
 .features-section {
   padding: 70px 0px 106px;
   @include max-screen($lg-screen) {
-    padding: 15px 0px 13px;
+    padding: 35px 0px 13px;
   }
   p {
     font-size: $font-size-sm;
@@ -62,13 +62,8 @@
 }
 
 .led-uplight-bg {
-  background-image: url("../images/home/led_uplight_bg.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  top: 40px;
   @include max-screen($lg-screen) {
-    background-position: top;
-    top: 0px;
+    background-position: center 80px;
     margin-bottom: 70px;
   }
 }
@@ -140,49 +135,6 @@
   }
 }
 
-.pinspot-img {
-  background-image: url("../images/home/blue_shading_bg.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 30px;
-  @include max-screen($lg-screen) {
-    background-image: url("../images/home/blue_shading_bg_mobile.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    border-radius: 25px;
-    margin-bottom: 0px;
-  }
-}
-
-.pngwing-img {
-  background-image: url("../images/home/blue_shading_bg_2.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  @include max-screen($lg-screen) {
-    background-image: url("../images/home/blue_shading_bg_mobile.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    border-radius: 25px;
-  }
-}
-
-.preview-img {
-  background-image: url("../images/home/blue_shading_bg_3.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 30px;
-  @include max-screen($lg-screen) {
-    background-image: url("../images/home/blue_shading_bg_mobile.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    border-radius: 25px;
-    margin-bottom: 0px;
-  }
-}
-
 .extras-img-position {
   top: -50px;
   max-height: 200px;
@@ -232,20 +184,6 @@
 }
 
 .review-photo-bg {
-  background-image: url("../images/home/review_photo_bg.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  border-radius: 25px;
-  padding: 17px;
-}
-
-.review-photo-two-bg {
-  background-image: url("../images/home/review_photo_two_bg.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  border-radius: 25px;
   padding: 17px;
 }
 

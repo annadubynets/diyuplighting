@@ -49,3 +49,36 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.bg-shape-7 {
+  background-image: url("../images/shapes/bg-shape-7.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.bg-shape-8 {
+  background-image: url("../images/shapes/bg-shape-8.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.bg-shape-9 {
+  background-image: url("../images/shapes/bg-shape-9.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.bg-shape-lg {
+  @include max-screen($lg-screen) {
+    background-image: url("../images/shapes/bg-shape-lg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 25px;
+  }
+}
+
+

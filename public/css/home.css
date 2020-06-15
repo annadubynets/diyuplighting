@@ -600,6 +600,20 @@ a.text-primary:focus, a.text-primary:hover {
   background-color: #FCFAFD !important;
 }
 
+.bg-shape-1 {
+  background-image: url("../images/shapes/bg-shape-1.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-shape-2 {
+  background-image: url("../images/shapes/bg-shape-2.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .bg-shape-3 {
   background-image: url("../images/shapes/bg-shape-3.svg");
   background-size: contain;
@@ -626,6 +640,37 @@ a.text-primary:focus, a.text-primary:hover {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.bg-shape-7 {
+  background-image: url("../images/shapes/bg-shape-7.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.bg-shape-8 {
+  background-image: url("../images/shapes/bg-shape-8.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.bg-shape-9 {
+  background-image: url("../images/shapes/bg-shape-9.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .bg-shape-lg {
+    background-image: url("../images/shapes/bg-shape-lg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 25px;
+  }
 }
 
 .font-secondary {

@@ -18,26 +18,23 @@ i[class^="diy-icon-"]:before, i[class*=" diy-icon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.diy-icon-business-center:before {
-    content: "\f101";
+.diy-icon-color-lens:before {
+    content: "\f103";
+}
+.diy-icon-timer:before {
+    content: "\f10a";
 }
 .diy-icon-car:before {
     content: "\f102";
 }
-.diy-icon-color-lens:before {
-    content: "\f103";
+.diy-icon-business-center:before {
+    content: "\f101";
 }
 .diy-icon-event-available:before {
     content: "\f104";
 }
-.diy-icon-facebook:before {
-    content: "\f105";
-}
 .diy-icon-local-pay:before {
     content: "\f106";
-}
-.diy-icon-pinterest:before {
-    content: "\f107";
 }
 .diy-icon-question-answer:before {
     content: "\f108";
@@ -45,9 +42,12 @@ i[class^="diy-icon-"]:before, i[class*=" diy-icon-"]:before {
 .diy-icon-star:before {
     content: "\f109";
 }
-.diy-icon-timer:before {
-    content: "\f10a";
+.diy-icon-facebook:before {
+    content: "\f105";
 }
 .diy-icon-twitter:before {
     content: "\f10b";
+}
+.diy-icon-pinterest:before {
+    content: "\f107";
 }
