@@ -8,7 +8,7 @@ $( ".date-picker" ).datepicker({
                  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
 });
 
-$('.owl-carousel').owlCarousel({
+$('.testimonials-section .owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -25,4 +25,23 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+$('.gallery-section .owl-carousel').owlCarousel({
+    stagePadding: 50,
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+
 
