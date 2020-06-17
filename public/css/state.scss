@@ -18,7 +18,10 @@
 @import "gallery";
 
 .venues-section {
-  padding: 44px 0px 130px;
+  padding: 44px 0px;
+  h2 {
+    margin-bottom: 36px;
+  }
   p {
     font-size: $font-size-sm;
     line-height: 22px;
@@ -27,29 +30,43 @@
       line-height: 21px;
     }
   }
+  @include max-screen($lg-screen) {
+    padding: 24px 0px 44px;
+  }
 }
 
-#summary p.collapse:not(.show) {
-  height: 42px !important;
-  overflow: hidden;
+#nav-venues {
+  .multi-collapse:not(.show) {
+    @include min-width($lg-screen) {
+      display: block;
+    }
+  }
 
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  .view-more-venues {
+    margin-top: 26px;
+    @include min-width($lg-screen) {
+      display: none;
+    }
+  }
 }
 
-#summary p.collapsing {
-  min-height: 42px !important;
-}
+#nav-cities {
+  .multi-collapse:not(.show) {
+    @include min-width(992px) {
+      display: block;
+    }
+  }
 
-.view-more-venues {
-  @include min-width(992px) {
-    display: none;
+  .view-more-cities {
+    margin-top: 26px;
+    @include min-width(992px) {
+      display: none;
+    }
   }
 }
 
 .gallery-section {
-  padding: 46px 0px 23px;
+  padding: 46px 0px 30px;
   h1 {
     margin-bottom: 47px;
   }

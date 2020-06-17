@@ -809,7 +809,7 @@ a.text-primary:focus, a.text-primary:hover {
 .extras-section {
   background-image: url("../images/home/extras_bg.png");
   background-repeat: no-repeat;
-  padding: 70px 0px 106px;
+  padding: 50px 0px 106px;
 }
 @media screen and (max-width: 992px) {
   .extras-section {
