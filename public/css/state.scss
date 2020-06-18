@@ -14,13 +14,101 @@
 @import "texts";
 @import "borders";
 @import "diy-icons.css";
+@import "dropdowns";
 @import "tabs";
+@import "gallery";
 
 .venues-section {
-  padding: 44px 130px;
+  padding: 44px 0px;
+  h2 {
+    margin-bottom: 36px;
+  }
   p {
-    font-size: 16px;
+    font-size: $font-size-sm;
     line-height: 22px;
+    @include max-screen($lg-screen) {
+      font-size: 12px;
+      line-height: 21px;
+    }
+  }
+  @include max-screen($lg-screen) {
+    padding: 24px 0px 44px;
   }
 }
+
+#nav-venues {
+  .multi-collapse:not(.show) {
+    @include min-width($lg-screen) {
+      display: block;
+    }
+  }
+  .view-more-venues {
+    margin-top: 26px;
+    @include min-width($lg-screen) {
+      display: none;
+    }
+  }
+}
+
+#nav-cities {
+  .multi-collapse:not(.show) {
+    @include min-width(992px) {
+      display: block;
+    }
+  }
+  .view-more-cities {
+    margin-top: 26px;
+    @include min-width(992px) {
+      display: none;
+    }
+  }
+}
+
+.gallery-section {
+  padding: 46px 0px 30px;
+  h1 {
+    margin-bottom: 47px;
+  }
+  .owl-carousel {
+    .owl-item img {
+      width: 100%!important;
+    }
+  }
+  button.owl-prev, button.owl-next {
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    margin-top: -20px;
+  }
+  button.owl-prev span, button.owl-next span {
+    width: 24px;
+    height: 24px;
+    color: $dark-purple-color;
+    margin: 0 5px;
+    @include max-screen($xl-screen) {
+      display: none;
+    }
+  }
+  .owl-dot {
+    border: none;
+    background-color: transparent;
+  }
+  .owl-dot span {
+    width: 10px;
+    height: 10px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 12px;
+  }
+  .owl-dot.active span {
+    background-color: $light-purple-color;
+  }
+}
+
+
+
+
+
+
 
