@@ -74,13 +74,13 @@
       width: 100%!important;
     }
   }
-  #gallery-nav > button.owl-prev, #gallery-nav > button.owl-next {
+  button.owl-prev, button.owl-next {
     border: none;
     background-color: transparent;
     font-size: 40px;
     margin-top: -20px;
   }
-  #gallery-nav > button.owl-prev span, #gallery-nav > button.owl-next span {
+  button.owl-prev span, button.owl-next span {
     width: 24px;
     height: 24px;
     color: $dark-purple-color;
@@ -89,11 +89,11 @@
       display: none;
     }
   }
-  #gallery-dot > .owl-dot {
+  .owl-dot {
     border: none;
     background-color: transparent;
   }
-  #gallery-dot > .owl-dot span {
+  .owl-dot span {
     width: 10px;
     height: 10px;
     background-color: #C4C4C4;
@@ -101,7 +101,7 @@
     display: inline-block;
     margin: 0 12px;
   }
-  #gallery-dot > .owl-dot.active span {
+  .owl-dot.active span {
     background-color: $light-purple-color;
   }
 }

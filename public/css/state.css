@@ -776,28 +776,28 @@ a:not([href]) {
 .gallery-section .owl-carousel .owl-item img {
   width: 100% !important;
 }
-.gallery-section #gallery-nav > button.owl-prev, .gallery-section #gallery-nav > button.owl-next {
+.gallery-section button.owl-prev, .gallery-section button.owl-next {
   border: none;
   background-color: transparent;
   font-size: 40px;
   margin-top: -20px;
 }
-.gallery-section #gallery-nav > button.owl-prev span, .gallery-section #gallery-nav > button.owl-next span {
+.gallery-section button.owl-prev span, .gallery-section button.owl-next span {
   width: 24px;
   height: 24px;
   color: #574A97;
   margin: 0 5px;
 }
 @media screen and (max-width: 1200px) {
-  .gallery-section #gallery-nav > button.owl-prev span, .gallery-section #gallery-nav > button.owl-next span {
+  .gallery-section button.owl-prev span, .gallery-section button.owl-next span {
     display: none;
   }
 }
-.gallery-section #gallery-dot > .owl-dot {
+.gallery-section .owl-dot {
   border: none;
   background-color: transparent;
 }
-.gallery-section #gallery-dot > .owl-dot span {
+.gallery-section .owl-dot span {
   width: 10px;
   height: 10px;
   background-color: #C4C4C4;
@@ -805,7 +805,7 @@ a:not([href]) {
   display: inline-block;
   margin: 0 12px;
 }
-.gallery-section #gallery-dot > .owl-dot.active span {
+.gallery-section .owl-dot.active span {
   background-color: #776FC3;
 }
 
