@@ -101,9 +101,16 @@
   }
 }
 
+.date-picker-height {
+  height: 310px;
+  @include max-screen($lg-screen) {
+    height: 400px;
+  }
+}
+
 .qty-dropdown::after {
   color: rgba(87, 74, 151, 0.46);
-  margin-left: 85px;
+  margin-left: 85px!important;
 }
 
 .extras-section {
@@ -169,7 +176,6 @@
     .owl-nav button.owl-prev {
       display: none;
     }
-
     .owl-nav button.owl-next {
       background-image: url("../images/home/carousel_next_icon.svg");
       background-repeat: no-repeat;
@@ -188,6 +194,22 @@
       @include max-screen($xl-screen) {
         display: none;
       }
+    }
+    .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      background-color: #C4C4C4;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 10px;
+    }
+    .owl-dots {
+      text-align: left;
+      position: relative;
+      top: -40px;
+    }
+    .owl-dots .owl-dot.active span {
+      background-color: $light-purple-color;
     }
   }
 }

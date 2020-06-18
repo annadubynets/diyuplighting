@@ -383,30 +383,6 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   padding-left: 0 !important;
 }
 
-.owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  background-color: #C4C4C4;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.owl-dots {
-  text-align: left;
-  position: relative;
-  top: -40px;
-}
-
-.owl-dots .owl-dot.active span {
-  background-color: #776FC3;
-}
-
-.owl-carousel .owl-item img {
-  display: inline-block;
-  width: auto;
-}
-
 .owl-stage, .owl-stage > div[class*=owl-item] {
   display: -webkit-box;
   display: -moz-box;
@@ -414,6 +390,11 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   display: -webkit-flex;
   display: flex;
   flex: 1 0 auto;
+}
+
+.owl-carousel .owl-item img {
+  display: inline-block;
+  width: auto;
 }
 
 .card {
@@ -801,9 +782,18 @@ a.text-primary:focus, a.text-primary:hover {
   }
 }
 
+.date-picker-height {
+  height: 310px;
+}
+@media screen and (max-width: 992px) {
+  .date-picker-height {
+    height: 400px;
+  }
+}
+
 .qty-dropdown::after {
   color: rgba(87, 74, 151, 0.46);
-  margin-left: 85px;
+  margin-left: 85px !important;
 }
 
 .extras-section {
@@ -898,6 +888,22 @@ a.text-primary:focus, a.text-primary:hover {
   .testimonials-section .owl-carousel .owl-nav button.owl-next {
     display: none;
   }
+}
+.testimonials-section .owl-carousel .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px;
+}
+.testimonials-section .owl-carousel .owl-dots {
+  text-align: left;
+  position: relative;
+  top: -40px;
+}
+.testimonials-section .owl-carousel .owl-dots .owl-dot.active span {
+  background-color: #776FC3;
 }
 
 .review-name {

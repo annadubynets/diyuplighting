@@ -27,19 +27,23 @@ $('.testimonials-section .owl-carousel').owlCarousel({
 })
 
 $('.gallery-section .owl-carousel').owlCarousel({
-    stagePadding: 50,
     loop:true,
-    margin:10,
+    margin:20,
     nav:true,
+    navContainer: '#gallery-nav',
+    dotsContainer: '#gallery-dot',
     responsive:{
         0:{
             items:1,
+            stagePadding:100,
         },
         600:{
-            items:2
+            items:2,
+            stagePadding:100,
         },
         1000:{
-            items:2
+            items:3,
+            stagePadding:100,
         }
     }
 })

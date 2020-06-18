@@ -383,30 +383,6 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   padding-left: 0 !important;
 }
 
-.owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  background-color: #C4C4C4;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.owl-dots {
-  text-align: left;
-  position: relative;
-  top: -40px;
-}
-
-.owl-dots .owl-dot.active span {
-  background-color: #776FC3;
-}
-
-.owl-carousel .owl-item img {
-  display: inline-block;
-  width: auto;
-}
-
 .owl-stage, .owl-stage > div[class*=owl-item] {
   display: -webkit-box;
   display: -moz-box;
@@ -414,6 +390,11 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   display: -webkit-flex;
   display: flex;
   flex: 1 0 auto;
+}
+
+.owl-carousel .owl-item img {
+  display: inline-block;
+  width: auto;
 }
 
 .card {
@@ -678,6 +659,32 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   box-shadow: 0px 4px 20px #776FC3;
 }
 
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: #FFFFFF;
+  border-color: transparent !important;
+  color: rgba(87, 74, 151, 0.43);
+}
+
+.dropdown-item {
+  color: rgba(87, 74, 151, 0.43);
+}
+
+@media screen and (max-width: 992px) {
+  .dropdown-menu {
+    border: none;
+  }
+}
+
+.dropdown-menu.show {
+  margin-top: -15px;
+}
+
+a.text-primary:focus, a.text-primary:hover {
+  color: #574A97 !important;
+}
+
 .nav-tabs .nav-link {
   font-weight: normal;
   font-size: 20px;
@@ -769,41 +776,37 @@ a:not([href]) {
 .gallery-section .owl-carousel .owl-item img {
   width: 100% !important;
 }
-.gallery-section .owl-carousel .owl-dots {
-  text-align: left;
-  position: relative;
-  top: 80px;
+.gallery-section #gallery-nav > button.owl-prev, .gallery-section #gallery-nav > button.owl-next {
+  border: none;
+  background-color: transparent;
+  font-size: 40px;
+  margin-top: -20px;
 }
-@media screen and (max-width: 576px) {
-  .gallery-section .owl-carousel .owl-dots {
-    top: 130px;
-  }
-}
-.gallery-section .owl-carousel .owl-nav button.owl-next {
-  background-image: url("public/images/state/arrow_next.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.gallery-section #gallery-nav > button.owl-prev span, .gallery-section #gallery-nav > button.owl-next span {
   width: 24px;
   height: 24px;
   color: #574A97;
+  margin: 0 5px;
 }
 @media screen and (max-width: 1200px) {
-  .gallery-section .owl-carousel .owl-nav button.owl-next {
+  .gallery-section #gallery-nav > button.owl-prev span, .gallery-section #gallery-nav > button.owl-next span {
     display: none;
   }
 }
-.gallery-section .owl-carousel .owl-nav button.owl-prev {
-  background-image: url("public/images/state/arrow_prev.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 24px;
-  height: 24px;
-  color: #574A97;
+.gallery-section #gallery-dot > .owl-dot {
+  border: none;
+  background-color: transparent;
 }
-@media screen and (max-width: 1200px) {
-  .gallery-section .owl-carousel .owl-nav button.owl-prev {
-    display: none;
-  }
+.gallery-section #gallery-dot > .owl-dot span {
+  width: 10px;
+  height: 10px;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 12px;
+}
+.gallery-section #gallery-dot > .owl-dot.active span {
+  background-color: #776FC3;
 }
 
 /*# sourceMappingURL=state.css.map */

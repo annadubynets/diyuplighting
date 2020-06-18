@@ -142,29 +142,11 @@
   padding-left: 0!important;
 }
 
-.owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  background-color: #C4C4C4;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 10px;
-}
-.owl-dots {
-  text-align: left;
-  position: relative;
-  top: -40px;
-}
-
-.owl-dots .owl-dot.active span {
-  background-color: $light-purple-color;
+.owl-stage, .owl-stage > div[class*='owl-item'] {
+  @include fit-to-parent();
 }
 
 .owl-carousel .owl-item img {
   display: inline-block;
   width: auto;
-}
-
-.owl-stage, .owl-stage > div[class*='owl-item'] {
-  @include fit-to-parent();
 }

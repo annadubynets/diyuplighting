@@ -14,6 +14,7 @@
 @import "texts";
 @import "borders";
 @import "diy-icons.css";
+@import "dropdowns";
 @import "tabs";
 @import "gallery";
 
@@ -41,7 +42,6 @@
       display: block;
     }
   }
-
   .view-more-venues {
     margin-top: 26px;
     @include min-width($lg-screen) {
@@ -56,7 +56,6 @@
       display: block;
     }
   }
-
   .view-more-cities {
     margin-top: 26px;
     @include min-width(992px) {
@@ -74,38 +73,42 @@
     .owl-item img {
       width: 100%!important;
     }
-    .owl-dots {
-      text-align: left;
-      position: relative;
-      top: 80px;
-      @include max-screen($sm-screen) {
-        top: 130px;
-      }
-    }
-    .owl-nav button.owl-next {
-      background-image: url("public/images/state/arrow_next.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 24px;
-      height: 24px;
-      color: $dark-purple-color;
-      @include max-screen($xl-screen) {
-        display: none;
-      }
-    }
-    .owl-nav button.owl-prev {
-      background-image: url("public/images/state/arrow_prev.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 24px;
-      height: 24px;
-      color: $dark-purple-color;
-      @include max-screen($xl-screen) {
-        display: none;
-      }
+  }
+  #gallery-nav > button.owl-prev, #gallery-nav > button.owl-next {
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    margin-top: -20px;
+  }
+  #gallery-nav > button.owl-prev span, #gallery-nav > button.owl-next span {
+    width: 24px;
+    height: 24px;
+    color: $dark-purple-color;
+    margin: 0 5px;
+    @include max-screen($xl-screen) {
+      display: none;
     }
   }
+  #gallery-dot > .owl-dot {
+    border: none;
+    background-color: transparent;
+  }
+  #gallery-dot > .owl-dot span {
+    width: 10px;
+    height: 10px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 12px;
+  }
+  #gallery-dot > .owl-dot.active span {
+    background-color: $light-purple-color;
+  }
 }
+
+
+
+
 
 
 
