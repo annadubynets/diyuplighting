@@ -28,14 +28,15 @@ $('.testimonials-section .owl-carousel').owlCarousel({
 
 $('.gallery-section .owl-carousel').owlCarousel({
     loop:true,
-    margin:20,
+    margin:10,
     nav:true,
+    center: true,
     navContainer: '#gallery-nav',
     dotsContainer: '#gallery-dot',
     responsive:{
         0:{
             items:1,
-            stagePadding:100,
+            stagePadding:40,
         },
         600:{
             items:2,
@@ -47,5 +48,18 @@ $('.gallery-section .owl-carousel').owlCarousel({
         }
     }
 })
+
+$('.gallery-section .owl-carousel').on('changed.owl.carousel', function(event) {
+    showPageDescription();
+
+});
+function showPageDescription() {
+    var center = $('.gallery-section .owl-carousel .owl-item.active.center .item');
+    console.log(center.attr('data-description-id'));
+    $('.gallery-description').hide();
+    $('#'+center.attr('data-description-id')).show();
+}
+showPageDescription();
+
 
 

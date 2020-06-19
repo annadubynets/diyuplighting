@@ -64,7 +64,7 @@
 
 .led-uplight-bg {
   @include max-screen($lg-screen) {
-    background-position: center 80px;
+    background-position: center 80px!important;
     margin-bottom: 70px;
   }
 }

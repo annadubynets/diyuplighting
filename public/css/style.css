@@ -741,7 +741,7 @@ a.text-primary:focus, a.text-primary:hover {
 
 @media screen and (max-width: 992px) {
   .led-uplight-bg {
-    background-position: center 80px;
+    background-position: center 80px !important;
     margin-bottom: 70px;
   }
 }
