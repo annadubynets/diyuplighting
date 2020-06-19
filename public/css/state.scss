@@ -42,11 +42,26 @@
       display: block;
     }
   }
-  .view-more-venues {
+  .view-more-venues, .view-less {
     margin-top: 26px;
     @include min-width($lg-screen) {
-      display: none;
+      display: none!important;
     }
+  }
+  a.view-more-venues.collapsed  {
+    display: block;
+  }
+
+  a.view-more-venues:not(.collapsed)  {
+    display: none;
+  }
+
+  a.view-less.collapsed  {
+    display: none;
+  }
+
+  a.view-less:not(.collapsed)  {
+    display: block;
   }
 }
 
@@ -56,11 +71,26 @@
       display: block;
     }
   }
-  .view-more-cities {
+  .view-more-cities, view-less  {
     margin-top: 26px;
-    @include min-width(992px) {
-      display: none;
+    @include min-width($lg-screen) {
+      display: none!important;
     }
+  }
+  a.view-more-cities.collapsed  {
+    display: block;
+  }
+
+  a.view-more-cities:not(.collapsed)  {
+    display: none;
+  }
+
+  a.view-less.collapsed  {
+    display: none;
+  }
+
+  a.view-less:not(.collapsed)  {
+    display: block;
   }
 }
 
@@ -72,6 +102,9 @@
   .owl-carousel {
     .owl-item img {
       width: 100%!important;
+    }
+    .owl-stage {
+      padding-left: 0!important;
     }
   }
   button.owl-prev, button.owl-next {
@@ -102,7 +135,17 @@
     margin: 0 12px;
   }
   .owl-dot.active span {
-    background-color: $light-purple-color;
+    background-color: $dark-purple-color
+  }
+
+  .owl-item:not(.center) {
+    transform: scale(0.8, 0.8);
+    @include max-screen($sm-screen) {
+      transform: none;
+    }
+  }
+  .gallery-description {
+    display: none;
   }
 }
 
