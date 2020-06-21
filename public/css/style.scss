@@ -30,11 +30,9 @@
   p {
     font-size: $font-size-lg;
     line-height: 38px;
-    margin-bottom: 35px;
     @include max-screen($lg-screen) {
       font-size: $font-size-sm;
       line-height: 24px;
-      margin-bottom: 28px;
     }
   }
 }
@@ -47,7 +45,6 @@
   p {
     font-size: $font-size-sm;
     line-height: 32px;
-    margin-bottom: 35px;
     @include max-screen($lg-screen) {
       font-size: $font-size-xs;
       line-height: 21px;
@@ -59,7 +56,6 @@
   min-height: 128px;
   height: 100%;
   display: flex;
-  position: relative;
 }
 
 .led-uplight-bg {

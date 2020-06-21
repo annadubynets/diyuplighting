@@ -16,18 +16,14 @@
 @import "diy-icons.css";
 @import "dropdowns";
 @import "tabs";
-@import "gallery";
 
 .venues-section {
   padding: 44px 0px;
-  h2 {
-    margin-bottom: 36px;
-  }
   p {
     font-size: $font-size-sm;
     line-height: 22px;
     @include max-screen($lg-screen) {
-      font-size: 12px;
+      font-size: $font-size-xs;
       line-height: 21px;
     }
   }
@@ -43,7 +39,6 @@
     }
   }
   .view-more-venues, .view-less {
-    margin-top: 26px;
     @include min-width($lg-screen) {
       display: none!important;
     }
@@ -67,12 +62,11 @@
 
 #nav-cities {
   .multi-collapse:not(.show) {
-    @include min-width(992px) {
+    @include min-width($lg-screen) {
       display: block;
     }
   }
   .view-more-cities, view-less  {
-    margin-top: 26px;
     @include min-width($lg-screen) {
       display: none!important;
     }
@@ -96,9 +90,6 @@
 
 .gallery-section {
   padding: 46px 0px 30px;
-  h1 {
-    margin-bottom: 47px;
-  }
   .owl-carousel {
     .owl-item img {
       width: 100%!important;
@@ -135,7 +126,7 @@
     margin: 0 12px;
   }
   .owl-dot.active span {
-    background-color: $dark-purple-color
+    background-color: $dark-purple-color;
   }
 
   .owl-item:not(.center) {

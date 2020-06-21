@@ -18,14 +18,12 @@ h1 {
   font-size: 34px;
   line-height: 42px;
   color: #574A97;
-  margin-bottom: 24px;
   text-transform: capitalize;
 }
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 22px;
     line-height: 27px;
-    margin-bottom: 18px;
   }
 }
 h1 span {
@@ -39,7 +37,6 @@ h2 {
   font-size: 24px;
   line-height: 36px;
   color: #284458;
-  margin-bottom: 14px;
   text-transform: capitalize;
 }
 @media screen and (max-width: 992px) {
@@ -72,13 +69,6 @@ h6 {
   line-height: 21px;
   letter-spacing: 0.2px;
   color: #BDBDBD;
-  margin-top: 59px;
-}
-@media screen and (max-width: 992px) {
-  h6 {
-    text-align: center;
-    margin-top: 28px;
-  }
 }
 
 .display-3 {
@@ -88,7 +78,6 @@ h6 {
   font-size: 70px;
   color: #574A97;
   line-height: 56px;
-  margin-bottom: 49px;
   text-transform: capitalize;
 }
 @media screen and (max-width: 992px) {
@@ -96,7 +85,6 @@ h6 {
     font-size: 40px;
     line-height: 56px;
     letter-spacing: 0.2px;
-    margin-bottom: 23px;
     text-align: left;
   }
 }

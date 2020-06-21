@@ -19,14 +19,12 @@ h1 {
   font-size: 34px;
   line-height: 42px;
   color: #574A97;
-  margin-bottom: 24px;
   text-transform: capitalize;
 }
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 22px;
     line-height: 27px;
-    margin-bottom: 18px;
   }
 }
 h1 span {
@@ -40,7 +38,6 @@ h2 {
   font-size: 24px;
   line-height: 36px;
   color: #284458;
-  margin-bottom: 14px;
   text-transform: capitalize;
 }
 @media screen and (max-width: 992px) {
@@ -73,13 +70,6 @@ h6 {
   line-height: 21px;
   letter-spacing: 0.2px;
   color: #BDBDBD;
-  margin-top: 59px;
-}
-@media screen and (max-width: 992px) {
-  h6 {
-    text-align: center;
-    margin-top: 28px;
-  }
 }
 
 .display-3 {
@@ -89,7 +79,6 @@ h6 {
   font-size: 70px;
   color: #574A97;
   line-height: 56px;
-  margin-bottom: 49px;
   text-transform: capitalize;
 }
 @media screen and (max-width: 992px) {
@@ -97,7 +86,6 @@ h6 {
     font-size: 40px;
     line-height: 56px;
     letter-spacing: 0.2px;
-    margin-bottom: 23px;
     text-align: left;
   }
 }
@@ -720,16 +708,13 @@ a:not([href]) {
 .venues-section {
   padding: 44px 0px;
 }
-.venues-section h2 {
-  margin-bottom: 36px;
-}
 .venues-section p {
   font-size: 16px;
   line-height: 22px;
 }
 @media screen and (max-width: 992px) {
   .venues-section p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 21px;
   }
 }
@@ -743,9 +728,6 @@ a:not([href]) {
   #nav-venues .multi-collapse:not(.show) {
     display: block;
   }
-}
-#nav-venues .view-more-venues, #nav-venues .view-less {
-  margin-top: 26px;
 }
 @media screen and (min-width: 992px) {
   #nav-venues .view-more-venues, #nav-venues .view-less {
@@ -770,9 +752,6 @@ a:not([href]) {
     display: block;
   }
 }
-#nav-cities .view-more-cities, #nav-cities view-less {
-  margin-top: 26px;
-}
 @media screen and (min-width: 992px) {
   #nav-cities .view-more-cities, #nav-cities view-less {
     display: none !important;
@@ -793,9 +772,6 @@ a:not([href]) {
 
 .gallery-section {
   padding: 46px 0px 30px;
-}
-.gallery-section h1 {
-  margin-bottom: 47px;
 }
 .gallery-section .owl-carousel .owl-item img {
   width: 100% !important;
