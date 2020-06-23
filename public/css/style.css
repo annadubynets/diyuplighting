@@ -657,6 +657,10 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   box-shadow: 0px 4px 20px #776FC3;
 }
 
+.border-dashed-bottom {
+  border-bottom: 5px dashed #574A97;
+}
+
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-secondary.dropdown-toggle {
