@@ -762,50 +762,26 @@ a:not([href]) {
     padding: 24px 0px 44px;
   }
 }
-
 @media screen and (min-width: 992px) {
-  #nav-venues .multi-collapse:not(.show) {
+  .venues-section .multi-collapse:not(.show) {
     display: block;
   }
 }
 @media screen and (min-width: 992px) {
-  #nav-venues .view-more-venues, #nav-venues .view-less {
+  .venues-section .view-more, .venues-section .view-less {
     display: none !important;
   }
 }
-#nav-venues a.view-more-venues.collapsed {
+.venues-section a.view-more.collapsed {
   display: block;
 }
-#nav-venues a.view-more-venues:not(.collapsed) {
+.venues-section a.view-more:not(.collapsed) {
   display: none;
 }
-#nav-venues a.view-less.collapsed {
+.venues-section a.view-less.collapsed {
   display: none;
 }
-#nav-venues a.view-less:not(.collapsed) {
-  display: block;
-}
-
-@media screen and (min-width: 992px) {
-  #nav-cities .multi-collapse:not(.show) {
-    display: block;
-  }
-}
-@media screen and (min-width: 992px) {
-  #nav-cities .view-more-cities, #nav-cities view-less {
-    display: none !important;
-  }
-}
-#nav-cities a.view-more-cities.collapsed {
-  display: block;
-}
-#nav-cities a.view-more-cities:not(.collapsed) {
-  display: none;
-}
-#nav-cities a.view-less.collapsed {
-  display: none;
-}
-#nav-cities a.view-less:not(.collapsed) {
+.venues-section a.view-less:not(.collapsed) {
   display: block;
 }
 

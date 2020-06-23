@@ -29,52 +29,21 @@
   @include max-screen($lg-screen) {
     padding: 24px 0px 44px;
   }
-}
-
-#nav-venues {
   .multi-collapse:not(.show) {
     @include min-width($lg-screen) {
       display: block;
     }
   }
-  .view-more-venues, .view-less {
+  .view-more, .view-less {
     @include min-width($lg-screen) {
       display: none!important;
     }
   }
-  a.view-more-venues.collapsed  {
+  a.view-more.collapsed  {
     display: block;
   }
 
-  a.view-more-venues:not(.collapsed)  {
-    display: none;
-  }
-
-  a.view-less.collapsed  {
-    display: none;
-  }
-
-  a.view-less:not(.collapsed)  {
-    display: block;
-  }
-}
-
-#nav-cities {
-  .multi-collapse:not(.show) {
-    @include min-width($lg-screen) {
-      display: block;
-    }
-  }
-  .view-more-cities, view-less  {
-    @include min-width($lg-screen) {
-      display: none!important;
-    }
-  }
-  a.view-more-cities.collapsed  {
-    display: block;
-  }
-
-  a.view-more-cities:not(.collapsed)  {
+  a.view-more:not(.collapsed)  {
     display: none;
   }
 
