@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Muli:wght@400;600;700&display=swap");
+@import url("//code.jquery.com/ui/1.12.1/themes/base/theme.css");
+@import "owl.carousel.min.css";
+@import "owl.theme.default.css";
+@import "bootstrap.min.css";
+@import "mixins";
+@import "variables";
+@import "typography";
+@import "jquery-ui-theme";
+@import "cards";
+@import "navbars";
+@import "buttons";
+@import "backgrounds";
+@import "texts";
+@import "borders";
+@import "diy-icons.css";
+@import "dropdowns";
+@import "tabs";
+
+.hero-section {
+  padding: 90px 0px 76px;
+  background-image: none;
+  p {
+    font-size: $font-size-sm!important;
+    line-height: 28px;
+  }
+}
+
+.resources-section {
+  padding: 71px 0px 131px;
+  p {
+    line-height: 21px;
+    letter-spacing: 0.2px;
+  }
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+background-color: #F2F2F2;
+}
+
+.btn.disabled, .btn:disabled {
+  opacity: 1.65;
+}
+
+.btn-secondary {
+  position: absolute;
+  top: 0px;
+}
+
+.btn-light {
+  padding: 12px 48px;
+}
+
+.btn-secondary {
+  padding: 12px 22px;
+}
+
+.dropdown-toggle::after {
+  margin-left: 27px !important;
+}
+
+.led-uplight-img {
+  border-radius: 25px;
+}

@@ -530,6 +530,10 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   background-color: #FCFAFD !important;
 }
 
+.bg-purple {
+  background-color: #574A97;
+}
+
 .bg-shape-1 {
   background-image: url("../images/shapes/bg-shape-1.svg");
   background-size: contain;
@@ -601,6 +605,12 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
     background-position: bottom;
     border-radius: 25px;
   }
+}
+
+.bg-shape-11 {
+  background-color: #E5F7FF;
+  border-radius: 25px;
+  padding: 11px 11px;
 }
 
 .font-secondary {
