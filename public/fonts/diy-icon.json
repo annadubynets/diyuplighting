@@ -1,13 +1,15 @@
 {
     "icon-business-center": "\\f101",
     "icon-car": "\\f102",
-    "icon-color-lens": "\\f103",
-    "icon-event-available": "\\f104",
-    "icon-facebook": "\\f105",
-    "icon-local-pay": "\\f106",
-    "icon-pinterest": "\\f107",
-    "icon-question-answer": "\\f108",
-    "icon-star": "\\f109",
-    "icon-timer": "\\f10a",
-    "icon-twitter": "\\f10b"
+    "icon-checkbox-checked": "\\f103",
+    "icon-color-lens": "\\f104",
+    "icon-event-available": "\\f105",
+    "icon-facebook": "\\f106",
+    "icon-info": "\\f107",
+    "icon-local-pay": "\\f108",
+    "icon-pinterest": "\\f109",
+    "icon-question-answer": "\\f10a",
+    "icon-star": "\\f10b",
+    "icon-timer": "\\f10c",
+    "icon-twitter": "\\f10d"
 }
