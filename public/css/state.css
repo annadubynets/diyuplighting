@@ -658,7 +658,8 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
 }
 
 .border-dashed-bottom {
-  border-bottom: 5px dashed #574A97;
+  border-bottom: 5px dashed #776FC3;
+  border-width: 11px;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active,
