@@ -59,6 +59,18 @@
 .gallery-section {
   padding: 46px 0px 30px;
   .owl-carousel {
+    .owl-item img {
+      @include min-width($sm-screen){
+        width: 320px;
+        height: 213px;
+        object-fit: cover;
+      }
+      @include max-screen($sm-screen) {
+        width: 180px;
+        height: 120px;
+        object-fit: cover;
+      }
+    }
     .item {
       margin: auto;
     }
@@ -77,15 +89,15 @@
     background-color: transparent;
     font-size: 40px;
     margin-top: -20px;
+    margin-right: 5px;
+    @include max-screen($sm-screen) {
+      display: none;
+    }
   }
   button.owl-prev span, button.owl-next span {
     width: 24px;
     height: 24px;
     color: $dark-purple-color;
-    margin: 0 5px;
-    @include max-screen($xl-screen) {
-      display: none;
-    }
   }
   .owl-dot {
     border: none;
@@ -97,7 +109,7 @@
     background-color: #C4C4C4;
     border-radius: 50%;
     display: inline-block;
-    margin: 0 12px;
+    margin: 0 4px;
   }
   .owl-dot.active span {
     background-color: $dark-purple-color;

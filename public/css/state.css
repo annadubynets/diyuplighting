@@ -788,6 +788,20 @@ a:not([href]) {
 .gallery-section {
   padding: 46px 0px 30px;
 }
+@media screen and (min-width: 576px) {
+  .gallery-section .owl-carousel .owl-item img {
+    width: 320px;
+    height: 213px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gallery-section .owl-carousel .owl-item img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+  }
+}
 .gallery-section .owl-carousel .item {
   margin: auto;
 }
@@ -804,17 +818,17 @@ a:not([href]) {
   background-color: transparent;
   font-size: 40px;
   margin-top: -20px;
+  margin-right: 5px;
+}
+@media screen and (max-width: 576px) {
+  .gallery-section button.owl-prev, .gallery-section button.owl-next {
+    display: none;
+  }
 }
 .gallery-section button.owl-prev span, .gallery-section button.owl-next span {
   width: 24px;
   height: 24px;
   color: #574A97;
-  margin: 0 5px;
-}
-@media screen and (max-width: 1200px) {
-  .gallery-section button.owl-prev span, .gallery-section button.owl-next span {
-    display: none;
-  }
 }
 .gallery-section .owl-dot {
   border: none;
@@ -826,7 +840,7 @@ a:not([href]) {
   background-color: #C4C4C4;
   border-radius: 50%;
   display: inline-block;
-  margin: 0 12px;
+  margin: 0 4px;
 }
 .gallery-section .owl-dot.active span {
   background-color: #574A97;
