@@ -788,11 +788,16 @@ a:not([href]) {
 .gallery-section {
   padding: 46px 0px 30px;
 }
-.gallery-section .owl-carousel .owl-item img {
-  width: 100% !important;
+.gallery-section .owl-carousel .item {
+  margin: auto;
 }
 .gallery-section .owl-carousel .owl-stage {
   padding-left: 0 !important;
+  display: flex;
+  align-items: center;
+}
+.gallery-section .owl-carousel .caption {
+  text-align: center;
 }
 .gallery-section button.owl-prev, .gallery-section button.owl-next {
   border: none;
