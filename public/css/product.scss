@@ -24,6 +24,19 @@
     font-size: $font-size-sm!important;
     line-height: 28px;
   }
+  .dropdown-toggle::after {
+    margin-left: 27px !important;
+  }
+}
+
+.rating-desc {
+  font-size: 50px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  span {
+    display: block;
+    font-size: $font-size-md;
+  }
 }
 
 .resources-section {
@@ -55,10 +68,57 @@ background-color: #F2F2F2;
   padding: 12px 22px;
 }
 
-.dropdown-toggle::after {
-  margin-left: 27px !important;
-}
-
 .led-uplight-img {
   border-radius: 25px;
+}
+
+.custom-control-input {
+  float: left;
+  width: 18px;
+  height: 18px;
+  border: 1px solid $gray-color;
+  background: $white-color;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 4px;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color: $dark-purple-color;
+  border-color: $dark-purple-color;
+}
+
+.custom-control {
+  padding-left: 0px;
+}
+
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before{
+  box-shadow: none;
+  border-color: $dark-purple-color;
+}
+
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+  width: 539px;
+  height: 295px;
+  border-radius: 30px;
+}
+
+.embed-responsive-4by3::before {
+  padding-top: 55%;
+}
+
+.btn-link {
+  color: #828282;
+}
+
+.testimonials-section {
+  a {
+    text-decoration: underline;
+    &:hover {
+      color: #828282;
+    }
+  }
+  .card-body {
+    padding-bottom: 28px;
+  }
 }

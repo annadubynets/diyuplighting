@@ -31,8 +31,8 @@ $('.gallery-section .owl-carousel').owlCarousel({
     margin:10,
     nav:true,
     center: true,
-    navContainer: '#gallery-nav',
-    dotsContainer: '#gallery-dot',
+    navContainer: '.gallery-nav',
+    dotsContainer: '.gallery-dot',
     responsive:{
         0:{
             items:1,
