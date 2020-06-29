@@ -21,7 +21,7 @@
   padding: 90px 0px 76px;
   background-image: none;
   p {
-    font-size: $font-size-sm!important;
+    font-size: $font-size-xs!important;
     line-height: 28px;
   }
   .dropdown-toggle::after {
@@ -36,6 +36,12 @@
   span {
     display: block;
     font-size: $font-size-md;
+  }
+}
+
+.information-icon {
+  @include max-screen(360px) {
+    display: none;
   }
 }
 
