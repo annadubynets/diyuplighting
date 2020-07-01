@@ -24,8 +24,49 @@
     font-size: $font-size-xs!important;
     line-height: 28px;
   }
-  .dropdown-toggle::after {
+  .quantity-dropdown::after {
     margin-left: 27px !important;
+  }
+  .date-dropdown::after {
+    margin-left: 51px !important;
+  }
+  .read-more-link {
+    text-decoration: underline;
+  }
+  .read-less-link {
+    text-decoration: underline;
+  }
+  a.read-more-link.collapsed  {
+    display: block;
+  }
+  a.read-more-link:not(.collapsed)  {
+    display: none;
+  }
+  a.read-less-link.collapsed  {
+    display: none;
+  }
+  a.read-less-link:not(.collapsed)  {
+    display: block;
+  }
+  .owl-dot {
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+  }
+  .owl-dot span {
+    width: 10px;
+    height: 10px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 12px;
+  }
+  .owl-dot.active span {
+    background-color: $dark-purple-color;
+  }
+  .product-dot img {
+    width: 38px;
+    height: 38px;
   }
 }
 
@@ -33,16 +74,6 @@
   font-size: 50px;
   line-height: 36px;
   letter-spacing: 0.2px;
-  span {
-    display: block;
-    font-size: $font-size-md;
-  }
-}
-
-.information-icon {
-  @include max-screen(360px) {
-    display: none;
-  }
 }
 
 .resources-section {
@@ -54,16 +85,11 @@
 }
 
 .btn-secondary.disabled, .btn-secondary:disabled {
-background-color: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
 .btn.disabled, .btn:disabled {
   opacity: 1.65;
-}
-
-.btn-secondary {
-  position: absolute;
-  top: 0px;
 }
 
 .btn-light {
@@ -85,17 +111,12 @@ background-color: #F2F2F2;
   border: 1px solid $gray-color;
   background: $white-color;
   vertical-align: middle;
-  position: relative;
   border-radius: 4px;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
   background-color: $dark-purple-color;
   border-color: $dark-purple-color;
-}
-
-.custom-control {
-  padding-left: 0px;
 }
 
 .custom-checkbox .custom-control-input:focus~.custom-control-label::before{
@@ -118,13 +139,13 @@ background-color: #F2F2F2;
 }
 
 .testimonials-section {
+  @include max-screen($lg-screen) {
+    padding: 50px 0px 62px;
+  }
+
   a {
-    text-decoration: underline;
     &:hover {
       color: #828282;
     }
-  }
-  .card-body {
-    padding-bottom: 28px;
   }
 }

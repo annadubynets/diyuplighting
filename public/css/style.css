@@ -507,12 +507,6 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   border-color: transparent !important;
   color: rgba(87, 74, 151, 0.43);
 }
-@media screen and (min-width: 992px) {
-  .btn-secondary {
-    position: absolute;
-    top: -90px;
-  }
-}
 
 .btn-secondary.focus, .btn-secondary:focus {
   color: rgba(87, 74, 151, 0.43);
@@ -658,8 +652,8 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
 }
 
 .border-dashed-bottom {
-  border-bottom: 5px dashed #776FC3;
-  border-width: 11px;
+  border-bottom: dashed #776FC3;
+  border-bottom-width: 5px;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active,
@@ -748,7 +742,8 @@ a.text-primary:focus, a.text-primary:hover {
 .led-uplight-img {
   max-height: 310px;
   max-width: 100%;
-  object-fit: scale-down;
+  object-fit: cover;
+  width: 310px !important;
 }
 
 .calendar-section {

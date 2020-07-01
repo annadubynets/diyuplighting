@@ -506,12 +506,6 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   border-color: transparent !important;
   color: rgba(87, 74, 151, 0.43);
 }
-@media screen and (min-width: 992px) {
-  .btn-secondary {
-    position: absolute;
-    top: -90px;
-  }
-}
 
 .btn-secondary.focus, .btn-secondary:focus {
   color: rgba(87, 74, 151, 0.43);

@@ -17,6 +17,6 @@
 }
 
 .border-dashed-bottom {
-  border-bottom: 5px dashed $light-purple-color;
-  border-width: 11px;
+  border-bottom: dashed $light-purple-color;
+  border-bottom-width: 5px;
 }
