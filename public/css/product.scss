@@ -20,6 +20,9 @@
 .hero-section {
   padding: 90px 0px 76px;
   background-image: none;
+  @include max-screen($sm-screen) {
+    padding: 30px 0px 17px;;
+  }
   p {
     font-size: $font-size-xs!important;
     line-height: 28px;
@@ -59,7 +62,7 @@
     background-color: #C4C4C4;
     border-radius: 50%;
     display: inline-block;
-    margin: 0 12px;
+    margin: 0 4px;
   }
   .owl-dot.active span {
     background-color: $dark-purple-color;
@@ -67,6 +70,33 @@
   .product-dot img {
     width: 38px;
     height: 38px;
+  }
+}
+
+.gallery-section {
+  .gallery-control {
+    font-size: 14px;
+    color: #828282;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 20px;
+  }
+  .btn-secondary {
+    background-color: #F2F2F2;
+    &:hover {
+      background-color: $light-white-color;
+      border-color: transparent !important;
+      color: rgba(87, 74, 151, 0.43);
+    }
+  }
+
+  .btn-secondary.focus, .btn-secondary:focus {
+    color: rgba(87, 74, 151, 0.43);
+    background-color: $light-white-color;
+  }
+
+  .dropdown-toggle::after {
+    margin-left: 150px;
   }
 }
 

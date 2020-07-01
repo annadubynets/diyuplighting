@@ -145,6 +145,12 @@ footer ul li > a:hover {
   font-size: 9px;
 }
 
+@media screen and (min-width: 992px) {
+  .d-lg-flow-root {
+    display: flow-root;
+  }
+}
+
 .white-background {
   background-color: #FCFAFD;
 }

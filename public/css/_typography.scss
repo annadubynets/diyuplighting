@@ -150,6 +150,16 @@ footer ul{
 }
 
 // -------------------
+// Display
+// -------------------
+
+.d-lg-flow-root {
+  @include min-width($lg-screen) {
+    display: flow-root;
+  }
+}
+
+// -------------------
 // Colours 
 // -------------------
 

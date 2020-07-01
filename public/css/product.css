@@ -146,6 +146,12 @@ footer ul li > a:hover {
   font-size: 9px;
 }
 
+@media screen and (min-width: 992px) {
+  .d-lg-flow-root {
+    display: flow-root;
+  }
+}
+
 .white-background {
   background-color: #FCFAFD;
 }
@@ -718,6 +724,11 @@ a:not([href]) {
   padding: 90px 0px 76px;
   background-image: none;
 }
+@media screen and (max-width: 576px) {
+  .hero-section {
+    padding: 30px 0px 17px;
+  }
+}
 .hero-section p {
   font-size: 14px !important;
   line-height: 28px;
@@ -757,7 +768,7 @@ a:not([href]) {
   background-color: #C4C4C4;
   border-radius: 50%;
   display: inline-block;
-  margin: 0 12px;
+  margin: 0 4px;
 }
 .hero-section .owl-dot.active span {
   background-color: #574A97;
@@ -765,6 +776,29 @@ a:not([href]) {
 .hero-section .product-dot img {
   width: 38px;
   height: 38px;
+}
+
+.gallery-section .gallery-control {
+  font-size: 14px;
+  color: #828282;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 20px;
+}
+.gallery-section .btn-secondary {
+  background-color: #F2F2F2;
+}
+.gallery-section .btn-secondary:hover {
+  background-color: #FFFFFF;
+  border-color: transparent !important;
+  color: rgba(87, 74, 151, 0.43);
+}
+.gallery-section .btn-secondary.focus, .gallery-section .btn-secondary:focus {
+  color: rgba(87, 74, 151, 0.43);
+  background-color: #FFFFFF;
+}
+.gallery-section .dropdown-toggle::after {
+  margin-left: 150px;
 }
 
 .rating-desc {
