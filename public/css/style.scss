@@ -90,18 +90,18 @@
       padding-bottom: 0px;
     }
   }
-}
 
-.date-picker {
-  @include max-screen($lg-screen) {
-    margin: 69px 0px;
+  .date-picker {
+    @include max-screen($lg-screen) {
+      margin: 69px 0px;
+    }
   }
-}
 
-.date-picker-height {
-  height: 310px;
-  @include max-screen($lg-screen) {
-    height: 400px;
+  .date-picker-height {
+    height: 310px;
+    @include max-screen($lg-screen) {
+      height: 400px;
+    }
   }
 }
 

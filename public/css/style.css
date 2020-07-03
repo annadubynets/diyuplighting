@@ -267,7 +267,7 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   padding: 6px 0px;
   text-align: center;
   margin: 0 auto;
-  max-width: 140px !important;
+  max-width: 120px !important;
 }
 @media screen and (max-width: 1200px) {
   .ui-datepicker .ui-datepicker-title {
@@ -341,8 +341,6 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
 }
 
 .ui-widget.ui-widget-content {
-  width: 100%;
-  height: 100%;
   border: none;
 }
 
@@ -775,18 +773,16 @@ a.text-primary:focus, a.text-primary:hover {
     padding-bottom: 0px;
   }
 }
-
 @media screen and (max-width: 992px) {
-  .date-picker {
+  .calendar-section .date-picker {
     margin: 69px 0px;
   }
 }
-
-.date-picker-height {
+.calendar-section .date-picker-height {
   height: 310px;
 }
 @media screen and (max-width: 992px) {
-  .date-picker-height {
+  .calendar-section .date-picker-height {
     height: 400px;
   }
 }

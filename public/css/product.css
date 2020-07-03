@@ -267,7 +267,7 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   padding: 6px 0px;
   text-align: center;
   margin: 0 auto;
-  max-width: 140px !important;
+  max-width: 120px !important;
 }
 @media screen and (max-width: 1200px) {
   .ui-datepicker .ui-datepicker-title {
@@ -341,8 +341,6 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
 }
 
 .ui-widget.ui-widget-content {
-  width: 100%;
-  height: 100%;
   border: none;
 }
 
@@ -778,13 +776,30 @@ a:not([href]) {
   height: 38px;
 }
 
-.gallery-section .gallery-control {
-  font-size: 14px;
-  color: #828282;
+.custom-select {
+  background-image: url("../images/product/polygon.svg");
+  width: 100%;
+  height: 50px;
   background-color: #F2F2F2;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
+  padding: 12px 17px;
 }
+
+.ui-datepicker td span, .ui-datepicker td a {
+  padding: 11px;
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+  padding: 10px;
+}
+
+.ui-widget-content {
+  border: solid 1px #574A97 !important;
+  background: white !important;
+}
+
 .gallery-section .btn-secondary {
   background-color: #F2F2F2;
 }
@@ -801,34 +816,12 @@ a:not([href]) {
   margin-left: 150px;
 }
 
-.rating-desc {
-  font-size: 50px;
-  line-height: 36px;
-  letter-spacing: 0.2px;
-}
-
 .resources-section {
   padding: 71px 0px 131px;
-}
-.resources-section p {
-  line-height: 21px;
-  letter-spacing: 0.2px;
-}
-
-.btn-secondary.disabled, .btn-secondary:disabled {
-  background-color: #F2F2F2;
 }
 
 .btn.disabled, .btn:disabled {
   opacity: 1.65;
-}
-
-.btn-light {
-  padding: 12px 48px;
-}
-
-.btn-secondary {
-  padding: 12px 22px;
 }
 
 .led-uplight-img {
@@ -863,14 +856,13 @@ a:not([href]) {
   padding-top: 55%;
 }
 
-.btn-link {
-  color: #828282;
-}
-
 @media screen and (max-width: 992px) {
   .testimonials-section {
     padding: 50px 0px 62px;
   }
+}
+.testimonials-section a {
+  text-decoration: underline;
 }
 .testimonials-section a:hover {
   color: #828282;
