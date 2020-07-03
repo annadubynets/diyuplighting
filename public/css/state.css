@@ -754,11 +754,6 @@ a:not([href]) {
 .gallery .owl-item:not(.center) {
   transform: scale(0.8, 0.8);
 }
-@media screen and (max-width: 576px) {
-  .gallery .owl-item:not(.center) {
-    transform: none;
-  }
-}
 .gallery .gallery-description {
   display: none;
 }

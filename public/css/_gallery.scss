@@ -37,9 +37,6 @@
   
     .owl-item:not(.center) {
       transform: scale(0.8, 0.8);
-      @include max-screen($sm-screen) {
-        transform: none;
-      }
     }
     .gallery-description {
       display: none;
