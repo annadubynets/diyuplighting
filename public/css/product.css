@@ -118,8 +118,14 @@ footer ul li > a:hover {
   }
 }
 
-.font-size-xxl {
+.font-size-xxl, .font-size-xxl-responsive {
   font-size: 48px;
+}
+
+@media screen and (max-width: 375px) {
+  .font-size-xxl-responsive {
+    font-size: 40px;
+  }
 }
 
 .font-size-xl {
@@ -130,12 +136,24 @@ footer ul li > a:hover {
   font-size: 23px;
 }
 
-.font-size-md {
+.font-size-md, .font-size-md-responsive {
   font-size: 18px;
 }
 
-.font-size-sm {
+@media screen and (max-width: 375px) {
+  .font-size-md-responsive {
+    font-size: 15px;
+  }
+}
+
+.font-size-sm, .font-size-sm-responsive {
   font-size: 16px;
+}
+
+@media screen and (max-width: 375px) {
+  .font-size-sm-responsive {
+    font-size: 13px;
+  }
 }
 
 .font-size-xs {

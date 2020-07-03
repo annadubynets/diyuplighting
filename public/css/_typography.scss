@@ -125,6 +125,13 @@ footer ul{
   font-size: 48px;
 }
 
+.font-size-xxl-responsive {
+  @extend .font-size-xxl;
+  @include max-screen($xs-screen) {
+    font-size: 40px;
+  }
+}
+
 .font-size-xl {
   font-size: 28px;
 }
@@ -137,8 +144,22 @@ footer ul{
   font-size: 18px;
 }
 
+.font-size-md-responsive {
+  @extend .font-size-md;
+  @include max-screen($xs-screen) {
+    font-size: 15px;
+  }
+}
+
 .font-size-sm {
   font-size: 16px;
+}
+
+.font-size-sm-responsive {
+  @extend .font-size-sm;
+  @include max-screen($xs-screen) {
+    font-size: 13px;
+  }
 }
 
 .font-size-xs {
