@@ -91,11 +91,10 @@ function showPageDescription(galleryId) {
     });
 }
 
-$(document).ready(function() {
-    $('#tab-selector').on('change', function (e) {
-        $('.gallery-section .nav-tabs li a').eq($(this).val()).tab('show');
-    });
+$('.select-nav').on('change', function (e) {
+    $('.gallery-section .nav-tabs li a').eq($(this).val()).tab('show');
 });
+
 
 
 

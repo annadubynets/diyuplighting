@@ -110,7 +110,7 @@
                             <form method="get" class="form-inline">
                                 <div class="form-group col-lg-3 col-md-3 col-6"> <!-- Quantity select -->
                                     <select class="custom-select text-secondary" id="exampleFormControlSelect1">
-                                        <option selected>Quantity</option>
+                                        <option disabled selected value="">Quantity</option>
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -182,11 +182,11 @@
                             </li>
                         </ul>
 
-                        <select class="custom-select text-secondary d-md-none d-flex" id="galleryFormControlSelect">
-                            <option selected>Weddings</option>
-                            <option>Bar Mitzvahs</option>
-                            <option>Graduations</option>
-                            <option>Parties</option>
+                        <select class="custom-select text-secondary d-flex d-md-none select-nav">
+                            <option selected value="0">Weddings</option>
+                            <option value="1">Bar Mitzvahs</option>
+                            <option value="2">Graduations</option>
+                            <option value="3">Parties</option>
                         </select>
                     </nav>
                 </div>
