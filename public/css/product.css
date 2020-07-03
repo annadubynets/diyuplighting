@@ -786,6 +786,10 @@ a:not([href]) {
   padding: 12px 17px;
 }
 
+.form-inline .custom-select, .form-inline .input-group {
+  width: 100%;
+}
+
 .ui-datepicker td span, .ui-datepicker td a {
   padding: 11px;
 }
