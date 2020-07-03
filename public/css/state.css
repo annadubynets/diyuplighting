@@ -718,6 +718,51 @@ a:not([href]) {
   color: #574A97;
 }
 
+.gallery .owl-carousel .owl-item img {
+  width: 100% !important;
+}
+.gallery .owl-carousel .owl-stage {
+  padding-left: 0 !important;
+}
+.gallery button.owl-prev, .gallery button.owl-next {
+  border: none;
+  background-color: transparent;
+  font-size: 40px;
+  margin-top: -20px;
+}
+.gallery button.owl-prev span, .gallery button.owl-next span {
+  width: 24px;
+  height: 24px;
+  color: #574A97;
+  margin: 0 5px;
+}
+.gallery .owl-dot {
+  border: none;
+  background-color: transparent;
+}
+.gallery .owl-dot span {
+  width: 10px;
+  height: 10px;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 12px;
+}
+.gallery .owl-dot.active span {
+  background-color: #574A97;
+}
+.gallery .owl-item:not(.center) {
+  transform: scale(0.8, 0.8);
+}
+@media screen and (max-width: 576px) {
+  .gallery .owl-item:not(.center) {
+    transform: none;
+  }
+}
+.gallery .gallery-description {
+  display: none;
+}
+
 .venues-section {
   padding: 44px 0px;
 }
@@ -785,50 +830,6 @@ a:not([href]) {
 
 .gallery-section {
   padding: 46px 0px 30px;
-}
-.gallery-section .owl-carousel .owl-item img {
-  width: 100% !important;
-}
-.gallery-section .owl-carousel .owl-stage {
-  padding-left: 0 !important;
-}
-.gallery-section button.owl-prev, .gallery-section button.owl-next {
-  border: none;
-  background-color: transparent;
-  font-size: 40px;
-  margin-top: -20px;
-}
-.gallery-section button.owl-prev span, .gallery-section button.owl-next span {
-  width: 24px;
-  height: 24px;
-  color: #574A97;
-  margin: 0 5px;
-}
-.gallery-section .owl-dot {
-  border: none;
-  background-color: transparent;
-}
-.gallery-section .owl-dot span {
-  width: 10px;
-  height: 10px;
-  background-color: #C4C4C4;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 12px;
-}
-.gallery-section .owl-dot.active span {
-  background-color: #574A97;
-}
-.gallery-section .owl-item:not(.center) {
-  transform: scale(0.8, 0.8);
-}
-@media screen and (max-width: 576px) {
-  .gallery-section .owl-item:not(.center) {
-    transform: none;
-  }
-}
-.gallery-section .gallery-description {
-  display: none;
 }
 
 /*# sourceMappingURL=state.css.map */
