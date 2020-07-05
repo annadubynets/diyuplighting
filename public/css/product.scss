@@ -72,6 +72,16 @@
     width: 38px;
     height: 38px;
   }
+
+  .multi-collapse:not(.show) {
+    @include min-width($lg-screen) {
+      display: inline;
+    }
+  }
+
+  .owl-stage {
+    align-items: center;
+  }
 }
 
 .custom-select {

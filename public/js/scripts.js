@@ -31,6 +31,7 @@ $('.product .owl-carousel').owlCarousel({
     margin:10,
     nav:false,
     items:1,
+    center: true,
     dotsData: true,
     dotsContainer:'.product-dot',
 });
