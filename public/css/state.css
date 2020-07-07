@@ -1,9 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Muli:wght@400;600;700&display=swap");
 @import url("//code.jquery.com/ui/1.12.1/themes/base/theme.css");
 @import "owl.carousel.min.css";
 @import "owl.theme.default.css";
 @import "bootstrap.min.css";
 @import "diy-icons.css";
+@font-face {
+  font-family: "Arvo";
+  src: url("../fonts/Arvo.eot");
+  src: url("../fonts/Arvo.eot?#iefix") format("embedded-opentype"), url("../fonts/Arvo.woff2") format("woff2"), url("../fonts/Arvo.woff") format("woff"), url("../fonts/Arvo.ttf") format("truetype"), url("../fonts/Arvo.svg#Arvo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arvo";
+  src: url("../fonts/Arvo-Bold.eot");
+  src: url("../fonts/Arvo-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Arvo-Bold.woff2") format("woff2"), url("../fonts/Arvo-Bold.woff") format("woff"), url("../fonts/Arvo-Bold.ttf") format("truetype"), url("../fonts/Arvo-Bold.svg#Arvo-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli-Regular.eot");
+  src: url("../fonts/Muli-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli-Regular.woff2") format("woff2"), url("../fonts/Muli-Regular.woff") format("woff"), url("../fonts/Muli-Regular.ttf") format("truetype"), url("../fonts/Muli-Regular.svg#Muli-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli-Bold.eot");
+  src: url("../fonts/Muli-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli-Bold.woff2") format("woff2"), url("../fonts/Muli-Bold.woff") format("woff"), url("../fonts/Muli-Bold.ttf") format("truetype"), url("../fonts/Muli-Bold.svg#Muli-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli-SemiBold.eot");
+  src: url("../fonts/Muli-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli-SemiBold.woff2") format("woff2"), url("../fonts/Muli-SemiBold.woff") format("woff"), url("../fonts/Muli-SemiBold.ttf") format("truetype"), url("../fonts/Muli-SemiBold.svg#Muli-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 html {
   font-family: "Muli", sans-serif !important;
 }
@@ -794,55 +833,45 @@ a:not([href]) {
     padding: 24px 0px 44px;
   }
 }
-
 @media screen and (min-width: 992px) {
-  #nav-venues .multi-collapse:not(.show) {
+  .venues-section .multi-collapse:not(.show) {
     display: block;
   }
 }
 @media screen and (min-width: 992px) {
-  #nav-venues .view-more-venues, #nav-venues .view-less {
+  .venues-section .view-more, .venues-section .view-less {
     display: none !important;
   }
 }
-#nav-venues a.view-more-venues.collapsed {
+.venues-section a.view-more.collapsed {
   display: block;
 }
-#nav-venues a.view-more-venues:not(.collapsed) {
+.venues-section a.view-more:not(.collapsed) {
   display: none;
 }
-#nav-venues a.view-less.collapsed {
+.venues-section a.view-less.collapsed {
   display: none;
 }
-#nav-venues a.view-less:not(.collapsed) {
-  display: block;
-}
-
-@media screen and (min-width: 992px) {
-  #nav-cities .multi-collapse:not(.show) {
-    display: block;
-  }
-}
-@media screen and (min-width: 992px) {
-  #nav-cities .view-more-cities, #nav-cities view-less {
-    display: none !important;
-  }
-}
-#nav-cities a.view-more-cities.collapsed {
-  display: block;
-}
-#nav-cities a.view-more-cities:not(.collapsed) {
-  display: none;
-}
-#nav-cities a.view-less.collapsed {
-  display: none;
-}
-#nav-cities a.view-less:not(.collapsed) {
+.venues-section a.view-less:not(.collapsed) {
   display: block;
 }
 
 .gallery-section {
   padding: 46px 0px 30px;
+}
+@media screen and (min-width: 576px) {
+  .gallery-section .owl-carousel .owl-item img {
+    width: 320px;
+    height: 213px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gallery-section .owl-carousel .owl-item img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+  }
 }
 
 /*# sourceMappingURL=state.css.map */
