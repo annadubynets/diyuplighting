@@ -678,6 +678,10 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   border-bottom-width: 5px;
 }
 
+.border-bottom {
+  border-bottom: 1px solid #8F8D9A !important;
+}
+
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-secondary.dropdown-toggle {

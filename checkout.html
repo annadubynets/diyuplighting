@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="public/css/checkout.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand mr-0" alt="logo" href="index.html">
+                    <img src="public/images/logo/logo_1.png">
+                    <img src="public/images/logo/logo_2.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="public/images/navbar/menu_icon.svg">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PRODUCTS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="product.html">Uplight</a>
+                                <a class="dropdown-item" href="product_2.html">Marquee Letter</a>
+                                <a class="dropdown-item" href="#">Pin Spot</a>
+                                <a class="dropdown-item" href="#">Confetti Blaster</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLearn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                LEARN
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">First link</a>
+                                <a class="dropdown-item" href="#">Second link</a>
+                                <a class="dropdown-item" href="#">Third link</a>
+                                <a class="dropdown-item" href="#">Fourth link</a>
+                                <a class="dropdown-item" href="#">Fifth link</a>
+                                <a class="dropdown-item" href="#">Sixth link</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-primary font-weight-bold position-relative" href="#" role="button">Rent Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="alert alert-primary col-lg-12  pt-2 pl-3 pb-2 mt-4 mb-5" role="alert">
+                    <i class="diy-icon-timer white-color"></i>
+                    <p class="white-color d-inline align-text-top">We are temporally holding 10 lights for you to give you time to fill out this rental agreement. This agreement will expire and the hold will be released in 40:25 minutes.</p>
+                </div>
+            </div>
+
+            <form method="get" class="form-inline">
+                <div class="row">
+                    <div class="col-lg-7 order-lg-0 order-1">
+                        <div class="row">
+                            <div class="col-lg-12 mt-lg-0 mt-4">
+                                <h1>Contact Information</h1>
+                                <p class="text-secondary font-size-sm mt-3">To reserve lighting for your event, just complete the following rental agreement.</p>
+                            </div>
+
+                            <div class="input-group col-lg-3 col-md-3 col-6"> <!-- First Name input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="First Name" id="firstNameInput">
+                            </div>
+                            <div class="input-group col-lg-3 col-md-3 col-6"> <!-- Last Name input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="Last Name" id="lastNameInput">
+                            </div>
+                            <div class="input-group col-lg-6 col-md-3 col-12 mt-lg-0 mt-4"> <!-- Email input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="Email" id="emailInput">
+                            </div>
+
+                            <div class="input-group col-lg-6 col-md-3 col-12 mt-4"> <!-- Address input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="Address" id="addressInput">
+                            </div>
+                            <div class="input-group col-lg-6 col-md-3 col-6 mt-4"> <!-- Phone input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="Phone" id="phoneInput">
+                            </div>
+
+                            <div class="input-group col-lg-5 col-md-3 col-6 mt-4"> <!-- City input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="City" id="cityInput">
+                            </div>
+                            <div class="input-group col-lg-3 col-md-3 col-6 mt-4"> <!-- State select -->
+                                <select class="custom-select text-secondary" id="stateSelect">
+                                    <option disabled selected value="">State</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                            <div class="input-group col-lg-4 col-md-3 col-6 mt-4"> <!-- Zipcode input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="Zipcode" id="zipcodeInput">
+                            </div>
+
+                            <div class="custom-control custom-checkbox col-lg-12 mt-4">
+                                <input class="custom-control-input position-relative" type="checkbox" value="" id="addressCheck">
+                                <label class="custom-control-label d-inline text-secondary" for="addressCheck">
+                                    Ship items to this address
+                                </label>
+                            </div>
+
+                            <div class="col-lg-12 mt-5">
+                                <h2 class="text-info">About Your Venue</h2>
+                                <p class="text-secondary font-size-sm mt-3">What is the name and location of the venue where you will be using the lights?</p>
+                            </div>
+
+                            <div class="input-group col-lg-5 col-md-3 col-12 mt-3"> <!-- Venue Name input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="Venue Name" id="venueNameInput">
+                            </div>
+                            <div class="input-group col-lg-3 col-md-3 col-6 mt-3"> <!-- State select -->
+                                <select class="custom-select text-secondary" id="stateSelect2">
+                                    <option disabled selected value="">State</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                            <div class="input-group col-lg-4 col-md-3 col-6 mt-3"> <!-- City input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="City" id="cityInput2">
+                            </div>
+
+                            <div class="col-lg-12 mt-5">
+                                <h1>Payment Details</h1>
+                                <p class="text-secondary font-size-sm mt-3">A $25 deposit will be charged now and a $490 balance right before shipping</p>
+                            </div>
+
+                            <div class="input-group col-lg-6 col-md-3 col-6"> <!-- First Name input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="First Name" id="firstNameInput2">
+                            </div>
+                            <div class="input-group col-lg-6 col-md-3 col-6"> <!-- Last Name input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="Last Name" id="lastNameInput2">
+                            </div>
+
+                            <div class="input-group col-lg-6 col-md-3 col-12 mt-3"> <!-- Credit Card Number input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="Credit Card Number" id="creditCardInput">
+                            </div>
+
+                            <div class="input-group col-lg-2 col-md-3 col-6 mt-3"> <!-- CVC input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="CVC" id="cvcInput">
+                            </div>
+
+                            <div class="input-group col-lg-4 col-md-3 col-6 mt-3"> <!-- Exp Date input -->
+                                <input type="text" class="form-control input-text text-secondary" placeholder="Exp Date" id="expDateInput">
+                            </div>
+
+                            <div class="col-lg-12 mt-5">
+                                <h1>Rental Agreement Terms</h1>
+
+                                <div class="card mt-4">
+                                    <div class="card-body">
+                                        <div class="scrollable">
+                                            <p class="text-secondary">
+                                                This is a legal and binding contract for the purpose of a short term rental of equipment between the signer of this document, hereinafter referred to as “Renter”, and 19A, Inc. operating under the brand name diyuplighting.com.
+                                                19A, Inc. maintains full ownership of all rented equipment.
+                                                Renter assumes full responsibility for the care of the rented equipment from the time it leaves 19A, Inc. property until it is returned and checked in by an agent of 19A, Inc.
+                                                Agreed upon due date is four (4) days after event date specified on this agreement. Failure to return rented equipment by the due date will incur daily rental rates of $5 per each light.
+                                                Renter agrees to full financial responsibility should rental equipment and/or any of the components parts or supplies be stolen, lost, damaged, or altered in any way. Renter’s signature on this document authorizes 19A Inc to bill the cost of repair/replacement </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-control custom-checkbox col-lg-12 mt-4">
+                                <input class="custom-control-input position-relative" type="checkbox" value="" id="agreeToTermsCheck">
+                                <label class="custom-control-label d-inline text-secondary" for="addressCheck">
+                                    I agree to the Terms and Conditions stated above
+                                </label>
+                            </div>
+
+                            <div class="col-lg-8 float-right col-12 order-8 text-lg-left text-center mt-5 mb-5">
+                                <a class="btn btn-primary font-weight-bold btn-lg" href="#" role="button">Submit Reservation</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-lg-0 order-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2 class="text-primary">Rental Summary</h2>
+                                        <p class="text-secondary font-size-sm">Event Date: September 09, 2020.</p>
+                                    </div>
+
+                                    <div class="col-lg-5 col-4">
+                                        <p class="uplight-desc text-secondary">Uplights <span class="font-italic d-block">$17 each</span></p>
+                                    </div>
+                                    <div class="col-lg-5 col-5">
+                                        <div class="form-row">
+                                            <label for="qtySelect" class="text-secondary col-lg-4 col-5">Qty:</label>
+                                            <select class="custom-select text-secondary col-lg-8 col-7" id="qtySelect">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-2 col-3">
+                                        <p class="font-weight-bold text-secondary uplight-desc">$170</p>
+                                    </div>
+
+                                    <div class="col-lg-10 col-9 float-right mt-3">
+                                        <div class="custom-control custom-checkbox pl-2">
+                                            <input class="custom-control-input position-relative" type="checkbox" value="" id="brighterCheck">
+                                            <label class="custom-control-label d-inline font-weight-bold text-secondary" for="brighterCheck">
+                                                Brighter Light Upgrade <span class="font-weight-normal font-italic d-block">+ $5 each</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-2 col-3 mt-4">
+                                        <p class="font-weight-bold text-secondary uplight-desc">$50</p>
+                                    </div>
+
+                                    <div class="col-lg-10 col-9 float-right mt-3">
+                                        <div class="custom-control custom-checkbox pl-2">
+                                            <input class="custom-control-input position-relative" type="checkbox" value="" id="wirelessCheck">
+                                            <label class="custom-control-label d-inline font-weight-sem text-secondary" for="wirelessCheck">
+                                                Wireless Light Upgrade  <span class="font-weight-normal font-italic d-block">+ $8 each</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-2 col-3 mt-4">
+                                        <p class="font-weight-bold text-secondary uplight-desc">$0</p>
+                                    </div>
+
+                                    <div class="col-lg-10 col-9 mt-4">
+                                        <p class="uplight-desc text-secondary">Marquee Letters: <span class="font-italic d-block">$49 each</span></p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-3 mt-4">
+                                        <p class="font-weight-bold text-secondary uplight-desc">$294</p>
+                                    </div>
+
+                                    <div class="col-lg-10 col-9 mt-4">
+                                        <p class="uplight-desc text-secondary font-weight-bold">Shipping <span class="font-weight-normal font-italic d-block">Estimated Arrival Date: Sep 7, 2020
+Due Date (return to UPS): Sep 13, 2020</span></p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-3 mt-4">
+                                        <p class="font-weight-bold text-secondary uplight-desc">FREE</p>
+                                    </div>
+
+                                    <div class="col-lg-10 col-9 mt-3 mb-2">
+                                        <p class="uplight-desc text-primary font-weight-bold">Total</p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-3 mt-3 mb-2">
+                                        <p class="font-weight-bold text-primary uplight-desc">$514</p>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="border-bottom"></div>
+                                    </div>
+
+                                    <div class="col-lg-10 col-9 mt-4">
+                                        <p class="uplight-desc text-secondary font-weight-bold">Deposit
+                                            <i class="diy-icon-info gray-color font-size-sm d-lg-inline d-none align-middle"></i>
+                                        </p>
+
+                                    </div>
+
+                                    <div class="col-lg-2 col-3 mt-4">
+                                        <p class="font-weight-bold text-secondary uplight-desc">$25</p>
+                                    </div>
+
+                                    <div class="col-lg-10 col-9 mt-1">
+                                        <p class="uplight-desc text-secondary font-weight-bold">Balance
+                                            <i class="diy-icon-info gray-color font-size-sm d-lg-inline d-none align-middle"></i>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-3 mt-1 ">
+                                        <p class="font-weight-bold text-secondary uplight-desc">$490</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 order-lg-0 col-12 order-2">
+                    <a class="navbar-brand" alt="logo" href="index.html">
+                        <img src="public/images/logo/logo_1.png">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 order-lg-0 col-12 order-2">
+                    <a class="navbar-brand" alt="logo" href="index.html">
+                        <img src="public/images/logo/logo_2.png" class="footer-logo-pos position-relative">
+                    </a>
+                    <h5 class="text-secondary mt-4">diyuplighting@gmail.com <br> (773) 917-8235</h5>
+                </div>
+
+                <div class="col-lg-3 order-lg-0 col-sm-5 col-6 order-1 mt-4 mb-4">
+                    <h4 class="text-uppercase text-primary pb-2">PRODUCTS</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul>
+                                <li>
+                                    <a href="product.html">Uplight</a>
+                                </li>
+                                <li>
+                                    <a href="product_2.html">Marquee Letter</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pin Spot</a>
+                                </li>
+                                <li>
+                                    <a href="#">Confetti Blaster</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 order-lg-0 col-sm-5 col-6 order-1 mt-4 mb-4">
+                    <h4 class="text-uppercase text-primary pb-2">LEARN</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="mb-0">
+                                <li>
+                                    <a href="#">First link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Fourth link</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li>
+                                    <a href="#">Fifth link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sixth link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 offset-lg-5 order-lg-0 col-12 order-3 mt-lg-5 mt-3">
+                    <a href="#" class="text-decoration-none">
+                        <i class="diy-icon-facebook ml-2 mr-2 text-info font-size-xl"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                        <i class="diy-icon-twitter ml-2 mr-2 text-info font-size-xl"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                        <i class="diy-icon-pinterest ml-2 mr-2 text-info font-size-xl"></i>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 offset-lg-1 order-lg-0 order-4 mt-lg-5 mt-3">
+                    <h5 class="text-secondary">© 2010-2020 19A, Inc.</h5>
+                </div>
+
+                <div class="col-lg-12 order-lg-0 order-5">
+                    <h6 class="text-muted mt-lg-5 mt-4 text-center">New York | Los Angeles | Chicago | Houston | Philadelphia | Phoenix | San Antonio | San Diego | Dallas | San Jose | Austin | Indianapolis | Jacksonville | San Francisco | Columbus | Charlotte | Detroit | Memphis | Seattle | Memphis | Denver | Washington DC | Boston | Nashville | Baltimore | Oklahoma City | Louisville | Portland | Las Vegas | Milwaukee | Albuquerque | Tucson | Fresno | Sacramento | El Paso | Long Beach | Kansas City | Virginia Beach | Atlanta | Colorado Springs | Omaha | Raleigh | Miami | Oakland | Minneapolis | Tulsa | Cleveland | Wichita | New Orleans | Tampa | Aurora | St Louis | Pittsburgh | Cincinnati | Newark | Henderson | Fargo | Boise | Birmingham</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="public/js/owl.carousel.min.js"></script>
+
+    <script src="public/js/popper.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/scripts.js"></script>
+</body>
+</html>
