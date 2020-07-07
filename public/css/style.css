@@ -840,7 +840,7 @@ a.text-primary:focus, a.text-primary:hover {
   }
 }
 .calendar-section .date-picker-height {
-  height: 310px;
+  height: 210px;
 }
 @media screen and (max-width: 992px) {
   .calendar-section .date-picker-height {

@@ -97,7 +97,7 @@
   }
 
   .date-picker-height {
-    height: 310px;
+    height: 210px;
     @include max-screen($lg-screen) {
       height: 400px;
     }
