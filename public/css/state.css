@@ -863,19 +863,5 @@ a:not([href]) {
 .gallery-section {
   padding: 46px 0px 30px;
 }
-@media screen and (min-width: 576px) {
-  .gallery-section .owl-carousel .owl-item img {
-    width: 320px;
-    height: 213px;
-    object-fit: cover;
-  }
-}
-@media screen and (max-width: 576px) {
-  .gallery-section .owl-carousel .owl-item img {
-    width: 180px;
-    height: 120px;
-    object-fit: cover;
-  }
-}
 
 /*# sourceMappingURL=state.css.map */
