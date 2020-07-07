@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Muli:wght@400;600;700&display=swap");
 @import url("//code.jquery.com/ui/1.12.1/themes/base/theme.css");
 @import "owl.carousel.min.css";
 @import "owl.theme.default.css";
@@ -30,52 +29,21 @@
   @include max-screen($lg-screen) {
     padding: 24px 0px 44px;
   }
-}
-
-#nav-venues {
   .multi-collapse:not(.show) {
     @include min-width($lg-screen) {
       display: block;
     }
   }
-  .view-more-venues, .view-less {
+  .view-more, .view-less {
     @include min-width($lg-screen) {
       display: none!important;
     }
   }
-  a.view-more-venues.collapsed  {
+  a.view-more.collapsed  {
     display: block;
   }
 
-  a.view-more-venues:not(.collapsed)  {
-    display: none;
-  }
-
-  a.view-less.collapsed  {
-    display: none;
-  }
-
-  a.view-less:not(.collapsed)  {
-    display: block;
-  }
-}
-
-#nav-cities {
-  .multi-collapse:not(.show) {
-    @include min-width($lg-screen) {
-      display: block;
-    }
-  }
-  .view-more-cities, view-less  {
-    @include min-width($lg-screen) {
-      display: none!important;
-    }
-  }
-  a.view-more-cities.collapsed  {
-    display: block;
-  }
-
-  a.view-more-cities:not(.collapsed)  {
+  a.view-more:not(.collapsed)  {
     display: none;
   }
 
@@ -92,10 +60,28 @@
   padding: 46px 0px 30px;
   .owl-carousel {
     .owl-item img {
-      width: 100%!important;
+      @include min-width($sm-screen){
+        width: 320px;
+        height: 213px;
+        object-fit: cover;
+      }
+      @include max-screen($sm-screen) {
+        width: 180px;
+        height: 120px;
+        object-fit: cover;
+      }
+    }
+    .item {
+      margin: auto;
     }
     .owl-stage {
       padding-left: 0!important;
+      display: flex;
+      align-items: center;
+    }
+
+    .caption {
+      text-align: center;
     }
   }
   button.owl-prev, button.owl-next {
@@ -103,15 +89,15 @@
     background-color: transparent;
     font-size: 40px;
     margin-top: -20px;
+    margin-right: 5px;
+    @include max-screen($sm-screen) {
+      display: none;
+    }
   }
   button.owl-prev span, button.owl-next span {
     width: 24px;
     height: 24px;
     color: $dark-purple-color;
-    margin: 0 5px;
-    @include max-screen($xl-screen) {
-      display: none;
-    }
   }
   .owl-dot {
     border: none;
@@ -123,7 +109,7 @@
     background-color: #C4C4C4;
     border-radius: 50%;
     display: inline-block;
-    margin: 0 12px;
+    margin: 0 4px;
   }
   .owl-dot.active span {
     background-color: $dark-purple-color;

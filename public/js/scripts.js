@@ -36,13 +36,20 @@ $('.gallery-section .owl-carousel').owlCarousel({
     responsive:{
         0:{
             items:1,
-            stagePadding:40,
+            stagePadding:60,
         },
-        600:{
+        375:{
+            items:1,
+            stagePadding:100,
+        },
+        414:{
+            items:2,
+        },
+        768:{
             items:2,
             stagePadding:100,
         },
-        1000:{
+        1060:{
             items:3,
             stagePadding:100,
         }
