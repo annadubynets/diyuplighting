@@ -775,8 +775,19 @@ a:not([href]) {
   color: #574A97;
 }
 
-.gallery .owl-carousel .owl-item img {
-  width: 100% !important;
+@media screen and (min-width: 576px) {
+  .gallery .owl-carousel .owl-item img {
+    width: 320px;
+    height: 213px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gallery .owl-carousel .owl-item img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+  }
 }
 .gallery .owl-carousel .owl-stage {
   padding-left: 0 !important;

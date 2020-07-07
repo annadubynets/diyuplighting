@@ -1,8 +1,18 @@
 .gallery {
     .owl-carousel {
-      .owl-item img {
-        width: 100%!important;
-      }
+        .owl-item img {
+			@include min-width($sm-screen) {
+				width: 320px;
+				height: 213px;
+				object-fit: cover;
+			}
+
+			@include max-screen($sm-screen) {
+				width: 180px;
+				height: 120px;
+				object-fit: cover;
+			}
+		}
       .owl-stage {
         padding-left: 0!important;
       }
