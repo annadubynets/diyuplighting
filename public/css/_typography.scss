@@ -235,6 +235,13 @@ footer ul{
   font-size: 14px;
 }
 
+.font-size-xs-responsive {
+  @extend .font-size-xs;
+  @include max-screen($sm-screen) {
+    font-size: 12px;
+  }
+}
+
 .font-size-xss {
   font-size: 9px;
 }
@@ -282,4 +289,12 @@ i[class^="diy-icon-"], i[class*=" diy-icon-"] {
 .scrollable{
   overflow-y: auto;
   max-height: 150px;
+}
+
+.min-h-50 {
+  min-height: 50px!important;
+}
+
+.min-w-50 {
+  min-width: 38px!important;
 }
