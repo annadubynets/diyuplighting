@@ -1,28 +1,50 @@
+@import "mixins";
+@import "variables";
+
+
 .gallery {
     .owl-carousel {
       .owl-item img {
-        width: 100%!important;
+        @include min-width($sm-screen){
+          width: 320px;
+          height: 213px;
+          object-fit: cover;
+        }
+        @include max-screen($sm-screen) {
+          width: 180px;
+          height: 120px;
+          object-fit: cover;
+        }
+      }
+      .item {
+        margin: auto;
       }
       .owl-stage {
         padding-left: 0!important;
+        display: flex;
+        align-items: center;
       }
     }
+
     button.owl-prev, button.owl-next {
       border: none;
       background-color: transparent;
       font-size: 40px;
       margin-top: -20px;
     }
+
     button.owl-prev span, button.owl-next span {
       width: 24px;
       height: 24px;
       color: $dark-purple-color;
       margin: 0 5px;
     }
+
     .owl-dot {
       border: none;
       background-color: transparent;
     }
+
     .owl-dot span {
       width: 10px;
       height: 10px;
@@ -31,6 +53,7 @@
       display: inline-block;
       margin: 0 12px;
     }
+
     .owl-dot.active span {
       background-color: $dark-purple-color;
     }
@@ -38,6 +61,7 @@
     .owl-item:not(.center) {
       transform: scale(0.8, 0.8);
     }
+
     .gallery-description {
       display: none;
     }

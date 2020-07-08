@@ -27,7 +27,6 @@
     font-size: $font-size-xs!important;
     line-height: 28px;
   }
-
   .quantity-dropdown::after {
     margin-left: 27px !important;
   }
@@ -72,26 +71,14 @@
     width: 38px;
     height: 38px;
   }
-
   .multi-collapse:not(.show) {
     @include min-width($lg-screen) {
       display: inline;
     }
   }
-
   .owl-stage {
     align-items: center;
   }
-}
-
-.custom-select {
-  background-image: url("../images/product/polygon.svg");
-  width: 100%;
-  height: 50px;
-  background-color: #F2F2F2;
-  border: none;
-  border-radius: 25px;
-  padding: 12px 17px;
 }
 
 .form-inline .custom-select, .form-inline .input-group {
@@ -110,6 +97,7 @@
   border: none;
   padding: 10px;
 }
+
 .ui-widget-content {
   border: solid 1px $dark-purple-color!important;
   background: white!important;
@@ -145,26 +133,6 @@
 
 .led-uplight-img {
   border-radius: 25px;
-}
-
-.custom-control-input {
-  float: left;
-  width: 18px;
-  height: 18px;
-  border: 1px solid $gray-color;
-  background: $white-color;
-  vertical-align: middle;
-  border-radius: 4px;
-}
-
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
-  background-color: $dark-purple-color;
-  border-color: $dark-purple-color;
-}
-
-.custom-checkbox .custom-control-input:focus~.custom-control-label::before{
-  box-shadow: none;
-  border-color: $dark-purple-color;
 }
 
 .embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
