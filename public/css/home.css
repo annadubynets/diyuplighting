@@ -195,8 +195,18 @@ footer ul li > a:hover {
   }
 }
 
-.font-size-xs {
+.font-size-small {
+  font-size: 12px;
+}
+
+.font-size-xs, .font-size-xs-responsive {
   font-size: 14px;
+}
+
+@media screen and (max-width: 576px) {
+  .font-size-xs-responsive {
+    font-size: 12px;
+  }
 }
 
 .font-size-xss {
@@ -292,6 +302,19 @@ footer ul li > a:hover {
 i[class^=diy-icon-], i[class*=" diy-icon-"] {
   font-family: diy-icon !important;
   margin: auto;
+}
+
+.scrollable {
+  overflow-y: auto;
+  max-height: 150px;
+}
+
+.min-h-50 {
+  min-height: 50px !important;
+}
+
+.min-w-50 {
+  min-width: 38px !important;
 }
 
 .ui-datepicker th {
@@ -576,6 +599,45 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
 
 .btn-link.focus, .btn-link:focus {
   text-decoration: none;
+}
+
+.input-text {
+  width: 100%;
+  height: 50px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 17px;
+}
+
+.custom-select {
+  background-image: url("../images/product/polygon.svg");
+  width: 100%;
+  height: 50px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 17px;
+}
+
+.custom-control-input {
+  float: left;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #8F8D9A;
+  background: #FCFAFD;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #574A97;
+  border-color: #574A97;
+}
+
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+  border-color: #574A97;
 }
 
 .bg-light {
