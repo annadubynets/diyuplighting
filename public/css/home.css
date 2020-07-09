@@ -195,8 +195,14 @@ footer ul li > a:hover {
   }
 }
 
-.font-size-small {
+.font-size-small, .font-size-small-responsive {
   font-size: 12px;
+}
+
+@media screen and (max-width: 576px) {
+  .font-size-small-responsive {
+    font-size: 10px;
+  }
 }
 
 .font-size-xs, .font-size-xs-responsive {
@@ -309,12 +315,24 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   max-height: 150px;
 }
 
-.min-h-50 {
+.min-h-50, .min-h-50-responsive {
   min-height: 50px !important;
 }
 
-.min-w-50 {
+.min-w-38, .min-w-38-responsive {
   min-width: 38px !important;
+}
+
+@media screen and (max-width: 576px) {
+  .min-h-50-responsive {
+    min-height: 38px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .min-w-38-responsive {
+    min-width: 29px !important;
+  }
 }
 
 .ui-datepicker th {
@@ -628,6 +646,14 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   background: #FCFAFD;
   vertical-align: middle;
   border-radius: 4px;
+}
+
+.custom-control-label::before {
+  top: 0px;
+}
+
+.custom-control-label::after {
+  top: 0px;
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {

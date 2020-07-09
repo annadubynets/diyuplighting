@@ -79,6 +79,13 @@
   .owl-stage {
     align-items: center;
   }
+  .custom-control-label::before {
+    top: 2px;
+  }
+
+  .custom-control-label::after {
+    top: 2px;
+  }
 }
 
 .form-inline .custom-select, .form-inline .input-group {

@@ -102,6 +102,14 @@
   border-radius: 4px;
 }
 
+.custom-control-label::before {
+  top: 0px;
+}
+
+.custom-control-label::after {
+  top: 0px;
+}
+
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
   background-color: $dark-purple-color;
   border-color: $dark-purple-color;

@@ -62,9 +62,9 @@
     <div class="hero-section">
         <div class="container">
             <div class="row">
-                <div class="alert alert-primary col-lg-12  pt-2 pl-3 pb-2 mt-4 mb-5" role="alert">
+                <div class="alert alert-primary col-lg-12 pt-2 pl-3 pb-2 mt-4 mb-lg-5 mb-4 mr-3 ml-3" role="alert">
                     <i class="diy-icon-timer white-color"></i>
-                    <p class="white-color d-inline align-text-top font-size-small">We are temporally holding 10 lights for you to give you time to fill out this rental agreement. This agreement will expire and the hold will be released in 40:25 minutes.</p>
+                    <p class="white-color d-inline align-text-top font-size-small font-size-small-responsive">We are temporally holding 10 lights for you to give you time to fill out this rental agreement. This agreement will expire and the hold will be released in 40:25 minutes.</p>
                 </div>
             </div>
 
@@ -75,37 +75,38 @@
                             <div class="col-lg-12 mt-lg-0 mt-4">
                                 <h1>Contact Information</h1>
                                 <p class="text-secondary font-size-sm mt-3 mb-4">To reserve lighting for your event, just complete the following rental agreement.</p>
-                            </div>
+                                <div class="row">
+                                    <div class="input-group col-lg-3 col-md-3 col-6 order-lg-0 order-0"> <!-- First Name input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="First Name" id="firstNameInput">
+                                    </div>
+                                    <div class="input-group col-lg-3 col-md-3 col-6 order-lg-0 order-1"> <!-- Last Name input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Last Name" id="lastNameInput">
+                                    </div>
+                                    <div class="input-group col-lg-6 col-md-3 col-12 mt-lg-0 mt-4 order-lg-0 order-2"> <!-- Email input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Email" id="emailInput">
+                                    </div>
 
-                            <div class="input-group col-lg-3 col-md-3 col-6"> <!-- First Name input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="First Name" id="firstNameInput">
-                            </div>
-                            <div class="input-group col-lg-3 col-md-3 col-6"> <!-- Last Name input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Last Name" id="lastNameInput">
-                            </div>
-                            <div class="input-group col-lg-6 col-md-3 col-12 mt-lg-0 mt-4"> <!-- Email input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Email" id="emailInput">
-                            </div>
+                                    <div class="input-group col-lg-6 col-md-3 col-12 mt-4 order-lg-0 order-3"> <!-- Address input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Address" id="addressInput">
+                                    </div>
+                                    <div class="input-group col-lg-6 col-md-3 col-8 mt-4 order-lg-0 order-7"> <!-- Phone input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Phone" id="phoneInput">
+                                    </div>
 
-                            <div class="input-group col-lg-6 col-md-3 col-12 mt-4"> <!-- Address input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Address" id="addressInput">
-                            </div>
-                            <div class="input-group col-lg-6 col-md-3 col-6 mt-4"> <!-- Phone input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Phone" id="phoneInput">
-                            </div>
-
-                            <div class="input-group col-lg-5 col-md-3 col-6 mt-4"> <!-- City input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="City" id="cityInput">
-                            </div>
-                            <div class="input-group col-lg-3 col-md-3 col-6 mt-4"> <!-- State select -->
-                                <select class="custom-select text-secondary font-size-xs" id="stateSelect">
-                                    <option disabled selected value="">State</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                </select>
-                            </div>
-                            <div class="input-group col-lg-4 col-md-3 col-6 mt-4"> <!-- Zipcode input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Zipcode" id="zipcodeInput">
+                                    <div class="input-group col-lg-5 col-md-3 col-8 mt-4 order-lg-0 order-4"> <!-- City input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="City" id="cityInput">
+                                    </div>
+                                    <div class="input-group col-lg-3 col-md-3 col-4 mt-4 order-lg-0 order-5"> <!-- State select -->
+                                        <select class="custom-select text-secondary font-size-xs" id="stateSelect">
+                                            <option disabled selected value="">State</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group col-lg-4 col-md-3 col-4 mt-4 order-lg-0 order-6"> <!-- Zipcode input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Zipcode" id="zipcodeInput">
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="custom-control custom-checkbox col-lg-12 mt-4">
@@ -118,44 +119,47 @@
                             <div class="col-lg-12 mt-5">
                                 <h2 class="text-info">About Your Venue</h2>
                                 <p class="text-secondary font-size-sm mt-3">What is the name and location of the venue where you will be using the lights?</p>
-                            </div>
 
-                            <div class="input-group col-lg-5 col-md-3 col-12 mt-3"> <!-- Venue Name input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Venue Name" id="venueNameInput">
-                            </div>
-                            <div class="input-group col-lg-3 col-md-3 col-6 mt-3"> <!-- State select -->
-                                <select class="custom-select text-secondary font-size-xs" id="stateSelect2">
-                                    <option disabled selected value="">State</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                </select>
-                            </div>
-                            <div class="input-group col-lg-4 col-md-3 col-6 mt-3"> <!-- City input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="City" id="cityInput2">
+                                <div class="row">
+                                    <div class="input-group col-lg-5 col-md-3 col-12 mt-3 order-lg-0 order-0"> <!-- Venue Name input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Venue Name" id="venueNameInput">
+                                    </div>
+                                    <div class="input-group col-lg-3 col-md-3 col-4 mt-3 order-lg-0 order-2"> <!-- State select -->
+                                        <select class="custom-select text-secondary font-size-xs" id="stateSelect2">
+                                            <option disabled selected value="">State</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group col-lg-4 col-md-3 col-8 mt-3 order-lg-0 order-1"> <!-- City input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="City" id="cityInput2">
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col-lg-12 mt-5">
                                 <h1>Payment Details</h1>
                                 <p class="text-secondary font-size-sm mt-3 mb-3">A $25 deposit will be charged now and a $490 balance right before shipping</p>
-                            </div>
+                                <div class="row">
+                                    <div class="input-group col-lg-6 col-md-3 col-6"> <!-- First Name input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="First Name" id="firstNameInput2">
+                                    </div>
+                                    <div class="input-group col-lg-6 col-md-3 col-6"> <!-- Last Name input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Last Name" id="lastNameInput2">
+                                    </div>
 
-                            <div class="input-group col-lg-6 col-md-3 col-6"> <!-- First Name input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="First Name" id="firstNameInput2">
-                            </div>
-                            <div class="input-group col-lg-6 col-md-3 col-6"> <!-- Last Name input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Last Name" id="lastNameInput2">
-                            </div>
+                                    <div class="input-group col-lg-6 col-md-3 col-12 mt-3"> <!-- Credit Card Number input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Credit Card Number" id="creditCardInput">
+                                    </div>
 
-                            <div class="input-group col-lg-6 col-md-3 col-12 mt-3"> <!-- Credit Card Number input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Credit Card Number" id="creditCardInput">
-                            </div>
+                                    <div class="input-group col-lg-2 col-md-3 col-6 mt-3"> <!-- CVC input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="CVC" id="cvcInput">
+                                    </div>
 
-                            <div class="input-group col-lg-2 col-md-3 col-6 mt-3"> <!-- CVC input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="CVC" id="cvcInput">
-                            </div>
-
-                            <div class="input-group col-lg-4 col-md-3 col-6 mt-3"> <!-- Exp Date input -->
-                                <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Exp Date" id="expDateInput">
+                                    <div class="input-group col-lg-4 col-md-3 col-6 mt-3"> <!-- Exp Date input -->
+                                        <input type="text" class="form-control input-text text-secondary font-size-xs" placeholder="Exp Date" id="expDateInput">
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col-lg-12 mt-5">
@@ -177,7 +181,7 @@
 
                             <div class="custom-control custom-checkbox col-lg-12 mt-4">
                                 <input class="custom-control-input position-relative font-size-xs" type="checkbox" value="" id="agreeToTermsCheck">
-                                <label class="custom-control-label d-inline text-secondary font-size-small" for="addressCheck">
+                                <label class="custom-control-label d-inline text-secondary font-size-small" for="agreeToTermsCheck">
                                     I agree to the Terms and Conditions stated above
                                 </label>
                             </div>
@@ -187,9 +191,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 order-lg-0 order-0">
+                    <div class="col-lg-5 order-lg-0 order-0 p-0">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body pr-3 pl-3">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <h2 class="text-primary">Rental Summary</h2>
@@ -201,10 +205,11 @@
                                     <div class="col-lg-5 col-4">
                                         <p class="font-size-xs font-size-xs-responsive text-secondary">Uplights <span class="font-italic d-block font-size-small">$17 each</span></p>
                                     </div>
+
                                     <div class="col-lg-4 col-5">
                                         <div class="form-row">
-                                            <label for="qtySelect" class="text-secondary col-lg-4 col-5 font-size-xs font-size-xs-responsive">Qty:</label>
-                                            <select class="custom-select text-secondary font-size-xs col-lg-8 col-7 pl-4" id="qtySelect">
+                                            <label for="qtySelect" class="text-secondary col-lg-4 col-4 font-size-xs font-size-xs-responsive align-self-center">Qty:</label>
+                                            <select class="custom-select bg-light text-secondary font-size-xs col-lg-8 col-8 pl-4" id="qtySelect">
                                                 <option>1</option>
                                                 <option>2</option>
                                                 <option>3</option>
@@ -214,7 +219,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-2 col-3 offset-lg-1">
+                                    <div class="col-lg-2 col-3 offset-lg-1 align-self-center">
                                         <p class="font-weight-bold text-secondary font-size-xs font-size-xs-responsive">$170</p>
                                     </div>
 
@@ -223,7 +228,7 @@
                                             <input class="custom-control-input position-relative" type="checkbox" value="" id="brighterCheck">
                                             <label class="custom-control-label d-inline font-weight-normal text-secondary font-size-xs font-size-xs-responsive" for="brighterCheck">
                                                 Brighter Light Upgrade
-                                                <i class="diy-icon-question light-gray-color font-size-sm align-middle"></i>
+                                                <i class="diy-icon-question light-gray-color font-size-sm align-middle ml-2"></i>
                                                 <span class="font-weight-normal font-italic d-block font-size-small pl-3">+ $5 each</span>
 
                                             </label>
@@ -239,7 +244,7 @@
                                             <input class="custom-control-input position-relative" type="checkbox" value="" id="wirelessCheck">
                                             <label class="custom-control-label d-inline font-weight-normal text-secondary font-size-xs font-size-xs-responsive" for="wirelessCheck">
                                                 Wireless Light Upgrade
-                                                <i class="diy-icon-question light-gray-color font-size-sm align-middle"></i>
+                                                <i class="diy-icon-question light-gray-color font-size-sm align-middle ml-2"></i>
                                                 <span class="font-weight-normal font-italic d-block font-size-small pl-3">+ $8 each</span>
                                             </label>
                                         </div>
@@ -257,44 +262,34 @@
 
                                     <div class="col-lg-6 col-4 mt-4">
                                         <div class="row">
-                                            <div class="col-lg-4 col-4 mb-2">
-                                                <div class="card d-flex min-h-50 min-w-38 bg-light align-items-center w-100">
-                                                    <p class="text-secondary font-size-xs text-center mt-auto mb-auto">J
-                                                        <i class="diy-icon-minus light-gray-color font-size-sm align-middle icon-card"></i>
-                                                    </p>
-                                                </div>
+                                            <div class="col-lg-2 col-2 mb-2 min-h-50 min-w-38 min-h-50-responsive min-w-38-responsive bg-light align-items-center d-flex ml-2 mr-2 p-0">
+                                                <p class="text-secondary font-size-xs text-center m-auto">J<i class="diy-icon-minus light-gray-color align-middle icon-card"></i>
+                                                </p>
                                             </div>
 
-                                            <div class="col-lg-4 col-4 mb-2">
-                                                <div class="card d-flex min-h-50 min-w-38 bg-light align-items-center w-100">
-                                                    <p class="text-secondary font-size-xs text-center mt-auto mb-auto">A
-                                                        <i class="diy-icon-minus light-gray-color font-size-sm align-middle icon-card"></i>
-                                                    </p>
-                                                </div>
+                                            <div class="col-lg-2 col-3 mb-2 min-h-50 min-w-38 min-h-50-responsive min-w-38-responsive bg-light align-items-center d-flex ml-2 mr-2 p-0">
+                                                <p class="text-secondary font-size-xs text-center m-auto">A<i class="diy-icon-minus light-gray-color align-middle icon-card"></i>
+                                                </p>
                                             </div>
 
-                                            <div class="col-lg-4 col-4 mb-2">
-                                                <div class="card d-flex min-h-50 min-w-38 bg-light align-items-center w-100">
-                                                    <p class="text-secondary font-size-xs text-center mt-auto mb-auto">V
-                                                        <i class="diy-icon-minus light-gray-color font-size-sm align-middle icon-card"></i>
-                                                    </p>
-                                                </div>
+                                            <div class="col-lg-2 col-3 mb-2 min-h-50 min-w-38 min-h-50-responsive min-w-38-responsive bg-light align-items-center d-flex ml-2 mr-2 p-0">
+                                                <p class="text-secondary font-size-xs text-center m-auto">V<i class="diy-icon-minus light-gray-color align-middle icon-card"></i>
+                                                </p>
                                             </div>
 
-                                            <div class="col-lg-4 col-4 mb-2">
-                                                <div class="card d-flex min-h-50 min-w-38 bg-light align-items-center w-100">
-                                                    <p class="text-secondary font-size-xs text-center mt-auto mb-auto">I
-                                                        <i class="diy-icon-minus light-gray-color font-size-sm align-middle icon-card"></i>
-                                                    </p>
-                                                </div>
+                                            <div class="col-lg-2 col-3 mb-2 min-h-50 min-w-38 min-h-50-responsive min-w-38-responsive bg-light align-items-center d-flex ml-2 mr-2 p-0">
+                                                <p class="text-secondary font-size-xs text-center m-auto">I<i class="diy-icon-minus light-gray-color align-middle icon-card"></i>
+                                                </p>
                                             </div>
 
-                                            <div class="col-lg-4 col-4 mb-2">
-                                                <div class="card d-flex min-h-50 min-w-38 bg-light align-items-center w-100">
-                                                    <p class="text-secondary font-size-xs text-center mt-auto mb-auto">E
-                                                        <i class="diy-icon-minus light-gray-color font-size-sm align-middle icon-card"></i>
-                                                    </p>
-                                                </div>
+                                            <div class="col-lg-2 col-3 mb-2 min-h-50 min-w-38 min-h-50-responsive min-w-38-responsive bg-light align-items-center d-flex ml-2 mr-2 p-0">
+                                                <p class="text-secondary font-size-xs text-center m-auto">E<i class="diy-icon-minus light-gray-color align-middle icon-card"></i>
+                                                </p>
+                                            </div>
+
+                                            <div class="col-lg-2 col-3 mb-2 min-h-50 min-w-38 min-h-50-responsive min-w-38-responsive bg-light align-items-center d-flex ml-2 mr-2 p-0">
+                                                <p class="text-secondary font-size-xs text-center m-auto">R<i class="diy-icon-minus light-gray-color align-middle icon-card"></i>
+                                                </p>
                                             </div>
 
                                             <div class="col-lg-2 col-3 mb-2 align-self-center">
@@ -330,7 +325,7 @@
 
                                     <div class="col-lg-10 col-9 mt-4">
                                         <p class="font-size-xs font-size-xs-responsive text-secondary font-weight-bold">Deposit
-                                            <i class="diy-icon-info gray-color font-size-sm align-middle"></i>
+                                            <i class="diy-icon-info gray-color font-size-sm align-middle ml-2"></i>
                                         </p>
 
                                     </div>
@@ -341,11 +336,11 @@
 
                                     <div class="col-lg-10 col-9 mt-1">
                                         <p class="font-size-xs font-size-xs-responsive text-secondary font-weight-bold">Balance
-                                            <i class="diy-icon-info gray-color font-size-sm align-middle"></i>
+                                            <i class="diy-icon-info gray-color font-size-sm align-middle ml-2"></i>
                                         </p>
                                     </div>
 
-                                    <div class="col-lg-2 col-3 mt-1 ">
+                                    <div class="col-lg-2 col-3 mt-1">
                                         <p class="font-weight-bold text-secondary font-size-xs font-size-xs-responsive">$490</p>
                                     </div>
 
