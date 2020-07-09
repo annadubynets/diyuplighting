@@ -1,0 +1,27 @@
+@import url("//code.jquery.com/ui/1.12.1/themes/base/theme.css");
+@import "owl.carousel.min.css";
+@import "owl.theme.default.css";
+@import "bootstrap.min.css";
+@import "mixins";
+@import "variables";
+@import "typography";
+@import "jquery-ui-theme";
+@import "cards";
+@import "navbars";
+@import "buttons";
+@import "backgrounds";
+@import "texts";
+@import "borders";
+@import "diy-icons.css";
+@import "dropdowns";
+@import "tabs";
+@import "gallery";
+
+.gallery-section {
+  .color-link {
+    text-decoration: underline;
+    &:hover {
+      color: $light-gray-color;
+    }
+  }
+}

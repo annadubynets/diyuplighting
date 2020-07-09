@@ -205,6 +205,13 @@ footer ul{
   font-size: 23px;
 }
 
+.font-size-lg-responsive {
+  @extend .font-size-lg;
+  @include max-screen($xs-screen) {
+    font-size: 20px;
+  }
+}
+
 .font-size-md {
   font-size: 18px;
 }
@@ -246,6 +253,7 @@ footer ul{
   @extend .font-size-xs;
   @include max-screen($sm-screen) {
     font-size: 12px;
+    line-height: 20px;
   }
 }
 
