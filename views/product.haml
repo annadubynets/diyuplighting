@@ -1,0 +1,537 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0", name: "viewport"}/
+    %meta{content: "ie=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title Product
+    %link{href: "css/style.css", rel: "stylesheet"}/
+    %link{href: "css/state.css", rel: "stylesheet"}/
+    %link{href: "css/product.css", rel: "stylesheet"}/
+  %body
+    %header
+      %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        .container
+          %a.navbar-brand.mr-0{alt: "logo", href: "index.html"}
+            %img{src: "images/logo/logo_1.png"}/
+            %img{src: "images/logo/logo_2.png"}/
+          %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", type: "button"}
+            %img{src: "images/navbar/menu_icon.svg"}/
+          #navbarSupportedContent.collapse.navbar-collapse
+            %ul.navbar-nav.ml-auto
+              %li.nav-item.dropdown
+                %a#navbarDropdownProducts.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: "#", role: "button"}
+                  PRODUCTS
+                .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+                  %a.dropdown-item{href: "product.html"} Uplight
+                  %a.dropdown-item{href: "product_2.html"} Marquee Letter
+                  %a.dropdown-item{href: "#"} Pin Spot
+                  %a.dropdown-item{href: "#"} Confetti Blaster
+              %li.nav-item.dropdown
+                %a#navbarDropdownLearn.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: "#", role: "button"}
+                  LEARN
+                .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+                  %a.dropdown-item{href: "#"} First link
+                  %a.dropdown-item{href: "#"} Second link
+                  %a.dropdown-item{href: "#"} Third link
+                  %a.dropdown-item{href: "#"} Fourth link
+                  %a.dropdown-item{href: "#"} Fifth link
+                  %a.dropdown-item{href: "#"} Sixth link
+              %li.nav-item
+                %a.nav-link{href: "#"} CONTACT
+            %a.btn.btn-primary.font-weight-bold.position-relative{href: "#", role: "button"} Rent Now
+    %section.hero-section
+      .container
+        .row.d-lg-flow-root
+          .col-lg-4.col-md-4.col-12.float-left.order-1
+            .product
+              .owl-carousel.bg-shape-11
+                .item.mx-auto.d-block{"data-dot" => "<span class='d-lg-none d-inline-block'></span> <div class='bg-shape-11 mr-1 d-lg-inline-block d-none'><img src='images/home/led_uplight_picture.png'></div>"}
+                  %img.led-uplight-img{src: "images/home/led_uplight_picture.png"}/
+                .item.mx-auto.d-block{"data-dot" => "<span class='d-lg-none d-inline-block'></span> <div class='bg-shape-11 mr-1 d-lg-inline-block d-none'><img src='images/product/removebg_preview_1.svg'></div>"}
+                  %img.led-uplight-img{src: "images/product/removebg_preview_1.svg"}/
+                .item.mx-auto.d-block{"data-dot" => "<span class='d-lg-none d-inline-block'></span> <div class='bg-shape-11 mr-1 d-lg-inline-block d-none'><img src='images/product/removebg_preview_2.svg'></div>"}
+                  %img.led-uplight-img{src: "images/product/removebg_preview_2.svg"}/
+                .item.mx-auto.d-block{"data-dot" => "<span class='d-lg-none d-inline-block'></span> <div class='bg-shape-11 mr-1 d-lg-inline-block d-none'><img src='images/product/removebg_preview_3.svg'></div>"}
+                  %img.led-uplight-img{src: "images/product/removebg_preview_3.svg"}/
+                .item.mx-auto.d-block{"data-dot" => "<span class='d-lg-none d-inline-block'></span> <div class='bg-shape-11 d-lg-inline-block d-none'><img src='images/product/removebg_preview_4.svg'></div>"}
+                  %img.led-uplight-img{src: "images/product/removebg_preview_4.svg"}/
+              .row.mt-3
+                .col-lg-12.owl-dots.product-dot.text-center.mb-3
+          .col-lg-8.float-right.mb-3.order-0
+            %h1 The Uplight
+          .col-lg-8.col-md-8.float-right.mb-3.col-12.order-2
+            %p.font-weight-normal.text-secondary.mb-3.order-lg-0.order-2
+              Simply plug the lights in, select your color, and then enjoy your event! 7 pre-set colors are available on the easy-to-use menu. You can set all your lights to the same color, or choose something different for each one.
+              %span#collapseExample.collapse.multi-collapse You can even customize the colors to get the shade just right. Have them slowly fade from one color to the next, or even change to the beat of the music!
+            %a.read-more-link.d-lg-none.font-weight-bold.text-secondary.collapsed{"aria-controls" => "collapseExample", "aria-expanded" => "false", "data-toggle" => "collapse", href: "#collapseExample", role: "button"}
+              Read More
+            %a.read-less-link.d-lg-none.font-weight-bold.text-secondary.collapsed{"aria-controls" => "collapseExample", "aria-expanded" => "false", "data-toggle" => "collapse", href: "#collapseExample", role: "button"}
+              Read Less
+          .col-lg-8.float-right.mb-4.order-3
+            %h2.text-info Reserve for your event now
+          .col-lg-8.float-right.order-4
+            .row
+              %form.form-inline{method: "get"}
+                .form-group.col-lg-3.col-md-3.col-6
+                  / Quantity select
+                  %select#exampleFormControlSelect1.custom-select.text-secondary
+                    %option{disabled: "disabled", selected: "selected", value: ""} Quantity
+                    %option 1
+                    %option 2
+                    %option 3
+                    %option 4
+                    %option 5
+                .form-group.col-lg-3.col-md-3.col-6
+                  / Date input
+                  %input#date.custom-select.date-picker.text-secondary{autocomplete: "off", name: "date", placeholder: "Date", type: "text"}/
+                .col-lg-6.col-md-6.col-12.order-5.text-lg-left.text-center.mt-md-0.mt-5
+                  %button.btn.btn-light.pt-3.pr-5.pb-3.font-weight-bold.btn-lg{href: "#", role: "button"} Check Availability
+          .col-lg-8.float-right.col-12.mt-4.text-lg-left.text-center.order-5
+            %p.font-weight-normal.text-success
+              %span.font-weight-bold Yes!
+              We do have 10 lights available to rent for September 04, 2020.
+          .col-lg-8.float-right.mt-2.order-6
+            .custom-control.custom-checkbox.pl-2
+              %input#defaultCheck1.custom-control-input.position-relative{type: "checkbox", value: ""}/
+              %label.custom-control-label.d-inline.font-weight-bold.text-secondary{for: "defaultCheck1"}
+                Upgrade to a brighter light with 8 more color presets
+                %span.font-weight-normal + $5 each
+              %i.diy-icon-info.gray-color.font-size-sm.d-lg-inline.d-none
+          .col-lg-8.float-right.mt-2.mb-5.order-7
+            .custom-control.custom-checkbox.pl-2
+              %input#defaultCheck2.custom-control-input.position-relative{type: "checkbox", value: ""}/
+              %label.custom-control-label.d-inline.font-weight-bold.text-secondary{for: "defaultCheck2"}
+                Upgrade to wireless
+                %span.font-weight-normal + $8 each
+              %i.diy-icon-info.gray-color.font-size-sm.d-lg-inline.d-none
+          .col-lg-8.float-right.col-12.order-8.text-lg-left.text-center
+            %a.btn.btn-primary.font-weight-bold.btn-lg{href: "#", role: "button"} Rent Now
+    %section.gallery-section
+      .container
+        .row
+          .col-lg-12
+            %h1.mb-lg-5.mb-4 Perfect for any event!
+            %nav
+              %ul#nav-tab.nav.nav-tabs.d-none.d-md-flex{role: "tablist"}
+                %li.gallery-selector.active
+                  %a#nav-weddings-tab.nav-item.nav-link.active{"aria-controls" => "nav-weddings", "aria-selected" => "true", "data-toggle" => "tab", href: "#nav-weddings", role: "tab"} Weddings
+                %li.gallery-selector
+                  %a#nav-mitzvahs-tab.nav-item.nav-link.ml-5{"aria-controls" => "nav-mitzvahs", "aria-selected" => "false", "data-toggle" => "tab", href: "#nav-mitzvahs", role: "tab"} Bar Mitzvahs
+                %li.gallery-selector
+                  %a#nav-graduations-tab.nav-item.nav-link.ml-5{"aria-controls" => "nav-graduations", "aria-selected" => "false", "data-toggle" => "tab", href: "#nav-graduations", role: "tab"} Graduations
+                %li.gallery-selector
+                  %a#nav-parties-tab.nav-item.nav-link.ml-5{"aria-controls" => "nav-parties", "aria-selected" => "false", "data-toggle" => "tab", href: "#nav-parties", role: "tab"} Parties
+              %select.custom-select.text-secondary.d-flex.d-md-none.select-nav
+                %option{selected: "selected", value: "0"} Weddings
+                %option{value: "1"} Bar Mitzvahs
+                %option{value: "2"} Graduations
+                %option{value: "3"} Parties
+      .container-fluid
+        .tab-content
+          #nav-weddings.tab-pane.fade.show.active{"aria-labelledby" => "nav-weddings-tab", role: "tabpanel"}
+            #weddings.gallery
+              .owl-carousel
+                .item{"data-description-id" => "d-gallery-1"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_1.png"}/
+                .item{"data-description-id" => "d-gallery-2"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_2.png"}/
+                .item{"data-description-id" => "d-gallery-3"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_3.png"}/
+                .item{"data-description-id" => "d-gallery-4"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_4.png"}/
+              .container
+                .row
+                  .col-lg-9
+                    %p#d-gallery-1.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description Here is a good photo showing just a single light lighting up a pillar at the Double Tree in Aurora, CO. This photo is a great example of how high the beam will light up. As you can see, this room has very high ceilings.
+                    %p#d-gallery-2.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description Adding a few up lights to your holiday party decor can transform your home into a festive party space. This photo is from a gorgeous home in Richmond, TX set-up with 15 uplights set to red.
+                    %p#d-gallery-3.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description This photo was sent in from a creative bride and groom who didn't have too much floor space. They used the recessed ledge around the top of the wall to hold the 10 lights they rented and it created a very cool effect!
+                    %p#d-gallery-4.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description Here's 10 lights setup for a Bat Mitzvah in Los Angeles, CA. This is a good example of how they look when the room lighting is very bright and also you can get a peek of how they look plugged into the wall.
+                .row.d-none.d-md-flex
+                  .col-lg-1.d-xl-block.d-none.owl-nav.gallery-nav
+                  .col-lg-4.owl-dots.gallery-dot
+          #nav-mitzvahs.tab-pane.fade.show{"aria-labelledby" => "nav-mitzvahs-tab", role: "tabpanel"}
+            #mitzvahs.gallery
+              .owl-carousel
+                .item{"data-description-id" => "d-gallery-5"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_1.png"}/
+                .item{"data-description-id" => "d-gallery-6"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_2.png"}/
+                .item{"data-description-id" => "d-gallery-7"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_3.png"}/
+                .item{"data-description-id" => "d-gallery-8"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_4.png"}/
+              .container
+                .row
+                  .col-lg-9
+                    %p#d-gallery-5.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description Here is a good photo showing just a single light lighting up a pillar at the Double Tree in Aurora, CO. This photo is a great example of how high the beam will light up. As you can see, this room has very high ceilings.
+                    %p#d-gallery-6.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description Adding a few up lights to your holiday party decor can transform your home into a festive party space. This photo is from a gorgeous home in Richmond, TX set-up with 15 uplights set to red.
+                    %p#d-gallery-7.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description This photo was sent in from a creative bride and groom who didn't have too much floor space. They used the recessed ledge around the top of the wall to hold the 10 lights they rented and it created a very cool effect!
+                    %p#d-gallery-8.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description Here's 10 lights setup for a Bat Mitzvah in Los Angeles, CA. This is a good example of how they look when the room lighting is very bright and also you can get a peek of how they look plugged into the wall.
+                .row.d-none.d-md-flex
+                  .col-lg-1.d-xl-block.d-none.owl-nav.gallery-nav
+                  .col-lg-4.owl-dots.gallery-dot
+          #nav-graduations.tab-pane.fade.show{"aria-labelledby" => "nav-graduations-tab", role: "tabpanel"}
+            #graduations.gallery
+              .owl-carousel
+                .item{"data-description-id" => "d-gallery-9"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_1.png"}/
+                .item{"data-description-id" => "d-gallery-10"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_2.png"}/
+                .item{"data-description-id" => "d-gallery-11"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_3.png"}/
+                .item{"data-description-id" => "d-gallery-12"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_4.png"}/
+              .container
+                .row
+                  .col-lg-9
+                    %p#d-gallery-9.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description Here is a good photo showing just a single light lighting up a pillar at the Double Tree in Aurora, CO. This photo is a great example of how high the beam will light up. As you can see, this room has very high ceilings.
+                    %p#d-gallery-10.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description Adding a few up lights to your holiday party decor can transform your home into a festive party space. This photo is from a gorgeous home in Richmond, TX set-up with 15 uplights set to red.
+                    %p#d-gallery-11.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description This photo was sent in from a creative bride and groom who didn't have too much floor space. They used the recessed ledge around the top of the wall to hold the 10 lights they rented and it created a very cool effect!
+                    %p#d-gallery-12.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description Here's 10 lights setup for a Bat Mitzvah in Los Angeles, CA. This is a good example of how they look when the room lighting is very bright and also you can get a peek of how they look plugged into the wall.
+                .row.d-none.d-md-flex
+                  .col-lg-1.d-xl-block.d-none.owl-nav.gallery-nav
+                  .col-lg-4.owl-dots.gallery-dot
+          #nav-parties.tab-pane.fade.show{"aria-labelledby" => "nav-parties-tab", role: "tabpanel"}
+            #parties.gallery
+              .owl-carousel
+                .item{"data-description-id" => "d-gallery-13"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_1.png"}/
+                .item{"data-description-id" => "d-gallery-14"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_2.png"}/
+                .item{"data-description-id" => "d-gallery-15"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_3.png"}/
+                .item{"data-description-id" => "d-gallery-16"}
+                  %img.img-responsive{alt: "", src: "images/state/gallery_4.png"}/
+              .container
+                .row
+                  .col-lg-9
+                    %p#d-gallery-13.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description Here is a good photo showing just a single light lighting up a pillar at the Double Tree in Aurora, CO. This photo is a great example of how high the beam will light up. As you can see, this room has very high ceilings.
+                    %p#d-gallery-14.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description Adding a few up lights to your holiday party decor can transform your home into a festive party space. This photo is from a gorgeous home in Richmond, TX set-up with 15 uplights set to red.
+                    %p#d-gallery-15.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description This photo was sent in from a creative bride and groom who didn't have too much floor space. They used the recessed ledge around the top of the wall to hold the 10 lights they rented and it created a very cool effect!
+                    %p#d-gallery-16.text-secondary.font-italic.font-weight-normal.font-size-xs.mt-3.mb-3.gallery-description Here's 10 lights setup for a Bat Mitzvah in Los Angeles, CA. This is a good example of how they look when the room lighting is very bright and also you can get a peek of how they look plugged into the wall.
+                .row.d-none.d-md-flex
+                  .col-lg-1.d-xl-block.d-none.owl-nav.gallery-nav
+                  .col-lg-4.owl-dots.gallery-dot
+    %section.testimonials-section.bg-white.position-relative
+      .container
+        .row
+          .col-lg-12.text-center
+            %h1.mb-lg-5.mb-5.text-lg-left What customers say about us
+          .col-lg-3.mb-5.col-6
+            .card.bg-light.text-center
+              .card-body.pt-4.pb-4
+                %p.font-weight-bold.text-info.font-size-xxl-responsive.pt-2
+                  4.9
+                  %span.font-weight-normal.text-secondary.pt-2.font-size-md-responsive.d-block out of 5.0
+                .star-rating
+                  %i.diy-icon-star.light-purple-color
+                  %i.diy-icon-star.light-purple-color
+                  %i.diy-icon-star.light-purple-color
+                  %i.diy-icon-star.light-purple-color
+                  %i.diy-icon-star.light-purple-color
+          .col-lg-9.col-6
+            .row
+              .col-lg-3.col-12.pt-lg-3.pl-0.pl-sm-3
+                %p.text-secondary.font-size-sm-responsive.font-weight-normal.mb-2
+                  %i.diy-icon-shield.dark-purple-color.font-size-md-responsive.mr-sm-2.align-top
+                  %span.d-md-none.d-inline.font-weight-bold 4.9
+                  Quality of service
+                .border-dashed-bottom.mb-md-0.mb-3
+                %p.text-info.font-size-xs.font-weight-bold.mt-2.d-none.d-md-inline 4.9
+                %p.text-secondary.font-size-sm-responsive.font-weight-normal.mb-2.mt-lg-4.mt-0
+                  %i.diy-icon-local-pay.dark-purple-color.font-size-md-responsive.mr-sm-2.align-top
+                  %span.d-md-none.d-inline.font-weight-bold 4.9
+                  Value
+                .border-dashed-bottom.mb-md-0.mb-3
+                %p.text-info.font-size-xs.font-weight-bold.mt-2.d-none.d-md-inline 4.9
+              .col-lg-3.offset-lg-1.col-12.pt-lg-3.pl-0.pl-sm-3
+                %p.text-secondary.font-size-sm-responsive.font-weight-normal.mb-2
+                  %i.diy-icon-business-center.dark-purple-color.font-size-md-responsive.mr-sm-2.align-top
+                  %span.d-md-none.d-inline.font-weight-bold 4.9
+                  Professionalism
+                .border-dashed-bottom.mb-md-0.mb-3
+                %p.text-info.font-size-xs.font-weight-bold.mt-2.d-none.d-md-inline 4.9
+                %p.text-secondary.font-size-sm-responsive.font-weight-normal.mb-2.mt-lg-4.mt-0
+                  %i.diy-icon-question-answer.dark-purple-color.font-size-md-responsive.mr-sm-2.mb-2.align-top
+                  %span.d-md-none.d-inline.font-weight-bold 4.9
+                  Response Time
+                .border-dashed-bottom.mb-md-0.mb-3
+                %p.text-info.font-size-xs.font-weight-bold.mt-2.d-none.d-md-inline 4.9
+              .col-lg-3.offset-lg-1.col-12.pt-lg-3.pl-0.pl-sm-3
+                %p.text-secondary.font-size-sm-responsive.font-weight-normal.mb-2
+                  %i.diy-icon-event-available.dark-purple-color.font-size-md-responsive.mr-sm-2.align-top
+                  %span.d-md-none.d-inline.font-weight-bold 4.9
+                  Flexibility
+                .border-dashed-bottom.mb-md-0.mb-3
+                %p.text-info.font-size-xs.font-weight-bold.mt-2.d-none.d-md-inline 4.9
+        .owl-carousel.mt-5
+          .item.card
+            .card-body.bg-light
+              %h2.mb-3 Great company with quality product
+              .star-rating
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+              %p.extras-text.text-secondary.font-weight-normal.mt-4 We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again.
+            .card-footer
+              .testimonials-position.position-relative
+                %p.review-name.font-weight-bold.text-primary.mt-4.ml-auto
+                  Yiu Kim
+                  %span.d-block.font-weight-normal 11/23/2020
+                .bg-shape-1.review-photo-bg
+                  %img.border-primary.rounded-circle{src: "images/home/review_photo_one.svg"}/
+          .item.card
+            .card-body.bg-light
+              %h2.mb-3 Couldn’t have been easier
+              .star-rating
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+              %p.extras-text.text-secondary.font-weight-normal.mt-4 We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again.
+            .card-footer
+              .testimonials-position.position-relative
+                %p.review-name.font-weight-bold.text-primary.mt-4.ml-auto
+                  Becca Stevenson
+                  %span.d-block.font-weight-normal 11/23/2020
+                .bg-shape-2.review-photo-bg
+                  %img.border-primary.rounded-circle{src: "images/home/review_photo_two.svg"}/
+          .item.card
+            .card-body.bg-light
+              %h2.mb-3 Great company with quality product
+              .star-rating
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+              %p.extras-text.text-secondary.font-weight-normal.mt-4 We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again.
+            .card-footer
+              .testimonials-position.position-relative
+                %p.review-name.font-weight-bold.text-primary.mt-4.ml-auto
+                  Yiu Kim
+                  %span.d-block.font-weight-normal 11/23/2020
+                .bg-shape-1.review-photo-bg
+                  %img.border-primary.rounded-circle{src: "images/home/review_photo_one.svg"}/
+          .item.card
+            .card-body.bg-light
+              %h2.mb-3 Couldn’t have been easier
+              .star-rating
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+              %p.extras-text.text-secondary.font-weight-normal.mt-4 We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again.
+            .card-footer
+              .testimonials-position.position-relative
+                %p.review-name.font-weight-bold.text-primary.mt-4.ml-auto
+                  Becca Stevenson
+                  %span.d-block.font-weight-normal 11/23/2020
+                .bg-shape-2.review-photo-bg
+                  %img.border-primary.rounded-circle{src: "images/home/review_photo_two.svg"}/
+          .item.card
+            .card-body.bg-light
+              %h2.mb-3 Great company with quality product
+              .star-rating
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+              %p.extras-text.text-secondary.font-weight-normal.mt-4 We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again.
+            .card-footer
+              .testimonials-position.position-relative
+                %p.review-name.font-weight-bold.text-primary.mt-4.ml-auto
+                  Yiu Kim
+                  %span.d-block.font-weight-normal 11/23/2020
+                .bg-shape-1.review-photo-bg
+                  %img.border-primary.rounded-circle{src: "images/home/review_photo_one.svg"}/
+          .item.card
+            .card-body.bg-light
+              %h2.mb-3 Couldn’t have been easier
+              .star-rating
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+                %i.diy-icon-star.light-purple-color
+              %p.extras-text.text-secondary.font-weight-normal.mt-4 We were so thrilled with our lighting rental from DIY Uplights. They were so quick, responsive, and the lights were perfect. We used them to light a booth at a tradeshow. Thank you so much! We will be using their service again.
+            .card-footer
+              .testimonials-position.position-relative
+                %p.review-name.font-weight-bold.text-primary.mt-4.ml-auto
+                  Becca Stevenson
+                  %span.d-block.font-weight-normal 11/23/2020
+                .bg-shape-2.review-photo-bg
+                  %img.border-primary.rounded-circle{src: "images/home/review_photo_two.svg"}/
+        .col-lg-12
+          %a.font-size-xs.gray-color{href: "#"} View our 200+ reviews on Wedding Wire
+    %section.awards-section
+      .container
+        .row
+          .col-xl-2.col-lg-4.col-md-4.col-sm-6.col-6.col-xss-12.mb-4
+            .card.bg-light.text-center
+              .card-body.pb-4
+                .star-rating
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                %p.awards-card-text.font-weight-bold.text-dark.mt-1 COUPLES’ CHOICE
+                %p.awards-card-title.font-secondary.font-weight-normal.text-info
+                  AWARDS
+                  %span.font-secondary.font-weight-bold.text-primary.d-block 2020
+                %img{src: "images/home/awards_icon.svg"}/
+          .col-xl-2.col-lg-4.col-md-4.col-sm-6.col-6.col-xss-12.mb-4
+            .card.bg-light.text-center
+              .card-body.pb-4
+                .star-rating
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                %p.awards-card-text.font-weight-bold.text-dark.mt-1 COUPLES’ CHOICE
+                %p.awards-card-title.font-secondary.font-weight-normal.text-info
+                  AWARDS
+                  %span.font-secondary.font-weight-bold.text-primary.d-block 2019
+                %img{src: "images/home/awards_icon.svg"}/
+          .col-xl-2.col-lg-4.col-md-4.col-sm-6.col-6.col-xss-12.mb-4
+            .card.bg-light.text-center
+              .card-body.pb-4
+                .star-rating
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                %p.awards-card-text.font-weight-bold.text-dark.mt-1 COUPLES’ CHOICE
+                %p.awards-card-title.font-secondary.font-weight-normal.text-info
+                  AWARDS
+                  %span.font-secondary.font-weight-bold.text-primary.d-block 2018
+                %img{src: "images/home/awards_icon.svg"}/
+          .col-xl-2.col-lg-4.col-md-4.col-sm-6.col-6.col-xss-12.mb-4
+            .card.bg-light.text-center
+              .card-body.pb-4
+                .star-rating
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                %p.awards-card-text.font-weight-bold.text-dark.mt-1 COUPLES’ CHOICE
+                %p.awards-card-title.font-secondary.font-weight-normal.text-info
+                  AWARDS
+                  %span.font-secondary.font-weight-bold.text-primary.d-block 2017
+                %img{src: "images/home/awards_icon.svg"}/
+          .col-xl-2.col-lg-4.col-md-4.col-sm-6.col-6.col-xss-12.mb-4
+            .card.bg-light.text-center
+              .card-body.pb-4
+                .star-rating
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                %p.awards-card-text.font-weight-bold.text-dark.mt-1 COUPLES’ CHOICE
+                %p.awards-card-title.font-secondary.font-weight-normal.text-info
+                  AWARDS
+                  %span.font-secondary.font-weight-bold.text-primary.d-block 2016
+                %img{src: "images/home/awards_icon.svg"}/
+          .col-xl-2.col-lg-4.col-md-4.col-sm-6.col-6.col-xss-12.mb-4
+            .card.bg-light.text-center
+              .card-body.pb-4
+                .star-rating
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                %p.awards-card-text.font-weight-bold.text-dark.mt-1 COUPLES’ CHOICE
+                %p.awards-card-title.font-secondary.font-weight-normal.text-info
+                  AWARDS
+                  %span.font-secondary.font-weight-bold.text-primary.d-block 2015
+                %img{src: "images/home/awards_icon.svg"}/
+    %section.resources-section
+      .container
+        .row
+          .col-lg-12
+            %h1.text-center.mb-5 Useful Resources
+          .col-lg-6
+            .embed-responsive.embed-responsive-4by3
+              %iframe.embed-responsive-item{allowfullscreen: "", src: "https://www.youtube.com/embed/aeL2uJQuAEc"}
+            %h2.text-primary.mt-4.mb-4 How to Set Up Rental Up Lights
+            %p.font-weight-normal.text-secondary.font-size-xs This video was recorded at an actual wedding reception. DJ Brendan Pfaff is featured here giving an excellent overview, plus he includes some great tips on setting up decorative room lighting.
+          .col-lg-6
+            .embed-responsive.embed-responsive-4by3
+              %iframe.embed-responsive-item{allowfullscreen: "", src: "https://www.youtube.com/embed/NjQa0sgrvUg"}
+            %h2.text-primary.mt-4.mb-4 Create your own custom color
+            %p.font-weight-normal.text-secondary.font-size-xs Another great feature of the lights we rent is the ability to specify an RGB value to create your own custom color. Here is a quick video showing how to set a custom color:
+    %footer
+      .container
+        .row
+          .col-lg-1.order-lg-0.col-12.order-2
+            %a.navbar-brand{alt: "logo", href: "index.html"}
+              %img{src: "images/logo/logo_1.png"}/
+          .col-lg-3.order-lg-0.col-12.order-2
+            %a.navbar-brand{alt: "logo", href: "index.html"}
+              %img.footer-logo-pos.position-relative{src: "images/logo/logo_2.png"}/
+            %h5.text-secondary.mt-4
+              diyuplighting@gmail.com
+              %br/
+              (773) 917-8235
+          .col-lg-3.order-lg-0.col-sm-5.col-6.order-1.mt-4.mb-4
+            %h4.text-uppercase.text-primary.pb-2 PRODUCTS
+            .row
+              .col-lg-6
+                %ul
+                  %li
+                    %a{href: "product.html"} Uplight
+                  %li
+                    %a{href: "product_2.html"} Marquee Letter
+                  %li
+                    %a{href: "#"} Pin Spot
+                  %li
+                    %a{href: "#"} Confetti Blaster
+          .col-lg-3.order-lg-0.col-sm-5.col-6.order-1.mt-4.mb-4
+            %h4.text-uppercase.text-primary.pb-2 LEARN
+            .row
+              .col-lg-6
+                %ul.mb-0
+                  %li
+                    %a{href: "#"} First link
+                  %li
+                    %a{href: "#"} Second link
+                  %li
+                    %a{href: "#"} Third link
+                  %li
+                    %a{href: "#"} Fourth link
+              .col-lg-6
+                %ul
+                  %li
+                    %a{href: "#"} Fifth link
+                  %li
+                    %a{href: "#"} Sixth link
+          .col-lg-3.offset-lg-5.order-lg-0.col-12.order-3.mt-lg-5.mt-3
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-facebook.ml-2.mr-2.text-info.font-size-xl
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-twitter.ml-2.mr-2.text-info.font-size-xl
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-pinterest.ml-2.mr-2.text-info.font-size-xl
+          .col-lg-3.offset-lg-1.order-lg-0.order-4.mt-lg-5.mt-3
+            %h5.text-secondary © 2010-2020 19A, Inc.
+          .col-lg-12.order-lg-0.order-5
+            %h6.text-muted.mt-lg-5.mt-4.text-center New York | Los Angeles | Chicago | Houston | Philadelphia | Phoenix | San Antonio | San Diego | Dallas | San Jose | Austin | Indianapolis | Jacksonville | San Francisco | Columbus | Charlotte | Detroit | Memphis | Seattle | Memphis | Denver | Washington DC | Boston | Nashville | Baltimore | Oklahoma City | Louisville | Portland | Las Vegas | Milwaukee | Albuquerque | Tucson | Fresno | Sacramento | El Paso | Long Beach | Kansas City | Virginia Beach | Atlanta | Colorado Springs | Omaha | Raleigh | Miami | Oakland | Minneapolis | Tulsa | Cleveland | Wichita | New Orleans | Tampa | Aurora | St Louis | Pittsburgh | Cincinnati | Newark | Henderson | Fargo | Boise | Birmingham
+    %script{src: "//code.jquery.com/jquery-1.12.4.js"}
+    %script{src: "//code.jquery.com/ui/1.12.1/jquery-ui.js"}
+    %script{src: "js/owl.carousel.min.js"}
+    %script{src: "js/popper.min.js"}
+    %script{src: "js/bootstrap.min.js"}
+    %script{src: "js/scripts.js"}
