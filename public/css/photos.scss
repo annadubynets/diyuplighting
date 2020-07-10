@@ -16,3 +16,31 @@
 @import "dropdowns";
 @import "tabs";
 @import "gallery";
+
+.gallery-section {
+  .multi-collapse:not(.show) {
+    @include min-width($sm-screen) {
+      display: block;
+    }
+  }
+  .view-more, .view-less {
+    @include min-width($sm-screen) {
+      display: none!important;
+    }
+  }
+  a.view-more.collapsed  {
+    display: block;
+  }
+
+  a.view-more:not(.collapsed)  {
+    display: none;
+  }
+
+  a.view-less.collapsed  {
+    display: none;
+  }
+
+  a.view-less:not(.collapsed)  {
+    display: block;
+  }
+}
