@@ -802,6 +802,10 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   height: 87px;
 }
 
+.rounded {
+  border-radius: 25px !important;
+}
+
 .border-primary {
   border: 7px solid #574A97 !important;
   box-shadow: 0px 4px 20px #776FC3;

@@ -934,11 +934,27 @@ a:not([href]) {
   display: none;
 }
 
-.gallery-section .color-link {
-  text-decoration: underline;
+@media screen and (min-width: 576px) {
+  .gallery-section .multi-collapse:not(.show) {
+    display: block;
+  }
 }
-.gallery-section .color-link:hover {
-  color: #BDBDBD;
+@media screen and (min-width: 576px) {
+  .gallery-section .view-more, .gallery-section .view-less {
+    display: none !important;
+  }
+}
+.gallery-section a.view-more.collapsed {
+  display: block;
+}
+.gallery-section a.view-more:not(.collapsed) {
+  display: none;
+}
+.gallery-section a.view-less.collapsed {
+  display: none;
+}
+.gallery-section a.view-less:not(.collapsed) {
+  display: block;
 }
 
-/*# sourceMappingURL=colors.css.map */
+/*# sourceMappingURL=videos.css.map */
