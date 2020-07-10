@@ -796,8 +796,13 @@ a:not([href]) {
     object-fit: cover;
   }
 }
+.gallery .owl-carousel .item {
+  margin: auto;
+}
 .gallery .owl-carousel .owl-stage {
   padding-left: 0 !important;
+  display: flex;
+  align-items: center;
 }
 .gallery button.owl-prev, .gallery button.owl-next {
   border: none;

@@ -16,8 +16,13 @@
 				object-fit: cover;
 			}
 		}
+      .item {
+        margin: auto;
+      }
       .owl-stage {
         padding-left: 0!important;
+        display: flex;
+        align-items: center;
       }
     }
     button.owl-prev, button.owl-next {
