@@ -294,6 +294,9 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   margin: auto;
 }
 
+.ui-datepicker {
+  display: none;
+}
 .ui-datepicker th {
   font-style: normal;
   font-weight: 400;
