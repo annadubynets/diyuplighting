@@ -94,6 +94,10 @@
     @include max-screen($lg-screen) {
       margin: 69px 0px;
     }
+
+    .ui-widget.ui-widget-content {
+      border: none;
+    }
   }
 
   .date-picker-height {

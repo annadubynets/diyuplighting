@@ -72,16 +72,6 @@
     width: 38px;
     height: 38px;
   }
-
-  .multi-collapse:not(.show) {
-    @include min-width($lg-screen) {
-      display: inline;
-    }
-  }
-
-  .owl-stage {
-    align-items: center;
-  }
 }
 
 .custom-select {
@@ -96,23 +86,6 @@
 
 .form-inline .custom-select, .form-inline .input-group {
   width: 100%;
-}
-
-.ui-datepicker {
-  td {
-    span, a {
-      padding: 11px;
-    }
-  }
-}
-
-.ui-widget.ui-widget-content {
-  border: none;
-  padding: 10px;
-}
-.ui-widget-content {
-  border: solid 1px $dark-purple-color!important;
-  background: white!important;
 }
 
 .gallery-section {
