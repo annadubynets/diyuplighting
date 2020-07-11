@@ -8,6 +8,10 @@
   background-color: $white-color!important;
 }
 
+.bg-purple {
+  background-color: $dark-purple-color;
+}
+
 .bg-shape-1 {
   background-image: url("../images/shapes/bg-shape-1.svg");
   background-size: contain;
@@ -81,4 +85,9 @@
   }
 }
 
+.bg-shape-11 {
+  background-color: $light-blue-color;
+  border-radius: 25px;
+  padding: 11px 11px;
+}
 

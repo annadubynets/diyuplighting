@@ -59,12 +59,8 @@
   padding: 20px 30px;
   &:hover {
     background-color: $light-white-color;
-    border-color: transparent!important;
+    border-color: transparent !important;
     color: rgba(87, 74, 151, 0.43);
-  }
-  @include min-width($lg-screen) {
-    position: absolute;
-    top: -90px;
   }
 }
 

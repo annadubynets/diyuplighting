@@ -15,3 +15,8 @@
   border: 7px solid $dark-purple-color!important;
   box-shadow: 0px 4px 20px $light-purple-color;
 }
+
+.border-dashed-bottom {
+  border-bottom: dashed $light-purple-color;
+  border-bottom-width: 5px;
+}

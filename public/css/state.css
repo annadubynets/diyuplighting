@@ -157,8 +157,14 @@ footer ul li > a:hover {
   }
 }
 
-.font-size-xxl {
+.font-size-xxl, .font-size-xxl-responsive {
   font-size: 48px;
+}
+
+@media screen and (max-width: 375px) {
+  .font-size-xxl-responsive {
+    font-size: 40px;
+  }
 }
 
 .font-size-xl {
@@ -169,12 +175,24 @@ footer ul li > a:hover {
   font-size: 23px;
 }
 
-.font-size-md {
+.font-size-md, .font-size-md-responsive {
   font-size: 18px;
 }
 
-.font-size-sm {
+@media screen and (max-width: 375px) {
+  .font-size-md-responsive {
+    font-size: 15px;
+  }
+}
+
+.font-size-sm, .font-size-sm-responsive {
   font-size: 16px;
+}
+
+@media screen and (max-width: 375px) {
+  .font-size-sm-responsive {
+    font-size: 13px;
+  }
 }
 
 .font-size-xs {
@@ -183,6 +201,12 @@ footer ul li > a:hover {
 
 .font-size-xss {
   font-size: 9px;
+}
+
+@media screen and (min-width: 992px) {
+  .d-lg-flow-root {
+    display: flow-root;
+  }
 }
 
 .white-background {
@@ -270,6 +294,9 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   margin: auto;
 }
 
+.ui-datepicker {
+  display: none;
+}
 .ui-datepicker th {
   font-style: normal;
   font-weight: 400;
@@ -280,11 +307,8 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   text-align: center;
   border: 0;
 }
-.ui-datepicker td {
-  border: 0;
-}
 .ui-datepicker td span, .ui-datepicker td a {
-  padding: 14px;
+  padding: 11px;
   display: block;
   text-align: right;
   text-decoration: none;
@@ -300,7 +324,7 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   padding: 6px 0px;
   text-align: center;
   margin: 0 auto;
-  max-width: 140px !important;
+  max-width: 120px !important;
 }
 @media screen and (max-width: 1200px) {
   .ui-datepicker .ui-datepicker-title {
@@ -334,6 +358,7 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   background: 0 !important;
   left: 0 !important;
   transform: translateY(-25%);
+  cursor: pointer;
 }
 @media screen and (max-width: 992px) {
   .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
@@ -343,6 +368,39 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
 .ui-datepicker .ui-datepicker-prev:hover, .ui-datepicker .ui-datepicker-next:hover {
   border: none !important;
   background: transparent !important;
+}
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+  right: 2px;
+}
+.ui-datepicker .ui-datepicker-other-month {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #8F8D9A;
+  opacity: 0.2;
+  background: transparent;
+  border: none;
+}
+.ui-datepicker .ui-widget-header {
+  border: none;
+  background: transparent;
+}
+.ui-datepicker .ui-datepicker-current-day {
+  background: #776FC3;
+  width: 36px;
+  height: 36px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 50%;
+}
+.ui-datepicker .ui-datepicker-current-day > a {
+  color: #F2F2F2 !important;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
@@ -357,53 +415,24 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   text-align: center;
 }
 
-.ui-datepicker-other-month {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #8F8D9A;
-  opacity: 0.2;
-  background: transparent;
-  border: none;
-}
-
-.ui-widget-header {
-  border: none;
-  background: transparent;
-}
-
 .ui-widget.ui-widget-content {
-  width: 100%;
-  height: 100%;
-  border: none;
+  padding: 10px;
 }
 
 .ui-widget-content {
-  background: transparent !important;
+  border: solid 1px #574A97 !important;
 }
 
-.ui-datepicker .ui-datepicker-prev {
-  left: 2px;
+.ui-datepicker-inline.ui-widget-content {
+  background: transparent;
+  border: none !important;
 }
 
-.ui-datepicker .ui-datepicker-next {
-  right: 2px;
+.ui-datepicker-inline.ui-datepicker td {
+  border: 0;
 }
-
-.ui-datepicker-current-day {
-  background: #776FC3;
-  width: 36px;
-  height: 36px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  border-radius: 50%;
-}
-
-.ui-datepicker-current-day > a {
-  color: #F2F2F2 !important;
+.ui-datepicker-inline.ui-datepicker td span, .ui-datepicker-inline.ui-datepicker td a {
+  padding: 14px;
 }
 
 .owl-stage {
@@ -546,12 +575,6 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   border-color: transparent !important;
   color: rgba(87, 74, 151, 0.43);
 }
-@media screen and (min-width: 992px) {
-  .btn-secondary {
-    position: absolute;
-    top: -90px;
-  }
-}
 
 .btn-secondary.focus, .btn-secondary:focus {
   color: rgba(87, 74, 151, 0.43);
@@ -568,6 +591,10 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
 
 .bg-white {
   background-color: #FCFAFD !important;
+}
+
+.bg-purple {
+  background-color: #574A97;
 }
 
 .bg-shape-1 {
@@ -643,6 +670,12 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   }
 }
 
+.bg-shape-11 {
+  background-color: #E5F7FF;
+  border-radius: 25px;
+  padding: 11px 11px;
+}
+
 .font-secondary {
   font-family: "Arvo", sans-serif !important;
 }
@@ -684,6 +717,11 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
 .border-primary {
   border: 7px solid #574A97 !important;
   box-shadow: 0px 4px 20px #776FC3;
+}
+
+.border-dashed-bottom {
+  border-bottom: dashed #776FC3;
+  border-bottom-width: 5px;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active,
@@ -744,6 +782,62 @@ a:not([href]) {
   color: #574A97;
 }
 
+@media screen and (min-width: 576px) {
+  .gallery .owl-carousel .owl-item img {
+    width: 320px;
+    height: 213px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gallery .owl-carousel .owl-item img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+  }
+}
+.gallery .owl-carousel .item {
+  margin: auto;
+}
+.gallery .owl-carousel .owl-stage {
+  padding-left: 0 !important;
+  display: flex;
+  align-items: center;
+}
+.gallery button.owl-prev, .gallery button.owl-next {
+  border: none;
+  background-color: transparent;
+  font-size: 40px;
+  margin-top: -20px;
+}
+.gallery button.owl-prev span, .gallery button.owl-next span {
+  width: 24px;
+  height: 24px;
+  color: #574A97;
+  margin: 0 5px;
+}
+.gallery .owl-dot {
+  border: none;
+  background-color: transparent;
+}
+.gallery .owl-dot span {
+  width: 10px;
+  height: 10px;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 12px;
+}
+.gallery .owl-dot.active span {
+  background-color: #574A97;
+}
+.gallery .owl-item:not(.center) {
+  transform: scale(0.8, 0.8);
+}
+.gallery .gallery-description {
+  display: none;
+}
+
 .venues-section {
   padding: 44px 0px;
 }
@@ -787,74 +881,6 @@ a:not([href]) {
 
 .gallery-section {
   padding: 46px 0px 30px;
-}
-@media screen and (min-width: 576px) {
-  .gallery-section .owl-carousel .owl-item img {
-    width: 320px;
-    height: 213px;
-    object-fit: cover;
-  }
-}
-@media screen and (max-width: 576px) {
-  .gallery-section .owl-carousel .owl-item img {
-    width: 180px;
-    height: 120px;
-    object-fit: cover;
-  }
-}
-.gallery-section .owl-carousel .item {
-  margin: auto;
-}
-.gallery-section .owl-carousel .owl-stage {
-  padding-left: 0 !important;
-  display: flex;
-  align-items: center;
-}
-.gallery-section .owl-carousel .caption {
-  text-align: center;
-}
-.gallery-section button.owl-prev, .gallery-section button.owl-next {
-  border: none;
-  background-color: transparent;
-  font-size: 40px;
-  margin-top: -20px;
-  margin-right: 5px;
-}
-@media screen and (max-width: 576px) {
-  .gallery-section button.owl-prev, .gallery-section button.owl-next {
-    display: none;
-  }
-}
-.gallery-section button.owl-prev span, .gallery-section button.owl-next span {
-  width: 24px;
-  height: 24px;
-  color: #574A97;
-}
-.gallery-section .owl-dot {
-  border: none;
-  background-color: transparent;
-}
-.gallery-section .owl-dot span {
-  width: 10px;
-  height: 10px;
-  background-color: #C4C4C4;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 4px;
-}
-.gallery-section .owl-dot.active span {
-  background-color: #574A97;
-}
-.gallery-section .owl-item:not(.center) {
-  transform: scale(0.8, 0.8);
-}
-@media screen and (max-width: 576px) {
-  .gallery-section .owl-item:not(.center) {
-    transform: none;
-  }
-}
-.gallery-section .gallery-description {
-  display: none;
 }
 
 /*# sourceMappingURL=state.css.map */

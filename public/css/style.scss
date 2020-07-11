@@ -67,7 +67,8 @@
 .led-uplight-img {
   max-height: 310px;
   max-width: 100%;
-  object-fit: scale-down;
+  object-fit: cover;
+  width: 310px !important;
 }
 
 .calendar-section {
@@ -88,18 +89,22 @@
       padding-bottom: 0px;
     }
   }
-}
 
-.date-picker {
-  @include max-screen($lg-screen) {
-    margin: 69px 0px;
+  .date-picker {
+    @include max-screen($lg-screen) {
+      margin: 69px 0px;
+    }
+
+    .ui-widget.ui-widget-content {
+      border: none;
+    }
   }
-}
 
-.date-picker-height {
-  height: 310px;
-  @include max-screen($lg-screen) {
-    height: 400px;
+  .date-picker-height {
+    height: 310px;
+    @include max-screen($lg-screen) {
+      height: 400px;
+    }
   }
 }
 
