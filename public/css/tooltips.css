@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.tooltip-inner {
+  color: #FFFFFF;
+  /* цвет шрифта */
+  background-color: #8F8D9A;
+  /* цвет фона (по умолчанию #000) */
+  border-radius: 25px;
+  /* радиус скругдения углов */
+}
+
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^=top] .arrow::before {
+  border-top-color: #8F8D9A;
+  /* цвет стрелочки (по умолчанию #000)*/
+}
+
+/*# sourceMappingURL=tooltips.css.map */

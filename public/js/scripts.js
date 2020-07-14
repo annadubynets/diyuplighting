@@ -96,6 +96,10 @@ $('.select-nav').on('change', function (e) {
     $('.gallery-section .nav-tabs li a').eq($(this).val()).tab('show');
 });
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
 
 
 
