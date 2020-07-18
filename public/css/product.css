@@ -328,7 +328,7 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
 }
 
 .min-w-38, .min-w-38-responsive {
-  min-width: 38px !important;
+  max-width: 38px !important;
 }
 
 @media screen and (max-width: 576px) {
@@ -339,7 +339,7 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
 
 @media screen and (max-width: 576px) {
   .min-w-38-responsive {
-    min-width: 29px !important;
+    max-width: 29px !important;
   }
 }
 
@@ -534,6 +534,12 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
 
 .card .card-header .btn-link.collapsed:after {
   content: url(../images/home/arrow_down.svg);
+}
+
+.icon-card {
+  position: absolute;
+  top: -10px;
+  right: -3px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -828,6 +834,10 @@ i[class^=diy-icon-], i[class*=" diy-icon-"] {
   border-bottom: 1px solid #8F8D9A !important;
 }
 
+.border {
+  color: #8F8D9A;
+}
+
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-secondary.dropdown-toggle {
@@ -1022,10 +1032,12 @@ a:not([href]) {
   align-items: center;
 }
 .hero-section .custom-control-label::before {
-  top: 2px;
+  top: -10px;
+  left: -10px;
 }
 .hero-section .custom-control-label::after {
-  top: 2px;
+  top: -10px;
+  left: -10px;
 }
 
 .form-inline .custom-select, .form-inline .input-group {
@@ -1078,6 +1090,12 @@ a:not([href]) {
 }
 .testimonials-section a:hover {
   color: #828282;
+}
+
+.icon-card {
+  position: absolute;
+  top: -10px;
+  right: -3px;
 }
 
 /*# sourceMappingURL=product.css.map */

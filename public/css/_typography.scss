@@ -311,7 +311,7 @@ i[class^="diy-icon-"], i[class*=" diy-icon-"] {
 }
 
 .min-w-38 {
-  min-width: 38px!important;
+  max-width: 38px!important;
 }
 
 .min-h-50-responsive {
@@ -324,6 +324,6 @@ i[class^="diy-icon-"], i[class*=" diy-icon-"] {
 .min-w-38-responsive {
   @extend .min-w-38;
   @include max-screen($sm-screen) {
-    min-width: 29px!important;
+    max-width: 29px!important;
   }
 }
