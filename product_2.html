@@ -129,8 +129,8 @@
                                             </div>
                                             <div class="modal-body">
                                                 <div class="form-group pl-2">
-                                                    <label for="formGroupAddLetterInput" class="font-size-xs">Enter the Marquee lights letters to rent. It can be combination of the following letters and symbols: A-Z, 1-0, # and &</label>
-                                                    <input type="text" size="46" class="form-control mt-3" id="formGroupAddLetterInput">
+                                                    <label data-error="wrong" data-success="right" for="formGroupAddLetterInput" class="font-size-xs">Enter the Marquee lights letters to rent. It can be combination of the following letters and symbols: A-Z, 1-0, # and &</label>
+                                                    <input type="text" size="46" class="form-control validate mt-3" id="formGroupAddLetterInput">
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
@@ -182,30 +182,7 @@
                                     </div>
 
                                     <div class="col-lg-2 col-3 mb-2 align-self-center">
-                                        <i class="diy-icon-plus light-purple-color font-size-lg" data-toggle="modal" data-target="#addLetterModal"></i>
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="addLetterModal" tabindex="-1" role="dialog" aria-labelledby="addLetterModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="addLetterModalLabel">Add Marquee Letters</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="form-group pl-2">
-                                                            <label for="formGroupAddLetter2Input">Enter letter: </label>
-                                                            <input type="text" class="form-control ml-3" id="formGroupAddLetter2Input">
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary mb-0" data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <i class="diy-icon-plus light-purple-color font-size-lg" data-toggle="modal" data-target="#pickCharactersModal"></i>
                                     </div>
                                 </div>
                             </div>
