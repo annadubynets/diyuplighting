@@ -1046,8 +1046,8 @@ a:not([href]) {
   left: -20px;
 }
 .hero-section .custom-control-label::after {
-  top: -10px;
-  left: -10px;
+  top: 3px;
+  left: -20px;
 }
 .hero-section .icon-card {
   position: absolute;
