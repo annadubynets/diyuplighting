@@ -288,12 +288,17 @@ $colours:
   "yellow" $yellow-color;
   
 @each $i in $colours{
-	.#{nth($i, 1)}-background {
-		background-color: nth($i, 2);
-	}
-	.#{nth($i, 1)}-color {
-		color:nth($i, 2);
-	}
+  .#{nth($i, 1)}-background {
+      background-color: nth($i, 2);
+  }
+  .#{nth($i, 1)}-color {
+      color:nth($i, 2);
+  }
+  .hover-#{nth($i, 1)}-color {
+    &:hover {
+      color: nth($i, 2);
+    }
+  }
 }
 
 i[class^="diy-icon-"], i[class*=" diy-icon-"] {
