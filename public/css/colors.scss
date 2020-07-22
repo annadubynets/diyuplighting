@@ -17,11 +17,8 @@
 @import "tabs";
 @import "gallery";
 
-.gallery-section {
-  .color-link {
-    text-decoration: underline;
-    &:hover {
-      color: $light-gray-color;
-    }
+.color-link {
+  &:hover {
+    color: $light-gray-color;
   }
 }
