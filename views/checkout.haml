@@ -42,7 +42,7 @@
     .hero-section
       .container
         .row
-          .alert.alert-primary.col-lg-12.pt-2.pl-3.pb-2.mt-4.mb-lg-5.mb-4.mr-3.ml-3{role: "alert"}
+          .alert.alert-primary.col-lg-12.pt-2.pl-3.pb-2.mt-4.mb-lg-5.mb-4.mr-3.mr-sm-0.ml-3.ml-sm-0{role: "alert"}
             %i.diy-icon-timer.white-color
             %p.white-color.d-inline.align-text-top.font-size-small.font-size-small-responsive We are temporally holding 10 lights for you to give you time to fill out this rental agreement. This agreement will expire and the hold will be released in 40:25 minutes.
         %form.form-inline{method: "get"}
@@ -61,7 +61,7 @@
                       %input#lastNameInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "Last Name", type: "text"}/
                     .input-group.col-lg-6.col-md-3.col-12.mt-lg-0.mt-4.order-lg-0.order-2
                       / Email input
-                      %input#emailInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "Email", type: "text"}/
+                      %input#emailInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "Email", type: "email"}/
                     .input-group.col-lg-6.col-md-3.col-12.mt-4.order-lg-0.order-3
                       / Address input
                       %input#addressInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "Address", type: "text"}/
@@ -151,19 +151,14 @@
                       %p.text-secondary.font-size-small
                         Event Date: September 09, 2020.
                         %i.diy-icon-edit.light-gray-color.font-size-sm.align-bottom
-                    .col-lg-5.col-4
+                    .col-lg-4.col-3
                       %p.font-size-xs.font-size-xs-responsive.text-secondary
                         Uplights
                         %span.font-italic.d-block.font-size-small $17 each
-                    .col-lg-4.col-5
-                      .form-row
-                        %label.text-secondary.col-lg-4.col-4.font-size-xs.font-size-xs-responsive.align-self-center{for: "qtySelect"} Qty:
-                        %select#qtySelect.custom-select.bg-light.text-secondary.font-size-xs.col-lg-8.col-8.pl-4
-                          %option 1
-                          %option 2
-                          %option 3
-                          %option 4
-                          %option 5
+                    .col-lg-5.col-6
+                      .form-group
+                        %label.text-secondary.col-lg-3.col-3.col-5.font-size-xs.font-size-xs-responsive.align-self-center Qty:
+                        %input.col-lg-9.col-6.input-spinner.text-secondary{type: "number", value: "10"}/
                     .col-lg-2.col-3.offset-lg-1.align-self-center
                       %p.font-weight-bold.text-secondary.font-size-xs.font-size-xs-responsive $170
                     .col-lg-10.col-9.float-right.mt-3
