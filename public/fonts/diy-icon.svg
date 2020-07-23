@@ -7,7 +7,7 @@
       units-per-em="1000" ascent="1000"
       descent="0" />
     <missing-glyph horiz-adv-x="0" />
-    <glyph glyph-name="arrow_back"
+    <glyph glyph-name="arrow-back"
       unicode="&#xF101;"
       horiz-adv-x="1000" d=" M743.085 838.75L668.92 912.5L256.836 500L669.3349999999999 87.5L743.085 161.2500000000001L404.336 500L743.085 838.75z" />
     <glyph glyph-name="business-center"
