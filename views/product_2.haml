@@ -78,28 +78,57 @@
                   / Date input
                   %input#date.custom-select.date-picker.text-secondary{autocomplete: "off", name: "date", placeholder: "Date", type: "text"}/
                 .col-lg-6
-                .form-group.col-lg-3.col-md-3.col-6.mb-3
-                  / Quantity select
-                  %select#exampleFormControlSelect1.custom-select.text-secondary
-                    %option{disabled: "disabled", selected: "selected", value: ""} Letter
-                    %option A
-                    %option B
-                    %option C
-                    %option D
-                    %option E
-                .form-group.col-lg-3.col-md-3.col-6.mb-3
-                  / Quantity select
-                  %select#exampleFormControlSelect2.custom-select.text-secondary
-                    %option{disabled: "disabled", selected: "selected", value: ""} Qty
-                    %option 1
-                    %option 2
-                    %option 3
-                    %option 4
-                    %option 5
-                .col-lg-6
                 .col-lg-6.col-md-6.col-12.float-right.text-lg-left.text-center.mb-3
-                  %button.btn.btn-light.pt-3.pr-5.pb-3.font-weight-bold.btn-lg{href: "#", role: "button"} Add another letter
-          .col-lg-8.float-right.col-12.order-8.text-lg-left.text-center
+                  %button.btn.btn-light.pt-3.pr-5.pb-3.font-weight-bold.btn-lg{"data-target" => "#pickCharactersModal", "data-toggle" => "modal", type: "button"}
+                    Pick Your Marquee Characters
+                  / Modal
+                  #pickCharactersModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "pickCharactersModalLabel", role: "dialog", tabindex: "-1"}
+                    .modal-dialog{role: "document"}
+                      .modal-content
+                        .modal-header
+                          %h5#pickCharactersModalLabel.modal-title Add Marquee Characters
+                          %button.close{"aria-label" => "Close", "data-dismiss" => "modal", type: "button"}
+                            %span{"aria-hidden" => "true"} ×
+                        .modal-body
+                          .form-group.pl-2
+                            %label.font-size-xs{"data-error" => "wrong", "data-success" => "right", for: "formGroupAddLetterInput"} Enter the Marquee lights letters to rent. It can be combination of the following letters and symbols: A-Z, 1-0, # and &amp;
+                            %input#formGroupAddLetterInput.form-control.validate.mt-3{size: "46", type: "text"}/
+                        .modal-footer
+                          %button.btn.btn-secondary.mb-0{"data-dismiss" => "modal", type: "button"} Cancel
+                          %button.btn.btn-primary{type: "button"} Add
+                .col-lg-6
+                .col-lg-3.col-5
+                  %p.font-size-sm.font-size-sm-responsive.text-secondary
+                    Marquee Letters:
+                .col-lg-6.col-6.mt-4
+                  .row
+                    .col-lg-2.col-2.mb-2.min-h-50.min-w-38.min-h-50-responsive.min-w-38-responsive.bg-light.border.align-items-center.d-flex.ml-2.mr-2.p-0
+                      %p.text-secondary.font-size-xs.text-center.m-auto
+                        J
+                        %i.diy-icon-minus.light-gray-color.align-middle.icon-card
+                    .col-lg-2.col-3.mb-2.min-h-50.min-w-38.min-h-50-responsive.min-w-38-responsive.bg-light.border.align-items-center.d-flex.ml-2.mr-2.p-0
+                      %p.text-secondary.font-size-xs.text-center.m-auto
+                        A
+                        %i.diy-icon-minus.light-gray-color.align-middle.icon-card
+                    .col-lg-2.col-3.mb-2.min-h-50.min-w-38.min-h-50-responsive.min-w-38-responsive.bg-light.border.align-items-center.d-flex.ml-2.mr-2.p-0
+                      %p.text-secondary.font-size-xs.text-center.m-auto
+                        V
+                        %i.diy-icon-minus.light-gray-color.align-middle.icon-card
+                    .col-lg-2.col-3.mb-2.min-h-50.min-w-38.min-h-50-responsive.min-w-38-responsive.bg-light.border.align-items-center.d-flex.ml-2.mr-2.p-0
+                      %p.text-secondary.font-size-xs.text-center.m-auto
+                        I
+                        %i.diy-icon-minus.light-gray-color.align-middle.icon-card
+                    .col-lg-2.col-3.mb-2.min-h-50.min-w-38.min-h-50-responsive.min-w-38-responsive.bg-light.border.align-items-center.d-flex.ml-2.mr-2.p-0
+                      %p.text-secondary.font-size-xs.text-center.m-auto
+                        E
+                        %i.diy-icon-minus.light-gray-color.align-middle.icon-card
+                    .col-lg-2.col-3.mb-2.min-h-50.min-w-38.min-h-50-responsive.min-w-38-responsive.bg-light.border.align-items-center.d-flex.ml-2.mr-2.p-0
+                      %p.text-secondary.font-size-xs.text-center.m-auto
+                        R
+                        %i.diy-icon-minus.light-gray-color.align-middle.icon-card
+                    .col-lg-2.col-3.mb-2.align-self-center
+                      %i.diy-icon-plus.light-purple-color.font-size-lg{"data-target" => "#pickCharactersModal", "data-toggle" => "modal"}
+          .col-lg-8.float-right.col-12.order-8.text-lg-left.text-center.mt-3
             %a.btn.btn-primary.font-weight-bold.btn-lg{href: "#", role: "button"} Rent Now
     %section.gallery-section
       .container

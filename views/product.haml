@@ -76,13 +76,7 @@
               %form.form-inline{method: "get"}
                 .form-group.col-lg-3.col-md-3.col-6
                   / Quantity select
-                  %select#exampleFormControlSelect1.custom-select.text-secondary
-                    %option{disabled: "disabled", selected: "selected", value: ""} Quantity
-                    %option 1
-                    %option 2
-                    %option 3
-                    %option 4
-                    %option 5
+                  %input.input-spinner.text-secondary{type: "number", value: "10"}/
                 .form-group.col-lg-3.col-md-3.col-6
                   / Date input
                   %input#date.custom-select.date-picker.text-secondary{autocomplete: "off", name: "date", placeholder: "Date", type: "text"}/
