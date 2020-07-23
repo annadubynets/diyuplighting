@@ -296,7 +296,7 @@ $colours:
   }
   .hover-#{nth($i, 1)}-color {
     &:hover {
-      color: nth($i, 2);
+      color: nth($i, 2)!important;
     }
   }
 }

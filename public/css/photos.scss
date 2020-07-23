@@ -43,4 +43,11 @@
   a.view-less:not(.collapsed)  {
     display: block;
   }
+
+  .photo-img {
+    width: 320px;
+    height: 213px;
+    object-fit: cover;
+  }
+
 }
