@@ -242,7 +242,7 @@ footer ul li > a:hover {
 }
 
 .hover-white-color:hover {
-  color: #FCFAFD;
+  color: #FCFAFD !important;
 }
 
 .light-white-background {
@@ -254,7 +254,7 @@ footer ul li > a:hover {
 }
 
 .hover-light-white-color:hover {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 
 .light-purple-background {
@@ -266,7 +266,7 @@ footer ul li > a:hover {
 }
 
 .hover-light-purple-color:hover {
-  color: #776FC3;
+  color: #776FC3 !important;
 }
 
 .dark-purple-background {
@@ -278,7 +278,7 @@ footer ul li > a:hover {
 }
 
 .hover-dark-purple-color:hover {
-  color: #574A97;
+  color: #574A97 !important;
 }
 
 .light-blue-background {
@@ -290,7 +290,7 @@ footer ul li > a:hover {
 }
 
 .hover-light-blue-color:hover {
-  color: #E5F7FF;
+  color: #E5F7FF !important;
 }
 
 .light-gray-background {
@@ -302,7 +302,7 @@ footer ul li > a:hover {
 }
 
 .hover-light-gray-color:hover {
-  color: #BDBDBD;
+  color: #BDBDBD !important;
 }
 
 .gray-background {
@@ -314,7 +314,7 @@ footer ul li > a:hover {
 }
 
 .hover-gray-color:hover {
-  color: #8F8D9A;
+  color: #8F8D9A !important;
 }
 
 .dark-black-background {
@@ -326,7 +326,7 @@ footer ul li > a:hover {
 }
 
 .hover-dark-black-color:hover {
-  color: #284458;
+  color: #284458 !important;
 }
 
 .light-white-background {
@@ -338,7 +338,7 @@ footer ul li > a:hover {
 }
 
 .hover-light-white-color:hover {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 
 .yellow-background {
@@ -350,7 +350,7 @@ footer ul li > a:hover {
 }
 
 .hover-yellow-color:hover {
-  color: #F2C94C;
+  color: #F2C94C !important;
 }
 
 i[class^=diy-icon-], i[class*=" diy-icon-"] {
