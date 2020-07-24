@@ -1023,5 +1023,13 @@ a:not([href]) {
 .gallery-section a.view-less:not(.collapsed) {
   display: block;
 }
+.gallery-section .wistia-video {
+  width: 100%;
+  height: 190px;
+  border-radius: 10px;
+}
+.gallery-section .wistia-video div {
+  border-radius: 10px;
+}
 
 /*# sourceMappingURL=videos.css.map */

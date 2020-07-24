@@ -43,4 +43,13 @@
   a.view-less:not(.collapsed)  {
     display: block;
   }
+
+  .wistia-video {
+    width: 100%;
+    height: 190px;
+    border-radius: 10px;
+    & div {
+      border-radius: 10px;
+    }
+  }
 }
