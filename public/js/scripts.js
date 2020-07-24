@@ -93,7 +93,7 @@ function showPageDescription(galleryId) {
 }
 
 $('.select-nav').on('change', function (e) {
-    $('.gallery-section .nav-tabs li a').eq($(this).val()).tab('show');
+    $('.nav-tabs li a').eq($(this).val()).tab('show');
 });
 
 $(function () {

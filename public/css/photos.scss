@@ -17,7 +17,7 @@
 @import "tabs";
 @import "gallery";
 
-.gallery-section {
+.photo-gallery-section {
   .multi-collapse:not(.show) {
     @include min-width($sm-screen) {
       display: block;
@@ -50,4 +50,11 @@
     object-fit: cover;
   }
 
+  .diy-icon-arrow-back {
+    top: 2px;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
