@@ -1,0 +1,170 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0", name: "viewport"}/
+    %meta{content: "ie=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title Videos
+    %link{href: "css/style.css", rel: "stylesheet"}/
+    %link{href: "css/state.css", rel: "stylesheet"}/
+    %link{href: "css/videos.css", rel: "stylesheet"}/
+  %body
+    %header
+      %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        .container
+          %a.navbar-brand.mr-0{alt: "logo", href: "index.html"}
+            %img{src: "images/logo/logo_1.png"}/
+            %img{src: "images/logo/logo_2.png"}/
+          %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", type: "button"}
+            %img{src: "images/navbar/menu_icon.svg"}/
+          #navbarSupportedContent.collapse.navbar-collapse
+            %ul.navbar-nav.ml-auto
+              %li.nav-item.dropdown
+                %a#navbarDropdownProducts.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: "#", role: "button"}
+                  PRODUCTS
+                .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+                  %a.dropdown-item{href: "product.html"} Uplight
+                  %a.dropdown-item{href: "product_2.html"} Marquee Letter
+                  %a.dropdown-item{href: "#"} Pin Spot
+                  %a.dropdown-item{href: "#"} Confetti Blaster
+              %li.nav-item.dropdown
+                %a#navbarDropdownLearn.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: "#", role: "button"}
+                  LEARN
+                .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+                  %a.dropdown-item{href: "#"} First link
+                  %a.dropdown-item{href: "#"} Second link
+                  %a.dropdown-item{href: "#"} Third link
+                  %a.dropdown-item{href: "#"} Fourth link
+                  %a.dropdown-item{href: "#"} Fifth link
+                  %a.dropdown-item{href: "#"} Sixth link
+              %li.nav-item
+                %a.nav-link{href: "#"} CONTACT
+            %a.btn.btn-primary.font-weight-bold.position-relative{href: "#", role: "button"} Rent Now
+    %section.gallery-section
+      .container
+        .row
+          .col-lg-12
+            %h1.mb-4 How-To Videos
+        .row
+          .col-lg-4.col-sm-6.col-12.card.bg-light
+            .card-body
+              .embed-responsive.embed-responsive-4by3.rounded
+                %iframe.embed-responsive-item{allowfullscreen: "", src: "https://www.youtube.com/embed/aeL2uJQuAEc"}
+              %h2.text-info.mt-3.mb-4 How to Set Up
+              %p.text-secondary.font-size-xs This video was recorded at an actual wedding reception. DJ Brendan Pfaff is featured here giving an excellent overview, plus he includes some great tips on setting up decorative room lighting.
+          .col-lg-4.col-sm-6.col-12.card.bg-light
+            .card-body
+              .embed-responsive.embed-responsive-4by3.rounded
+                %iframe.embed-responsive-item{allowfullscreen: "", src: "https://www.youtube.com/embed/NjQa0sgrvUg"}
+              %h2.text-info.mt-3.mb-4 Create Custom Color
+              %p.text-secondary.font-size-xs Another great feature of the lights we rent is the ability to specify an RGB value to create your own custom color. Here is a quick video showing how to set a custom color.
+          .col-lg-4.col-sm-6.col-12.card.bg-light
+            .card-body
+              .embed-responsive.embed-responsive-4by3.rounded
+                %iframe.embed-responsive-item{allowfullscreen: "", src: "https://www.youtube.com/embed/aeL2uJQuAEc"}
+              %h2.text-info.mt-3.mb-4 Pattern Settings
+              %p.text-secondary.font-size-xs You can also set each light to scroll through all the colors. You can select a fast change, slow change, or to change on beat with music playing. This video was recording at a wedding reception, with the pattern just set to random.
+          .col-lg-4.col-sm-6.col-12.card.bg-light.collapse.multi-collapse
+            .card-body
+              .embed-responsive.embed-responsive-4by3.rounded
+                %iframe.embed-responsive-item{allowfullscreen: "", src: "https://www.youtube.com/embed/NjQa0sgrvUg"}
+              %h2.text-info.mt-3.mb-4 How easy it is?
+              %p.text-secondary.font-size-xs Very easy. Here is another video showing how to use them:
+          .col-lg-4.col-sm-6.col-12.card.bg-light.collapse.multi-collapse
+            .card-body
+              .embed-responsive.embed-responsive-4by3.rounded
+                %iframe.embed-responsive-item{allowfullscreen: "", src: "https://www.youtube.com/embed/aeL2uJQuAEc"}
+              %h2.text-info.mt-3.mb-4 Promo Video
+              %p.text-secondary.font-size-xs The 45 second overview
+          .col-lg-4.col-sm-6.col-12.card.bg-light.collapse.multi-collapse
+            .card-body
+              .embed-responsive.embed-responsive-4by3.rounded
+                %iframe.embed-responsive-item{allowfullscreen: "", src: "https://www.youtube.com/embed/NjQa0sgrvUg"}
+              %h2.text-info.mt-3.mb-4 7 Colors to choose from
+              %p.text-secondary.font-size-xs We love the lights that we rent because there are 7 built-in colors that are super easy to select. Here is a video showing the built-in colors:
+        .row
+          .col-8.offset-2.text-center
+            %a.btn.btn-light.font-weight-bold.view-more.collapsed.mt-4{"aria-expanded" => "false", "data-target" => ".multi-collapse", "data-toggle" => "collapse"}
+              View More
+            %a.btn.btn-light.font-weight-bold.view-less.collapsed.mt-4{"aria-expanded" => "false", "data-target" => ".multi-collapse", "data-toggle" => "collapse"}
+              View Less
+    %section.calendar-section
+      .container
+        .row.d-flex.justify-content-lg-start.justify-content-center
+          .col-lg-6.order-1.text-lg-left.col-12.text-center
+            %h1.mb-lg-4.mb-3 Reserve your uplights
+            %p.text-secondary.font-weight-normal Select your event date and quantity needed in order to instantly check availability. We have a limited number of lights, so we recommend reserving your uplighting as early as possible.
+          .col-lg-5.offset-lg-1.order-2.text-lg-left.col-12.col-sm-8.col-md-6.d-flex.justify-content-center.date-picker-height
+            .date-picker
+          .col-lg-6.offset-lg-0.text-lg-left.col-12.text-center.order-4
+            .dropdown
+              %button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.qty-dropdown{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
+                Qty
+              .dropdown-menu.mt-0{"aria-labelledby" => "dropdownMenuButton"}
+                %a.dropdown-item{href: "#"} Action
+                %a.dropdown-item{href: "#"} Another action
+                %a.dropdown-item{href: "#"} Something else here
+            %a.btn.btn-primary.font-weight-bold.btn-lg{href: "#", role: "button"} Check Availability
+    %footer
+      .container
+        .row
+          .col-lg-1.order-lg-0.col-12.order-2
+            %a.navbar-brand{alt: "logo", href: "index.html"}
+              %img{src: "images/logo/logo_1.png"}/
+          .col-lg-3.order-lg-0.col-12.order-2
+            %a.navbar-brand{alt: "logo", href: "index.html"}
+              %img.footer-logo-pos.position-relative{src: "images/logo/logo_2.png"}/
+            %h5.text-secondary.mt-4
+              diyuplighting@gmail.com
+              %br/
+              (773) 917-8235
+          .col-lg-3.order-lg-0.col-sm-5.col-6.order-1.mt-4.mb-4
+            %h4.text-uppercase.text-primary.pb-2 PRODUCTS
+            .row
+              .col-lg-6
+                %ul
+                  %li
+                    %a{href: "product.html"} Uplight
+                  %li
+                    %a{href: "product_2.html"} Marquee Letter
+                  %li
+                    %a{href: "#"} Pin Spot
+                  %li
+                    %a{href: "#"} Confetti Blaster
+          .col-lg-3.order-lg-0.col-sm-5.col-6.order-1.mt-4.mb-4
+            %h4.text-uppercase.text-primary.pb-2 LEARN
+            .row
+              .col-lg-6
+                %ul.mb-0
+                  %li
+                    %a{href: "#"} First link
+                  %li
+                    %a{href: "#"} Second link
+                  %li
+                    %a{href: "#"} Third link
+                  %li
+                    %a{href: "#"} Fourth link
+              .col-lg-6
+                %ul
+                  %li
+                    %a{href: "#"} Fifth link
+                  %li
+                    %a{href: "#"} Sixth link
+          .col-lg-3.offset-lg-5.order-lg-0.col-12.order-3.mt-lg-5.mt-3
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-facebook.ml-2.mr-2.text-info.font-size-xl
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-twitter.ml-2.mr-2.text-info.font-size-xl
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-pinterest.ml-2.mr-2.text-info.font-size-xl
+          .col-lg-3.offset-lg-1.order-lg-0.order-4.mt-lg-5.mt-3
+            %h5.text-secondary © 2010-2020 19A, Inc.
+          .col-lg-12.order-lg-0.order-5
+            %h6.text-muted.mt-lg-5.mt-4.text-center New York | Los Angeles | Chicago | Houston | Philadelphia | Phoenix | San Antonio | San Diego | Dallas | San Jose | Austin | Indianapolis | Jacksonville | San Francisco | Columbus | Charlotte | Detroit | Memphis | Seattle | Memphis | Denver | Washington DC | Boston | Nashville | Baltimore | Oklahoma City | Louisville | Portland | Las Vegas | Milwaukee | Albuquerque | Tucson | Fresno | Sacramento | El Paso | Long Beach | Kansas City | Virginia Beach | Atlanta | Colorado Springs | Omaha | Raleigh | Miami | Oakland | Minneapolis | Tulsa | Cleveland | Wichita | New Orleans | Tampa | Aurora | St Louis | Pittsburgh | Cincinnati | Newark | Henderson | Fargo | Boise | Birmingham
+    %script{src: "//code.jquery.com/jquery-1.12.4.js"}
+    %script{src: "//code.jquery.com/ui/1.12.1/jquery-ui.js"}
+    %script{src: "js/owl.carousel.min.js"}
+    %script{src: "js/popper.min.js"}
+    %script{src: "js/bootstrap.min.js"}
+    %script{src: "js/scripts.js"}

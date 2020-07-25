@@ -1,0 +1,183 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0", name: "viewport"}/
+    %meta{content: "ie=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title FAQ
+    %link{href: "css/style.css", rel: "stylesheet"}/
+  %body
+    %header
+      %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        .container
+          %a.navbar-brand.mr-0{alt: "logo", href: "index.html"}
+            %img{src: "images/logo/logo_1.png"}/
+            %img{src: "images/logo/logo_2.png"}/
+          %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", type: "button"}
+            %img{src: "images/navbar/menu_icon.svg"}/
+          #navbarSupportedContent.collapse.navbar-collapse
+            %ul.navbar-nav.ml-auto
+              %li.nav-item.dropdown
+                %a#navbarDropdownProducts.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: "#", role: "button"}
+                  PRODUCTS
+                .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+                  %a.dropdown-item{href: "product.html"} Uplight
+                  %a.dropdown-item{href: "product_2.html"} Marquee Letter
+                  %a.dropdown-item{href: "#"} Pin Spot
+                  %a.dropdown-item{href: "#"} Confetti Blaster
+              %li.nav-item.dropdown
+                %a#navbarDropdownLearn.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: "#", role: "button"}
+                  LEARN
+                .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+                  %a.dropdown-item{href: "#"} First link
+                  %a.dropdown-item{href: "#"} Second link
+                  %a.dropdown-item{href: "#"} Third link
+                  %a.dropdown-item{href: "#"} Fourth link
+                  %a.dropdown-item{href: "#"} Fifth link
+                  %a.dropdown-item{href: "#"} Sixth link
+              %li.nav-item
+                %a.nav-link{href: "#"} CONTACT
+            %a.btn.btn-primary.font-weight-bold.position-relative{href: "#", role: "button"} Rent Now
+    %section.question-section.bg-light.pt-5.pb-5
+      .container
+        .row
+          .col-lg-12.text-center
+            %h1.mb-5 Frequently Asked Questions
+          .col-lg-10.offset-lg-1.mb-5
+            #accordionAnswersQ1.accordion
+              .card.bg-light
+                #headingA0.card-header.bg-light
+                  %a.btn.btn-link.d-block.text-left.collapsed.question-title.font-weight-bold.text-primary{"aria-controls" => "collapseA0", "aria-expanded" => "false", "data-target" => "#collapseA0", "data-toggle" => "collapse", href: "#"}
+                    Is this really that easy to do?
+                #collapseA0.collapse{"aria-labelledby" => "headingA0", "data-parent" => "#accordionAnswersQ1"}
+                  .card-body
+                    %p.question-text.text-secondary.font-weight-normal This is true for traditional par cans. We only ship out more modern LED lights. They use very minimal power and do not get hot at all. You can have them on for your entire event!
+              .card.bg-light
+                #headingA1.card-header.bg-light
+                  %a.btn.btn-link.d-block.text-left.collapsed.question-title.font-weight-bold.text-primary{"aria-controls" => "collapseA1", "aria-expanded" => "false", "data-target" => "#collapseA1", "data-toggle" => "collapse", href: "#"}
+                    I've heard that par cans get really hot and can cause fires and/or electrical problems.
+                #collapseA1.collapse{"aria-labelledby" => "headingA1", "data-parent" => "#accordionAnswersQ1"}
+                  .card-body
+                    %p.question-text.text-secondary.font-weight-normal This is true for traditional par cans. We only ship out more modern LED lights. They use very minimal power and do not get hot at all. You can have them on for your entire event!
+              .card.bg-light
+                #headingA2.card-header.bg-light
+                  %a.btn.btn-link.d-block.text-left.collapsed.question-title.font-weight-bold.text-primary{"aria-controls" => "collapseA2", "aria-expanded" => "false", "data-target" => "#collapseA2", "data-toggle" => "collapse", href: "#"}
+                    Do you rent indoor or outdoor lights?
+                #collapseA2.collapse{"aria-labelledby" => "headingA2", "data-parent" => "#accordionAnswersQ1"}
+                  .card-body
+                    %p.question-text.text-secondary.font-weight-normal This is true for traditional par cans. We only ship out more modern LED lights. They use very minimal power and do not get hot at all. You can have them on for your entire event!
+              .card.bg-light
+                #headingA3.card-header.bg-light
+                  %a.btn.btn-link.d-block.text-left.collapsed.question-title.font-weight-bold.text-primary{"aria-controls" => "collapseA3", "aria-expanded" => "false", "data-target" => "#collapseA3", "data-toggle" => "collapse", href: "#"}
+                    How many lights should I rent?
+                #collapseA3.collapse{"aria-labelledby" => "headingA3", "data-parent" => "#accordionAnswersQ1"}
+                  .card-body
+                    %p.question-text.text-secondary.font-weight-normal This is true for traditional par cans. We only ship out more modern LED lights. They use very minimal power and do not get hot at all. You can have them on for your entire event!
+              .card.bg-light
+                #headingA4.card-header.bg-light
+                  %a.btn.btn-link.d-block.text-left.collapsed.question-title.font-weight-bold.text-primary{"aria-controls" => "collapseA4", "aria-expanded" => "false", "data-target" => "#collapseA4", "data-toggle" => "collapse", href: "#"}
+                    What length power cable is provided? Will I need any additional cords?
+                #collapseA4.collapse{"aria-labelledby" => "headingA4", "data-parent" => "#accordionAnswersQ1"}
+                  .card-body
+                    %p.question-text.text-secondary.font-weight-normal This is true for traditional par cans. We only ship out more modern LED lights. They use very minimal power and do not get hot at all. You can have them on for your entire event!
+              .card.bg-light
+                #headingA5.card-header.bg-light
+                  %a.btn.btn-link.d-block.text-left.collapsed.question-title.font-weight-bold.text-primary{"aria-controls" => "collapseA4", "aria-expanded" => "false", "data-target" => "#collapseA5", "data-toggle" => "collapse", href: "#"}
+                    Do you rent indoor or outdoor lights?
+                #collapseA5.collapse{"aria-labelledby" => "headingA5", "data-parent" => "#accordionAnswersQ1"}
+                  .card-body
+                    %p.question-text.text-secondary.font-weight-normal This is true for traditional par cans. We only ship out more modern LED lights. They use very minimal power and do not get hot at all. You can have them on for your entire event!
+              .card.bg-light
+                #headingA6.card-header.bg-light
+                  %a.btn.btn-link.d-block.text-left.collapsed.question-title.font-weight-bold.text-primary{"aria-controls" => "collapseA3", "aria-expanded" => "false", "data-target" => "#collapseA6", "data-toggle" => "collapse", href: "#"}
+                    How many lights should I rent?
+                #collapseA6.collapse{"aria-labelledby" => "headingA6", "data-parent" => "#accordionAnswersQ1"}
+                  .card-body
+                    %p.question-text.text-secondary.font-weight-normal This is true for traditional par cans. We only ship out more modern LED lights. They use very minimal power and do not get hot at all. You can have them on for your entire event!
+              .card.bg-light
+                #headingA7.card-header.bg-light
+                  %a.btn.btn-link.d-block.text-left.collapsed.question-title.font-weight-bold.text-primary{"aria-controls" => "collapseA7", "aria-expanded" => "false", "data-target" => "#collapseA7", "data-toggle" => "collapse", href: "#"}
+                    What length power cable is provided? Will I need any additional cords?
+                #collapseA7.collapse{"aria-labelledby" => "headingA4", "data-parent" => "#accordionAnswersQ1"}
+                  .card-body
+                    %p.question-text.text-secondary.font-weight-normal This is true for traditional par cans. We only ship out more modern LED lights. They use very minimal power and do not get hot at all. You can have them on for your entire event!
+    %section.calendar-section
+      .container
+        .row.d-flex.justify-content-lg-start.justify-content-center
+          .col-lg-6.order-1.text-lg-left.col-12.text-center
+            %h1.mb-lg-4.mb-3 Reserve your uplights
+            %p.text-secondary.font-weight-normal Select your event date and quantity needed in order to instantly check availability. We have a limited number of lights, so we recommend reserving your uplighting as early as possible.
+          .col-lg-5.offset-lg-1.order-2.text-lg-left.col-12.col-sm-8.col-md-6.d-flex.justify-content-center.date-picker-height
+            .date-picker
+          .col-lg-6.offset-lg-0.text-lg-left.col-12.text-center.order-4
+            .dropdown
+              %button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle.qty-dropdown{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", type: "button"}
+                Qty
+              .dropdown-menu.mt-0{"aria-labelledby" => "dropdownMenuButton"}
+                %a.dropdown-item{href: "#"} Action
+                %a.dropdown-item{href: "#"} Another action
+                %a.dropdown-item{href: "#"} Something else here
+            %a.btn.btn-primary.font-weight-bold.btn-lg{href: "#", role: "button"} Check Availability
+    %footer
+      .container
+        .row
+          .col-lg-1.order-lg-0.col-12.order-2
+            %a.navbar-brand{alt: "logo", href: "index.html"}
+              %img{src: "images/logo/logo_1.png"}/
+          .col-lg-3.order-lg-0.col-12.order-2
+            %a.navbar-brand{alt: "logo", href: "index.html"}
+              %img.footer-logo-pos.position-relative{src: "images/logo/logo_2.png"}/
+            %h5.text-secondary.mt-4
+              diyuplighting@gmail.com
+              %br/
+              (773) 917-8235
+          .col-lg-3.order-lg-0.col-sm-5.col-6.order-1.mt-4.mb-4
+            %h4.text-uppercase.text-primary.pb-2 PRODUCTS
+            .row
+              .col-lg-6
+                %ul
+                  %li
+                    %a{href: "product.html"} Uplight
+                  %li
+                    %a{href: "product_2.html"} Marquee Letter
+                  %li
+                    %a{href: "#"} Pin Spot
+                  %li
+                    %a{href: "#"} Confetti Blaster
+          .col-lg-3.order-lg-0.col-sm-5.col-6.order-1.mt-4.mb-4
+            %h4.text-uppercase.text-primary.pb-2 LEARN
+            .row
+              .col-lg-6
+                %ul.mb-0
+                  %li
+                    %a{href: "#"} First link
+                  %li
+                    %a{href: "#"} Second link
+                  %li
+                    %a{href: "#"} Third link
+                  %li
+                    %a{href: "#"} Fourth link
+              .col-lg-6
+                %ul
+                  %li
+                    %a{href: "#"} Fifth link
+                  %li
+                    %a{href: "#"} Sixth link
+          .col-lg-3.offset-lg-5.order-lg-0.col-12.order-3.mt-lg-5.mt-3
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-facebook.ml-2.mr-2.text-info.font-size-xl
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-twitter.ml-2.mr-2.text-info.font-size-xl
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-pinterest.ml-2.mr-2.text-info.font-size-xl
+          .col-lg-3.offset-lg-1.order-lg-0.order-4.mt-lg-5.mt-3
+            %h5.text-secondary © 2010-2020 19A, Inc.
+          .col-lg-12.order-lg-0.order-5
+            %h6.text-muted.mt-lg-5.mt-4.text-center New York | Los Angeles | Chicago | Houston | Philadelphia | Phoenix | San Antonio | San Diego | Dallas | San Jose | Austin | Indianapolis | Jacksonville | San Francisco | Columbus | Charlotte | Detroit | Memphis | Seattle | Memphis | Denver | Washington DC | Boston | Nashville | Baltimore | Oklahoma City | Louisville | Portland | Las Vegas | Milwaukee | Albuquerque | Tucson | Fresno | Sacramento | El Paso | Long Beach | Kansas City | Virginia Beach | Atlanta | Colorado Springs | Omaha | Raleigh | Miami | Oakland | Minneapolis | Tulsa | Cleveland | Wichita | New Orleans | Tampa | Aurora | St Louis | Pittsburgh | Cincinnati | Newark | Henderson | Fargo | Boise | Birmingham
+    %script{src: "//code.jquery.com/jquery-1.12.4.js"}
+    %script{src: "//code.jquery.com/ui/1.12.1/jquery-ui.js"}
+    %script{src: "js/owl.carousel.min.js"}
+    %script{src: "js/popper.min.js"}
+    %script{src: "js/bootstrap.min.js"}
+    %script{src: "js/scripts.js"}

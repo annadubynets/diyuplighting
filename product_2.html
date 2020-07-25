@@ -114,38 +114,84 @@
 
                             <div class="col-lg-6"></div>
 
-                            <div class="form-group col-lg-3 col-md-3 col-6 mb-3"> <!-- Quantity select -->
-                                <select class="custom-select text-secondary" id="exampleFormControlSelect1">
-                                    <option disabled selected value="">Letter</option>
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                    <option>E</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-lg-3 col-md-3 col-6 mb-3"> <!-- Quantity select -->
-                                <select class="custom-select text-secondary" id="exampleFormControlSelect2">
-                                    <option disabled selected value="">Qty</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
+                            <div class="col-lg-6 col-md-6 col-12 float-right text-lg-left text-center mb-3">
+                                <button class="btn btn-light pt-3 pr-5 pb-3 font-weight-bold btn-lg" type="button" data-toggle="modal" data-target="#pickCharactersModal">Pick Your Marquee Characters
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pickCharactersModal" tabindex="-1" role="dialog" aria-labelledby="pickCharactersModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="pickCharactersModalLabel">Add Marquee Characters</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-group pl-2">
+                                                    <label data-error="wrong" data-success="right" for="formGroupAddLetterInput" class="font-size-xs">Enter the Marquee lights letters to rent. It can be combination of the following letters and symbols: A-Z, 1-0, # and &</label>
+                                                    <input type="text" size="46" class="form-control validate mt-3" id="formGroupAddLetterInput">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary mb-0" data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-primary">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col-lg-6"></div>
 
-                            <div class="col-lg-6 col-md-6 col-12 float-right text-lg-left text-center mb-3">
-                                <button class="btn btn-light pt-3 pr-5 pb-3 font-weight-bold btn-lg" href="#" role="button">Add another letter</button>
+                            <div class="col-lg-3 col-5">
+                                <p class="font-size-sm font-size-sm-responsive text-secondary">Marquee Letters:
+                                </p>
                             </div>
+
+                            <div class="col-lg-6 col-6 mt-4">
+                                <div class="row">
+                                    <div class="col-lg-2 col-2 mb-2 min-h-50 min-w-38 min-h-50-responsive min-w-38-responsive bg-light border align-items-center d-flex ml-2 mr-2 p-0">
+                                        <p class="text-secondary font-size-xs text-center m-auto">J<i class="diy-icon-minus light-gray-color align-middle icon-card"></i>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-3 mb-2 min-h-50 min-w-38 min-h-50-responsive min-w-38-responsive bg-light border align-items-center d-flex ml-2 mr-2 p-0">
+                                        <p class="text-secondary font-size-xs text-center m-auto">A<i class="diy-icon-minus light-gray-color align-middle icon-card"></i>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-3 mb-2 min-h-50 min-w-38 min-h-50-responsive min-w-38-responsive bg-light border align-items-center d-flex ml-2 mr-2 p-0">
+                                        <p class="text-secondary font-size-xs text-center m-auto">V<i class="diy-icon-minus light-gray-color align-middle icon-card"></i>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-3 mb-2 min-h-50 min-w-38 min-h-50-responsive min-w-38-responsive bg-light border align-items-center d-flex ml-2 mr-2 p-0">
+                                        <p class="text-secondary font-size-xs text-center m-auto">I<i class="diy-icon-minus light-gray-color align-middle icon-card"></i>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-3 mb-2 min-h-50 min-w-38 min-h-50-responsive min-w-38-responsive bg-light border align-items-center d-flex ml-2 mr-2 p-0">
+                                        <p class="text-secondary font-size-xs text-center m-auto">E<i class="diy-icon-minus light-gray-color align-middle icon-card"></i>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-3 mb-2 min-h-50 min-w-38 min-h-50-responsive min-w-38-responsive bg-light border align-items-center d-flex ml-2 mr-2 p-0">
+                                        <p class="text-secondary font-size-xs text-center m-auto">R<i class="diy-icon-minus light-gray-color align-middle icon-card"></i>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-3 mb-2 align-self-center">
+                                        <i class="diy-icon-plus light-purple-color font-size-lg" data-toggle="modal" data-target="#pickCharactersModal"></i>
+                                    </div>
+                                </div>
+                            </div>
+
                         </form>
                     </div>
                 </div>
 
-                <div class="col-lg-8 float-right col-12 order-8 text-lg-left text-center">
+                <div class="col-lg-8 float-right col-12 order-8 text-lg-left text-center mt-3">
                     <a class="btn btn-primary font-weight-bold btn-lg" href="#" role="button">Rent Now</a>
                 </div>
             </div>

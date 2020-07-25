@@ -1,0 +1,302 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0", name: "viewport"}/
+    %meta{content: "ie=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title Checkout
+    %link{href: "css/checkout.css", rel: "stylesheet"}/
+  %body
+    %header
+      %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        .container
+          %a.navbar-brand.mr-0{alt: "logo", href: "index.html"}
+            %img{src: "images/logo/logo_1.png"}/
+            %img{src: "images/logo/logo_2.png"}/
+          %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", type: "button"}
+            %img{src: "images/navbar/menu_icon.svg"}/
+          #navbarSupportedContent.collapse.navbar-collapse
+            %ul.navbar-nav.ml-auto
+              %li.nav-item.dropdown
+                %a#navbarDropdownProducts.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: "#", role: "button"}
+                  PRODUCTS
+                .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+                  %a.dropdown-item{href: "product.html"} Uplight
+                  %a.dropdown-item{href: "product_2.html"} Marquee Letter
+                  %a.dropdown-item{href: "#"} Pin Spot
+                  %a.dropdown-item{href: "#"} Confetti Blaster
+              %li.nav-item.dropdown
+                %a#navbarDropdownLearn.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: "#", role: "button"}
+                  LEARN
+                .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+                  %a.dropdown-item{href: "#"} First link
+                  %a.dropdown-item{href: "#"} Second link
+                  %a.dropdown-item{href: "#"} Third link
+                  %a.dropdown-item{href: "#"} Fourth link
+                  %a.dropdown-item{href: "#"} Fifth link
+                  %a.dropdown-item{href: "#"} Sixth link
+              %li.nav-item
+                %a.nav-link{href: "#"} CONTACT
+            %a.btn.btn-primary.font-weight-bold.position-relative{href: "#", role: "button"} Rent Now
+    .hero-section
+      .container
+        .row
+          .alert.alert-primary.col-lg-12.pt-2.pl-3.pb-2.mt-4.mb-lg-5.mb-4.mr-3.mr-sm-0.ml-3.ml-sm-0{role: "alert"}
+            %i.diy-icon-timer.white-color
+            %p.white-color.d-inline.align-text-top.font-size-small.font-size-small-responsive We are temporally holding 10 lights for you to give you time to fill out this rental agreement. This agreement will expire and the hold will be released in 40:25 minutes.
+        %form.form-inline{method: "get"}
+          .row
+            .col-lg-7.order-lg-0.order-1
+              .row
+                .col-lg-12.mt-lg-0.mt-4
+                  %h1 Contact Information
+                  %p.text-secondary.font-size-sm.mt-3.mb-4 To reserve lighting for your event, just complete the following rental agreement.
+                  .row
+                    .input-group.col-lg-3.col-md-3.col-6.order-lg-0.order-0
+                      / First Name input
+                      %input#firstNameInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "First Name", type: "text"}/
+                    .input-group.col-lg-3.col-md-3.col-6.order-lg-0.order-1
+                      / Last Name input
+                      %input#lastNameInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "Last Name", type: "text"}/
+                    .input-group.col-lg-6.col-md-3.col-12.mt-lg-0.mt-4.order-lg-0.order-2
+                      / Email input
+                      %input#emailInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "Email", type: "email"}/
+                    .input-group.col-lg-6.col-md-3.col-12.mt-4.order-lg-0.order-3
+                      / Address input
+                      %input#addressInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "Address", type: "text"}/
+                    .input-group.col-lg-6.col-md-3.col-8.mt-4.order-lg-0.order-7
+                      / Phone input
+                      %input#phoneInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "Phone", type: "text"}/
+                    .input-group.col-lg-5.col-md-3.col-8.mt-4.order-lg-0.order-4
+                      / City input
+                      %input#cityInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "City", type: "text"}/
+                    .input-group.col-lg-3.col-md-3.col-4.mt-4.order-lg-0.order-5
+                      / State select
+                      %select#stateSelect.custom-select.text-secondary.font-size-xs
+                        %option{disabled: "disabled", selected: "selected", value: ""} State
+                        %option State of Texas
+                        %option State of Florida
+                        %option State of Oregon
+                        %option State of New York
+                        %option State of Mississippi
+                    .input-group.col-lg-4.col-md-3.col-4.mt-4.order-lg-0.order-6
+                      / Zipcode input
+                      %input#zipcodeInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "Zipcode", type: "text"}/
+                .custom-control.custom-checkbox.col-lg-12.mt-4
+                  %input#addressCheck.custom-control-input.position-relative.font-size-xs{type: "checkbox", value: ""}/
+                  %label.custom-control-label.d-inline.text-secondary.font-size-small{for: "addressCheck"}
+                    Ship items to this address
+                .col-lg-12.mt-5
+                  %h2.text-info About Your Venue
+                  %p.text-secondary.font-size-sm.mt-3 What is the name and location of the venue where you will be using the lights?
+                  .row
+                    .input-group.col-lg-5.col-md-3.col-12.mt-3.order-lg-0.order-0
+                      / Venue Name input
+                      %input#venueNameInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "Venue Name", type: "text"}/
+                    .input-group.col-lg-3.col-md-3.col-4.mt-3.order-lg-0.order-2
+                      / State select
+                      %select#stateSelect2.custom-select.text-secondary.font-size-xs
+                        %option{disabled: "disabled", selected: "selected", value: ""} State
+                        %option State of Texas
+                        %option State of Florida
+                        %option State of Oregon
+                        %option State of New York
+                        %option State of Mississippi
+                    .input-group.col-lg-4.col-md-3.col-8.mt-3.order-lg-0.order-1
+                      / City input
+                      %input#cityInput2.form-control.input-text.text-secondary.font-size-xs{placeholder: "City", type: "text"}/
+                .col-lg-12.mt-5
+                  %h1 Payment Details
+                  %p.text-secondary.font-size-sm.mt-3.mb-3 A $25 deposit will be charged now and a $490 balance right before shipping
+                  .row
+                    .input-group.col-lg-6.col-md-3.col-6
+                      / First Name input
+                      %input#firstNameInput2.form-control.input-text.text-secondary.font-size-xs{placeholder: "First Name", type: "text"}/
+                    .input-group.col-lg-6.col-md-3.col-6
+                      / Last Name input
+                      %input#lastNameInput2.form-control.input-text.text-secondary.font-size-xs{placeholder: "Last Name", type: "text"}/
+                    .input-group.col-lg-6.col-md-3.col-12.mt-3
+                      / Credit Card Number input
+                      %input#creditCardInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "Credit Card Number", type: "text"}/
+                    .input-group.col-lg-2.col-md-3.col-6.mt-3
+                      / CVC input
+                      %input#cvcInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "CVC", type: "text"}/
+                    .input-group.col-lg-4.col-md-3.col-6.mt-3
+                      / Exp Date input
+                      %input#expDateInput.form-control.input-text.text-secondary.font-size-xs{placeholder: "Exp Date", type: "text"}/
+                .col-lg-12.mt-5
+                  %h1 Rental Agreement Terms
+                  .card.mt-4
+                    .card-body
+                      .scrollable
+                        %p.text-secondary.font-size-xs
+                          This is a legal and binding contract for the purpose of a short term rental of equipment between the signer of this document, hereinafter referred to as “Renter”, and 19A, Inc. operating under the brand name diyuplighting.com.
+                          19A, Inc. maintains full ownership of all rented equipment.
+                          Renter assumes full responsibility for the care of the rented equipment from the time it leaves 19A, Inc. property until it is returned and checked in by an agent of 19A, Inc.
+                          Agreed upon due date is four (4) days after event date specified on this agreement. Failure to return rented equipment by the due date will incur daily rental rates of $5 per each light.
+                          Renter agrees to full financial responsibility should rental equipment and/or any of the components parts or supplies be stolen, lost, damaged, or altered in any way. Renter’s signature on this document authorizes 19A Inc to bill the cost of repair/replacement
+                .custom-control.custom-checkbox.col-lg-12.mt-4
+                  %input#agreeToTermsCheck.custom-control-input.position-relative.font-size-xs{type: "checkbox", value: ""}/
+                  %label.custom-control-label.d-inline.text-secondary.font-size-small{for: "agreeToTermsCheck"}
+                    I agree to the Terms and Conditions stated above
+                .col-lg-8.float-right.col-12.order-8.text-lg-left.text-center.mt-5.mb-5
+                  %a.btn.btn-primary.font-weight-bold.btn-lg{href: "#", role: "button"} Submit Reservation
+            .col-lg-5.order-lg-0.order-0.p-0
+              .card
+                .card-body.pr-3.pl-3
+                  .row
+                    .col-lg-12
+                      %h2.text-primary Rental Summary
+                      %p.text-secondary.font-size-small
+                        Event Date: September 09, 2020.
+                        %i.diy-icon-edit.light-gray-color.font-size-sm.align-bottom
+                    .col-lg-4.col-3
+                      %p.font-size-xs.font-size-xs-responsive.text-secondary
+                        Uplights
+                        %span.font-italic.d-block.font-size-small $17 each
+                    .col-lg-5.col-6
+                      .form-group
+                        %label.text-secondary.col-lg-3.col-3.col-5.font-size-xs.font-size-xs-responsive.align-self-center Qty:
+                        %input.col-lg-9.col-6.input-spinner.text-secondary{type: "number", value: "10"}/
+                    .col-lg-2.col-3.offset-lg-1.align-self-center
+                      %p.font-weight-bold.text-secondary.font-size-xs.font-size-xs-responsive $170
+                    .col-lg-10.col-9.float-right.mt-3
+                      .custom-control.custom-checkbox.pl-2
+                        %input#brighterCheck.custom-control-input.position-relative{type: "checkbox", value: ""}/
+                        %label.custom-control-label.d-inline.font-weight-normal.text-secondary.font-size-xs.font-size-xs-responsive{for: "brighterCheck"}
+                          Brighter Light Upgrade
+                          %i.diy-icon-question.light-gray-color.font-size-sm.align-middle.ml-2{"data-placement" => "top", "data-toggle" => "tooltip", title: "Tooltip on top"}
+                          %span.font-weight-normal.font-italic.d-block.font-size-small.pl-3 + $5 each
+                    .col-lg-2.col-3.mt-4
+                      %p.font-weight-bold.text-secondary.font-size-xs.font-size-xs-responsive $50
+                    .col-lg-10.col-9.float-right.mt-3
+                      .custom-control.custom-checkbox.pl-2
+                        %input#wirelessCheck.custom-control-input.position-relative{type: "checkbox", value: ""}/
+                        %label.custom-control-label.d-inline.font-weight-normal.text-secondary.font-size-xs.font-size-xs-responsive{for: "wirelessCheck"}
+                          Wireless Light Upgrade
+                          %i.diy-icon-question.light-gray-color.font-size-sm.align-middle.ml-2{"data-placement" => "top", "data-toggle" => "tooltip", title: "Tooltip on top"}
+                          %span.font-weight-normal.font-italic.d-block.font-size-small.pl-3 + $8 each
+                    .col-lg-2.col-3.mt-4
+                      %p.font-weight-bold.text-secondary.font-size-xs.font-size-xs-responsive $0
+                    .col-lg-4.col-5.mt-4
+                      %p.font-size-xs.font-size-xs-responsive.text-secondary
+                        Marquee Letters:
+                        %span.font-italic.d-block.font-size-small $49 each
+                    .col-lg-6.col-4.mt-4
+                      .row
+                        .col-lg-2.col-2.mb-2.min-h-50.min-w-38.min-h-50-responsive.min-w-38-responsive.bg-light.align-items-center.d-flex.ml-2.mr-2.p-0
+                          %p.text-secondary.font-size-xs.text-center.m-auto
+                            J
+                            %i.diy-icon-minus.light-gray-color.align-middle.icon-card
+                        .col-lg-2.col-3.mb-2.min-h-50.min-w-38.min-h-50-responsive.min-w-38-responsive.bg-light.align-items-center.d-flex.ml-2.mr-2.p-0
+                          %p.text-secondary.font-size-xs.text-center.m-auto
+                            A
+                            %i.diy-icon-minus.light-gray-color.align-middle.icon-card
+                        .col-lg-2.col-3.mb-2.min-h-50.min-w-38.min-h-50-responsive.min-w-38-responsive.bg-light.align-items-center.d-flex.ml-2.mr-2.p-0
+                          %p.text-secondary.font-size-xs.text-center.m-auto
+                            V
+                            %i.diy-icon-minus.light-gray-color.align-middle.icon-card
+                        .col-lg-2.col-3.mb-2.min-h-50.min-w-38.min-h-50-responsive.min-w-38-responsive.bg-light.align-items-center.d-flex.ml-2.mr-2.p-0
+                          %p.text-secondary.font-size-xs.text-center.m-auto
+                            I
+                            %i.diy-icon-minus.light-gray-color.align-middle.icon-card
+                        .col-lg-2.col-3.mb-2.min-h-50.min-w-38.min-h-50-responsive.min-w-38-responsive.bg-light.align-items-center.d-flex.ml-2.mr-2.p-0
+                          %p.text-secondary.font-size-xs.text-center.m-auto
+                            E
+                            %i.diy-icon-minus.light-gray-color.align-middle.icon-card
+                        .col-lg-2.col-3.mb-2.min-h-50.min-w-38.min-h-50-responsive.min-w-38-responsive.bg-light.align-items-center.d-flex.ml-2.mr-2.p-0
+                          %p.text-secondary.font-size-xs.text-center.m-auto
+                            R
+                            %i.diy-icon-minus.light-gray-color.align-middle.icon-card
+                        .col-lg-2.col-3.mb-2.align-self-center
+                          %i.diy-icon-plus.light-purple-color.font-size-lg
+                    .col-lg-2.col-3.mt-4
+                      %p.font-weight-bold.text-secondary.font-size-xs.font-size-xs-responsive $294
+                    .col-lg-10.col-9.mt-4
+                      %p.font-size-xs.font-size-xs-responsive.text-secondary.font-weight-bold
+                        Shipping
+                        %span.font-weight-normal.font-italic.font-size-small.d-block.pl-2.mt-1 Estimated Arrival Date: Sep 7, 2020
+                        %span.font-weight-normal.font-italic.font-size-small.d-block.pl-2 Due Date (return to UPS): Sep 13, 2020
+                    .col-lg-2.col-3.mt-4
+                      %p.font-weight-normal.text-secondary.font-size-xs.font-size-xs-responsive FREE
+                    .col-lg-10.col-9.mt-3.mb-2
+                      %p.font-size-xs.font-size-xs-responsive.text-primary.font-weight-bold Total
+                    .col-lg-2.col-3.mt-3.mb-2
+                      %p.font-weight-bold.text-primary.font-size-xs.font-size-xs-responsive $514
+                    .col-lg-12
+                      .border-bottom
+                    .col-lg-10.col-9.mt-4
+                      %p.font-size-xs.font-size-xs-responsive.text-secondary.font-weight-bold
+                        Deposit
+                        %i.diy-icon-info.gray-color.font-size-sm.align-middle.ml-2{"data-placement" => "top", "data-toggle" => "tooltip", title: "Tooltip on top"}
+                    .col-lg-2.col-3.mt-4
+                      %p.font-weight-bold.text-secondary.font-size-xs.font-size-xs-responsive $25
+                    .col-lg-10.col-9.mt-1
+                      %p.font-size-xs.font-size-xs-responsive.text-secondary.font-weight-bold
+                        Balance
+                        %i.diy-icon-info.gray-color.font-size-sm.align-middle.ml-2{"data-placement" => "top", "data-toggle" => "tooltip", title: "Tooltip on top"}
+                    .col-lg-2.col-3.mt-1
+                      %p.font-weight-bold.text-secondary.font-size-xs.font-size-xs-responsive $490
+    %footer
+      .container
+        .row
+          .col-lg-1.order-lg-0.col-12.order-2
+            %a.navbar-brand{alt: "logo", href: "index.html"}
+              %img{src: "images/logo/logo_1.png"}/
+          .col-lg-3.order-lg-0.col-12.order-2
+            %a.navbar-brand{alt: "logo", href: "index.html"}
+              %img.footer-logo-pos.position-relative{src: "images/logo/logo_2.png"}/
+            %h5.text-secondary.mt-4
+              diyuplighting@gmail.com
+              %br/
+              (773) 917-8235
+          .col-lg-3.order-lg-0.col-sm-5.col-6.order-1.mt-4.mb-4
+            %h4.text-uppercase.text-primary.pb-2 PRODUCTS
+            .row
+              .col-lg-6
+                %ul
+                  %li
+                    %a{href: "product.html"} Uplight
+                  %li
+                    %a{href: "product_2.html"} Marquee Letter
+                  %li
+                    %a{href: "#"} Pin Spot
+                  %li
+                    %a{href: "#"} Confetti Blaster
+          .col-lg-3.order-lg-0.col-sm-5.col-6.order-1.mt-4.mb-4
+            %h4.text-uppercase.text-primary.pb-2 LEARN
+            .row
+              .col-lg-6
+                %ul.mb-0
+                  %li
+                    %a{href: "#"} First link
+                  %li
+                    %a{href: "#"} Second link
+                  %li
+                    %a{href: "#"} Third link
+                  %li
+                    %a{href: "#"} Fourth link
+              .col-lg-6
+                %ul
+                  %li
+                    %a{href: "#"} Fifth link
+                  %li
+                    %a{href: "#"} Sixth link
+          .col-lg-3.offset-lg-5.order-lg-0.col-12.order-3.mt-lg-5.mt-3
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-facebook.ml-2.mr-2.text-info.font-size-xl
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-twitter.ml-2.mr-2.text-info.font-size-xl
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-pinterest.ml-2.mr-2.text-info.font-size-xl
+          .col-lg-3.offset-lg-1.order-lg-0.order-4.mt-lg-5.mt-3
+            %h5.text-secondary © 2010-2020 19A, Inc.
+          .col-lg-12.order-lg-0.order-5
+            %h6.text-muted.mt-lg-5.mt-4.text-center New York | Los Angeles | Chicago | Houston | Philadelphia | Phoenix | San Antonio | San Diego | Dallas | San Jose | Austin | Indianapolis | Jacksonville | San Francisco | Columbus | Charlotte | Detroit | Memphis | Seattle | Memphis | Denver | Washington DC | Boston | Nashville | Baltimore | Oklahoma City | Louisville | Portland | Las Vegas | Milwaukee | Albuquerque | Tucson | Fresno | Sacramento | El Paso | Long Beach | Kansas City | Virginia Beach | Atlanta | Colorado Springs | Omaha | Raleigh | Miami | Oakland | Minneapolis | Tulsa | Cleveland | Wichita | New Orleans | Tampa | Aurora | St Louis | Pittsburgh | Cincinnati | Newark | Henderson | Fargo | Boise | Birmingham
+    %script{src: "//code.jquery.com/jquery-1.12.4.js"}
+    %script{src: "//code.jquery.com/ui/1.12.1/jquery-ui.js"}
+    %script{src: "js/owl.carousel.min.js"}
+    %script{src: "js/popper.min.js"}
+    %script{src: "js/bootstrap.min.js"}
+    %script{src: "js/scripts.js"}

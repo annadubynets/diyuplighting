@@ -205,6 +205,13 @@ footer ul{
   font-size: 23px;
 }
 
+.font-size-lg-responsive {
+  @extend .font-size-lg;
+  @include max-screen($xs-screen) {
+    font-size: 20px;
+  }
+}
+
 .font-size-md {
   font-size: 18px;
 }
@@ -227,8 +234,27 @@ footer ul{
   }
 }
 
+.font-size-small {
+  font-size: 12px;
+}
+
+.font-size-small-responsive {
+  @extend .font-size-small;
+  @include max-screen($sm-screen) {
+    font-size: 10px;
+  }
+}
+
 .font-size-xs {
   font-size: 14px;
+}
+
+.font-size-xs-responsive {
+  @extend .font-size-xs;
+  @include max-screen($sm-screen) {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
 
 .font-size-xss {
@@ -262,15 +288,47 @@ $colours:
   "yellow" $yellow-color;
   
 @each $i in $colours{
-	.#{nth($i, 1)}-background {
-		background-color: nth($i, 2);
-	}
-	.#{nth($i, 1)}-color {
-		color:nth($i, 2);
-	}
+  .#{nth($i, 1)}-background {
+      background-color: nth($i, 2);
+  }
+  .#{nth($i, 1)}-color {
+      color:nth($i, 2);
+  }
+  .hover-#{nth($i, 1)}-color {
+    &:hover {
+      color: nth($i, 2)!important;
+    }
+  }
 }
 
 i[class^="diy-icon-"], i[class*=" diy-icon-"] {
   font-family: diy-icon !important;
   margin: auto;
+}
+
+.scrollable{
+  overflow-y: auto;
+  max-height: 150px;
+}
+
+.min-h-50 {
+  min-height: 50px!important;
+}
+
+.min-w-38 {
+  max-width: 38px!important;
+}
+
+.min-h-50-responsive {
+  @extend .min-h-50;
+  @include max-screen($sm-screen) {
+    min-height: 38px!important;
+  }
+}
+
+.min-w-38-responsive {
+  @extend .min-w-38;
+  @include max-screen($sm-screen) {
+    max-width: 29px!important;
+  }
 }

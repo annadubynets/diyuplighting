@@ -1,0 +1,205 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0", name: "viewport"}/
+    %meta{content: "ie=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title Photo
+    %link{href: "css/style.css", rel: "stylesheet"}/
+    %link{href: "css/state.css", rel: "stylesheet"}/
+    %link{href: "css/photos.css", rel: "stylesheet"}/
+  %body
+    %header
+      %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        .container
+          %a.navbar-brand.mr-0{alt: "logo", href: "index.html"}
+            %img{src: "images/logo/logo_1.png"}/
+            %img{src: "images/logo/logo_2.png"}/
+          %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", type: "button"}
+            %img{src: "images/navbar/menu_icon.svg"}/
+          #navbarSupportedContent.collapse.navbar-collapse
+            %ul.navbar-nav.ml-auto
+              %li.nav-item.dropdown
+                %a#navbarDropdownProducts.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: "#", role: "button"}
+                  PRODUCTS
+                .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+                  %a.dropdown-item{href: "product.html"} Uplight
+                  %a.dropdown-item{href: "product_2.html"} Marquee Letter
+                  %a.dropdown-item{href: "#"} Pin Spot
+                  %a.dropdown-item{href: "#"} Confetti Blaster
+              %li.nav-item.dropdown
+                %a#navbarDropdownLearn.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: "#", role: "button"}
+                  LEARN
+                .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+                  %a.dropdown-item{href: "#"} First link
+                  %a.dropdown-item{href: "#"} Second link
+                  %a.dropdown-item{href: "#"} Third link
+                  %a.dropdown-item{href: "#"} Fourth link
+                  %a.dropdown-item{href: "#"} Fifth link
+                  %a.dropdown-item{href: "#"} Sixth link
+              %li.nav-item
+                %a.nav-link{href: "#"} CONTACT
+            %a.btn.btn-primary.font-weight-bold.position-relative{href: "#", role: "button"} Rent Now
+    %section.gallery-section
+      .container
+        .row
+          .col-lg-12
+            %a.text-secondary.font-size-md{href: "photos.html"} Back to gallery
+            %h1.text-info.mt-5.mb-4 Virgina Beach Uplighting Rentals
+          .col-lg-7
+            %img.w-100{alt: "", src: "images/photos/photos_picture_1.png"}/
+          .col-lg-12
+            %h2.text-secondary.mt-5 Awesome view from the outside looking in! 15 of our uplights were setup inside The Water Table in Virginia Beach, VA. With the glass windows letting the light shine through, it looks super cool from the outside!
+        .row
+          %a{"data-pin-count" => "beside", "data-pin-do" => "buttonPin", href: "https://www.pinterest.com/pin/create/button/?url=http://www.foodiecrush.com/2014/03/filet-mignon-with-porcini-mushroom-compound-butter/&media=https://i.pinimg.com/736x/17/34/8e/17348e163a3212c06e61c41c4b22b87a.jpg&description=So%20delicious!"}
+            %img{height: "25", src: "https://addons.opera.com/media/extensions/55/19155/1.1-rev1/icons/icon_64x64.png", width: "25"}/
+    %section.awards-section
+      .container
+        .row
+          .col-xl-2.col-lg-4.col-md-4.col-sm-6.col-6.col-xss-12.mb-4
+            .card.bg-light.text-center
+              .card-body
+                .star-rating
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                %p.awards-card-text.font-weight-bold.text-dark.mt-1 COUPLES’ CHOICE
+                %p.awards-card-title.font-secondary.font-weight-normal.text-info
+                  AWARDS
+                  %span.font-secondary.font-weight-bold.text-primary.d-block 2020
+                %img{src: "images/home/awards_icon.svg"}/
+          .col-xl-2.col-lg-4.col-md-4.col-sm-6.col-6.col-xss-12.mb-4
+            .card.bg-light.text-center
+              .card-body
+                .star-rating
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                %p.awards-card-text.font-weight-bold.text-dark.mt-1 COUPLES’ CHOICE
+                %p.awards-card-title.font-secondary.font-weight-normal.text-info
+                  AWARDS
+                  %span.font-secondary.font-weight-bold.text-primary.d-block 2019
+                %img{src: "images/home/awards_icon.svg"}/
+          .col-xl-2.col-lg-4.col-md-4.col-sm-6.col-6.col-xss-12.mb-4
+            .card.bg-light.text-center
+              .card-body
+                .star-rating
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                %p.awards-card-text.font-weight-bold.text-dark.mt-1 COUPLES’ CHOICE
+                %p.awards-card-title.font-secondary.font-weight-normal.text-info
+                  AWARDS
+                  %span.font-secondary.font-weight-bold.text-primary.d-block 2018
+                %img{src: "images/home/awards_icon.svg"}/
+          .col-xl-2.col-lg-4.col-md-4.col-sm-6.col-6.col-xss-12.mb-4
+            .card.bg-light.text-center
+              .card-body
+                .star-rating
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                %p.awards-card-text.font-weight-bold.text-dark.mt-1 COUPLES’ CHOICE
+                %p.awards-card-title.font-secondary.font-weight-normal.text-info
+                  AWARDS
+                  %span.font-secondary.font-weight-bold.text-primary.d-block 2017
+                %img{src: "images/home/awards_icon.svg"}/
+          .col-xl-2.col-lg-4.col-md-4.col-sm-6.col-6.col-xss-12.mb-4
+            .card.bg-light.text-center
+              .card-body
+                .star-rating
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                %p.awards-card-text.font-weight-bold.text-dark.mt-1 COUPLES’ CHOICE
+                %p.awards-card-title.font-secondary.font-weight-normal.text-info
+                  AWARDS
+                  %span.font-secondary.font-weight-bold.text-primary.d-block 2016
+                %img{src: "images/home/awards_icon.svg"}/
+          .col-xl-2.col-lg-4.col-md-4.col-sm-6.col-6.col-xss-12.mb-4
+            .card.bg-light.text-center
+              .card-body
+                .star-rating
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                  %i.diy-icon-star.yellow-color
+                %p.awards-card-text.font-weight-bold.text-dark.mt-1 COUPLES’ CHOICE
+                %p.awards-card-title.font-secondary.font-weight-normal.text-info
+                  AWARDS
+                  %span.font-secondary.font-weight-bold.text-primary.d-block 2015
+                %img{src: "images/home/awards_icon.svg"}/
+    %footer
+      .container
+        .row
+          .col-lg-1.order-lg-0.col-12.order-2
+            %a.navbar-brand{alt: "logo", href: "index.html"}
+              %img{src: "images/logo/logo_1.png"}/
+          .col-lg-3.order-lg-0.col-12.order-2
+            %a.navbar-brand{alt: "logo", href: "index.html"}
+              %img.footer-logo-pos.position-relative{src: "images/logo/logo_2.png"}/
+            %h5.text-secondary.mt-4
+              diyuplighting@gmail.com
+              %br/
+              (773) 917-8235
+          .col-lg-3.order-lg-0.col-sm-5.col-6.order-1.mt-4.mb-4
+            %h4.text-uppercase.text-primary.pb-2 PRODUCTS
+            .row
+              .col-lg-6
+                %ul
+                  %li
+                    %a{href: "product.html"} Uplight
+                  %li
+                    %a{href: "product_2.html"} Marquee Letter
+                  %li
+                    %a{href: "#"} Pin Spot
+                  %li
+                    %a{href: "#"} Confetti Blaster
+          .col-lg-3.order-lg-0.col-sm-5.col-6.order-1.mt-4.mb-4
+            %h4.text-uppercase.text-primary.pb-2 LEARN
+            .row
+              .col-lg-6
+                %ul.mb-0
+                  %li
+                    %a{href: "#"} First link
+                  %li
+                    %a{href: "#"} Second link
+                  %li
+                    %a{href: "#"} Third link
+                  %li
+                    %a{href: "#"} Fourth link
+              .col-lg-6
+                %ul
+                  %li
+                    %a{href: "#"} Fifth link
+                  %li
+                    %a{href: "#"} Sixth link
+          .col-lg-3.offset-lg-5.order-lg-0.col-12.order-3.mt-lg-5.mt-3
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-facebook.ml-2.mr-2.text-info.font-size-xl
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-twitter.ml-2.mr-2.text-info.font-size-xl
+            %a.text-decoration-none{href: "#"}
+              %i.diy-icon-pinterest.ml-2.mr-2.text-info.font-size-xl
+          .col-lg-3.offset-lg-1.order-lg-0.order-4.mt-lg-5.mt-3
+            %h5.text-secondary © 2010-2020 19A, Inc.
+          .col-lg-12.order-lg-0.order-5
+            %h6.text-muted.mt-lg-5.mt-4.text-center New York | Los Angeles | Chicago | Houston | Philadelphia | Phoenix | San Antonio | San Diego | Dallas | San Jose | Austin | Indianapolis | Jacksonville | San Francisco | Columbus | Charlotte | Detroit | Memphis | Seattle | Memphis | Denver | Washington DC | Boston | Nashville | Baltimore | Oklahoma City | Louisville | Portland | Las Vegas | Milwaukee | Albuquerque | Tucson | Fresno | Sacramento | El Paso | Long Beach | Kansas City | Virginia Beach | Atlanta | Colorado Springs | Omaha | Raleigh | Miami | Oakland | Minneapolis | Tulsa | Cleveland | Wichita | New Orleans | Tampa | Aurora | St Louis | Pittsburgh | Cincinnati | Newark | Henderson | Fargo | Boise | Birmingham
+    %script{src: "//code.jquery.com/jquery-1.12.4.js"}
+    %script{src: "//code.jquery.com/ui/1.12.1/jquery-ui.js"}
+    %script{src: "js/owl.carousel.min.js"}
+    %script{src: "js/popper.min.js"}
+    %script{src: "js/bootstrap.min.js"}
+    %script{src: "js/scripts.js"}

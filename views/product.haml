@@ -76,13 +76,7 @@
               %form.form-inline{method: "get"}
                 .form-group.col-lg-3.col-md-3.col-6
                   / Quantity select
-                  %select#exampleFormControlSelect1.custom-select.text-secondary
-                    %option{disabled: "disabled", selected: "selected", value: ""} Quantity
-                    %option 1
-                    %option 2
-                    %option 3
-                    %option 4
-                    %option 5
+                  %input.input-spinner.text-secondary{type: "number", value: "10"}/
                 .form-group.col-lg-3.col-md-3.col-6
                   / Date input
                   %input#date.custom-select.date-picker.text-secondary{autocomplete: "off", name: "date", placeholder: "Date", type: "text"}/
@@ -98,14 +92,14 @@
               %label.custom-control-label.d-inline.font-weight-bold.text-secondary{for: "defaultCheck1"}
                 Upgrade to a brighter light with 8 more color presets
                 %span.font-weight-normal + $5 each
-              %i.diy-icon-info.gray-color.font-size-sm.d-lg-inline.d-none
+              %i.diy-icon-info.gray-color.font-size-sm.d-lg-inline.d-none{"data-placement" => "top", "data-toggle" => "tooltip", title: "Tooltip on top"}
           .col-lg-8.float-right.mt-2.mb-5.order-7
             .custom-control.custom-checkbox.pl-2
               %input#defaultCheck2.custom-control-input.position-relative{type: "checkbox", value: ""}/
               %label.custom-control-label.d-inline.font-weight-bold.text-secondary{for: "defaultCheck2"}
                 Upgrade to wireless
                 %span.font-weight-normal + $8 each
-              %i.diy-icon-info.gray-color.font-size-sm.d-lg-inline.d-none
+              %i.diy-icon-info.gray-color.font-size-sm.d-lg-inline.d-none{"data-placement" => "top", "data-toggle" => "tooltip", title: "Tooltip on top"}
           .col-lg-8.float-right.col-12.order-8.text-lg-left.text-center
             %a.btn.btn-primary.font-weight-bold.btn-lg{href: "#", role: "button"} Rent Now
     %section.gallery-section
@@ -134,13 +128,13 @@
             #weddings.gallery
               .owl-carousel
                 .item{"data-description-id" => "d-gallery-1"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_1.png"}/
+                  %img{alt: "", src: "images/state/gallery_1.png"}/
                 .item{"data-description-id" => "d-gallery-2"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_2.png"}/
+                  %img{alt: "", src: "images/state/gallery_2.png"}/
                 .item{"data-description-id" => "d-gallery-3"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_3.png"}/
+                  %img{alt: "", src: "images/state/gallery_3.png"}/
                 .item{"data-description-id" => "d-gallery-4"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_4.png"}/
+                  %img{alt: "", src: "images/state/gallery_4.png"}/
               .container
                 .row
                   .col-lg-9
@@ -155,13 +149,13 @@
             #mitzvahs.gallery
               .owl-carousel
                 .item{"data-description-id" => "d-gallery-5"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_1.png"}/
+                  %img{alt: "", src: "images/state/gallery_1.png"}/
                 .item{"data-description-id" => "d-gallery-6"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_2.png"}/
+                  %img{alt: "", src: "images/state/gallery_2.png"}/
                 .item{"data-description-id" => "d-gallery-7"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_3.png"}/
+                  %img{alt: "", src: "images/state/gallery_3.png"}/
                 .item{"data-description-id" => "d-gallery-8"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_4.png"}/
+                  %img{alt: "", src: "images/state/gallery_4.png"}/
               .container
                 .row
                   .col-lg-9
@@ -176,13 +170,13 @@
             #graduations.gallery
               .owl-carousel
                 .item{"data-description-id" => "d-gallery-9"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_1.png"}/
+                  %img{alt: "", src: "images/state/gallery_1.png"}/
                 .item{"data-description-id" => "d-gallery-10"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_2.png"}/
+                  %img{alt: "", src: "images/state/gallery_2.png"}/
                 .item{"data-description-id" => "d-gallery-11"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_3.png"}/
+                  %img{alt: "", src: "images/state/gallery_3.png"}/
                 .item{"data-description-id" => "d-gallery-12"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_4.png"}/
+                  %img{alt: "", src: "images/state/gallery_4.png"}/
               .container
                 .row
                   .col-lg-9
@@ -197,13 +191,13 @@
             #parties.gallery
               .owl-carousel
                 .item{"data-description-id" => "d-gallery-13"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_1.png"}/
+                  %img{alt: "", src: "images/state/gallery_1.png"}/
                 .item{"data-description-id" => "d-gallery-14"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_2.png"}/
+                  %img{alt: "", src: "images/state/gallery_2.png"}/
                 .item{"data-description-id" => "d-gallery-15"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_3.png"}/
+                  %img{alt: "", src: "images/state/gallery_3.png"}/
                 .item{"data-description-id" => "d-gallery-16"}
-                  %img.img-responsive{alt: "", src: "images/state/gallery_4.png"}/
+                  %img{alt: "", src: "images/state/gallery_4.png"}/
               .container
                 .row
                   .col-lg-9

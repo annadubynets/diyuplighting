@@ -1,0 +1,60 @@
+@import url("//code.jquery.com/ui/1.12.1/themes/base/theme.css");
+@import "owl.carousel.min.css";
+@import "owl.theme.default.css";
+@import "bootstrap.min.css";
+@import "mixins";
+@import "variables";
+@import "typography";
+@import "jquery-ui-theme";
+@import "cards";
+@import "navbars";
+@import "buttons";
+@import "backgrounds";
+@import "texts";
+@import "borders";
+@import "diy-icons.css";
+@import "dropdowns";
+@import "tabs";
+@import "gallery";
+
+.photo-gallery-section {
+  .multi-collapse:not(.show) {
+    @include min-width($sm-screen) {
+      display: block;
+    }
+  }
+  .view-more, .view-less {
+    @include min-width($sm-screen) {
+      display: none!important;
+    }
+  }
+  a.view-more.collapsed  {
+    display: block;
+  }
+
+  a.view-more:not(.collapsed)  {
+    display: none;
+  }
+
+  a.view-less.collapsed  {
+    display: none;
+  }
+
+  a.view-less:not(.collapsed)  {
+    display: block;
+  }
+
+  .photo-img {
+    width: 320px;
+    height: 213px;
+    object-fit: cover;
+  }
+
+  .diy-icon-arrow-back {
+    top: 2px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

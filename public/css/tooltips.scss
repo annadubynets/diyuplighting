@@ -1,0 +1,11 @@
+@import "variables";
+
+.tooltip-inner {
+  color: $light-white-color; /* цвет шрифта */
+  background-color: $gray-color; /* цвет фона (по умолчанию #000) */
+  border-radius: 25px; /* радиус скругдения углов */
+}
+
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: $gray-color; /* цвет стрелочки (по умолчанию #000)*/
+}

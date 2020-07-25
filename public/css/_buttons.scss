@@ -72,3 +72,60 @@
 .btn-link.focus, .btn-link:focus {
   text-decoration: none;
 }
+
+.input-text {
+  width: 100%;
+  height: 50px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 17px;
+}
+
+.custom-select {
+  background-image: url("../images/product/polygon.svg");
+  width: 100%;
+  height: 50px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 17px;
+}
+
+.custom-control-input {
+  float: left;
+  width: 18px;
+  height: 18px;
+  border: 1px solid $gray-color;
+  background: $white-color;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+.custom-control-label::before {
+  top: 0px;
+}
+
+.custom-control-label::after {
+  top: 0px;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color: $dark-purple-color;
+  border-color: $dark-purple-color;
+}
+
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before{
+  box-shadow: none;
+  border-color: $dark-purple-color;
+}
+
+.input-spinner {
+  width: 100%;
+  height: 50px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 25px;
+  padding: 20px 30px;
+  margin-bottom: 0px;
+}
